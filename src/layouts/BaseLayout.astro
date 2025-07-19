@@ -1,0 +1,17 @@
+---
+import MaamiConfig from "../../maami.config";
+import BaseHead from "../components/BaseHead.astro";
+---
+
+<html lang={MaamiConfig.locale}>
+  <BaseHead />
+  <body class="overflow-y-hidden">
+    <slot />
+  </body>
+</html>
+
+<style>
+  body {
+    @apply bg-[var(--background-color)];
+  }
+</style>
