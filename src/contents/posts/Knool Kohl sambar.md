@@ -1,10 +1,18 @@
-# 🌿 Turnip (Knool Kohl) Sambar – Hearty & Flavorful Tamil Style
+---
+title: Turnip (Knool Kohl) Sambar | Hearty & Flavorful Tamil Style  
+published: 2025-07-28  
+description: A soulful Tamil-style sambar featuring tender turnip simmered with toor dal, tamarind, and aromatic spices. Perfect with rice, idli, or dosa.  
+tags: [Turnip, Sambar, Tamil, Traditional, Lentils, Vegan]  
+category: Recipe  
+draft: false  
+image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/turnip_sambar.jpg"  
+---
 
-*"Earthy turnip meets classic sambar — a soulful bowl of Tamil tradition!"*
+# 🌿 Turnip (Knool Kohl) Sambar | Hearty & Flavorful Tamil Style
 
-Turnip Sambar is a hearty and flavorful Tamil-style lentil stew featuring tender turnip pieces simmered with toor dal and aromatic spices. This wholesome sambar brings a comforting, tangy warmth to your meals and pairs beautifully with rice or idli.
+**"Earthy turnip meets classic sambar — a soulful bowl of Tamil tradition!"**
 
-A comforting sambar featuring tender turnip cooked with toor dal and tangy tamarind, seasoned with traditional spices and curry leaves. This wholesome dish pairs perfectly with hot rice and crispy potato roast.
+Turnip Sambar is a hearty and flavorful Tamil-style lentil stew made with tender turnip pieces simmered alongside toor dal and aromatic spices. This comforting, tangy dish is perfect for pairing with hot rice, crispy potato roast, idli, or dosa.
 
 ---
 
@@ -21,37 +29,39 @@ A comforting sambar featuring tender turnip cooked with toor dal and tangy tamar
 - 🧂 Salt – to taste  
 - 🛢️ Oil (preferably gingelly/sesame oil) – 2 tbsp  
 - Tamarind – lemon-sized ball, soaked in water  
-- Sambar Powder – 2 tbsp  
+- 🌶️ Sambar Powder – 2 tbsp  
 
 ---
 
 ## 👩‍🍳 Directions
 
-1. **Prepare Dal & Turnip:**  
-   Wash toor dal thoroughly. Add turmeric powder and enough water to pressure cook. Place a flat plate on top of the dal inside the cooker.
+### Prepare Dal & Turnip  
+1. Wash toor dal thoroughly. Add turmeric powder and enough water to pressure cook. Place a flat plate inside the cooker on top of the dal.  
 
-2. **Add Turnip for Steaming:**  
-   Place chopped turnip in a bowl (no extra water needed). Place this bowl on top of the plate covering the dal. Pressure cook for 3 whistles (~5–10 minutes).
+2. Place chopped turnip in a bowl (no extra water needed). Put this bowl on the plate inside the cooker. Pressure cook for 3 whistles (~5–10 minutes).
 
-3. **Tempering:**  
-   In a heavy-bottomed kadai, heat 2 tbsp gingelly oil. Add 1 tbsp mustard seeds. When they splutter, add chopped green chilies and chopped tomato. Sauté until tomato turns juicy (~2–3 minutes).
+### Tempering  
+3. Heat 2 tbsp gingelly oil in a heavy-bottomed kadai. Add mustard seeds and let them splutter.  
 
-4. **Add Curry Leaves & Cooked Turnip:**  
-   Add curry leaves. Then add the cooked turnip along with any water released during cooking. Mix well.
+4. Add chopped green chilies and chopped tomato. Sauté until tomatoes turn juicy (~2–3 minutes).
 
-5. **Tamarind & Sambar Powder:**  
-   Extract tamarind pulp from soaked tamarind. Add this pulp, sambar powder, and salt to the turnip mixture. Cook on medium flame for about 10 minutes until raw tamarind smell disappears.
+### Add Curry Leaves & Cooked Turnip  
+5. Add curry leaves. Then add the cooked turnip along with any cooking water. Mix well.
 
-6. **Add Cooked Dal:**  
-   Add the cooked dal to the sambar. Mix thoroughly and check seasoning; add salt if needed.
+### Tamarind & Sambar Powder  
+6. Extract tamarind pulp from soaked tamarind. Add tamarind pulp, sambar powder, and salt to the turnip mixture. Cook on medium flame for about 10 minutes until the raw tamarind smell disappears.
 
-7. **Final Boil & Garnish:**  
-   Bring sambar to a boil for 5 minutes. Turn off the flame and add chopped coriander leaves. Mix gently.
+### Add Cooked Dal  
+7. Add cooked dal to the sambar. Mix thoroughly, check seasoning, and add salt if needed.
+
+### Final Boil & Garnish  
+8. Bring sambar to a boil for 5 minutes. Turn off the flame, add chopped coriander leaves, and mix gently.
 
 ---
 
-## 💡 Serving Suggestions  
+## 💡 Serving Suggestions
+
 - Serve hot with steamed rice and crispy potato roast for a delightful meal.  
-- Also pairs well with idli or dosa. 
+- Also pairs beautifully with idli or dosa.
 
 ---
