@@ -1,8 +1,18 @@
-# 🌶️ Seppankizhangu Roast Recipe (Elephant Yam Roast)
+---
+title: Seppankizhangu Roast Recipe (Elephant Yam Roast)  
+published: 2025-07-28  
+description: A crispy, spicy South Indian elephant yam roast flavored with mustard seeds, curry leaves, and aromatic spices. Perfect as a side with rice, sambar, or dosa.  
+tags: [Elephant Yam, Seppankizhangu, Roast, South Indian, Side Dish, Spicy]  
+category: Recipe  
+draft: false  
+image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/seppankizhangu_roast.jpg"  
+---
+
+# 🥔 Seppankizhangu Roast | Elephant Yam Roast
 
 **“Crispy, spicy, and deeply comforting — Seppankizhangu Roast that steals the show!”**
 
-Seppankizhangu Roast is a spicy and aromatic South Indian dish featuring tender elephant yam pieces roasted to perfection with mustard seeds, curry leaves, and flavorful spices. Crispy on the outside and soft inside, this roast is a beloved side dish that pairs wonderfully with rice and sambar.
+A beloved South Indian side dish featuring tender elephant yam roasted to crispy perfection with mustard seeds, urad dal, curry leaves, and flavorful spices. This roast pairs wonderfully with rice, sambar, dosa, or idli.
 
 ---
 
@@ -13,7 +23,7 @@ Seppankizhangu Roast is a spicy and aromatic South Indian dish featuring tender 
 - 🌶️ Sambar powder – 1 to 2 tsp (adjust to taste)  
 - 🧂 Salt – to taste  
 - 🔸 Hing (Asafoetida) – a pinch  
-- 🛢️ Oil (preferably sesame or sunflower oil) – for cooking  
+- 🛢️ Oil (sesame or sunflower) – for cooking  
 - 🌱 Mustard seeds – 1 tsp  
 - 🌾 Urad dal – 1 tsp  
 - 🧈 Ghee – 1 tbsp  
@@ -22,55 +32,51 @@ Seppankizhangu Roast is a spicy and aromatic South Indian dish featuring tender 
 
 ## 👩‍🍳 Instructions
 
-1. **Clean the Seppankizhangu**  
-   Soak yam pieces in water for 10–15 minutes to remove any soil. Rinse thoroughly under running water.
+### 1. Clean the Seppankizhangu  
+Soak the yam pieces in water for 10–15 minutes to remove soil. Rinse thoroughly under running water.
 
-2. **Boil the Yam**  
-   Bring water to a boil in a kadai or deep pan. Add yam and cook for 5–10 minutes. Test with a fork — it should pierce easily. Drain and set aside.
+### 2. Boil the Yam  
+Bring water to a boil in a kadai or deep pan. Add yam pieces and cook for 5–10 minutes until fork-tender. Drain and set aside.
 
-3. **Peel & Cut**  
-   Let it cool. Peel off the skin and slice into thick round pieces.
+### 3. Peel & Cut  
+Once cooled, peel off the skin and slice into thick rounds.
 
-4. **Coat with Rice Flour**  
-   Add rice flour to the yam slices. Toss to coat evenly. Rest for 5 minutes or refrigerate for 5–10 minutes.
+### 4. Coat with Rice Flour  
+Toss yam slices with rice flour evenly. Rest for 5 minutes or refrigerate for 5–10 minutes.
 
-5. **Tempering**  
-   Heat oil in a heavy-bottomed pan. Add mustard seeds and urad dal. Once they splutter and turn golden, add a pinch of hing.
+### 5. Tempering  
+Heat oil in a heavy-bottomed pan. Add mustard seeds and urad dal. When they splutter and turn golden, add a pinch of hing.
 
-6. **Add & Season the Yam**  
-   Add the coated yam slices to the oil. Sprinkle sambar powder and salt. Toss gently to coat the pieces evenly.
+### 6. Add & Season the Yam  
+Add coated yam slices to the oil. Sprinkle sambar powder and salt. Toss gently to coat.
 
-7. **Cook Covered**  
-   Cover and cook for 2–3 minutes to help spices absorb.
+### 7. Cook Covered  
+Cover and cook for 2–3 minutes to absorb spices.
 
-8. **Roast Uncovered**  
-   Remove lid. Spread the pieces evenly in the pan. Roast uncovered on medium flame for 10–15 minutes, flipping occasionally until all sides are golden and crisp.
+### 8. Roast Uncovered  
+Remove lid and roast on medium flame for 10–15 minutes, flipping occasionally until golden and crisp on all sides.
 
-9. **Finish with Ghee**  
-   Add 1 tbsp ghee, mix gently. Cover the pan for a minute to retain aroma.
+### 9. Finish with Ghee  
+Add 1 tbsp ghee, mix gently, cover for a minute to retain aroma.
 
 ---
 
 ## 🍽️ Serving Suggestions
 
-Serve hot with:
-- 🍚 Steamed rice  
-- 🍲 Rasam  
-- 🍛 Sambar  
-
-Also pairs well with dosa or idli as a crunchy side.
+- Serve hot with steamed rice, rasam, or sambar.  
+- Great as a crunchy side with dosa or idli.
 
 ---
 
 ## 💡 Tips
 
-- ➕ Use thick yam slices to avoid breakage while roasting.  
-- 🌶️ Adjust sambar powder for desired spice level.  
-- 🛢️ Sesame oil enhances authentic flavor, but sunflower oil is a good substitute.  
-- ❗ Avoid overcrowding the pan to ensure even roasting and crispiness.
+- Use thick yam slices to prevent breakage while roasting.  
+- Adjust sambar powder for preferred spice level.  
+- Sesame oil adds authentic flavor; sunflower oil works well too.  
+- Avoid overcrowding the pan for even roasting and crispiness.
 
 ---
 
 ## 👥 Serves
 
-3 to 4 people as a side dish
+3 to 4 people as a side dish.
