@@ -1,15 +1,23 @@
-# 🍛 Kadai Paneer Recipe - Restaurant Style
+---
+title: Kadai Paneer Recipe - Restaurant Style  
+published: 2025-07-28  
+description: A flavorful and aromatic North Indian paneer curry with a rich tomato-onion gravy and bold spices. Perfect for lunch boxes and family meals.  
+tags: [Paneer, North Indian, Curry, Kadai Paneer, Restaurant Style, Vegetarian]  
+category: Recipe  
+draft: false  
+image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kadai_paneer.jpg"  
+---
 
-💝 *"Love at First Bite - Guaranteed!"*
+# 🍛 Kadai Paneer | Restaurant-Style Aromatic Paneer Curry
+
+💝 **"Love at First Bite - Guaranteed!"**
 
 A delicious and aromatic paneer dish that's perfect for lunch boxes and family meals. This simple method delivers restaurant-quality taste at home!
 
 ---
 
-## 🥘 About This Recipe  
-Kadai Paneer is a popular North Indian dish featuring tender paneer cubes cooked in a flavorful tomato-onion gravy with aromatic spices. This recipe uses a simple method perfect for busy mornings — prepare and pack for school tiffins or office lunch boxes.
+## ⏱️ Preparation Time
 
-⏱️ **Preparation Time**  
 - Prep Time: 20 minutes  
 - Cook Time: 25 minutes  
 - Total Time: 45 minutes  
@@ -20,108 +28,109 @@ Kadai Paneer is a popular North Indian dish featuring tender paneer cubes cooked
 ## 🥄 Ingredients
 
 ### For Marinating Paneer:  
-- 🧀 250g paneer - cut into cubes  
-- 🧂 Salt - to taste  
-- 🌶️ Red chili powder - ½ teaspoon  
-- 🍋 Lemon juice - from half lemon  
+- 250g paneer, cut into cubes  
+- Salt, to taste  
+- ½ tsp red chili powder  
+- Juice of half a lemon  
 
 ### For the Base Gravy:  
-- 🫒 Oil - 2 tablespoons  
-- 🌰 Cloves - 2 pieces  
-- ⚫ Black peppercorns - 10 pieces  
-- 🧅 Onion - 1 large, chopped  
-- 🥜 Cashew nuts - 4-5 pieces (optional, for creamier texture)  
-- 🧄 Ginger-garlic paste - 1 tablespoon  
-- 🍅 Tomatoes - 2 medium, chopped  
+- 2 tbsp oil  
+- 2 cloves  
+- 10 black peppercorns  
+- 1 large onion, chopped  
+- 4-5 cashew nuts (optional, for creamier texture)  
+- 1 tbsp ginger-garlic paste  
+- 2 medium tomatoes, chopped  
 
 ### For Vegetables:  
-- 🫒 Oil - 1 tablespoon  
-- 🧅 Onion - 1 medium, chopped  
-- 🫑 Capsicum - 1 large, chopped  
+- 1 tbsp oil  
+- 1 medium onion, chopped  
+- 1 large capsicum, chopped  
 
 ### For Final Cooking:  
-- 🫒 Oil - 2 tablespoons  
-- 🧈 Butter - 2 tablespoons  
-- 🍃 Bay leaf - 1 piece  
-- 🍃 Cinnamon stick - 1 small piece  
-- 🌶️ Red chili powder - 1 tablespoon  
-- 🌿 Coriander powder - 1 teaspoon  
-- 🌟 Garam masala - ½ teaspoon  
-- 💛 Turmeric powder - ¼ teaspoon  
-- 🌰 Asafoetida (hing) - pinch  
-- 🧂 Salt - to taste  
-- 🌿 Dry fenugreek leaves (kasoori methi) - 1 teaspoon (optional)  
+- 2 tbsp oil  
+- 2 tbsp butter  
+- 1 bay leaf  
+- 1 small cinnamon stick  
+- 1 tbsp red chili powder  
+- 1 tsp coriander powder  
+- ½ tsp garam masala  
+- ¼ tsp turmeric powder  
+- Pinch of asafoetida (hing)  
+- Salt, to taste  
+- 1 tsp dry fenugreek leaves (kasoori methi) (optional)  
 
 ---
 
 ## 👨‍🍳 Method
 
 ### Step 1: Marinate the Paneer  
-- 🧀 Cut paneer into medium cubes  
-- 🥄 Add salt, red chili powder, and lemon juice to paneer  
-- 🤲 Mix well ensuring all pieces are coated evenly  
-- ⏰ Set aside for 10-15 minutes  
+- Cut paneer into medium cubes.  
+- Add salt, red chili powder, and lemon juice. Mix well to coat evenly.  
+- Set aside for 10–15 minutes.  
 
 ### Step 2: Prepare the Base Gravy  
-- 🔥 Heat 2 tablespoons oil in a kadai or heavy-bottomed pan  
-- 🌰 Add cloves and peppercorns, let them crackle  
-- 🧅 Add chopped onions and fry until light brown  
-- 🥜 Add cashew nuts if using (for creamier texture)  
-- 🧄 Add ginger-garlic paste and cook until raw smell disappears  
-- 🍅 Add chopped tomatoes and cook until soft and mushy  
-- ❄️ Let the mixture cool, then grind to a smooth paste  
+- Heat 2 tbsp oil in a kadai or heavy pan.  
+- Add cloves and peppercorns; let them crackle.  
+- Add chopped onions and fry until light brown.  
+- Add cashew nuts (optional).  
+- Add ginger-garlic paste; sauté until raw smell disappears.  
+- Add chopped tomatoes and cook until soft and mushy.  
+- Let the mixture cool; then grind to a smooth paste.  
 
 ### Step 3: Prepare the Vegetables  
-- 🔥 Heat 1 tablespoon oil in the same kadai on high heat  
-- 🧅 Add chopped onions and toss for 1 minute (keep crunchy)  
-- 🫑 Add chopped capsicum and toss for another minute  
-- 🍽️ Remove and set aside  
+- Heat 1 tbsp oil in the same pan on high heat.  
+- Add chopped onions; toss for 1 minute (keep crunchy).  
+- Add chopped capsicum; toss for another minute.  
+- Remove and set aside.  
 
 ### Step 4: Final Cooking  
-- 🔥 Heat 2 tablespoons oil and 2 tablespoons butter in the kadai  
-- 🍃 Add bay leaf, cinnamon stick, and red chili powder  
-- 🥄 Add prepared tomato-onion paste and mix well  
-- 🌿 Add coriander powder, garam masala, and turmeric powder  
-- 🌰 Add asafoetida and salt to taste  
-- 🥘 Cover and cook for 5 minutes on medium heat  
-- 👀 Open, stir once, then cover and cook for 2-3 more minutes  
+- Heat 2 tbsp oil and 2 tbsp butter in the kadai.  
+- Add bay leaf, cinnamon stick, and red chili powder.  
+- Add prepared tomato-onion paste; mix well.  
+- Add coriander powder, garam masala, turmeric powder.  
+- Add asafoetida and salt.  
+- Cover and cook on medium heat for 5 minutes.  
+- Stir once, cover again, and cook for 2–3 more minutes.  
 
 ### Step 5: Bring It All Together  
-- 🧀 Add marinated paneer, fried onions, and capsicum  
-- 🥄 Mix gently to combine all ingredients  
-- 🥘 Cover and cook for 1 minute  
-- 🌿 If using kasoori methi, crush it between palms and add  
-- 🥄 Mix well, turn off heat, and cover for 2 minutes to let flavors meld  
+- Add marinated paneer, fried onions, and capsicum.  
+- Mix gently and cover; cook for 1 minute.  
+- Add kasoori methi (if using), crush between palms, and mix well.  
+- Turn off heat and cover for 2 minutes to let flavors meld.  
 
 ---
 
-## 🍽️ Serving Suggestions  
-- 🍚 Serve hot with steamed basmati rice or jeera rice  
-- 🫓 Pairs perfectly with roti, naan, or paratha  
-- 🥗 Garnish with fresh coriander leaves and a dollop of butter  
-- 🍋 Serve with lemon wedges and sliced onions on the side  
+## 🍽️ Serving Suggestions
+
+- Serve hot with steamed basmati rice or jeera rice.  
+- Perfect accompaniment for roti, naan, or paratha.  
+- Garnish with fresh coriander leaves and a dollop of butter.  
+- Serve with lemon wedges and sliced onions on the side.  
 
 ---
 
-## 💡 Chef's Tips  
-- ⏰ Make-Ahead Friendly - Perfect for morning prep and lunch boxes  
-- 🧊 Storage - Keeps fresh in fridge for up to 3 days  
-- 🔥 Heat Control - Keep vegetables slightly crunchy for texture  
-- 🌿 Flavor Boost - Don’t skip kasoori methi for authentic taste  
-- 🧈 Richness - Oil + butter combo gives perfect restaurant richness  
-- 🕒 Timing - 5-minute covered cooking helps oil separate from gravy  
+## 💡 Chef's Tips
+
+- Make-ahead friendly: Great for morning prep and lunch boxes.  
+- Store refrigerated up to 3 days; reheat gently.  
+- Keep vegetables slightly crunchy for best texture.  
+- Kasoori methi adds authentic restaurant flavor—don’t skip!  
+- Oil + butter combo gives rich, restaurant-style taste.  
+- The covered 5-minute cooking step is crucial for flavor and oil separation.  
 
 ---
 
-## 🌟 Health Benefits  
-- 🫀 Heart Healthy - Spices like turmeric and ginger support cardiovascular health  
-- 💪 High Protein - Paneer provides complete protein for muscle building  
-- 🦴 Bone Strength - Calcium and phosphorus from paneer promote strong bones  
-- 🔥 Boosts Metabolism - Red chili powder and garam masala increase metabolic rate  
-- 🧠 Brain Function - Cashews (optional) provide healthy fats for cognition  
-- 🛡️ Immunity Booster - Garlic, ginger, turmeric have antimicrobial properties  
-- 🌿 Anti-inflammatory - Spices reduce inflammation in the body  
+## 🌟 Health Benefits
+
+- Heart Healthy: Spices like turmeric and ginger support cardiovascular health.  
+- High Protein: Paneer provides complete protein for muscle repair.  
+- Bone Strength: Rich calcium and phosphorus from paneer.  
+- Boosts Metabolism: Red chili powder and garam masala increase metabolic rate.  
+- Brain Function: Cashews (optional) provide healthy fats.  
+- Immunity Booster: Garlic, ginger, turmeric offer antimicrobial benefits.  
+- Anti-inflammatory: Turmeric and spices reduce inflammation.  
 
 ---
 
-Enjoy this aromatic and flavorful **Kadai Paneer** that brings restaurant taste right to your home kitchen! Perfect for special occasions or everyday meals.  
+Enjoy this aromatic and flavorful Kadai Paneer that brings restaurant taste right to your home kitchen—perfect for special occasions or everyday meals!
