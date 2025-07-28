@@ -10,7 +10,6 @@ draft: false
 
 # 🥗 Beetroot Curry with Homemade Curry Powder
 
-> "A humble beetroot, now bold with spice — this curry turns everyday into festival fare!"
 
 > “A crunchy, colorful curry with the goodness of beetroot and the magic of podi!”
 
