@@ -1,108 +1,121 @@
-# 🍲 Poosanikai Puli Kootu (Ash Gourd Tamarind Curry)
+---
+title: Poosanikai Puli Kootu (Ash Gourd Tamarind Curry)  
+published: 2025-07-28  
+description: A traditional South Indian tangy curry combining ash gourd with lentils in a flavorful tamarind gravy. Perfect with rice or dosa.  
+tags: [Poosanikai, Ash Gourd, Tamarind, South Indian, Kootu, Lentils, Traditional]  
+category: Recipe  
+draft: false  
+image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/poosanikai_puli_kootu.jpg"  
+---
 
-*"Where tradition meets nutrition - one spoonful of comfort, a bowlful of health!"*
+# 🍲 Poosanikai Puli Kootu | Ash Gourd Tamarind Curry
 
-This traditional South Indian Puli Kootu is a delicious and tangy curry combining the goodness of ash gourd (poosanikai) with lentils in a flavorful tamarind-based gravy. This versatile recipe can also be made with bottle gourd, chickpeas, or green peas.
+**"Where tradition meets nutrition — one spoonful of comfort, a bowlful of health!"**
+
+This classic South Indian Puli Kootu features tender ash gourd simmered with lentils and a tangy tamarind-based gravy. Aromatic roasted spices and fresh coconut enrich the flavor, making it a wholesome and versatile curry.
 
 ---
 
 ## 🛒 Ingredients
 
-### For the Spice Paste:
-- 🌿 1 tbsp coriander seeds  
-- 🌰 1 tbsp chana dal (split chickpeas)  
-- 🌰 1 tbsp urad dal (split black gram)  
-- 🌶️ 7-8 red chilies  
-- ⚫ 1 tsp black pepper  
-- 🌾 1 tsp fenugreek seeds  
-- 🥥 1 cup grated coconut  
-- 💧 Water as needed  
+### For the Spice Paste  
+- 🌿 Coriander seeds – 1 tbsp  
+- 🌰 Chana dal (split chickpeas) – 1 tbsp  
+- 🌰 Urad dal (split black gram) – 1 tbsp  
+- 🌶️ Red chilies – 7 to 8  
+- ⚫ Black pepper – 1 tsp  
+- 🌾 Fenugreek seeds – 1 tsp  
+- 🥥 Fresh grated coconut – 1 cup  
+- 💧 Water – as needed  
 
-### For the Lentil Base:
-- 🌱 1 tbsp moong dal (split green gram)  
-- 🌰 3 tbsp chana dal (split chickpeas)  
-- 🌰 3 tbsp urad dal (split black gram)  
-- 🌟 ¼ tsp turmeric powder  
-- 💧 Water as needed  
+### For the Lentil Base  
+- 🌱 Moong dal (split green gram) – 1 tbsp  
+- 🌰 Chana dal – 3 tbsp  
+- 🌰 Urad dal – 3 tbsp  
+- 🌟 Turmeric powder – ¼ tsp  
+- 💧 Water – as needed  
 
-### For the Kootu:
-- 🛢️ 3-4 tbsp oil  
-- 🌶️ 2 green chilies, slit  
-- 🍅 2 medium tomatoes, chopped  
-- 🍈 2 cups ash gourd (poosanikai), chopped  
-- 🟢 ½ cup green peas (fresh or frozen)  
-- 🍋 2 tbsp tamarind paste or 1 lemon-sized tamarind ball soaked in water  
-- 🧂 Salt to taste  
+### For the Kootu  
+- 🛢️ Oil – 3 to 4 tbsp  
+- 🌶️ Green chilies – 2, slit  
+- 🍅 Tomatoes – 2 medium, chopped  
+- 🍈 Ash gourd (poosanikai) – 2 cups, chopped  
+- 🟢 Green peas – ½ cup (fresh or frozen)  
+- 🍋 Tamarind paste – 2 tbsp (or 1 lemon-sized tamarind ball soaked in water)  
+- 🧂 Salt – to taste  
 - 🍃 Curry leaves  
 - 🌿 Fresh coriander leaves, chopped  
 
-### For Tempering:
-- 🛢️ 1 tbsp oil  
-- ⚫ 1 tsp mustard seeds  
-- 🌰 1 tsp urad dal  
-- 🌿 Pinch of asafoetida (hing)  
+### For Tempering  
+- 🛢️ Oil – 1 tbsp  
+- ⚫ Mustard seeds – 1 tsp  
+- 🌰 Urad dal – 1 tsp  
+- 🌿 Asafoetida (hing) – a pinch  
 
 ---
 
 ## 👩‍🍳 Instructions
 
 ### Step 1: Prepare the Spice Paste  
-1. 🔥 Heat a heavy-bottomed pan over medium heat.  
-2. 🌿 Dry roast coriander seeds, chana dal, urad dal, red chilies, and black pepper without oil until fragrant and lightly golden (3-4 mins).  
-3. 🌾 Add fenugreek seeds, roast for another minute, then switch off the flame.  
-4. ❄️ Let the spices cool to room temperature.  
-5. 🥥 Add grated coconut and grind with little water to a fine paste. Set aside.  
+- Heat a heavy-bottomed pan over medium heat.  
+- Dry roast coriander seeds, chana dal, urad dal, red chilies, and black pepper until fragrant and lightly golden (3–4 mins).  
+- Add fenugreek seeds, roast for 1 minute, then turn off the heat.  
+- Let cool to room temperature.  
+- Grind the roasted spices with grated coconut and little water to a fine paste. Set aside.
 
 ### Step 2: Cook the Lentils  
-1. 💧 Wash and clean moong dal, chana dal, and urad dal thoroughly.  
-2. 🍲 In a pressure cooker, add lentils with water and turmeric powder.  
-3. ⏲️ Cook for 3 whistles or until soft. Set aside with cooking liquid.  
+- Wash moong dal, chana dal, and urad dal thoroughly.  
+- Pressure cook with turmeric powder and water for 3 whistles or until soft. Set aside with cooking liquid.
 
 ### Step 3: Make the Kootu  
-1. 🛢️ Heat oil in a thick-bottomed pan over medium heat.  
-2. 🌶️ Add slit green chilies and sauté for 2 minutes.  
-3. 🍅 Add chopped tomatoes; cook until soft and mushy.  
-4. 🍈 Add chopped ash gourd and cook for 3-4 minutes.  
-5. 🍲 Add cooked lentils with their water and green peas.  
-6. 🍋 Add tamarind paste and boil for 5-10 minutes until raw tamarind smell disappears.  
-7. 🥄 Add the ground spice paste, salt, and curry leaves.  
-8. 🔥 Simmer on medium flame for 5-10 minutes, stirring occasionally.  
-9. 🌿 Garnish with chopped coriander leaves.  
+- Heat oil in a thick-bottomed pan over medium flame.  
+- Add slit green chilies, sauté for 2 minutes.  
+- Add chopped tomatoes, cook until soft and mushy.  
+- Add chopped ash gourd and cook for 3–4 minutes.  
+- Add cooked lentils with their water and green peas.  
+- Add tamarind paste and boil for 5–10 minutes until raw tamarind smell disappears.  
+- Stir in the ground spice paste, salt, and curry leaves. Simmer for 5–10 minutes, stirring occasionally.  
+- Garnish with chopped coriander leaves.
 
-### Step 4: Prepare the Tempering  
-1. 🛢️ Heat oil in a small pan.  
-2. ⚫ Add mustard seeds and let splutter.  
-3. 🌰 Add urad dal and asafoetida; sauté until dal is golden.  
-4. 🥄 Pour tempering over the kootu and mix gently.  
+### Step 4: Prepare Tempering  
+- Heat oil in a small pan.  
+- Add mustard seeds, let splutter.  
+- Add urad dal and asafoetida; sauté until dal turns golden.  
+- Pour tempering over the kootu and mix gently.
 
 ---
 
 ## 🍽️ Serving Suggestions  
-- 🍚 Serve hot with steamed rice and a dollop of ghee.  
-- 🥒 Pairs excellently with pickle and papad.  
-- 🫓 Can be enjoyed with chapati or dosa.  
+- Serve hot with steamed rice and a dollop of ghee.  
+- Pairs excellently with pickle and papad.  
+- Can be enjoyed with chapati or dosa.
 
 ---
 
 ## 💡 Tips for Success  
-- 🔥 Roast spices well for maximum flavor.  
-- ⏲️ Cook tamarind thoroughly to avoid raw taste.  
-- 💧 Adjust water to get a thick, gravy-like consistency.  
+- Roast spices well for maximum flavor.  
+- Cook tamarind thoroughly to avoid raw taste.  
+- Adjust water to achieve a thick, gravy-like consistency.
 
 ---
 
 ## 🌿 Variations  
-- 🥒 Bottle gourd (lauki)  
-- 🥢 Drumsticks  
-- 🌿 Okra (bhindi)  
-- 🥕 Mixed vegetables  
+- Substitute ash gourd with bottle gourd (lauki), drumsticks, okra (bhindi), or mixed vegetables.
 
 ---
 
 ## 🧊 Storage  
-- ❄️ Store in refrigerator for up to 2 days.  
-- ♨️ Reheat gently before serving.  
+- Refrigerate for up to 2 days.  
+- Reheat gently before serving.
 
 ---
 
-This authentic South Indian recipe balances tangy tamarind, aromatic spices, and nutritious vegetables — a comforting classic to enjoy any day!
+This authentic South Indian recipe balances tangy tamarind, aromatic spices, and nutritious vegetables — a comforting classic to enjoy any day!  
+
+
+
+
+
+
+
+
