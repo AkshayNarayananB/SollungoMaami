@@ -1,16 +1,24 @@
-# 🍆 Kathirikai Rasavangi – Classic Tangy Brinjal Sambar
+---
+title: Kathirikai Rasavangi | Classic Tangy Brinjal Sambar  
+published: 2025-07-28  
+description: A thick, tangy, and flavorful Tamil-style brinjal sambar made with mixed dals, roasted spices, and fresh coconut paste. Perfect with hot steamed rice.  
+tags: [Brinjal, Sambar, Tamil, Traditional, South Indian, Vegan]  
+category: Recipe  
+draft: false  
+image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kathirikai_rasavangi.jpg"  
+---
 
-*"Bold flavors, tender brinjal — a timeless Tamil favorite."*
+# 🍆 Kathirikai Rasavangi | Classic Tangy Brinjal Sambar
 
-Kathirikai Rasavangi is a thick, flavorful sambar made with purple brinjals, a blend of dals, roasted spices, and fresh coconut paste. Its rich texture and balanced spices make it a perfect accompaniment for hot rice.
+**"Bold flavors, tender brinjal — a timeless Tamil favorite."**
 
-A comforting, tangy, and nutty South Indian dish — perfect for lunch, festivals, or simply when you're craving authentic Tamil flavors.
+Kathirikai Rasavangi is a thick and flavorful sambar from Tamil Nadu featuring purple brinjals cooked with a blend of dals, roasted spices, and fresh coconut paste. Its rich texture and balanced spices make it an ideal accompaniment to hot rice, perfect for everyday meals or festive occasions.
 
 ---
 
 ## 📝 Ingredients
 
-### Main Ingredients
+### Main Ingredients  
 - 🍆 Long Purple Brinjal – 3 to 4, cut into long pieces  
 - 🌾 Chana Dal – 1 cup (50 g)  
 - 🌾 Toor Dal – 1 cup (50 g)  
@@ -21,9 +29,7 @@ A comforting, tangy, and nutty South Indian dish — perfect for lunch, festival
 - 🧂 Salt – to taste  
 - 🌿 Curry Leaves – handful  
 
----
-
-### To Grind (Roasted Paste)
+### To Grind (Roasted Paste)  
 - 🌾 Chana Dal – 2 tbsp  
 - 🌿 Coriander Seeds – 2 tbsp  
 - 🌾 Urad Dal – 1 tbsp  
@@ -31,9 +37,7 @@ A comforting, tangy, and nutty South Indian dish — perfect for lunch, festival
 - ⚫ Black Pepper – ½ tsp  
 - 🥥 Fresh Grated Coconut – ½ cup  
 
----
-
-### For Tempering
+### For Tempering  
 - 🛢️ Sesame Oil – 2 tbsp  
 - 🌱 Mustard Seeds – 1 tbsp  
 - 🌾 Urad Dal – 1 tbsp  
@@ -44,52 +48,64 @@ A comforting, tangy, and nutty South Indian dish — perfect for lunch, festival
 
 ## 👩‍🍳 Directions
 
-1. **Roast the Grinding Ingredients**  
-   Dry roast chana dal, coriander seeds, urad dal, black pepper, and dry red chilies in a kadai without oil until the dals turn light brown.  
-   Add ¼ tsp fenugreek seeds and roast for 1 minute. Let it cool.
+### Roast the Grinding Ingredients  
+1. Dry roast chana dal, coriander seeds, urad dal, black pepper, and dry red chilies in a kadai without oil until the dals turn light brown.  
+2. Add ¼ tsp fenugreek seeds and roast for 1 minute. Let cool.
 
-2. **Cook the Dals**  
-   In a pressure cooker, combine chana dal, toor dal, moong dal, turmeric powder, and enough water.  
-   Pressure cook for 3 whistles. Mash lightly once cooled.
+### Cook the Dals  
+3. In a pressure cooker, combine chana dal, toor dal, moong dal, turmeric powder, and enough water.  
+4. Pressure cook for 3 whistles. Mash lightly once cooled.
 
-3. **Prepare Tamarind Water**  
-   Soak tamarind in warm water and extract the pulp. Set aside.
+### Prepare Tamarind Water  
+5. Soak tamarind in warm water and extract the pulp. Set aside.
 
-4. **Sauté Brinjal**  
-   Heat 2–3 tbsp gingelly oil in a heavy-bottomed pot. Add 2 slit green chilies, a pinch of hing, and sauté the brinjal pieces for 1–2 minutes.
+### Sauté Brinjal  
+6. Heat 2–3 tbsp gingelly (sesame) oil in a heavy-bottomed pot.  
+7. Add 2 slit green chilies and a pinch of hing.  
+8. Add brinjal pieces and sauté for 1–2 minutes.
 
-5. **Add Tamarind Water**  
-   Pour in the tamarind extract. Cook the brinjals in tamarind water over medium flame for 5–10 minutes, until soft and the raw smell fades.
+### Add Tamarind Water  
+9. Pour in the tamarind extract. Cook the brinjals in tamarind water on medium flame for 5–10 minutes until soft and raw smell fades.
 
-6. **Grind the Roasted Paste**  
-   Grind the roasted spice mix and fresh coconut with little water into a smooth, fine paste.
+### Grind the Roasted Paste  
+10. Grind the roasted spice mix and fresh coconut with little water into a smooth, fine paste.
 
-7. **Combine & Cook**  
-   Add the coconut paste to the brinjal-tamarind mixture. Stir well.  
-   Add the cooked dals, salt, and curry leaves. Adjust thickness with a little water if needed. Simmer for 5–10 minutes.
+### Combine & Cook  
+11. Add the coconut paste to the brinjal-tamarind mixture and stir well.  
+12. Add the cooked dals, salt, and curry leaves. Adjust thickness with water if needed. Simmer for 5–10 minutes.
 
-8. **Tempering**  
-   Heat sesame oil in a small pan. Add mustard seeds, urad dal, chana dal, and fry until golden.  
-   Add a pinch of hing and pour this tempering over the rasavangi. Mix gently.
+### Tempering  
+13. Heat sesame oil in a small pan. Add mustard seeds, urad dal, chana dal and fry until golden.  
+14. Add a pinch of hing and pour this tempering over the rasavangi. Mix gently.
 
 ---
 
 ## 💡 Points to Remember
 
-- ❗ **No extra water** for brinjal — they release moisture naturally.  
-- 🥄 **Rasavangi is traditionally thick** — avoid diluting the flavor with excess water.  
-- 🌶️ **Spice it up** with 3–4 green chilies, if desired.  
-- 🍆 **Handle brinjal gently** — stir softly after cooking to avoid mashing the pieces.
+- ❗ Do not add extra water for brinjal — they release moisture naturally.  
+- 🥄 Rasavangi is traditionally thick — avoid diluting flavor with excess water.  
+- 🌶️ Spice it up with 3–4 green chilies if you prefer more heat.  
+- 🍆 Handle brinjal gently — stir softly to avoid mashing the pieces.
 
 ---
 
 ## 🍽️ Serving Suggestions
 
-Serve hot with:
+Serve hot with:  
 - 🍚 Steamed rice  
 - 🥔 Potato roast  
 - 🥦 Simple vegetable stir-fry  
 
-Perfect for a hearty weekday lunch or traditional Tamil festive meal!
+Perfect for hearty weekday lunches or traditional Tamil festive meals!
 
 ---
+
+
+
+
+
+
+
+
+
+
