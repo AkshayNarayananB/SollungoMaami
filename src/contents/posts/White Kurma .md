@@ -1,3 +1,13 @@
+---
+title: Onion Garlic Free Kurma (White Kurma)
+published: 2025-07-28  
+description: A delicious and aromatic vegetable curry perfect for festivals and fasting days
+tags: [Gravy, South Indian, Festival, Fasting, Traditional, Side]  
+category: Recipe  
+draft: false  
+image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/vellai_appam.jpg"  
+---
+
 # 🥥 Onion Garlic Free Kurma (White Kurma)
 
 *A delicious and aromatic vegetable curry perfect for festivals and fasting days*
