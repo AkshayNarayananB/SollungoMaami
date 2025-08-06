@@ -4,7 +4,7 @@ published: 2025-07-28
 description: A crunchy, colorful South Indian-style beetroot stir-fry with roasted peanuts, fresh coconut, and homemade curry podi.
 tags: [Indian, South Indian, Vegan, Gluten-Free, Curry, Side Dish, Beetroot]
 category: Recipe
-image: "https://your-image-link.com/beetroot-curry.jpg"
+image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/traditional_badusha.jpg"
 draft: false
 ---
 
