@@ -1,8 +1,10 @@
 ---
-title: Chow Chow Thogayal | Healthy & Flavorful South Indian Chutney  
+title: Chow Chow Thogayal | Healthy & Flavorful South Indian Chutney
+published: 2025-07-28  
 description: A nutritious and delicious chutney made from the often-discarded chow chow (chayote) skin, roasted dals, and spices — a perfect tangy and fiber-rich accompaniment to South Indian meals.  
 tags: [Chow Chow, Thogayal, South Indian Chutney, Healthy Recipes, Fiber-rich]  
-category: Recipe  
+category: Recipe
+draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702101/chow_chow_thogayal.jpg"  
 ---
 
