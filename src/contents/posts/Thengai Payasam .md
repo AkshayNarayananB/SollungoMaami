@@ -5,7 +5,7 @@ description: Sweet, comforting, and full of coconut flavor — Thengai Payasam i
 tags: [Dessert, South Indian, Payasam, Coconut, Festival]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753701100/thengai_payasam.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/thengai payasam.jpg"  
 ---
 
 # 🥥 Thengai Payasam | Traditional Coconut Milk Dessert
@@ -108,3 +108,9 @@ A divine offering especially prepared during the auspicious Aadi month and for G
 ---
 
 This recipe serves 4-6 people and brings a rich, traditional flavor to your festive table!
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/zDQ39nzi5uk?si=vtxAdyqersOSMsBP)
+
