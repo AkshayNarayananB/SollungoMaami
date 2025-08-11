@@ -5,7 +5,8 @@ description: Crispy, flaky, syrupy Badusha — a traditional Indian sweet perfec
 tags: [Sweet, Indian, Festival, Badusha, Traditional]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/traditional_badusha.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/badusha.jpg"
+  
 ---
 
 # 🍩 Badusha Recipe | Traditional Indian Sweet
@@ -113,3 +114,8 @@ Let soak for 2–3 minutes until syrup is absorbed.
 
 **Yield:** About 12–15 medium-sized Badushas.  
 **Note:** Mastery comes with practice—focus on dough softness, correct oil temperature, and proper soaking for perfect results!
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/68VOVjN1Fyg?si=LRPfFVjnCiAbKgKM)
