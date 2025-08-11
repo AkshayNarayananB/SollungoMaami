@@ -5,7 +5,8 @@ description: A festive South Indian sweet made with wheat flour, jaggery, coconu
 tags: [Sweet, South Indian, Festival, Nei Appam, Traditional]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/traditional_nei_appam.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/nei appam.jpg"
+  
 ---
 
 # 🍯 Nei Appam Recipe | Traditional Ghee-Fried Sweet Appam
@@ -83,3 +84,8 @@ A staple during **Varalakshmi Vratham**, **Vinayaka Chaturthi**, **Krishna Jayan
 🧖‍♂️ Avani Avittam (esp. for families with unmarried boys)
 
 ---
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/q--UX1pj-rE?si=Kg1o1_MGumtWf7KQ)
+
