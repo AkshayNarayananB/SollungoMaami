@@ -5,7 +5,7 @@ description: A simple, rustic Tamil breakfast made with coarsely ground rice and
 tags: [Breakfast, South Indian, Upma, Tamil, Traditional, Vengala Panai]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753700500/arisi_upma_vengala_panai.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/arisi upma.png" 
 ---
 
 # 🍚 Arisi Upma Recipe | Traditional Rice Upma in Vengala Panai
@@ -108,3 +108,5 @@ Simple, soulful, and absolutely comforting — this is everyday Tamil food at it
 - Natural source of healthy fats and flavor
 
 ---
+
+
