@@ -5,7 +5,7 @@ description: A glossy, rich South Indian sweet made from white pumpkin, saffron,
 tags: [Dessert, Sweet, Halwa, South Indian, Pumpkin, Festival]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1699999999/kasi_halwa_sample.jpg"  
+image: "images/kasi.png"
 ---
 
 # 🎃 Kasi Halwa Recipe | Traditional White Pumpkin Halwa
