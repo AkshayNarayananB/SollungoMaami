@@ -20,18 +20,18 @@ Simple spices, grated coconut, and a final drizzle of ghee elevate this dish fro
 
 ## 🛒 Ingredients
 
-- 🍚 **Raw Rice** – 1¼ cups  
-- 🌾 **Toor Dal** – ¼ cup + 1 tsp  
-- 🌶️ **Black Pepper** – 1 tsp  
-- 🔴 **Dry Red Chilies** or **Mor Milagai** – 3 to 4  
-- 🥥 **Fresh Grated Coconut** – ¼ to ½ cup  
-- 🌱 **Mustard Seeds** – ½ tsp  
-- 🟠 **Hing (Asafoetida)** – a pinch  
-- 🧂 **Salt** – to taste  
-- 🛢️ **Oil** – 2 to 3 tbsp (sunflower or coconut oil)  
-- 🧈 **Ghee** – 1 tsp (for finishing)  
-- 🌿 **Curry Leaves** – few  
-- 💧 **Water** – ~3¾ to 4 cups (use 2.5 cups water per 1 cup rice-dal mix)
+-  **Raw Rice** – 1¼ cups  
+-  **Toor Dal** – ¼ cup + 1 tsp  
+-  **Black Pepper** – 1 tsp  
+-  **Dry Red Chilies** or **Mor Milagai** – 3 to 4  
+-  **Fresh Grated Coconut** – ¼ to ½ cup  
+-  **Mustard Seeds** – ½ tsp  
+-  **Hing (Asafoetida)** – a pinch  
+-  **Salt** – to taste  
+-  **Oil** – 2 to 3 tbsp (sunflower or coconut oil)  
+-  **Ghee** – 1 tsp (for finishing)  
+-  **Curry Leaves** – few  
+-  **Water** – ~3¾ to 4 cups (use 2.5 cups water per 1 cup rice-dal mix)
 
 ---
 
