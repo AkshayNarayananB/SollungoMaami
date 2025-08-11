@@ -102,3 +102,8 @@ Also works as a light dinner or a healthy snack with curd and pickle.
 - Perfect for busy schedules and instant cravings!
 
 ---
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/OCZ2jJoeWDs?si=K4kFm4_E5AlaCZgT)
