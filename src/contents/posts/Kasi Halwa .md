@@ -129,4 +129,4 @@ It’s sweet but not cloying, aromatic without being overpowering, and has a uni
 ---
 
 ## Video Tutorial
-<iframe width="560" height="315" src="https://youtu.be/gADkwJlQjOA?si=Zu5pTsu4a81mIRP6" frameborder="0" allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/gADkwJlQjOA?si=Zu5pTsu4a81mIRP6)
