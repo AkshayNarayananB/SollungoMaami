@@ -111,3 +111,8 @@ Traditionally served as **prasadam** at the **Varadaraja Perumal Temple**, it ha
 - Adds healthy fats and boosts absorption of spices
 
 ---
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/uYPpyQZWSJ8?si=IDydlqspXpSaGtYN)
+
