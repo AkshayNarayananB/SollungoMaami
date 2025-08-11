@@ -5,7 +5,7 @@ description: A traditional temple-style spiced idli from Tamil Nadu, infused wit
 tags: [Breakfast, South Indian, Idli, Tamil Nadu, Temple Prasadam]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753701100/kanchipuram_idli_traditional.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kanchipuram idli.png"  
 ---
 
 # 🥣 Kanchipuram Idli Recipe | Traditional South Indian Spiced Idli
