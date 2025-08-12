@@ -2,7 +2,7 @@
 title: "🥗 Beetroot Curry with Homemade Curry Powder"
 published: 2025-07-28
 description: A crunchy, colorful South Indian-style beetroot stir-fry with roasted peanuts, fresh coconut, and homemade curry podi.
-tags: [Indian, South Indian, Vegan, Gluten-Free, Curry, Side Dish, Beetroot]
+tags: [Vegan, Gluten-Free, Side Dish for rice]
 category: Recipe
 draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/beetroot curry.png"
