@@ -2,7 +2,7 @@
 title: Seppankizhangu Roast Recipe (Elephant Yam Roast)  
 published: 2025-07-28  
 description: A crispy, spicy South Indian elephant yam roast flavored with mustard seeds, curry leaves, and aromatic spices. Perfect as a side with rice, sambar, or dosa.  
-tags: [Elephant Yam, Seppankizhangu, Roast, South Indian, Side Dish, Spicy]  
+tags: [Side Dish]   
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/seppankizhangu_roast.jpg"  
