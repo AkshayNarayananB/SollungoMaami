@@ -30,7 +30,7 @@ Stuffed Brinjal Curry, also known as Bharwan Baingan, is a flavorful delicacy fr
 - 🌱 Pinch of hing (asafoetida)  
 - 🌿 Fresh coriander leaves for garnish  
 - 🛢️ 3-4 tbsp oil  
-- 🍯 Jaggery (small piece)  
+ 
 
 ### For the Stuffing Paste:  
 - 🥜 1 cup peanuts  
@@ -50,9 +50,8 @@ Stuffed Brinjal Curry, also known as Bharwan Baingan, is a flavorful delicacy fr
 1. Dry roast the peanuts in a pan on medium flame until golden. Set aside.  
 2. Roast sesame seeds in the same pan for 1-2 minutes until fragrant.  
 3. Add grated coconut, ginger, and garlic; roast for 5-10 minutes until coconut turns light brown.  
-4. Mix in jaggery and let it splutter for a minute.  
-5. Add red chilies and roast for 2 minutes. Turn off heat and let cool.  
-6. Grind roasted peanuts and 1 onion with the cooled mixture into a fine paste, adding minimal water.
+4. Add red chilies and roast for 2 minutes. Turn off heat and let cool.  
+5. Grind roasted peanuts and 1 onion with the cooled mixture into a fine paste, adding minimal water.
 
 ### Preparing the Brinjals:  
 1. Prepare salted water in a vessel.  
