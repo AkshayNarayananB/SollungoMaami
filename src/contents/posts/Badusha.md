@@ -2,7 +2,7 @@
 title: Badusha  
 published: 2025-07-28  
 description: Crispy, flaky, syrupy Badusha — a traditional Indian sweet perfect for festivals and celebrations.  
-tags: [Sweet, Festival, Traditional]  
+tags: [Sweets, Festival, Traditional]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/badusha.jpg"
