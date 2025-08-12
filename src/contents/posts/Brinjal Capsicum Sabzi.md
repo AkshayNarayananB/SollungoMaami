@@ -2,7 +2,7 @@
 title: Brinjal Capsicum Sabzi  
 published: 2025-07-28  
 description: A simple, flavorful dry vegetable sabzi made with brinjal, capsicum, roasted peanuts, and homemade curry powder. Perfect for chapathi, pulka, or rice.  
-tags: [Sabzi, South Indian, Brinjal, Capsicum, Dry Curry, Healthy]  
+tags: [Sabzi]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjal capsicum.png"  
