@@ -2,7 +2,7 @@
 title: Kathirikai Rasavangi | Classic Tangy Brinjal Sambar  
 published: 2025-07-28  
 description: A thick, tangy, and flavorful Tamil-style brinjal sambar made with mixed dals, roasted spices, and fresh coconut paste. Perfect with hot steamed rice.  
-tags: [Brinjal, Sambar, Tamil, Traditional, South Indian, Vegan]  
+tags: [Sambar,South Indian, Vegan]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kathirikai_rasavangi.jpg"  
