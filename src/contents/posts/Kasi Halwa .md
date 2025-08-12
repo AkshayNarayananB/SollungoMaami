@@ -2,7 +2,7 @@
 title: Kasi Halwa  
 published: 2025-07-28  
 description: A glossy, rich South Indian sweet made from white pumpkin, saffron, cardamom, and ghee — perfect for festivals and celebrations.  
-tags: [Dessert]  
+tags: [Sweets]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kasi.png"
