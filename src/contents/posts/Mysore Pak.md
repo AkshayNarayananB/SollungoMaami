@@ -5,7 +5,7 @@ description: The royal South Indian sweet made with besan, ghee, and sugar — f
 tags: [Sweet, South Indian, Festival, Mysore Pak, Traditional]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kasi.png"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysore pak.jpg"  
 ---
 
 ## ✨ Ingredients
@@ -41,7 +41,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ### 3️⃣ Prepare Sugar Syrup
 - In the same kadai, add sugar and water.  
-- Boil on high flame until it reaches one-string consistency (test by touching syrup between thumb and finger — it should form a string).  
+- Boil on medium high flame until it reaches one-string consistency (test by touching syrup between thumb and finger — it should form a string).  
 - Reduce to low flame once reached.  
 
 ### 4️⃣ Heat the Ghee
@@ -114,3 +114,7 @@ Making Mysore Pak with your partner can be a wonderful bonding experience — te
 ## 👶 For Beginners
 
 Start with smaller quantity (½ cup besan) to practice before making larger batches for celebrations.
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/I_yKUPhXbaQ?si=cnxGqwlK3Iy9fh7D)
