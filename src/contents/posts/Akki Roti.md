@@ -2,7 +2,7 @@
 title: Akki Roti – Traditional Karnataka Flatbread  
 published: 2025-07-28  
 description: A gluten-free, wholesome rice flour roti from Karnataka made with fresh veggies and spices. A delicious, healthy flatbread that's perfect for any meal!  
-tags: [Breakfast, Karnataka, Akki Roti, Gluten-Free, South Indian]  
+tags: [Breakfast,  Gluten-Free]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/akki roti.jpg" 
