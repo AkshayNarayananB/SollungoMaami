@@ -2,7 +2,7 @@
 title: Paruppu Pooranam Recipe for Kozhukattai  
 published: 2025-07-28  
 description: A traditional South Indian savory filling made with urad dal and spices — perfect for stuffing in kozhukattai and steamed dumplings.  
-tags: [Paruppu Pooranam, Kozhukattai, Urad Dal, Stuffing, Traditional, South Indian]  
+tags: [ Stuffing, Traditional, Festival]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/paruppu_pooranam.jpg"  
