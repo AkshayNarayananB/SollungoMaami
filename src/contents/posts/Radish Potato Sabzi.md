@@ -2,7 +2,7 @@
 title: "🥔🌿 Radish Potato Sabzi | Quick & Flavorful Dry Curry"
 published: 2025-07-28
 description: A comforting, quick-to-make dry curry made with radish and potatoes, perfect for chapathi, pulka, or rice. Spiced with Indian flavors, ready in 20 minutes!
-tags: [Indian, Curry, Sabzi, Vegetarian, Healthy, Vegan, Quick, Radish, Potato, Gluten-Free]
+tags: [ Sabzi,  Vegan,]
 category: Recipe
 image: "https://your-image-hosting-link.com/radish-potato-sabzi.jpg"
 draft: false
