@@ -5,7 +5,7 @@ description: Boldly spiced and perfectly stuffed, Bharwan Baingan is a classic I
 tags: [Curry, Indian, Stuffed Brinjal, Bharwan Baingan, Traditional, Vegetarian]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/bharwan_baingan.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/stuffed brinjal.jpg"  
 ---
 
 # 🍆 Stuffed Brinjal Curry (Bharwan Baingan)
@@ -100,3 +100,8 @@ Stuffed Brinjal Curry, also known as Bharwan Baingan, is a flavorful delicacy fr
 ---
 
 This recipe serves 4-6 people and yields about 25 stuffed brinjals. Enjoy this authentic Maharashtrian and Andhra delicacy at home!  
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/BmuIFuZ7KRw?si=G5TQr2aayofomAIS)
