@@ -2,7 +2,7 @@
 title: Karuni Kizhangu Masiyal | Elephant Yam Mash | Healthy & Easy  
 published: 2025-07-28  
 description: A wholesome and nutritious Elephant Yam mash tempered with mustard seeds and lemon. Perfectly comforting with rice, chapathi, or dosa.  
-tags: [Elephant Yam, Masiyal, Healthy, South Indian, Side Dish, Vegetarian]  
+tags: [Masiyal,South Indian, Side Dish]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/karuni_kizhangu_masiyal.jpg"  
