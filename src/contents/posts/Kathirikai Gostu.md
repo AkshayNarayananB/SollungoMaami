@@ -2,7 +2,7 @@
 title: Kathirikai Gostu | Traditional South Indian Brinjal Curry  
 published: 2025-07-28  
 description: A rich, tangy, and hearty South Indian brinjal curry cooked with moong dal, tamarind, and homemade curry powder. Perfect with rice upma or idli.  
-tags: [Brinjal, Eggplant, South Indian, Curry, Traditional, Vegan]  
+tags: [South Indian, Curry, Vegan]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kathirikai_gostu.jpg"  
