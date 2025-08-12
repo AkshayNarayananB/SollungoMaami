@@ -2,7 +2,7 @@
 title: Godhuma Rava Akkaravadisal  
 published: 2025-07-28  
 description: A rich, traditional South Indian sweet made with wheat semolina, jaggery, and ghee — perfect for festivals and special occasions.  
-tags: [Sweet, South Indian, Festival, Akkaravadisal, Traditional]  
+tags: [Sweet, Festival, Traditional]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/godhuma rava sweet.jpg" 
