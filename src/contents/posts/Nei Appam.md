@@ -2,7 +2,7 @@
 title: Nei Appam  
 published: 2025-07-28  
 description: A festive South Indian sweet made with wheat flour, jaggery, coconut, and ghee. Soft inside, crisp outside — a timeless treat for special occasions.  
-tags: [Sweet, South Indian, Festival, Nei Appam, Traditional]  
+tags: [Sweet, Festival, Traditional]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/nei appam.jpg"
