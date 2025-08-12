@@ -2,7 +2,7 @@
 title: Mysore Pak  
 published: 2025-07-28  
 description: The royal South Indian sweet made with besan, ghee, and sugar — famous for its melt-in-the-mouth texture and rich aroma.  
-tags: [Sweet, South Indian, Festival, Mysore Pak, Traditional]  
+tags: [Sweet, Festival,  Traditional]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysore pak.jpg"  
