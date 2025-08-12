@@ -2,7 +2,7 @@
 title: Kanchipuram Idli  
 published: 2025-07-28  
 description: A traditional temple-style spiced idli from Tamil Nadu, infused with black pepper, cumin, dry ginger, and ghee. Soft, aromatic, and full of heritage!  
-tags: [Breakfast, South Indian, Idli, Tamil Nadu, Temple Prasadam]  
+tags: [Breakfast,  Idli, Tiffin, Temple Prasadam]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kanchiidli.jpg"  
