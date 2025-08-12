@@ -2,7 +2,7 @@
 title: Kadamba Sadam  
 published: 2025-07-28  
 description: A wholesome South Indian mixed rice dish without onion and garlic, perfect for festivals, fasting, and traditional occasions.  
-tags: [South Indian, Rice, Festival, Fasting, Traditional, One-Pot Meal]  
+tags: [South Indian, Rice,One-Pot Meal]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kadamba_sadam.jpg"  
