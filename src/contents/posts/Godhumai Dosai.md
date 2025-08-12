@@ -2,7 +2,7 @@
 title: Wheat Dosa (Godhumai Dosai)  
 published: 2025-07-28  
 description: A quick and wholesome South Indian dosa made with wheat flour — no fermentation needed! Crispy, lacy, and perfect for breakfast or dinner.  
-tags: [Tiffin, Dosa,  Vegan]  
+tags: [Tiffin,Vegan]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Godhuma dosai.png"
