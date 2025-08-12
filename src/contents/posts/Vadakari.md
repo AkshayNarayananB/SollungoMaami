@@ -2,7 +2,7 @@
 title: Vadakari (South Indian Spiced Lentil Curry)
 published: 2025-01-01
 description: A timeless South Indian lentil curry bursting with flavors from roasted spices, coconut, and fresh herbs. Perfect with dosa, idiyappam, or rice.  
-tags: [Vadakari, Lentil Curry, South Indian, Chana Dal, Coconut, Traditional Recipe]  
+tags: [south indian side dish]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702101/vadakari_lentil_curry.jpg"  
