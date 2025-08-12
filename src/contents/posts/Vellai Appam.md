@@ -2,7 +2,7 @@
 title: Vellai Appam Recipe - Crispy Evening Snack  
 published: 2025-07-28  
 description: A simple yet incredibly tasty traditional South Indian snack, perfect for Diwali, Karthika Deepam, or any evening craving! Crispy, spicy, golden appams that bring festive joy in every bite.  
-tags: [Snack, South Indian, Festival, Vellai Appam, Traditional, Crispy]  
+tags: [Snack, Festival]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/vellai_appam.jpg"  
