@@ -2,7 +2,7 @@
 title: Vazhaipoo Paruppu Usili  
 published: 2025-07-28  
 description: A wholesome Tamil-style stir-fry made with lentils and banana flower. Rich in protein and fiber, this traditional dish is both nourishing and flavorful.  
-tags: [South Indian, Vazhaipoo, Paruppu Usili, Healthy, Vegetarian, Stir-Fry, Banana Flower]  
+tags: [Side dish for rice]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753709200/vazhaipoo_paruppu_usili.jpg"  
