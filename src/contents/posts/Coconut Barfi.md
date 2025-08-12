@@ -5,7 +5,7 @@ description: A simple, melt-in-mouth Indian sweet made with fresh grated coconut
 tags: [Sweet, Indian, Festival, Coconut Barfi, Traditional]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kasi.png" 
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/coconut barfi.jpg" 
 ---
 
 # 🥥 Coconut Barfi | Classic Indian Coconut Sweet
