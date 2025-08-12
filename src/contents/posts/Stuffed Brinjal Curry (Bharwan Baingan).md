@@ -5,7 +5,7 @@ description: Boldly spiced and perfectly stuffed, Bharwan Baingan is a classic I
 tags: [Curry, Indian, Stuffed Brinjal, Bharwan Baingan, Traditional, Vegetarian]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/stuffed brinjal.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/stuffed brinjal.png"  
 ---
 
 # 🍆 Stuffed Brinjal Curry (Bharwan Baingan)
