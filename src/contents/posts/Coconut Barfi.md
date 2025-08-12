@@ -2,7 +2,7 @@
 title: Coconut Barfi  
 published: 2025-07-28  
 description: A simple, melt-in-mouth Indian sweet made with fresh grated coconut, sugar, and cardamom — perfect for festivals and celebrations.  
-tags: [Sweet, Indian, Festival, Coconut Barfi, Traditional]  
+tags: [Sweet, Festival, Traditional]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/coconut burfi.jpg" 
