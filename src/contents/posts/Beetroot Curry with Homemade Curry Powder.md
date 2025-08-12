@@ -21,7 +21,7 @@ This vibrant **South Indian beetroot curry** is simple yet packed with flavor. R
 
 🥬 **Beetroot** – 500g, peeled and finely chopped  
 🥜 **Roasted peanuts** – 2 to 3 tbsp  
-💧 **Water** – approx. 1.5 tbsp  
+💧 **Water**  
 🥥 **Grated coconut** – ½ cup  
 🌶️ **Homemade curry powder (podi)** – 1½ to 2 tbsp  
 🧂 **Salt** – to taste  
@@ -48,7 +48,7 @@ This vibrant **South Indian beetroot curry** is simple yet packed with flavor. R
 
 ### 🔹 2. Cook Beetroot:
 
-- Add the chopped beetroot and sprinkle 1.5 tbsp water.  
+- Add the chopped beetroot and sprinkle some water.  
 - Mix well, cover with a lid, and cook on high flame for **5–7 minutes** until beetroot becomes soft.
 
 ### 🔹 3. Evaporate Moisture:
