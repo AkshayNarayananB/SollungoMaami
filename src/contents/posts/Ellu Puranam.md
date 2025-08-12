@@ -2,7 +2,7 @@
 title: Sesame Puranam for Kozhukattai  
 published: 2025-07-28  
 description: Simple and delicious black sesame and jaggery stuffing — a traditional favorite for festivals like Varalakshmi Vratam and Vinayaka Chaturthi.  
-tags: [ Festival, Traditional, Sweet Stuffing]  
+tags: [ Festival, Traditional,Stuffing]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/sesame_puranam_kozhukattai.jpg"  
