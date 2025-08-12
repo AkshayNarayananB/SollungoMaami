@@ -2,7 +2,7 @@
 title: Thakkali Thokku  
 published: 2025-07-28  
 description: A spicy, tangy Tamil-style tomato preserve slow-cooked with mustard seeds and sesame oil. Perfect as a flavorful side for idli, dosa, and rice dishes.  
-tags: [Chutney, Spicy, Side Dish,]  
+tags: [Chutney, Side Dish]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/tomato tokku.jpg"  
