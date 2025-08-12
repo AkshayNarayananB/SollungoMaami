@@ -5,7 +5,7 @@ description: A spicy, tangy Tamil-style tomato preserve slow-cooked with mustard
 tags: [Chutney, Tamil, Tomato, Spicy, Side Dish, Traditional]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/thakkali_thokku.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/tomato tokku.jpg"  
 ---
 
 # 🍅 Thakkali Thokku | Spicy Tamil-Style Tomato Preserve
@@ -66,4 +66,9 @@ Thakkali Thokku is a spicy and tangy tomato pickle from Tamil Nadu, slow-cooked 
 
 ## 🍽️ Serving Suggestion
 
-Pairs perfectly with idli, dosa, chapati, curd rice, pongal, or upma. Also great as a quick sandwich spread or base for tamarind rice mixes.
+Pairs perfectly with idli, dosa, chapati, curd rice, pongal, or upma. Also great as a quick sandwich spread.
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/VxBgvUk75Ho?si=3emO8OA-NvM6W6-F)
+
