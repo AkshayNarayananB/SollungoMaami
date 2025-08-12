@@ -58,7 +58,7 @@ Thakkali Thokku is a spicy and tangy tomato pickle from Tamil Nadu, slow-cooked 
 ## 💡 Tips & Storage Notes
 
 - 🍅 Adjust sambar powder if tomatoes are too sour or sweet.  
-- 🛢️ Use plenty of sesame oil for authentic flavor and longer shelf life.  
+- 🛢️ Use generous amount of sesame oil for authentic flavor and longer shelf life.  
 - ❄️ Refrigerate after a day for freshness; always use dry spoons to serve.  
 - 🔥 Slow cooking is key to developing flavor and preservation.
 
