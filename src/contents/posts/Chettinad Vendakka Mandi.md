@@ -8,7 +8,7 @@ draft: false
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/chettinad_vendakka_mandi.jpg"  
 ---
 
-# 🌶️🍆 Chettinad Vendakka Mandi | Ladies Finger Tamarind Curry
+#  Chettinad Vendakka Mandi | Ladies Finger Tamarind Curry
 
 "A spicy symphony from Chettinad kitchens - where humble okra meets bold flavors!"
 
@@ -21,18 +21,8 @@ This authentic Chettinad Vendakka Mandi is a traditional South Indian delicacy t
 ### Ladies Finger (Vendakka/Okra)
 - High in fiber — promotes digestion and helps control blood sugar  
 - Rich in vitamins C, K, and folate  
-- Low in calories — great for weight management  
-- Heart healthy — contains potassium and antioxidants  
-- Supports bone health — good source of calcium and magnesium  
-- Boosts immunity — high antioxidant content  
-
-### Tamarind
-- Rich in antioxidants — protects against cell damage  
-- Aids digestion and metabolism  
-- Supports heart health — may lower cholesterol  
-- Anti-inflammatory properties  
-- Rich in vitamin C — boosts immunity  
-
+- Low in calories — great for weight management, Supports bone health & Boosts immunity
+- 
 ### Gingelly Oil (Sesame Oil)
 - Contains healthy monounsaturated fats  
 - Heart protective — helps maintain healthy cholesterol levels  
@@ -102,12 +92,11 @@ This authentic Chettinad Vendakka Mandi is a traditional South Indian delicacy t
 
 - Mix with steamed rice for a complete meal  
 - Serve as a side with crispy dosa  
-- Pairs well with chapati or roti  
 - Great accompaniment for idli breakfast  
 
 ---
 
-## 💡 Chef's Tips
+## 💡 Tips
 
 - Keep oil temperature medium-low to prevent burning  
 - Cut ladies finger into large pieces to maintain texture  
