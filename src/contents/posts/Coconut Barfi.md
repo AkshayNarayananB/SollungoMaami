@@ -79,3 +79,7 @@ Just 3 ingredients — melt-in-mouth coconut barfi!
 
 This traditional coconut barfi is especially popular during festivals in the month of **Aadi**, when coconut is commonly used. It’s a simple recipe with few ingredients that anyone can easily try!
 
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/SPYRfqGCHc4?si=VMWmbPfXW2eFyhoo)
+
