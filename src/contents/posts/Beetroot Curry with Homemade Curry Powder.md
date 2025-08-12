@@ -5,7 +5,7 @@ description: A crunchy, colorful South Indian-style beetroot stir-fry with roast
 tags: [Indian, South Indian, Vegan, Gluten-Free, Curry, Side Dish, Beetroot]
 category: Recipe
 draft: false
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/traditional_badusha.jpg"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/beetroot curry.png"
 ---
 
 # 🥗 Beetroot Curry with Homemade Curry Powder
@@ -86,3 +86,8 @@ This vibrant **South Indian beetroot curry** is simple yet packed with flavor. R
 
 🕒 **Total Time:** 20–25 minutes  
 🌱 **Vegan & Gluten-Free**
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/3XQyO_O2XaM?si=n8h3kp3Dz-HVOI-5)
