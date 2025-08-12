@@ -2,7 +2,7 @@
 title: Kozhukattai Flour Recipe  
 published: 2025-07-28  
 description: Perfect rice flour batter recipe for making soft and smooth Kozhukattai and Idiyappam — easy, traditional, and convenient!  
-tags: [South Indian, Kozhukattai, Idiyappam, Rice Flour, Traditional, Steamed Snacks]  
+tags: [South Indian]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kozhukattai_flour.jpg"  
