@@ -2,7 +2,7 @@
 title: Poosanikai Puli Kootu (Ash Gourd Tamarind Curry)  
 published: 2025-07-28  
 description: A traditional South Indian tangy curry combining ash gourd with lentils in a flavorful tamarind gravy. Perfect with rice or dosa.  
-tags: [Poosanikai, Ash Gourd, Tamarind, South Indian, Kootu, Lentils, Traditional]  
+tags: [ South Indian, Kootu,]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/poosanikai_puli_kootu.jpg"  
