@@ -2,7 +2,7 @@
 title: Chettinad Vendakka Mandi  
 published: 2025-07-28  
 description: A spicy, tangy Chettinad-style ladies finger (okra) tamarind curry cooked with bold spices and gingelly oil. Perfect with rice, dosa, or chapati.  
-tags: [Curry, South Indian, Spicy]  
+tags: [South Indian side dish]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vendakai.png"
