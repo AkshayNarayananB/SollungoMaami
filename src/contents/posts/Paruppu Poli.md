@@ -2,7 +2,7 @@
 title: Paruppu Poli  
 published: 2025-07-28  
 description: A traditional South Indian sweet flatbread stuffed with chana dal, jaggery, and coconut — soft, rich, and perfect for festivals.  
-tags: [Sweet, South Indian, Festival, Paruppu Poli, Traditional]  
+tags: [Sweet, Festival, Traditional]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/paruppu boli.jpg" 
