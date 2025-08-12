@@ -2,7 +2,7 @@
 title: Thengai Payasam  
 published: 2025-07-28  
 description: Sweet, comforting, and full of coconut flavor — Thengai Payasam is a classic South Indian coconut milk dessert perfect for festivals and offerings.  
-tags: [sweets, Festival]  
+tags: [Sweets, Festival]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/thengai payasam.jpg"  
