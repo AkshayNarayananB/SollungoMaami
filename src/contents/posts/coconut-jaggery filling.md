@@ -2,7 +2,7 @@
 title: Coconut Stuffing for Kozhukattai  
 published: 2025-07-28  
 description: Sweet and juicy coconut-jaggery filling perfect for traditional Kozhukattai and other South Indian stuffed dumplings.  
-tags: [festival]  
+tags: [festival, stuffing, Traditional]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/coconut_stuffing_kozhukattai.jpg"  
