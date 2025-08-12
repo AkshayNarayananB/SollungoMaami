@@ -2,7 +2,7 @@
 title: Kadai Paneer Recipe - Restaurant Style  
 published: 2025-07-28  
 description: A flavorful and aromatic North Indian paneer curry with a rich tomato-onion gravy and bold spices. Perfect for lunch boxes and family meals.  
-tags: [Paneer, North Indian, Curry, Kadai Paneer, Restaurant Style, Vegetarian]  
+tags: [North Indian]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kadai_paneer.jpg"  
