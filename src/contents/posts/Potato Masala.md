@@ -2,7 +2,7 @@
 title: "🥔 Potato Masala Recipe | Perfect Side Dish for Puri, Dosa, or Chapati"
 published: 2025-07-28
 description: A mildly spiced, comforting potato curry with green peas — the perfect companion for poori and South Indian breakfasts.
-tags: [Indian, South Indian, Breakfast, Potato, Curry, Vegan, Gluten-Free]
+tags: [side dish, Vegan, Gluten-Free]
 category: Recipe
 image: "https://your-image-hosting-link.com/potato-masala.jpg"
 draft: false
