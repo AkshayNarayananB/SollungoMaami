@@ -2,7 +2,7 @@
 title: Turnip (Knool Kohl) Sambar | Hearty & Flavorful Tamil Style  
 published: 2025-07-28  
 description: A soulful Tamil-style sambar featuring tender turnip simmered with toor dal, tamarind, and aromatic spices. Perfect with rice, idli, or dosa.  
-tags: [Turnip, Sambar, Tamil, Traditional, Lentils, Vegan]  
+tags: [Sambar,Vegan]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/turnip_sambar.jpg"  
