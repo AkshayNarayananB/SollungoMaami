@@ -2,7 +2,7 @@
 title: Arisi Upma (Rice Upma)  
 published: 2025-07-28  
 description: A simple, rustic Tamil breakfast made with coarsely ground rice and dal, traditionally cooked in a bronze pot (vengala panai) for unbeatable flavor.  
-tags: [Tiffin, Upma,]  
+tags: [Tiffin]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/arisi upma.png" 
