@@ -2,7 +2,7 @@
 title: Pudina Chutney  
 published: 2025-07-28  
 description: A zesty and fresh mint & coriander chutney, perfect as a cooling side with dosas, idlis, and snacks.  
-tags: [Chutney, Mint, Coriander, South Indian, Fresh, Vegan]  
+tags: [Chutney, Vegan]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/pudina_chutney.jpg"  
