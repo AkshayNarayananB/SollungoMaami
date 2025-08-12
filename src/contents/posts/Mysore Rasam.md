@@ -2,7 +2,7 @@
 title: Mysore Rasam  
 published: 2025-07-28  
 description: The aromatic and tangy traditional Karnataka rasam made with toor dal, tamarind, and a special roasted spice paste — a soul-soothing bowl of flavor!  
-tags: [South Indian, Karnataka, Rasam, Traditional, Comfort Food, Spices]  
+tags: [South Indian, Rasam]  
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/mysore_rasam.jpg"  
