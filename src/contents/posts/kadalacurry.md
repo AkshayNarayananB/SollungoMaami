@@ -2,7 +2,7 @@
 title: Kadala Curry
 published: 2025-07-18
 description: Spice up your mornings with the authentic taste of Kerala’s Kadala Curry! A rich coconut-based curry made with black chickpeas and traditional spices.
-tags: [Main, Side, Gravy, Kerala, Chana]
+tags: [south indian side dish]
 category: Recipe
 draft: false
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1752853323/IMG_20220331_064519_yz1gqd.jpg"
