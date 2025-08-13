@@ -18,17 +18,18 @@ Chow Chow, also known as chayote squash, is a versatile vegetable popular in Sou
 
 ## 🛒 Ingredients
 
-- 🥒 **Chow Chow skin (peeled)** – 2 cups  
-- 🌰 **Urad dal** – 1 tbsp  
-- 🌰 **Chana dal** – 1 tbsp  
-- 🌶️ **Dry red chili** – 5 to 6  
-- 🥥 **Grated coconut** – ¼ cup  
-- 🧂 **Asafoetida (hing)** – a pinch  
-- 🧂 **Salt** – to taste  
-- ⚫ **Mustard seeds** – 1 tsp  
-- 🍃 **Curry leaves** – a few  
-- 🛢️ **Oil** – 2 tbsp  
-- 💧 **Water** – as needed  
+-  **Chow Chow skin (peeled)** – 2 cups  
+-  **Urad dal** – 1 tbsp  
+-  **Chana dal** – 1 tbsp  
+-  **Dry red chili** – 5 to 6  
+-  **Grated coconut** – ¼ cup  
+-  **Asafoetida (hing)** – a pinch  
+-  **Salt** – to taste
+-  **Tamarind** – small gooseberry size
+-  **Mustard seeds** – 1 tsp  
+-  **Curry leaves** – a few  
+-  **Oil** – 2 tbsp  
+-  **Water** – as needed  
 
 ---
 
