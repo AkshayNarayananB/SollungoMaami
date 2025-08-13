@@ -42,13 +42,15 @@ Chow Chow, also known as chayote squash, is a versatile vegetable popular in Sou
 
 3. 🌶️ Add dry red chilies and fry for 1 minute, then add a pinch of asafoetida.  
 
-4. 🍳 Add the chow chow skin pieces and sauté on medium-low heat for 5 to 10 minutes, stirring occasionally. This helps the skin shrink and softens it without burning the dals.  
+4. 🍳 Add the chow chow skin pieces and sauté on medium-low heat for 5 to 10 minutes, stirring occasionally. This helps the skin shrink and softens it without burning the dals.
 
-5. 🥥 Once cooked, add grated coconut and mix well. Turn off the heat and allow the mixture to cool to room temperature.  
+5.  Add tamarind and saute for 1 minute.
 
-6. 🌀 Transfer the mixture to a blender, add salt, and grind gradually with water into a thick paste.  
+6. 🥥 Once cooked, add grated coconut and mix well. Turn off the heat and allow the mixture to cool to room temperature.  
 
-7. 🍳 For tempering: Heat oil in a small pan. Add mustard seeds, urad dal, curry leaves, and a pinch of asafoetida. Once they splutter, pour this tempering over the ground thogayal and mix well.  
+7. 🌀 Transfer the mixture to a blender, add salt, and grind gradually with water into a thick paste.  
+
+8. 🍳 For tempering: Heat oil in a small pan. Add mustard seeds, urad dal, curry leaves, and a pinch of asafoetida. Once they splutter, pour this tempering over the ground thogayal and mix well.  
 
 ---
 
