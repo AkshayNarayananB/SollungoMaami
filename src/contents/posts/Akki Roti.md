@@ -7,7 +7,6 @@ category: Recipe
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/akki roti.jpg" 
 ---
-![Akki Roti](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/akki%20roti.jpg)
 
 # 🫓 Akki Roti Recipe | Traditional Karnataka Flatbread
 
@@ -16,7 +15,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 A beloved staple in Karnataka homes, **Akki Roti** is a gluten-free rice flour flatbread that's as tasty as it is nourishing. Made with finely chopped vegetables, coconut, and a hint of spice, it's a wholesome breakfast or lunchbox treat. It needs no side dish — just serve hot off the tawa for comfort in every bite!
 
 ---
-
+![Akki Roti](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/akki%20roti.jpg)
+---
 ## 🛒 Ingredients
 
 ### For the Dough
