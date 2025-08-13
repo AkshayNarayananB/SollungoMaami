@@ -15,6 +15,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 This authentic Chettinad Vendakka Mandi is a traditional South Indian delicacy that transforms simple ladies finger (okra) into a flavorful, tangy curry. This rustic dish embodies the essence of Chettinad cuisine with its bold spices and traditional cooking methods.
 
 ---
+![vendakai](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vendakai.png)
+---
 
 ## 🌿 Health Benefits
 
