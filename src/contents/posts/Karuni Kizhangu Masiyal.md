@@ -5,7 +5,7 @@ description: A wholesome and nutritious Elephant Yam mash tempered with mustard 
 tags: [Masiyal,South Indian, Side Dish]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karunai kizhangu.png" 
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Karunai kizhangu.png" 
   
 ---
 
@@ -16,7 +16,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 Karuni Kizhangu (Elephant Yam) is a nutritious vegetable popular in South Indian kitchens. Packed with fiber and essential nutrients, this simple Elephant Yam Masiyal is a comforting mash made with moong dal and tempered with mustard seeds and tangy lemon juice. It pairs beautifully with steamed rice, chapathi, or dosa for a wholesome meal.
 
 ---
-![karunai kizhangu](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karunai%20kizhangu.png)
+![Karunai kizhangu](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Karunai%20kizhangu.png)
 ---
 
 ## 🛒 Ingredients
