@@ -16,6 +16,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 Kathirikai Rasavangi is a thick and flavorful sambar from Tamil Nadu featuring purple brinjals cooked with a blend of dals, roasted spices, and fresh coconut paste. Its rich texture and balanced spices make it an ideal accompaniment to hot rice, perfect for everyday meals or festive occasions.
 
 ---
+![rasavangi](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/rasavangi.png)
+---
 
 ## 📝 Ingredients
 
