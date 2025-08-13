@@ -5,7 +5,8 @@ description: A wholesome and nutritious Elephant Yam mash tempered with mustard 
 tags: [Masiyal,South Indian, Side Dish]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/karuni_kizhangu_masiyal.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karunai kizhangu.png" 
+  
 ---
 
 # 🍠 Karuni Kizhangu Masiyal | Elephant Yam Mash | Healthy & Easy
@@ -50,7 +51,7 @@ Karuni Kizhangu (Elephant Yam) is a nutritious vegetable popular in South Indian
 ## 🍽️ Serving Suggestions
 
 - Serve hot with steamed rice for a comforting meal.  
-- Goes well with chapathi, dosa, or idli.  
+- Goes well with chapathi, dosa.  
 - Perfect alongside a simple vegetable stir-fry or crispy papad.  
 
 ---
@@ -74,3 +75,8 @@ Karuni Kizhangu (Elephant Yam) is a nutritious vegetable popular in South Indian
 ---
 
 Enjoy this healthy, flavorful Elephant Yam Masiyal as a comforting and nutritious addition to your meal! 
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/c9o5G2Kc-Ak?si=8MybYB5tAU9vUr-a)
