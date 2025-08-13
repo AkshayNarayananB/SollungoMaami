@@ -8,7 +8,7 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kasi.png"
 ---
 
-# 🎃 Kasi Halwa Recipe | Traditional White Pumpkin Halwa
+#  Kasi Halwa Recipe | Traditional White Pumpkin Halwa
 
 “Rich, nutty, and melt-in-mouth — that’s the magic of Kasi Halwa!”
 
@@ -16,6 +16,8 @@ Kasi Halwa is a classic South Indian dessert made from white pumpkin (ash gourd)
 
 It’s sweet but not cloying, aromatic without being overpowering, and has a unique taste that wins you over bite after bite.
 
+---
+![kasi](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kasi.png)
 ---
 
 ## 🛒 Ingredients
