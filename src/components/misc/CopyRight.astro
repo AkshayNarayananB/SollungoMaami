@@ -21,7 +21,7 @@ const { title, published, license, author, sourceLink } = Astro.props;
 
 <div
   class="fonts relative mt-4 h-32 w-full rounded-lg bg-gray-100 px-4 py-4 lg:h-36 dark:bg-[var(--background-color)] cursor-pointer"
-  onclick="sharePost()"
+  id="share-card"
 >
   <div
     class="absolute left-4 top-4 z-10 flex h-24 flex-col justify-between lg:h-28"
@@ -102,8 +102,8 @@ const { title, published, license, author, sourceLink } = Astro.props;
   </div>
 </div>
 
-<script>
-  function sharePost() {
+<script client:load>
+  document.getElementById('share-card').addEventListener('click', () => {
     const shareData = {
       title: document.title,
       text: 'Check out this recipe!',
@@ -111,7 +111,8 @@ const { title, published, license, author, sourceLink } = Astro.props;
     };
 
     if (navigator.share) {
-      navigator.share(shareData).catch(err => console.error('Share cancelled', err));
+      navigator.share(shareData)
+        .catch(err => console.error('Share cancelled', err));
     } else {
       navigator.clipboard.writeText(shareData.url)
         .then(() => {
@@ -121,7 +122,7 @@ const { title, published, license, author, sourceLink } = Astro.props;
           console.error('Failed to copy link:', err);
         });
     }
-  }
+  });
 </script>
 
 <style>
