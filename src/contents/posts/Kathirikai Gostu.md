@@ -16,6 +16,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 Kathirikai Gostu is a classic South Indian wedding breakfast dish featuring tender brinjal (eggplant) cooked in a tangy tamarind and spice-infused gravy with moong dal. This hearty curry pairs perfectly with rice upma or idli for an authentic, comforting meal.
 
 ---
+![Kathirikai Gotsu](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Kathirikai%20Gotsu.png)
+---
 
 ## 📝 Ingredients
 
