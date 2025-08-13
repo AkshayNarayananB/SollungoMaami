@@ -15,6 +15,8 @@ Just 3 ingredients — melt-in-mouth coconut barfi!
 **Coconut Barfi** is a classic Indian sweet made with fresh grated coconut, sugar, and a touch of cardamom. Soft, chewy, and full of flavor, this quick dessert is a festival favorite — especially during **Diwali**, **Navratri**, and **Krishna Jayanthi**. It’s easy to make and melts in your mouth with every bite!
 
 ---
+![coconut burfi](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/coconut%20burfi.jpg)
+---
 
 ## ✨ Ingredients
 
