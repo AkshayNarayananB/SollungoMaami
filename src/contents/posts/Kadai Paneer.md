@@ -25,6 +25,8 @@ A delicious and aromatic paneer dish that's perfect for lunch boxes and family m
 - Serves: 4 people  
 
 ---
+![kadai paneer](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kadai%20paneer.png)
+---
 
 ## 🥄 Ingredients
 
