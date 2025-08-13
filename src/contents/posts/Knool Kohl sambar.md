@@ -5,7 +5,8 @@ description: A soulful Tamil-style sambar featuring tender turnip simmered with 
 tags: [Sambar,Vegan]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/turnip_sambar.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/turnip.jpg" 
+  
 ---
 
 # 🌿 Turnip (Knool Kohl) Sambar | Hearty & Flavorful Tamil Style
@@ -52,7 +53,7 @@ Turnip Sambar is a hearty and flavorful Tamil-style lentil stew made with tender
 6. Extract tamarind pulp from soaked tamarind. Add tamarind pulp, sambar powder, and salt to the turnip mixture. Cook on medium flame for about 10 minutes until the raw tamarind smell disappears.
 
 ### Add Cooked Dal  
-7. Add cooked dal to the sambar. Mix thoroughly, check seasoning, and add salt if needed.
+7. Add cooked dal to the sambar. Mix thoroughly and add salt if needed.
 
 ### Final Boil & Garnish  
 8. Bring sambar to a boil for 5 minutes. Turn off the flame, add chopped coriander leaves, and mix gently.
@@ -65,3 +66,8 @@ Turnip Sambar is a hearty and flavorful Tamil-style lentil stew made with tender
 - Also pairs beautifully with idli or dosa.
 
 ---
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/sS-CHSLoq8M?si=NtbPHOdErnHMH3fY)
