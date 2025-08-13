@@ -14,6 +14,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 A simple yet flavorful black sesame and jaggery stuffing that’s perfect for festive Kozhukattai and Modak!
 
 ---
+![ellu](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ellu.png)
+---
 
 ## 🌾 Ingredients
 
