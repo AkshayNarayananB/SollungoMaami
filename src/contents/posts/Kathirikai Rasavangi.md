@@ -5,7 +5,8 @@ description: A thick, tangy, and flavorful Tamil-style brinjal sambar made with 
 tags: [Sambar,South Indian, Vegan]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kathirikai_rasavangi.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/rasavangi.png" 
+  
 ---
 
 # 🍆 Kathirikai Rasavangi | Classic Tangy Brinjal Sambar
@@ -101,7 +102,9 @@ Perfect for hearty weekday lunches or traditional Tamil festive meals!
 ---
 
 
+## Video Tutorial
 
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/wZjHRnKrdZU?si=9dsuu2LVeI_1f6pV)
 
 
 
