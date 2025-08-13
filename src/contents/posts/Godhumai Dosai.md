@@ -16,6 +16,8 @@ draft: false
 It's healthy, beginner-friendly, and comes together in just minutes.
 
 ---
+![Godhuma dosai](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Godhuma%20dosai.png)
+---
 
 ## 🛒 Ingredients
 
