@@ -17,7 +17,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 Simple spices, grated coconut, and a final drizzle of ghee elevate this dish from everyday to soul-satisfying.
 
 ---
-![arisi upma](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/arisi%20upma.jpg)
+![arisi upma](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/arisi%20upma.png)
 
 ---
 ## 🛒 Ingredients
