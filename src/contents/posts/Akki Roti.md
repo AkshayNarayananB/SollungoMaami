@@ -7,6 +7,7 @@ category: Recipe
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/akki roti.jpg" 
 ---
+![Akki Roti](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/akki%20roti.jpg)
 
 # 🫓 Akki Roti Recipe | Traditional Karnataka Flatbread
 
