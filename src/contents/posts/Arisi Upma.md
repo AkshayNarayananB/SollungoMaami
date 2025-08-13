@@ -17,7 +17,9 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 Simple spices, grated coconut, and a final drizzle of ghee elevate this dish from everyday to soul-satisfying.
 
 ---
+![arisi upma](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/arisi upma.jpg)
 
+---
 ## 🛒 Ingredients
 
 -  **Raw Rice** – 1¼ cups  
