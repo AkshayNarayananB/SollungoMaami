@@ -5,7 +5,8 @@ description: A rich, tangy, and hearty South Indian brinjal curry cooked with mo
 tags: [South Indian, side dish]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kathirikai_gostu.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Kathirikai Gotsu.png" 
+ 
 ---
 
 # 🍆 Kathirikai Gostu | Traditional South Indian Brinjal Curry
@@ -83,10 +84,9 @@ Kathirikai Gostu is a classic South Indian wedding breakfast dish featuring tend
 
 Use a homemade South Indian curry powder made with:  
 - Coriander seeds  
-- Cumin seeds  
-- Fennel seeds  
+- chana dal 
+- Urad dal  
 - Red chilies  
-- Turmeric  
 - Fenugreek seeds  
 
 ---
@@ -113,5 +113,10 @@ Use a homemade South Indian curry powder made with:
 Kathirikai Gostu is a beloved dish at South Indian wedding breakfasts and festivals, especially popular in Tamil Nadu and Karnataka, traditionally served alongside rice upma.
 
 ---
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/LARQ3xm79zo?si=fRC4TuxdXdP9v2aL)
 
 This recipe serves 4 people and brings the authentic, soulful taste of South Indian tradition right to your table!
