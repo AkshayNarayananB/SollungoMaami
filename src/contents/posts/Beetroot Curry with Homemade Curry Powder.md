@@ -16,6 +16,9 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 This vibrant **South Indian beetroot curry** is simple yet packed with flavor. Roasted peanuts, fresh coconut, and spicy homemade curry powder elevate this everyday vegetable to a must-try side dish — perfect with hot rice or warm chapati!
 
 ---
+![beetroot curry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/beetroot curry.png)
+---
+
 
 ## 🛒 Ingredients
 
