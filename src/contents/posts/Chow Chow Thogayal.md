@@ -5,7 +5,8 @@ description: A nutritious and delicious chutney made from the often-discarded ch
 tags: [Thogayal,vegan]  
 category: Recipe
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702101/chow_chow_thogayal.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/chow chow.png" 
+  
 ---
 
 # 🌿 Chow Chow Thogayal | Healthy & Flavorful South Indian Chutney
@@ -70,3 +71,8 @@ Chow Chow, also known as chayote squash, is a versatile vegetable popular in Sou
 ---
 
 Enjoy this nutritious and flavorful South Indian thogayal that transforms a humble vegetable skin into a delightful, healthful accompaniment!  
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/G8jC8YSCNnA?si=HzyoQNbBB4MGJerz)
