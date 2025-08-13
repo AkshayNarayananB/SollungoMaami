@@ -14,6 +14,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 A comforting South Indian rice dish ideal for Navaratri and religious occasions — no onion, no garlic, just pure traditional flavors!
 
 ---
+![kadamba sadam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kadamba%20sadam.png)
+---
 
 ## 🛒 Ingredients
 
