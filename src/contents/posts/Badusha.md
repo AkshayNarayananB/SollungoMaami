@@ -16,6 +16,11 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 A classic melt-in-your-mouth sweet that's perfect for festivals and celebrations. Badusha is crispy on the outside, soft and flaky inside, and soaked in fragrant sugar syrup. Often made during Diwali and weddings, this sweet delight melts in your mouth and leaves a hint of cardamom and ghee in every bite — a true celebration on a plate!
 
 ---
+![badusha](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/badusha.jpg)
+---
+
+
+
 
 ## ✨ Ingredients
 
