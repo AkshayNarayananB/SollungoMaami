@@ -5,7 +5,8 @@ description: A flavorful and aromatic North Indian paneer curry with a rich toma
 tags: [sabzi]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kadai_paneer.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kadai paneer.png" 
+ 
 ---
 
 # 🍛 Kadai Paneer | Restaurant-Style Aromatic Paneer Curry
@@ -91,7 +92,7 @@ A delicious and aromatic paneer dish that's perfect for lunch boxes and family m
 - Add coriander powder, garam masala, turmeric powder.  
 - Add asafoetida and salt.  
 - Cover and cook on medium heat for 5 minutes.  
-- Stir once, cover again, and cook for 2–3 more minutes.  
+- Stir once, cover again and cook for 2–3 more minutes.  
 
 ### Step 5: Bring It All Together  
 - Add marinated paneer, fried onions, and capsicum.  
@@ -110,7 +111,7 @@ A delicious and aromatic paneer dish that's perfect for lunch boxes and family m
 
 ---
 
-## 💡 Chef's Tips
+## 💡Tips
 
 - Make-ahead friendly: Great for morning prep and lunch boxes.  
 - Store refrigerated up to 3 days; reheat gently.  
@@ -125,12 +126,13 @@ A delicious and aromatic paneer dish that's perfect for lunch boxes and family m
 
 - Heart Healthy: Spices like turmeric and ginger support cardiovascular health.  
 - High Protein: Paneer provides complete protein for muscle repair.  
-- Bone Strength: Rich calcium and phosphorus from paneer.  
-- Boosts Metabolism: Red chili powder and garam masala increase metabolic rate.  
-- Brain Function: Cashews (optional) provide healthy fats.  
-- Immunity Booster: Garlic, ginger, turmeric offer antimicrobial benefits.  
-- Anti-inflammatory: Turmeric and spices reduce inflammation.  
+  
 
 ---
 
 Enjoy this aromatic and flavorful Kadai Paneer that brings restaurant taste right to your home kitchen—perfect for special occasions or everyday meals!
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/t4-DP_17Upg?si=MuszRG1hMi3jprml)
