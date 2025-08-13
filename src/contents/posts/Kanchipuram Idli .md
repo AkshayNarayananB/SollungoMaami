@@ -17,6 +17,8 @@ A legendary offering from the temples of Tamil Nadu, **Kanchipuram Idli** stands
 Traditionally served as **prasadam** at the **Varadaraja Perumal Temple**, it has become a beloved breakfast and snack across South India.
 
 ---
+![kanchiidli](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kanchiidli.jpg)
+---
 
 ## 🛒 Ingredients
 
