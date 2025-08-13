@@ -16,6 +16,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 Chow Chow, also known as chayote squash, is a versatile vegetable popular in South Indian cooking. Its mild sweetness and crunchy texture hold well in curries and chutneys. The skin, often discarded, is packed with fiber and nutrients — making this chow chow skin thogayal a clever, delicious way to use every bit of the vegetable.
 
 ---
+![chow chow](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/chow%20chow.png)
+---
 
 ## 🛒 Ingredients
 
