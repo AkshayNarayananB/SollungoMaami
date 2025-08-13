@@ -5,7 +5,8 @@ description: Simple and delicious black sesame and jaggery stuffing — a tradit
 tags: [ Festival, Traditional,Stuffing]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/sesame_puranam_kozhukattai.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ellu.png" 
+ 
 ---
 
 # ⚫ Sesame Puranam for Kozhukattai | Nutty & Sweet Festival Stuffing
@@ -79,3 +80,7 @@ This sesame puranam is a beloved choice during:
 The nutty aroma of roasted sesame combined with jaggery’s sweetness creates a timeless, delicious stuffing loved by all!  
 
 ---
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/woFJ4ZSBvyU?si=Xi6gmLQ4vZC_S3N0)
