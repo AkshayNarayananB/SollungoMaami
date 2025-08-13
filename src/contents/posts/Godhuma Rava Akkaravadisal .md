@@ -15,6 +15,8 @@ A rich, traditional South Indian sweet perfect for festivals and special occasio
 Akkaravadisal is a beloved South Indian sweet traditionally made with rice, but this **wheat rava** (broken wheat/semolina) version is equally delicious and nutritious. The key is cooking the wheat semolina entirely in milk, giving it incredible richness and a unique taste that makes it truly special.
 
 ---
+![godhuma rava sweet](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/godhuma%20rava%20sweet.jpg)
+---
 
 ## ✨ Ingredients
 
