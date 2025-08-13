@@ -15,6 +15,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 A simple, flavorful, and healthy dry vegetable sabzi made with brinjal (eggplant), capsicum, roasted peanuts, and homemade curry powder. Perfect to pair with chapathi, pulka, or even rice.
 
 ---
+![brinjal capsicum](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjal%20capsicum.png)
+---
 
 ## 📝 Ingredients
 
