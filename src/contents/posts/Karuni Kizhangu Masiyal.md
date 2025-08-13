@@ -5,7 +5,7 @@ description: A wholesome and nutritious Elephant Yam mash tempered with mustard 
 tags: [Masiyal,South Indian, Side Dish]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karunai kizhangu.png" 
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karunaikizhangu.png" 
   
 ---
 
