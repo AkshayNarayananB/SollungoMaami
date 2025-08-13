@@ -5,7 +5,8 @@ description: A wholesome South Indian mixed rice dish without onion and garlic, 
 tags: [Rice,One-Pot Meal]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kadamba_sadam.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kadamba sadam.png" 
+  
 ---
 
 # 🍚 Kadamba Sadam | Traditional Mixed Rice for Festivals & Fasting
@@ -96,13 +97,15 @@ Pour tempering over Kadamba Sadam.
 ---
 
 ## 🍽️ Serving Suggestions  
-- 🥒 Serve hot with pickle  
-- 🥛 Buttermilk  
-- 🥗 Raita  
-
+- Potato Fry
+- Appalam
+- Serve hot with pickle  
+- Buttermilk  
+- Raita
+  
 ---
 
-## 💡 Tips for Success  
+## 💡 Tips   
 - ✨ Cook rice slightly mushy for better mixing  
 - 🌶️ Adjust red chillies to desired spice level  
 - 🥥 Use fresh coconut for best flavor  
@@ -134,3 +137,8 @@ Pour tempering over Kadamba Sadam.
 ---
 
 Enjoy this easy, wholesome Kadamba Sadam — a festive classic that brings family and tradition to your dining table! 🌾🙏
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/rWXC8KSU-VY?si=lQDWBpJCuGWok_b1)
