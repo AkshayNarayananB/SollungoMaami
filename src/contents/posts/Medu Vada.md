@@ -5,7 +5,8 @@ description: A crispy golden South Indian snack that's fluffy on the inside and 
 tags: [South Indian, Snack, Festival]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753703500/medu_vada.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/meduvada.png" 
+  
 ---
 
 # 🌀 Perfect Medu Vada | Crispy & Fluffy South Indian Delight
@@ -13,7 +14,8 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753703500/medu_vada.
 🔥 *Crispy on the outside, fluffy on the inside – that's the magic of perfect Medu Vada!*
 
 ---
-
+![meduvada](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/meduvada.png)
+---
 ## 🥘 Ingredients
 
 - 🌾 1 cup urad dal (black gram dal)  
@@ -96,3 +98,8 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753703500/medu_vada.
 ---
 
 💫 *Master the art of Medu Vada — where simple ingredients create extraordinary memories!*
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/T_u7oH7saCk?si=-eIgI04QCm3GMU-f)
