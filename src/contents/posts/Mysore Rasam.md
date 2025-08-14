@@ -109,10 +109,6 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/mysore_ras
 - 💪 Protein-rich toor dal provides essential amino acids.  
 - 🔥 Black pepper and cumin boost metabolism and digestion.  
 - 🛡️ Turmeric and curry leaves support immunity.  
-- ❤️ Low saturated fat makes it heart-healthy.  
-- 🦴 Contains calcium and magnesium for bone strength.  
-- 🌱 Natural antioxidants from spices.  
-- 💧 Helps maintain hydration and fluid balance.  
 
 ---
 
