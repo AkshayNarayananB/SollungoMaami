@@ -16,7 +16,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 - 🧈 **Ghee** – 2 to 2½ cups  
 
 ---
-
+![mysore pak](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysore%20pak.jpg)
+---
 ## 🛠️ Equipment Needed
 
 - Large thick-bottomed kadai  
