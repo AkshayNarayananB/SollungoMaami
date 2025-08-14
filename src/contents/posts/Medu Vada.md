@@ -18,7 +18,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 ---
 ## 🥘 Ingredients
 
-- 🌾 1 cup urad dal (black gram dal)  
+- 🌾 1 cup urad dal  
 - 🧂 Salt to taste  
 - 🧄 A pinch of asafoetida (hing)  
 - 🫚 1-inch piece ginger, finely chopped  
@@ -49,7 +49,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ### 🍳 Prepare to Fry  
 1️⃣ Heat oil in a deep pan or kadai.  
-2️⃣ Wet the back of a banana leaf or small plate.  
+2️⃣ Wet the banana leaf or small plate.  
 3️⃣ Keep a bowl of water nearby for shaping.  
 
 ### ✋ Shape the Vadas  
@@ -69,7 +69,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 ## 📝 Pro Tips
 
 ⭐ Batter should be thick and fluffy, not runny  
-⭐ Add salt at the end to avoid watery batter  
+⭐ Add salt at the end (while grinding) to avoid watery batter  
 ⭐ Use wet hands and plate for easy shaping  
 ⭐ Fry on medium-high heat only — low heat makes them oily  
 ⭐ Don’t overcrowd the oil while frying
