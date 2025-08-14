@@ -5,7 +5,8 @@ description: A zesty and fresh mint & coriander chutney, perfect as a cooling si
 tags: [Chutney, Vegan]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/pudina_chutney.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/pudina chutney.png" 
+  
 ---
 
 # 🌿 Pudina Chutney | Fresh Mint & Coriander Chutney
@@ -15,7 +16,8 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/pudina_chu
 Pudina Chutney is a refreshing blend of fresh mint, coriander, and green chilies, balanced with tangy tomato and aromatic spices. It pairs beautifully with dosas, idlis, and snacks, adding a burst of herbal freshness to every bite.
 
 ---
-
+![pudina chutney](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/pudina%20chutney.png)
+---
 ## 📝 Ingredients
 
 🌿 Fresh Pudina (Mint) Leaves – 1 cup  
@@ -58,3 +60,8 @@ Pudina Chutney is a refreshing blend of fresh mint, coriander, and green chilies
 - Perfect with idli, dosa, uttapam, or as a dip for snacks.  
 - Adjust dry red chili quantity for milder or spicier chutney.  
 - Store refrigerated for up to 3 days for best freshness.
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/yk8AOZ_F6c8?si=TpoTJfRSVEvSKyt2)
