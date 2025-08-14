@@ -65,7 +65,7 @@ const MaamiConfig: Configuration = {
   },
 
   // WIP functions
-  bannerStyle: "STATIC", // 'loop' | 'static' | 'hidden'
+  bannerStyle: "HIDDEN", // 'loop' | 'static' | 'hidden'
 };
 
 export default MaamiConfig;
