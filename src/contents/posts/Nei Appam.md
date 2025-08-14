@@ -18,7 +18,8 @@ A beloved treat during South Indian festivals, **Nei Appam** is made with **whea
 A staple during **Varalakshmi Vratham**, **Vinayaka Chaturthi**, **Krishna Jayanthi**, **Karthigai Deepam**, and **Avani Avittam**, this traditional recipe carries the flavor of family heritage in every bite.
 
 ---
-
+![nei appam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/nei%20appam.jpg)
+---
 ## ✨ Ingredients
 
 🔸 **Wheat flour** – ¾ cup  
