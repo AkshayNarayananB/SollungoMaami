@@ -4,7 +4,8 @@ published: 2025-07-28
 description: A comforting, quick-to-make dry curry made with radish and potatoes, perfect for chapathi, pulka, or rice. Spiced with Indian flavors, ready in 20 minutes!
 tags: [ Sabzi,  Vegan,]
 category: Recipe
-image: "https://your-image-hosting-link.com/radish-potato-sabzi.jpg"
+image:"https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/raddhish potato.png" 
+
 draft: false
 ---
 
@@ -20,20 +21,22 @@ draft: false
 Looking for a quick, healthy, and tasty side dish? This **Radish Potato Sabzi** is a simple yet satisfying dry curry made with radish, potatoes, onions, and everyday spices. Comes together in **just 20 minutes**!
 
 ---
+![raddhish potato](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/raddhish%20potato.png)
+---
 
 ## 🛒 Ingredients
 
-🥔 **Radish** – 500g (peeled, chopped into small cubes)  
-🥔 **Potatoes** – 2 to 3 (peeled and cubed)  
-🧅 **Onions** – 2 (sliced or finely chopped)  
-🧄 **Ginger-garlic paste** – 1 tbsp  
-🌱 **Cumin seeds (jeera)** – 1 tsp  
-🌿 **Coriander powder** – 1 tbsp  
-🌶️ **Red chili powder** – 1 tbsp (adjust to taste)  
-💨 **Asafoetida (hing)** – a pinch  
-🧂 **Salt** – to taste  
-🛢️ **Oil** – 1 to 2 tbsp  
-🌿 **Coriander leaves** – handful (chopped)
+ **Radish** – 500g (peeled, chopped into small cubes)  
+ **Potatoes** – 2 to 3 (peeled and cubed)  
+ **Onions** – 2 (sliced or finely chopped)  
+ **Ginger-garlic paste** – 1 tbsp  
+ **Cumin seeds (jeera)** – 1 tsp  
+ **Coriander powder** – 1 tbsp  
+ **Red chili powder** – 1 tbsp (adjust to taste)  
+ **Asafoetida (hing)** – a pinch  
+ **Salt** – to taste  
+ **Oil** – 1 to 2 tbsp  
+ **Coriander leaves** – handful (chopped)
 
 ---
 
@@ -65,6 +68,7 @@ Looking for a quick, healthy, and tasty side dish? This **Radish Potato Sabzi** 
 - 🍋 Squeeze lemon juice at the end for a fresh twist  
 - 🌶️ Add **garam masala** for more heat  
 - 🔥 Cook on **low flame** for soft veggies and no burning
+- also can use simple sambar powder. 
 
 ---
 
@@ -89,3 +93,8 @@ Looking for a quick, healthy, and tasty side dish? This **Radish Potato Sabzi** 
 👉 **Serves:** 3 to 4 people as a side dish  
 ⏱️ **Ready in:** ~20 minutes  
 🥄 **Type:** Dry Curry / Sabzi
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/YMiiFkGihbg?si=GOUdR5fu2L27yom0)
