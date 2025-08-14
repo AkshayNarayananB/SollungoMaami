@@ -34,7 +34,7 @@ A classic savory filling made with urad dal, tempered with mustard seeds and cur
 
 ### Step 2: Grind the Mixture  
 🔄 In a mixer jar, combine soaked urad dal, dry red chillies, and a pinch of salt.  
-⚡ Pulse grind without water to a coarse, idli batter-like consistency.  
+⚡ Pulse grind without water to get a coarse batter-like consistency.  
 
 ### Step 3: Steam the Dal  
 🍽️ Grease an idli plate lightly with oil.  
