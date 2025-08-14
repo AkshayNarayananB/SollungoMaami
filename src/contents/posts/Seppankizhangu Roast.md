@@ -5,7 +5,8 @@ description: A crispy, spicy South Indian elephant yam roast flavored with musta
 tags: [Side Dish]   
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/seppankizhangu_roast.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/seppankizhangu roast.png" 
+ 
 ---
 
 # 🥔 Seppankizhangu Roast | Elephant Yam Roast
@@ -15,6 +16,9 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/seppankizh
 A beloved South Indian side dish featuring tender elephant yam roasted to crispy perfection with mustard seeds, urad dal, curry leaves, and flavorful spices. This roast pairs wonderfully with rice, sambar, dosa, or idli.
 
 ---
+![seppankizhangu roast](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/seppankizhangu%20roast.png)
+---
+
 
 ## 📝 Ingredients
 
@@ -74,9 +78,15 @@ Add 1 tbsp ghee, mix gently, cover for a minute to retain aroma.
 - Adjust sambar powder for preferred spice level.  
 - Sesame oil adds authentic flavor; sunflower oil works well too.  
 - Avoid overcrowding the pan for even roasting and crispiness.
+- can also add home made curry powder for taste enhancement.
 
 ---
 
 ## 👥 Serves
 
 3 to 4 people as a side dish.
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/IzbVjk-_WHM?si=LOlSjuwveq3hZxx2)
