@@ -54,12 +54,7 @@ const MaamiConfig: Configuration = {
   maxFooterTagChip: 24,
 
   banners: [
-    "https://res.cloudinary.com/dupwt6i5f/image/upload/v1752769370/IMG_20200630_120327_w61pbk.jpg",
-    "https://res.cloudinary.com/dupwt6i5f/image/upload/v1752769370/IMG_20210804_130409_ztjkvx.jpg",
-    "https://static.wixstatic.com/media/ccfeb1_fe5fa08b42ac4c89ade0b3f8c52bbf0d~mv2.jpg/v1/fill/w_2850,h_556,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ccfeb1_fe5fa08b42ac4c89ade0b3f8c52bbf0d~mv2.jpg",
-    "https://res.cloudinary.com/dupwt6i5f/image/upload/v1752852606/IMG_20210830_191548_i0qgrb.jpg",
-    "https://res.cloudinary.com/dupwt6i5f/image/upload/v1752852606/20141230_155648_cnmoyj.jpg",
-    "https://res.cloudinary.com/dupwt6i5f/image/upload/v1752852606/IMG_20201102_195455_hvjuoa.jpg",
+    "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/newbg.png",
   ],
 
   slugMode: "HASH", // 'RAW' | 'HASH'
