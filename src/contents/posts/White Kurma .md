@@ -48,7 +48,7 @@ A flavorful mixed vegetable curry made **without onion and garlic** — perfect 
 ### Cooking the Vegetables  
 1. 🛢️ Heat oil: In a pan, add 1 tablespoon of oil and let it heat up.  
 2. 🥕 Add vegetables: Once the oil is hot, add the chopped carrot, beans, potato, and frozen peas.  
-3. 🍳 Sauté: Sauté all vegetables for 1 minute, stirring gently.  
+3. 🍳 Saute: Saute all vegetables for 1 minute, stirring gently.  
 4. 💧 Add water and cook: Add 2-3 cups of water to the pan. Cover with a lid and cook for 5-7 minutes until vegetables are tender.  
 
 ### Preparing the Coconut Masala  
