@@ -5,7 +5,8 @@ description: The aromatic and tangy traditional Karnataka rasam made with toor d
 tags: [South Indian, Rasam]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/mysore_rasam.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysorerasam.png" 
+  
 ---
 
 # 🍲 Mysore Rasam | The Aromatic Soul of Karnataka
@@ -13,7 +14,8 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/mysore_ras
 *Where tradition meets taste — a symphony of spices in every spoonful!*
 
 ---
-
+![mysorerasam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysorerasam.png)
+---
 ## 🥘 Ingredients
 
 ### For the Dal:  
@@ -124,3 +126,8 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/mysore_ras
 ---
 
 Enjoy this soulful Mysore Rasam that fills your kitchen with the authentic aromas of Karnataka! 🌿🍲
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/_sq2Qp8OM5Y?si=dJc1tNlWZpvR8q4P)
