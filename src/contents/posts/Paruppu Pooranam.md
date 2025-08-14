@@ -5,13 +5,16 @@ description: A traditional South Indian savory filling made with urad dal and sp
 tags: [ Stuffing, Traditional, Festival]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/paruppu_pooranam.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/paruppu%20poornam.png" 
+
 ---
 
 # 🌾 Paruppu Pooranam for Kozhukattai | Classic Urad Dal Stuffing
 
 A classic savory filling made with urad dal, tempered with mustard seeds and curry leaves — perfect for delicious kozhukattai and other steamed dumplings.
 
+---
+![paruppu poornam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/paruppu%20poornam.png)
 ---
 
 ## 🥘 Ingredients
@@ -81,3 +84,6 @@ Ideal stuffing for:
 Pairs beautifully with the soft, mild rice flour outer layer for a classic South Indian snack.  
 
 ---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/skVSzXRZtr0?si=IsB1M8QNEjYGwIau)
