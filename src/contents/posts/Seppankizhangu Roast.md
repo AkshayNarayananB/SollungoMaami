@@ -5,7 +5,7 @@ description: A crispy, spicy South Indian elephant yam roast flavored with musta
 tags: [Side Dish]   
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/seppankizhangu roast.png" 
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/seppankizhangu%20roast.png" 
  
 ---
 
