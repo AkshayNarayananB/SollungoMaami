@@ -16,7 +16,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 Turnip Sambar is a hearty and flavorful Tamil-style lentil stew made with tender turnip pieces simmered alongside toor dal and aromatic spices. This comforting, tangy dish is perfect for pairing with hot rice, crispy potato roast, idli, or dosa.
 
 ---
-
+![turnip](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/turnip.jpg)
+---
 ## 📝 Ingredients
 
 - ⚪ Turnip (Knool Kohl) – 3 to 4 medium-sized, peeled & chopped  
