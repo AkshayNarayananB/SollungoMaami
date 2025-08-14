@@ -37,7 +37,7 @@ const MaamiConfig: Configuration = {
   socialLinks: [
     {
       icon: "mdi:instagram",
-      link: "https://github.com/WhitePaper233",
+      link: "https://www.instagram.com/sollungomaamiofficial/",
     },
     {
       icon: "mdi:youtube",
@@ -45,7 +45,7 @@ const MaamiConfig: Configuration = {
     },
     {
       icon: "mdi:spotify",
-      link: "https://music.163.com/#/user/home?id=125291648",
+      link: "https://open.spotify.com/track/4PTG3Z6ehGkBFwjybzWkR8",
     },
   ],
   maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3
