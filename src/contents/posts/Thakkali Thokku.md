@@ -15,7 +15,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 Thakkali Thokku is a spicy and tangy tomato pickle from Tamil Nadu, slow-cooked with mustard seeds, curry leaves, and aromatic spices. This versatile chutney pairs wonderfully with rice, dosa, idli, or chapati, adding a burst of traditional flavor to every meal.
 
 ---
-
+![tomato tokku](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/tomato%20tokku.jpg)
+---
 ## 📝 Ingredients
 
 🍅 Ripe Tomatoes – 7 to 8  
