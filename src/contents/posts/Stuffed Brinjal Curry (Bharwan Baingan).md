@@ -15,6 +15,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 Stuffed Brinjal Curry, also known as Bharwan Baingan, is a flavorful delicacy from Maharashtra and Andhra Pradesh where tender eggplants are filled with a spiced, aromatic masala and cooked to perfection. This curry pairs beautifully with steamed rice or roti.
 
 ---
+![stuffed brinjal](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/stuffed%20brinjal.png)
+---
 
 ## 📝 Ingredients
 
@@ -99,6 +101,11 @@ Stuffed Brinjal Curry, also known as Bharwan Baingan, is a flavorful delicacy fr
 ---
 
 This recipe serves 4-6 people and yields about 25 stuffed brinjals. Enjoy this authentic Maharashtrian and Andhra delicacy at home!  
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/BmuIFuZ7KRw?si=SpZnoRinIkNOTVbz)
 
 
 ## Video Tutorial
