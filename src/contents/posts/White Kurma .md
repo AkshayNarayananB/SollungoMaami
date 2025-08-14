@@ -5,7 +5,7 @@ description: A delicious and aromatic vegetable curry perfect for festivals and 
 tags: [South Indian side dish , No onion no garlic]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/white kurma.jpg" 
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/white%20kurma.jpg" 
  
 ---
 
