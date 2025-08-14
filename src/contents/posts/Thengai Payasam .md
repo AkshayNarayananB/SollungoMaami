@@ -15,7 +15,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 A divine offering especially prepared during the auspicious Aadi month and for Goddess Lalitha Saraswathi, known as "Payasan Priya" (one who loves payasam). This creamy, aromatic dessert is perfect for festivals, celebrations, and temple offerings.
 
 ---
-
+![thengai payasam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/thengai%20payasam.jpg)
+---
 ## ✨ Ingredients
 
 - 🍚 Raw rice – 1 to 1½ tbsp  
