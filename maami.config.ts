@@ -33,7 +33,7 @@ const MaamiConfig: Configuration = {
 
   username: "Sollungo Maami",
   sign: "Har Har Mahadev",
-  avatarUrl: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/IMG_20220308_092327.jpg",
+  avatarUrl: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/20140808_084243.jpg",
   socialLinks: [
     {
       icon: "mdi:instagram",
