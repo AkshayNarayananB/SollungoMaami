@@ -5,7 +5,8 @@ description: A delicious and aromatic vegetable curry perfect for festivals and 
 tags: [South Indian side dish , No onion no garlic]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/vellai_appam.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/white kurma.jpg" 
+ 
 ---
 
 # 🥥 Onion Garlic Free Kurma (White Kurma)
@@ -15,7 +16,8 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/vellai_app
 A flavorful mixed vegetable curry made **without onion and garlic** — perfect for those who avoid these ingredients for religious or dietary reasons!
 
 ---
-
+![white kurma](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/white%20kurma.jpg)
+---
 ## 🛒 Ingredients
 
 ### For the Vegetables:
@@ -103,3 +105,10 @@ A flavorful mixed vegetable curry made **without onion and garlic** — perfect 
 ---
 
 A comforting, wholesome meal that proves you don’t need onion and garlic for amazing flavor! 🌟
+---
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/LhFE1ER-YhY?si=hLlFd23ikSIqPJ1d)
+
+
