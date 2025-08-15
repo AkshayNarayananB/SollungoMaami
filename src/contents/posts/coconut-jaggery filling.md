@@ -5,7 +5,8 @@ description: Sweet and juicy coconut-jaggery filling perfect for traditional Koz
 tags: [festival, stuffing, Traditional]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/coconut_stuffing_kozhukattai.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/coconutjaggery.png" 
+  
 ---
 
 # 🥥 Coconut Stuffing for Kozhukattai | Sweet & Juicy Filling
@@ -13,7 +14,8 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/coconut_st
 A luscious coconut and jaggery stuffing that melts in your mouth — the perfect partner for traditional Kozhukattai!
 
 ---
-
+![coconutjaggery](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/coconutjaggery.png)
+---
 ## 🌾 Ingredients
 
 - 🥥 1 cup fresh grated coconut  
@@ -67,7 +69,6 @@ A luscious coconut and jaggery stuffing that melts in your mouth — the perfect
 - 🥄 Stir continuously; never stop during cooking.  
 - ⏰ Avoid overcooking to prevent hard stuffing.  
 - 🏀 Use ball rolling test for doneness.  
-- ❄️ Use fresh stuffing for easier shaping and soft texture.  
 
 ---
 
@@ -82,3 +83,6 @@ This coconut stuffing is ideal for:
 > Achieving the right moisture balance is key — juicy enough to be flavorful but firm enough to hold shape.  
 
 ---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/l0SQmGFYyas?si=Ajap5Zn1c6NgtLH2)
