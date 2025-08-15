@@ -5,7 +5,7 @@ description: Spice up your mornings with the authentic taste of Kerala’s Kadal
 tags: [south indian side dish]
 category: Recipe
 draft: false
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1752853323/IMG_20220331_064519_yz1gqd.jpg"
+image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1752853323/kadalacurry.png"
 ---
 
 # Kadala Curry Recipe | Classic Kerala Black Chana Curry
@@ -16,6 +16,8 @@ Kadala Curry is a traditional Kerala-style black chickpea (black chana) curry, r
 
 Its robust flavors come from a blend of aromatic spices such as cloves, cinnamon, dry red chilies, and freshly grated coconut, ground into a smooth and flavorful paste. The black chickpeas, soaked and pressure-cooked to perfection, absorb these spices beautifully, resulting in a curry that is both comforting and nutritious.
 
+![kadalacurry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kadalacurry.png)
+---
 ## 🛒 Ingredients
 
 ### For the Kadala (Black Chana)
@@ -101,3 +103,8 @@ Also pairs well with steamed rice or chapathi.
 - Turmeric: anti-inflammatory.  
 - Coriander: aids digestion and is antioxidant-rich.  
 - Red chili: boosts metabolism and contains vitamin C.
+
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/GfsSDbAZhYU?si=HdKx1Kp4yVVVnP2C)
