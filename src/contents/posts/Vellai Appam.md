@@ -5,7 +5,8 @@ description: A simple yet incredibly tasty traditional South Indian snack, perfe
 tags: [Snack, Festival]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/vellai_appam.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vellaiappam.png" 
+  
 ---
 
 # 🌟 Vellai Appam | Crispy Evening Snack
@@ -15,18 +16,19 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/vellai_app
 A beloved traditional South Indian snack that’s perfect for festivals like Diwali and Karthika Deepam, or just an irresistible evening treat. Crispy, spicy, and golden, these appams are a crunchy delight in every bite.
 
 ---
-
+![vellaiappam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vellaiappam.png)
+---
 ## 🥘 Ingredients
 
 ### For the Batter  
-- 🍚 3¼ cups rice  
-- 🌾 1¼ cups urad dal (black gram dal)  
+- 🍚 1.5 cups rice  
+- 🌾 1/2 cups urad dal  
 - 🧂 Salt to taste  
 - 🫚 1-inch piece ginger, finely chopped  
 - 🌶️ 3-4 green chillies, finely chopped  
 - 🍃 Few curry leaves, finely chopped  
-- ⚫ 1 tsp crushed black pepper  
-- 🥛 2 tbsp thick curd/yogurt  
+- ⚫ 1 to 2 tsp crushed black pepper  
+- 🥛 2 to 3 tbsp thick curd/yogurt  
 - 💧 Water as needed for grinding  
 
 ### For Tempering  
@@ -44,7 +46,7 @@ A beloved traditional South Indian snack that’s perfect for festivals like Diw
 
 ### Step 1: Prepare the Base  
 - 🧽 Wash rice and urad dal thoroughly.  
-- 🕐 Soak together for 1 hour until swollen.  
+- 🕐 Soak together for 1 hour.  
 - 💧 Drain completely.  
 
 ### Step 2: Grind the Batter  
@@ -90,10 +92,6 @@ A beloved traditional South Indian snack that’s perfect for festivals like Diw
 
 ## 🌟 Health Benefits
 
-- 💪 Complete protein from rice and urad dal combination.  
-- 🦴 Rich in calcium and phosphorus for bone health.  
-- ⚡ Provides sustained energy via complex carbs.  
-- 🧠 B-vitamins support brain function.  
 - 🌱 Probiotic benefits from fermented batter and curd.  
 - 🛡️ Immunity booster spices: pepper and ginger.  
 
@@ -118,3 +116,7 @@ Simple ingredients, traditional technique, extraordinary taste — that’s the 
 
 ---
 🏆 "Master this recipe once, and Vellai Appam will become your go-to evening delight!"
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/fTmSa62sBk0?si=azZB_PUuebvv7a_9)
