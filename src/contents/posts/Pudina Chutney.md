@@ -5,7 +5,7 @@ description: A zesty and fresh mint & coriander chutney, perfect as a cooling si
 tags: [Chutney, Vegan]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/pudinachutney.png" 
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/pudina%20chutney.png" 
   
 ---
 
