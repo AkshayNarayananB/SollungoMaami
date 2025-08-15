@@ -5,7 +5,8 @@ description: Turn simple veggies into extraordinary bites — crispy outside, te
 tags: [Snack,Gluten-Free]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/zucchini_fritters.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/zucchini.png" 
+  
 ---
 
 # 🥒 Zucchini Fritters | Crispy & Healthy Snack
@@ -24,7 +25,8 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/zucchini_f
 - **Yield:** 6-8 medium fritters  
 
 ---
-
+![zucchini](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/zucchini.png)
+---
 ## ✨ Ingredients
 
 ### Main Ingredients  
@@ -88,11 +90,10 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/zucchini_f
 - 👶 Kids love it with cream cheese  
 - 👨‍👩‍👧‍👦 Pair with mint or coriander chutney  
 - 🍅 Serve with tomato ketchup or favorite dip  
-- 🍱 Ideal for lunch boxes—stays crispy for hours  
 
 ---
 
-## 💡 Chef's Tips
+## 💡 Tips
 
 - 💧 Squeeze excess water from veggies if too juicy  
 - 🌾 Add flour gradually to get perfect batter thickness  
@@ -149,3 +150,6 @@ image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/zucchini_f
 Transform humble vegetables into crispy, golden delights that everyone will love. These zucchini fritters make healthy eating absolutely delicious!
 
 ---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/SI0xX7WoaPc?si=iCB2hmEpWJjJQ06Z)
