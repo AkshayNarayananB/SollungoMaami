@@ -43,8 +43,9 @@ Vadakari is a beloved South Indian side dish known for pairing beautifully with 
 ## 🛒 Ingredients
 
 ### For Soaking  
-- 1 cup chana dal (split chickpeas)  
-- 3-4 dried red chilies  
+- 2 cup chana dal (split chickpeas)  
+- 10  - 15 dried red chilies
+- 1 spoon fennel seeds 
 - Water for soaking  
 
 ### For Spice Paste  
@@ -79,13 +80,18 @@ Vadakari is a beloved South Indian side dish known for pairing beautifully with 
 ## 👩‍🍳 Instructions
 
 ### Step 1: Prepare the Lentils  
-- Soak chana dal and dried red chilies in water for 2-3 hours or until soft.  
+- Soak chana dal and dried red chilies in water for 1 hour.  
 - Drain and set aside.  
 
 ### Step 2: Make the Spice Paste  
-- Dry roast ginger, garlic, roasted chana dal, and poppy seeds without oil until fragrant.  
+- Dry roast clove, cinnamon, cardamom 
+- Add 4 to 5 red chilies along with 2 to 3 green chilies.
+- To this next add ginger, garlic and saute until the raw smell of garlic goes off.
+- Then add pottukadalai and poppy seeds and saute until the colour of pottukadalai starts to change.
+- Add curry leaves and mint leaves. Saute it well.
+- Add freshly grated coconut to it. Mix it well.
 - Let cool to room temperature.  
-- Blend roasted ingredients with grated coconut and a little water into a thick, smooth paste. Set aside.  
+- Blend roasted ingredients along with little water into a thick, smooth paste. Set aside.  
 
 ### Step 3: Roast the Soaked Lentils  
 - Dry roast soaked and drained chana dal until lightly golden. Set aside.  
