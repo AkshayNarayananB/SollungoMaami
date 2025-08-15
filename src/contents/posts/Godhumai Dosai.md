@@ -5,7 +5,7 @@ description: A quick and wholesome South Indian dosa made with wheat flour — n
 tags: [Tiffin,Vegan]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Godhuma dosai.png"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Godhuma%20dosai.png"
 ---
 
 # 🟤 Wheat Dosa Recipe | Godhumai Dosai (Quick & Crispy)
