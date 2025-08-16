@@ -47,6 +47,59 @@ const {
           />
         )
       }
+
+      <!-- Comments Section -->
+      <section id="comments-section" class="mt-8">
+        <h2 class="text-xl font-bold mb-4">Comments</h2>
+        <div id="comments-list" class="space-y-4"></div>
+
+        <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
+        <form id="comment-form" class="space-y-2">
+          <input type="hidden" name="blogId" value={blogId} />
+          <textarea name="comment" placeholder="Write your comment..." required class="w-full p-2 rounded border"></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+        </form>
+      </section>
+
+      <script>
+        const form = document.getElementById("comment-form");
+        const commentsList = document.getElementById("comments-list");
+        const scriptURL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL"; // replace with your deployed web app URL
+
+        async function loadComments() {
+          const blogId = form.querySelector('input[name="blogId"]').value;
+          const res = await fetch(\`\${scriptURL}?blogId=\${encodeURIComponent(blogId)}\`);
+          const data = await res.json();
+
+          commentsList.innerHTML = "";
+          data.forEach((row) => {
+            const commentEl = document.createElement("div");
+            commentEl.classList.add("p-3", "bg-gray-100", "rounded");
+            commentEl.innerHTML = \`
+              <p>\${row.comment}</p>
+              \${row.reply ? `<div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">Reply: \${row.reply}</div>` : ""}
+            \`;
+            commentsList.appendChild(commentEl);
+          });
+        }
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const blogId = form.querySelector('input[name="blogId"]').value;
+          const comment = form.querySelector('textarea[name="comment"]').value;
+
+          await fetch(scriptURL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ blogId, comment })
+          });
+
+          alert("Your comment has been submitted for approval.");
+          form.reset();
+        });
+
+        loadComments();
+      </script>
     </div>
   </div>
 </Main>
