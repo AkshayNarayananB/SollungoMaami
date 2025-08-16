@@ -25,8 +25,8 @@ const {
   image,
 } = Astro.props;
 
-const blogId = Astro.url.pathname.replace(/^\/|\/$/g, "");
-
+// Get only the slug from URL (last segment)
+const blogId = Astro.url.pathname.split("/").pop();
 ---
 
 <Main title={title} subTitle={subTitle}>
@@ -64,8 +64,11 @@ const blogId = Astro.url.pathname.replace(/^\/|\/$/g, "");
 <script is:client>
 const form = document.getElementById("comment-form");
 const commentsList = document.getElementById("comments-list");
-const blogId = window.location.pathname.replace(/^\/|\/$/g, "");
 
+// Calculate blogId from current URL
+const blogId = window.location.pathname.split("/").pop();
+
+// Load approved comments
 async function loadComments() {
   try {
     const res = await fetch(`/api/comments?blogId=${encodeURIComponent(blogId)}`);
@@ -87,19 +90,21 @@ async function loadComments() {
   }
 }
 
+// Submit a new comment
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const comment = form.querySelector('textarea[name="comment"]').value;
+  const comment = form.querySelector('textarea[name="comment"]').value.trim();
+  if (!comment) return;
 
   try {
-    const res = await fetch("/functions/comments", {
+    const res = await fetch("/api/comments", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ blogId, comment })
     });
 
     if (!res.ok) throw new Error(`POST failed: ${res.status}`);
-    const result = await res.json();
+    await res.json();
 
     alert("Your comment has been submitted for approval.");
     form.reset();
@@ -110,5 +115,16 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
+// Initial load
 loadComments();
 </script>
+
+<style>
+.article-wrapper {
+  @apply mx-3 rounded-2xl bg-[var(--card-color)] px-5 py-6 lg:mx-0 lg:px-10 lg:py-9;
+}
+.article {
+  @apply flex flex-col;
+  font-size: var(--primary-font);
+}
+</style>
