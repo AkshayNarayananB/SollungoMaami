@@ -66,7 +66,7 @@ const blogId = Astro.url.pathname.replace(/^\/|\/$/g, "");
 <script is:client>
   const form = document.getElementById("comment-form");
   const commentsList = document.getElementById("comments-list");
-  const scriptURL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL"; // replace with your URL
+  const scriptURL = "https://script.google.com/macros/s/AKfycbx_tmOYClGq6I7iZbgCBjAZBidkodwE8DIt7jm0PqzFtY7tMHbm0mgrJJE3mWcK3ndq/exec"; // replace with your URL
 
   async function loadComments() {
     const blogId = form.querySelector('input[name="blogId"]').value;
