@@ -2,7 +2,6 @@
 import Main from "../layouts/MainLayout.astro";
 import Markdown from "../components/Markdown.astro";
 import CopyRight from "../components/misc/CopyRight.astro";
-import { createClient } from '@supabase/supabase-js';
 
 interface Props {
   title?: string;
@@ -28,10 +27,6 @@ const {
 
 const blogId = Astro.url.pathname.replace(/^\/|\/$/g, "");
 
-// Initialize Supabase client
-const supabaseUrl = "YOUR_SUPABASE_URL";
-const supabaseAnonKey = "YOUR_SUPABASE_ANON_KEY";
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
 ---
 
 <Main title={title} subTitle={subTitle}>
@@ -69,22 +64,13 @@ const supabase = createClient(supabaseUrl, supabaseAnonKey);
 <script is:client>
 const form = document.getElementById("comment-form");
 const commentsList = document.getElementById("comments-list");
-
-// Initialize Supabase client on client-side
-const supabaseUrl = "YOUR_SUPABASE_URL";
-const supabaseAnonKey = "YOUR_SUPABASE_ANON_KEY";
-const supabase = supabaseJs.createClient(supabaseUrl, supabaseAnonKey);
+const blogId = window.location.pathname.replace(/^\/|\/$/g, "");
 
 async function loadComments() {
   try {
-    const { data, error } = await supabase
-      .from('comments')
-      .select('*')
-      .eq('slug', blogId)
-      .eq('approved', true)
-      .order('created_at', { ascending: true });
-
-    if (error) throw error;
+    const res = await fetch(`/api/comments?blogId=${encodeURIComponent(blogId)}`);
+    if (!res.ok) throw new Error(`GET failed: ${res.status}`);
+    const data = await res.json();
 
     commentsList.innerHTML = "";
     data.forEach(row => {
@@ -106,11 +92,14 @@ form.addEventListener("submit", async (e) => {
   const comment = form.querySelector('textarea[name="comment"]').value;
 
   try {
-    const { data, error } = await supabase
-      .from('comments')
-      .insert([{ slug: blogId, comment, approved: false }]);
+    const res = await fetch("/api/comments", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ blogId, comment })
+    });
 
-    if (error) throw error;
+    if (!res.ok) throw new Error(`POST failed: ${res.status}`);
+    const result = await res.json();
 
     alert("Your comment has been submitted for approval.");
     form.reset();
