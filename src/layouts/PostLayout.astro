@@ -8,10 +8,7 @@ interface Props {
   subTitle?: string;
   bannerImage?: string;
   published?: Date;
-  license?: {
-    name: string;
-    url?: string;
-  };
+  license?: { name: string; url?: string };
   image?: string;
   author?: string;
   sourceLink?: string;
@@ -27,10 +24,12 @@ const {
   sourceLink,
   image,
 } = Astro.props;
+
+// use URL path as blogId (e.g., /posts/my-slug)
+const blogId = Astro.url.pathname.replace(/^\/|\/$/g, "");
 ---
 
-<Main title={title} subTitle={subTitle} {/* bannerImage={bannerImage} */}>
-  <!-- <Fragment set:html={tocHTMLString} /> -->
+<Main title={title} subTitle={subTitle}>
   <div class="article-wrapper">
     <div class="article">
       <Markdown>
@@ -60,49 +59,50 @@ const {
           <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
         </form>
       </section>
-
-      <script>
-        const form = document.getElementById("comment-form");
-        const commentsList = document.getElementById("comments-list");
-        const scriptURL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL"; // replace with your deployed web app URL
-
-        async function loadComments() {
-          const blogId = form.querySelector('input[name="blogId"]').value;
-          const res = await fetch(\`\${scriptURL}?blogId=\${encodeURIComponent(blogId)}\`);
-          const data = await res.json();
-
-          commentsList.innerHTML = "";
-          data.forEach((row) => {
-            const commentEl = document.createElement("div");
-            commentEl.classList.add("p-3", "bg-gray-100", "rounded");
-            commentEl.innerHTML = \`
-              <p>\${row.comment}</p>
-              \${row.reply ? `<div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">Reply: \${row.reply}</div>` : ""}
-            \`;
-            commentsList.appendChild(commentEl);
-          });
-        }
-
-        form.addEventListener("submit", async (e) => {
-          e.preventDefault();
-          const blogId = form.querySelector('input[name="blogId"]').value;
-          const comment = form.querySelector('textarea[name="comment"]').value;
-
-          await fetch(scriptURL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ blogId, comment })
-          });
-
-          alert("Your comment has been submitted for approval.");
-          form.reset();
-        });
-
-        loadComments();
-      </script>
     </div>
   </div>
 </Main>
+
+<script is:client>
+  const form = document.getElementById("comment-form");
+  const commentsList = document.getElementById("comments-list");
+  const scriptURL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL"; // replace with your URL
+
+  async function loadComments() {
+    const blogId = form.querySelector('input[name="blogId"]').value;
+    const res = await fetch(`${scriptURL}?blogId=${encodeURIComponent(blogId)}`);
+    const data = await res.json();
+
+    commentsList.innerHTML = "";
+    data.forEach((row) => {
+      const commentEl = document.createElement("div");
+      commentEl.classList.add("p-3", "bg-gray-100", "rounded");
+      commentEl.innerHTML = `
+        <p>${row.comment}</p>
+        ${row.reply ? `<div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">Reply: ${row.reply}</div>` : ""}
+      `;
+      commentsList.appendChild(commentEl);
+    });
+  }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const blogId = form.querySelector('input[name="blogId"]').value;
+    const comment = form.querySelector('textarea[name="comment"]').value;
+
+    await fetch(scriptURL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ blogId, comment })
+    });
+
+    alert("Your comment has been submitted for approval.");
+    form.reset();
+    loadComments();
+  });
+
+  loadComments();
+</script>
 
 <style>
   .article-wrapper {
