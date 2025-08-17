@@ -1,94 +1,68 @@
----
+<!-- Comments.astro -->
+<section id="comments-section" class="mt-8">
+  <h2 class="text-xl font-bold mb-4">Comments</h2>
+  <div id="comments-list" class="space-y-4"></div>
+
+  <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
+  <form id="comment-form" class="space-y-2">
+    <textarea
+      name="comment"
+      placeholder="Write your comment..."
+      required
+      class="w-full p-2 rounded border"
+    ></textarea>
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
+      Submit
+    </button>
+  </form>
+</section>
+
+<script is:client>
 import { createClient } from "@supabase/supabase-js";
 
-// Create Supabase client
-const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
-const supabaseKey = import.meta.env.PUBLIC_SUPABASE_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
+// Initialize Supabase client in the browser only
+const supabase = createClient(
+  import.meta.env.PUBLIC_SUPABASE_URL,
+  import.meta.env.PUBLIC_SUPABASE_ANON_KEY
+);
 
-// Props passed from blog page
-const { slug } = Astro.props;
+const blogId = Astro.props.slug; // or get from path if not passed
+const form = document.getElementById("comment-form");
+const commentsList = document.getElementById("comments-list");
 
-// Fetch existing comments for this slug
-const { data: comments, error } = await supabase
-  .from("Comments")
-  .select("*")
-  .eq("slug", slug)
-  .order("timestamp", { ascending: false });
----
+async function loadComments() {
+  const { data, error } = await supabase
+    .from("comments")
+    .select("*")
+    .eq("slug", blogId)
+    .eq("approved", true)
+    .order("timestamp", { ascending: true });
+  if (error) return console.error(error);
 
-<div class="comments-section">
-  <h2>Comments</h2>
-
-  {error && <p class="error">Error loading comments: {error.message}</p>}
-
-  <form id="comment-form">
-    <textarea id="comment-input" name="comment" placeholder="Write a comment..." required></textarea>
-    <button type="submit">Submit</button>
-  </form>
-
-  <ul>
-    {comments && comments.length > 0 ? (
-      comments.map((c) => (
-        <li>
-          <p>{c.comment}</p>
-          {c.reply && <p class="reply">↳ {c.reply}</p>}
-          <small>{new Date(c.timestamp).toLocaleString()}</small>
-        </li>
-      ))
-    ) : (
-      <p>No comments yet. Be the first!</p>
-    )}
-  </ul>
-</div>
-
-<script>
-  import { createClient } from "@supabase/supabase-js";
-
-  const supabase = createClient(
-    import.meta.env.PUBLIC_SUPABASE_URL,
-    import.meta.env.PUBLIC_SUPABASE_KEY
-  );
-
-  const form = document.querySelector("#comment-form");
-  const input = document.querySelector("#comment-input");
-
-  form?.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const commentText = input.value.trim();
-    if (!commentText) return;
-
-    // Insert comment into Supabase
-    const { error } = await supabase.from("Comments").insert([
-      {
-        slug: "{{slug}}", // Astro injects the slug here
-        comment: commentText,
-      },
-    ]);
-
-    if (error) {
-      alert("Error submitting comment: " + error.message);
-    } else {
-      input.value = "";
-      location.reload(); // reload page to see new comment
-    }
+  commentsList.innerHTML = "";
+  data.forEach((row) => {
+    const el = document.createElement("div");
+    el.className = "p-3 bg-gray-100 rounded";
+    el.innerHTML = `
+      <p>${row.comment}</p>
+      ${row.reply ? `<div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">Reply: ${row.reply}</div>` : ""}
+    `;
+    commentsList.appendChild(el);
   });
-</script>
+}
 
-<style>
-  .comments-section {
-    margin-top: 2rem;
-  }
-  textarea {
-    width: 100%;
-    min-height: 80px;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-  }
-  .reply {
-    margin-left: 1rem;
-    color: gray;
-    font-size: 0.9rem;
-  }
-</style>
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const comment = form.querySelector("textarea").value.trim();
+  if (!comment) return;
+
+  const { error } = await supabase.from("comments").insert([{ slug: blogId, comment, approved: false }]);
+  if (error) return console.error(error);
+
+  alert("Comment submitted for approval");
+  form.reset();
+  loadComments();
+});
+
+loadComments();
+</script>
