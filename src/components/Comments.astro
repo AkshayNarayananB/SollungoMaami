@@ -10,15 +10,21 @@ import {
   onSnapshot
 } from 'firebase/firestore';
 ---
-
-<section class="comments-section">
+<section id="comments-section" class="comments-section" data-slug={slug}>
   <h2 class="text-xl font-bold mb-4">Comments</h2>
   <div id="comments-list" class="space-y-4"></div>
 
   <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
   <form id="comment-form" class="space-y-2">
-    <textarea name="comment" placeholder="Write your comment..." required class="w-full p-2 rounded border"></textarea>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+    <textarea
+      name="comment"
+      placeholder="Write your comment..."
+      required
+      class="w-full p-2 rounded border"
+    ></textarea>
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
+      Submit
+    </button>
   </form>
 </section>
 
@@ -26,14 +32,16 @@ import {
 import { db } from '../db/firebase';
 import { collection, addDoc, query, orderBy, onSnapshot } from 'firebase/firestore';
 
-const slug = Astro.props.slug;
+// Get slug from the data attribute
+const section = document.getElementById('comments-section');
+const slug = section.dataset.slug;
 const commentsList = document.getElementById('comments-list');
 const form = document.getElementById('comment-form');
 
-// Reference to comments collection for this post
+// Reference to the collection for this post
 const commentsRef = collection(db, 'comments_' + slug);
 
-// Real-time listener
+// Real-time listener for comments
 const q = query(commentsRef, orderBy('timestamp', 'asc'));
 onSnapshot(q, (snapshot) => {
   commentsList.innerHTML = '';
@@ -46,17 +54,22 @@ onSnapshot(q, (snapshot) => {
   });
 });
 
-// Handle submission
+// Handle new comment submission
 form.addEventListener('submit', async (e) => {
-  e.preventDefault();
+  e.preventDefault(); // Prevent default form submission
+
   const comment = form.comment.value.trim();
   if (!comment) return;
 
-  await addDoc(commentsRef, {
-    comment,
-    timestamp: new Date()
-  });
-
-  form.reset();
+  try {
+    await addDoc(commentsRef, {
+      comment,
+      timestamp: new Date()
+    });
+    form.reset(); // Clear textarea
+  } catch (err) {
+    console.error('Error adding comment:', err);
+    alert('Failed to submit comment. Check console for details.');
+  }
 });
 </script>
