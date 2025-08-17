@@ -2,12 +2,12 @@
 // src/components/Comments.astro
 const { slug } = Astro.props;
 ---
-<section id="comments-section" class="comments-section" data-slug={slug}>
+<section class="comments-section" data-slug={slug}>
   <h2 class="text-xl font-bold mb-4">Comments</h2>
-  <div id="comments-list" class="space-y-4"></div>
+  <div class="comments-list space-y-4"></div>
 
   <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
-  <form id="comment-form" class="space-y-2">
+  <form class="comment-form space-y-2">
     <textarea
       name="comment"
       placeholder="Write your comment..."
@@ -25,14 +25,15 @@ import { db } from '../db/firebase';
 import { collection, addDoc, query, orderBy, onSnapshot } from 'firebase/firestore';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const section = document.getElementById('comments-section');
+  const section = document.querySelector('.comments-section');
   const slug = section.dataset.slug;
-  const commentsList = document.getElementById('comments-list');
-  const form = document.getElementById('comment-form');
+
+  const commentsList = section.querySelector('.comments-list');
+  const form = section.querySelector('.comment-form');
 
   const commentsRef = collection(db, 'comments_' + slug);
 
-  // Real-time listener
+  // 🔹 Real-time listener
   const q = query(commentsRef, orderBy('timestamp', 'asc'));
   onSnapshot(q, (snapshot) => {
     commentsList.innerHTML = '';
@@ -45,10 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Handle form submission
+  // 🔹 Handle form submission
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const comment = form.comment.value.trim();
+    const textarea = form.querySelector('textarea');
+    const comment = textarea.value.trim();
     if (!comment) return;
 
     try {
@@ -56,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
         comment,
         timestamp: new Date()
       });
-      form.reset();
+      textarea.value = '';
     } catch (err) {
       console.error('Error adding comment:', err);
-      alert('Failed to submit comment. Check console for details.');
+      alert('Failed to submit comment.');
     }
   });
 });
