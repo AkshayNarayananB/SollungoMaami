@@ -14,6 +14,9 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+// Generate a slug to pass to Comments
+const slug = IdToSlug(entry.id);
+
 ---
 
 {
@@ -36,6 +39,8 @@ const { Content } = await render(entry);
       <div data-pagefind-body>
         <Content />
       </div>
+      <!-- Include Comments component -->
+      <Comments slug={slug} />
     </PostLayout>
   )
 }
@@ -61,6 +66,8 @@ const { Content } = await render(entry);
       <div data-pagefind-body>
         <Content />
       </div>
+      <!-- Include Comments component -->
+      <Comments slug={slug} />
     </PostLayout>
   )
 }
