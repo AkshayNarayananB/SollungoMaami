@@ -1,89 +1,65 @@
 ---
-// Props
 interface Props {
   slug: string;
 }
 
 const { slug } = Astro.props;
 import { supabase } from '../db/supabase';
+
+// Fetch comments for this post
+const { data: comments, error } = await supabase
+  .from('Comments')        // Match your table name exactly
+  .select('*')
+  .eq('slug', slug)
+  .eq('approved', true)
+  .order('timestamp', { ascending: true });
 ---
 
-<section id="comments-section" class="mt-8">
-  <h2 class="text-xl font-bold mb-4">Comments</h2>
-  <div id="comments-list" class="space-y-4"></div>
+<div class="comments-section">
+  {error && <p>Error loading comments: {error.message}</p>}
+  
+  {comments?.map(comment => (
+    <div class="comment p-3 bg-gray-100 rounded">
+      <p>{comment.comment}</p>
+      {comment.reply && (
+        <div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">
+          Reply: {comment.reply}
+        </div>
+      )}
+      <small class="text-gray-500 text-xs">{new Date(comment.timestamp).toLocaleString()}</small>
+    </div>
+  ))}
 
-  <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
-  <form id="comment-form" class="space-y-2">
+  <form id="comment-form" class="space-y-2 mt-4">
     <textarea
       name="comment"
-      placeholder="Write your comment..."
+      placeholder="Write a comment..."
       required
       class="w-full p-2 rounded border"
     ></textarea>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
-      Submit
-    </button>
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
   </form>
-</section>
+</div>
 
-<script is:client>
-import { supabase } from '../db/supabase';
-
+<script is:client define:vars={{ slug }}>
 const form = document.getElementById('comment-form');
-const commentsList = document.getElementById('comments-list');
-const blogSlug = Astro.props.slug;
 
-// Load comments
-async function loadComments() {
-  try {
-    const { data, error } = await supabase
-      .from('Comments') // Match your table name exactly (case-sensitive)
-      .select('*')
-      .eq('slug', blogSlug)
-      .eq('approved', true)
-      .order('timestamp', { ascending: true });
-
-    if (error) throw error;
-
-    commentsList.innerHTML = '';
-    data.forEach(row => {
-      const el = document.createElement('div');
-      el.className = 'p-3 bg-gray-100 rounded';
-      el.innerHTML = `
-        <p>${row.comment}</p>
-        ${row.reply ? `<div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">Reply: ${row.reply}</div>` : ''}
-      `;
-      commentsList.appendChild(el);
-    });
-  } catch (err) {
-    console.error('Error loading comments:', err);
-  }
-}
-
-// Handle form submission
-form.addEventListener('submit', async e => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
-
-  const textarea = form.querySelector('textarea[name="comment"]');
-  const comment = textarea.value.trim();
+  const comment = form.comment.value.trim();
   if (!comment) return;
 
   try {
     const { data, error } = await supabase
-      .from('Comments') // Case-sensitive
-      .insert([{ slug: blogSlug, comment, approved: false }]); // moderation
-
+      .from('Comments')
+      .insert([{ slug, comment, approved: false }]); // Needs moderation
     if (error) throw error;
 
-    alert('Your comment has been submitted for approval.');
-    textarea.value = '';
-    loadComments();
+    form.reset();
+    location.reload(); // Simple way to refresh comments
   } catch (err) {
-    console.error('Error submitting comment:', err);
-    alert('Failed to submit comment.');
+    console.error('Error posting comment:', err);
+    alert('Failed to post comment. Check console.');
   }
 });
-
-// Initial load
-loadComments();
 </script>
