@@ -1,6 +1,8 @@
 ---
 // src/components/Comments.astro
 const { slug } = Astro.props;
+import { db } from "../db/firebase";
+import { collection, addDoc, query, orderBy, onSnapshot } from "firebase/firestore";
 ---
 
 <section class="comments-section">
@@ -9,55 +11,48 @@ const { slug } = Astro.props;
 
   <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
   <form id="comment-form" class="space-y-2">
-    <textarea 
-      name="comment" 
-      placeholder="Write your comment..." 
-      required 
-      class="w-full p-2 rounded border"></textarea>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
-      Submit
-    </button>
+    <textarea name="comment" placeholder="Write your comment..." required class="w-full p-2 rounded border"></textarea>
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
   </form>
 </section>
 
 <script is:client>
-import { db } from "../db/firebase";
-import { collection, addDoc, query, orderBy, onSnapshot } from "firebase/firestore";
-
 const slug = Astro.props.slug;
 
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("#comment-form");
-  const commentsList = document.querySelector("#comments-list");
-  const commentsRef = collection(db, "comments_" + slug);
+// Use querySelector inside the client script itself
+const form = document.querySelector("#comment-form");
+const commentsList = document.querySelector("#comments-list");
+const commentsRef = collection(db, "comments_" + slug);
 
-  // Load existing + realtime comments
-  const q = query(commentsRef, orderBy("timestamp", "asc"));
-  onSnapshot(q, (snapshot) => {
-    commentsList.innerHTML = "";
-    snapshot.forEach((doc) => {
-      const data = doc.data();
-      const div = document.createElement("div");
-      div.className = "p-3 bg-gray-100 rounded";
-      div.innerHTML = `<p>${data.comment}</p>`;
-      commentsList.appendChild(div);
-    });
+// Real-time listener
+const q = query(commentsRef, orderBy("timestamp", "asc"));
+onSnapshot(q, (snapshot) => {
+  commentsList.innerHTML = "";
+  snapshot.forEach(doc => {
+    const data = doc.data();
+    const div = document.createElement("div");
+    div.className = "p-3 bg-gray-100 rounded";
+    div.innerHTML = `<p>${data.comment}</p>`;
+    commentsList.appendChild(div);
   });
+});
 
-  // Form submission
+// Bind submit **after form exists**
+if (form) {
   form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // 🚀 stop page reload
+    e.preventDefault(); // ✅ stop reload
     const val = form.comment.value.trim();
     if (!val) return;
+
     try {
       await addDoc(commentsRef, {
         comment: val,
-        timestamp: new Date(),
+        timestamp: new Date()
       });
       form.reset();
     } catch (err) {
       console.error("🔥 Firestore error:", err);
     }
   });
-});
+}
 </script>
