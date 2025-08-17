@@ -1,57 +1,35 @@
 ---
-// src/components/Comments.astro
-const { slug } = Astro.props;
+// Comments.astro
 import { db } from "../db/firebase";
-import { collection, addDoc, query, orderBy, onSnapshot } from "firebase/firestore";
-import { Timestamp } from "firebase/firestore";
----
-<section class="comments-section">
-  <h2 class="text-xl font-bold mb-4">Comments</h2>
-  <div id="comments-list" class="space-y-4"></div>
-  <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
-  <form id="comment-form" class="space-y-2">
-    <textarea name="comment" placeholder="Write your comment..." required class="w-full p-2 rounded border"></textarea>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
-  </form>
-</section>
-<script is:client>
 import { collection, addDoc, query, orderBy, onSnapshot, Timestamp } from "firebase/firestore";
-import { db } from "../db/firebase";
-
-const slug = Astro.props.slug;
-const form = document.querySelector("#comment-form");
-const commentsList = document.querySelector("#comments-list");
-const commentsRef = collection(db, "comments_" + slug);
-
-// Real-time listener
-const q = query(commentsRef, orderBy("timestamp", "asc"));
-onSnapshot(q, (snapshot) => {
-  commentsList.innerHTML = "";
-  snapshot.forEach(doc => {
-    const data = doc.data();
-    const div = document.createElement("div");
-    div.className = "p-3 bg-gray-100 rounded";
-    // Fix innerHTML!
-    div.innerHTML = `<p>${data.comment}</p>`;
-    commentsList.appendChild(div);
-  });
-});
-
-// Submit handler
-if (form) {
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const val = form.comment.value.trim();
-    if (!val) return;
-    try {
-      await addDoc(commentsRef, {
-        comment: val,
-        timestamp: Timestamp.fromDate(new Date()) // Use Firestore Timestamp!
-      });
-      form.reset();
-    } catch (err) {
-      console.error("🔥 Firestore error:", err);
-    }
-  });
-}
+const { slug } = Astro.props;
+---
+<section>
+  <form id="comment-form">
+    <textarea name="comment" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="comments-list"></div>
+</section>
+<script is:client="load">
+  const slug = Astro.props.slug;
+  const form = document.querySelector("#comment-form");
+  console.log("form object:", form);
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      console.log("Submit handler called");
+      e.preventDefault();
+      const val = form.comment.value.trim();
+      if (!val) return;
+      try {
+        await addDoc(collection(db, "comments_" + slug), {
+          comment: val,
+          timestamp: Timestamp.fromDate(new Date())
+        });
+        form.reset();
+      } catch (err) {
+        console.error("Error:", err);
+      }
+    });
+  }
 </script>
