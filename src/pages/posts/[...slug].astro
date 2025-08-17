@@ -36,7 +36,11 @@ const slug = IdToSlug(entry.id);
       </div>
 
       <!-- Include Comments -->
-      <Comments slug={IdToSlug(entry.id)} />
+      <div class="fb-comments" 
+        data-href={`https://sollungomaami.vercel.app/posts/${slug}`} 
+       data-width="100%" 
+       data-numposts="5">
+      </div>
     </PostLayout>
   )
 }
@@ -59,7 +63,11 @@ const slug = IdToSlug(entry.id);
       </div>
 
       <!-- Include Comments -->
-      <Comments slug={IdToSlug(entry.id)} />
+      <div class="fb-comments" 
+        data-href={`https://sollungomaami.vercel.app/posts/${slug}`} 
+       data-width="100%" 
+       data-numposts="5">
+      </div>
     </PostLayout>
   )
 }
