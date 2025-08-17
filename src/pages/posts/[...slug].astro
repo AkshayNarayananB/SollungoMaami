@@ -36,7 +36,7 @@ const slug = IdToSlug(entry.id);
       </div>
 
       <!-- Include Comments -->
-      <Comments slug={slug} />
+      <Comments slug={slug} title={entry.data.title} client:visible />
     </PostLayout>
   )
 }
@@ -59,7 +59,7 @@ const slug = IdToSlug(entry.id);
       </div>
 
       <!-- Include Comments -->
-      <Comments slug={slug} />
+      <Comments slug={slug} title={entry.data.title} client:visible />
     </PostLayout>
   )
 }
