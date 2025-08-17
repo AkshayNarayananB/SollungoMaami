@@ -1,0 +1,94 @@
+---
+import { createClient } from "@supabase/supabase-js";
+
+// Create Supabase client
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
+const supabaseKey = import.meta.env.PUBLIC_SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+// Props passed from blog page
+const { slug } = Astro.props;
+
+// Fetch existing comments for this slug
+const { data: comments, error } = await supabase
+  .from("Comments")
+  .select("*")
+  .eq("slug", slug)
+  .order("timestamp", { ascending: false });
+---
+
+<div class="comments-section">
+  <h2>Comments</h2>
+
+  {error && <p class="error">Error loading comments: {error.message}</p>}
+
+  <form id="comment-form">
+    <textarea id="comment-input" name="comment" placeholder="Write a comment..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <ul>
+    {comments && comments.length > 0 ? (
+      comments.map((c) => (
+        <li>
+          <p>{c.comment}</p>
+          {c.reply && <p class="reply">↳ {c.reply}</p>}
+          <small>{new Date(c.timestamp).toLocaleString()}</small>
+        </li>
+      ))
+    ) : (
+      <p>No comments yet. Be the first!</p>
+    )}
+  </ul>
+</div>
+
+<script>
+  import { createClient } from "@supabase/supabase-js";
+
+  const supabase = createClient(
+    import.meta.env.PUBLIC_SUPABASE_URL,
+    import.meta.env.PUBLIC_SUPABASE_KEY
+  );
+
+  const form = document.querySelector("#comment-form");
+  const input = document.querySelector("#comment-input");
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const commentText = input.value.trim();
+    if (!commentText) return;
+
+    // Insert comment into Supabase
+    const { error } = await supabase.from("Comments").insert([
+      {
+        slug: "{{slug}}", // Astro injects the slug here
+        comment: commentText,
+      },
+    ]);
+
+    if (error) {
+      alert("Error submitting comment: " + error.message);
+    } else {
+      input.value = "";
+      location.reload(); // reload page to see new comment
+    }
+  });
+</script>
+
+<style>
+  .comments-section {
+    margin-top: 2rem;
+  }
+  textarea {
+    width: 100%;
+    min-height: 80px;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+  .reply {
+    margin-left: 1rem;
+    color: gray;
+    font-size: 0.9rem;
+  }
+</style>
