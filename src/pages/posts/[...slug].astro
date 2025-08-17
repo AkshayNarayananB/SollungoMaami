@@ -3,9 +3,8 @@ import { getCollection } from "astro:content";
 import { IdToSlug } from "../../utils/hash";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { render } from "astro:content";
-import Comments from "../../components/Comments.astro";
+import Comments from '../../components/Comments.astro';
 
-// Generate static paths for posts
 export async function getStaticPaths() {
   const postEntries = await getCollection("posts");
   return postEntries.map((entry) => ({
@@ -14,11 +13,10 @@ export async function getStaticPaths() {
   }));
 }
 
-// Get the current post entry
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-// Generate a slug to pass to Comments component
+// Generate slug for passing to Comments component
 const slug = IdToSlug(entry.id);
 ---
 
@@ -30,25 +28,18 @@ const slug = IdToSlug(entry.id);
       bannerImage={entry.data.image}
       published={entry.data.published}
     >
-      <div
-        class="hidden"
-        data-pagefind-body
-        data-pagefind-weight="10"
-        data-pagefind-meta="title"
-      >
+      <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
         {entry.data.title}
       </div>
-
       <div data-pagefind-body>
         <Content />
       </div>
 
-      <!-- Comments section -->
+      <!-- Include Comments -->
       <Comments slug={slug} />
     </PostLayout>
   )
 }
-
 {
   entry.data.licenseName && (
     <PostLayout
@@ -60,20 +51,14 @@ const slug = IdToSlug(entry.id);
       author={entry.data.author}
       sourceLink={entry.data.sourceLink}
     >
-      <div
-        class="hidden"
-        data-pagefind-body
-        data-pagefind-weight="10"
-        data-pagefind-meta="title"
-      >
+      <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
         {entry.data.title}
       </div>
-
       <div data-pagefind-body>
         <Content />
       </div>
 
-      <!-- Comments section -->
+      <!-- Include Comments -->
       <Comments slug={slug} />
     </PostLayout>
   )
