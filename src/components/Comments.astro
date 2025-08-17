@@ -1,29 +1,31 @@
 ---
+// src/components/Comments.astro
 const { slug, title } = Astro.props;
+
+// Full page URL for Disqus
 const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
-<section class="comments-section">
-  <h2>Comments</h2>
-  <div id="disqus_thread"></div>
-</section>
+<div id="disqus_thread"></div>
 
 <script is:client>
-  // Replace these values with your own site info
+(() => {
+  // Disqus configuration
   var disqus_config = function () {
-    this.page.url = `${pageUrl}`;       // Current page URL
-    this.page.identifier = `${slug}`;   // Unique identifier per post
-    this.page.title = `${title}`;       // Optional: post title
+    this.page.url = "<?= pageUrl ?>";       // Full URL of the page
+    this.page.identifier = "<?= slug ?>";   // Unique identifier per post
+    this.page.title = "<?= title ?>";       // Title of the post
   };
 
-  (function() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://sollungomaami.disqus.com/embed.js'; // Your Disqus shortname
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
+  // Load Disqus embed script
+  var d = document, s = d.createElement('script');
+  s.src = 'https://sollungomaami.disqus.com/embed.js'; // Replace with your Disqus shortname
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
 </script>
 
 <noscript>
-  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  Please enable JavaScript to view the 
+  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
