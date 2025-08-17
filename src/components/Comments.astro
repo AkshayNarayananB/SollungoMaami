@@ -1,31 +1,33 @@
 ---
 // src/components/Comments.astro
-const { slug, title } = Astro.props;
+const { slug } = Astro.props;
 
-// Full page URL for Disqus
-const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+// Generate the full URL for the post
+const postUrl = `${Astro.site}${slug}`;
 ---
 
-<div id="disqus_thread"></div>
+<section class="comments-section">
+  <h2 class="text-xl font-bold mb-4">Comments</h2>
 
-<script is:client>
-(() => {
-  // Disqus configuration
-  var disqus_config = function () {
-    this.page.url = "<?= pageUrl ?>";       // Full URL of the page
-    this.page.identifier = "<?= slug ?>";   // Unique identifier per post
-    this.page.title = "<?= title ?>";       // Title of the post
-  };
+  <!-- Facebook SDK root -->
+  <div id="fb-root"></div>
+  
+  <!-- Load Facebook SDK once -->
+  <script is:client>
+    if (!window.FB) {
+      const script = document.createElement('script');
+      script.async = true;
+      script.defer = true;
+      script.crossOrigin = 'anonymous';
+      script.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v23.0';
+      document.body.appendChild(script);
+    }
+  </script>
 
-  // Load Disqus embed script
-  var d = document, s = d.createElement('script');
-  s.src = 'https://sollungomaami.disqus.com/embed.js'; // Replace with your Disqus shortname
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-})();
-</script>
-
-<noscript>
-  Please enable JavaScript to view the 
-  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-</noscript>
+  <!-- Facebook Comments plugin -->
+  <div class="fb-comments" 
+       data-href={postUrl} 
+       data-width="100%" 
+       data-numposts="1000">
+  </div>
+</section>
