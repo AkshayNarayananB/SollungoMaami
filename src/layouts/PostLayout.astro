@@ -25,7 +25,7 @@ const {
   image,
 } = Astro.props;
 
-// Use URL path as blogId
+// Use URL path as blogId (slug)
 const blogId = Astro.url.pathname.replace(/^\/|\/$/g, "");
 ---
 
@@ -53,8 +53,15 @@ const blogId = Astro.url.pathname.replace(/^\/|\/$/g, "");
 
         <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
         <form id="comment-form" class="space-y-2">
-          <textarea name="comment" placeholder="Write your comment..." required class="w-full p-2 rounded border"></textarea>
-          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+          <textarea
+            name="comment"
+            placeholder="Write your comment..."
+            required
+            class="w-full p-2 rounded border"
+          ></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
+            Submit
+          </button>
         </form>
       </section>
     </div>
@@ -62,37 +69,43 @@ const blogId = Astro.url.pathname.replace(/^\/|\/$/g, "");
 </Main>
 
 <script is:client>
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from "@supabase/supabase-js";
 
-// Initialize Supabase client
-const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// ✅ Initialize Supabase client
+const supabase = createClient(
+  import.meta.env.PUBLIC_SUPABASE_URL,
+  import.meta.env.PUBLIC_SUPABASE_ANON_KEY
+);
 
 const form = document.getElementById("comment-form");
 const commentsList = document.getElementById("comments-list");
 
-// Get blogId from page path
+// ✅ Get blogId from path
 const blogId = window.location.pathname.replace(/^\/|\/$/g, "");
 
+// Load existing comments
 async function loadComments() {
   try {
     const { data, error } = await supabase
-      .from('comments')
-      .select('*')
-      .eq('slug', blogId)
-      .eq('approved', true)
-      .order('created_at', { ascending: true });
+      .from("comments")
+      .select("*")
+      .eq("slug", blogId)
+      .eq("approved", true)
+      .order("created_at", { ascending: true });
 
     if (error) throw error;
 
     commentsList.innerHTML = "";
-    data.forEach(row => {
+    data.forEach((row) => {
       const commentEl = document.createElement("div");
       commentEl.classList.add("p-3", "bg-gray-100", "rounded");
       commentEl.innerHTML = `
         <p>${row.comment}</p>
-        ${row.reply ? `<div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">Reply: ${row.reply}</div>` : ""}
+        ${
+          row.reply
+            ? `<div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">Reply: ${row.reply}</div>`
+            : ""
+        }
       `;
       commentsList.appendChild(commentEl);
     });
@@ -101,27 +114,33 @@ async function loadComments() {
   }
 }
 
+// Handle form submission
 form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const comment = form.querySelector('textarea[name="comment"]').value;
+  e.preventDefault(); // 🚨 Stop page reload & ?comment=... in URL
+
+  const textarea = form.querySelector('textarea[name="comment"]');
+  const comment = textarea.value.trim();
+  if (!comment) return; // avoid empty submissions
 
   try {
     const { data, error } = await supabase
-      .from('comments')
-      .insert([{ slug: blogId, comment, approved: false }]); // false: needs moderation
+      .from("comments")
+      .insert([{ slug: blogId, comment, approved: false }]); // needs moderation
 
     if (error) throw error;
 
-    alert("Your comment has been submitted for approval.");
-    form.reset();
+    alert("✅ Your comment has been submitted for approval.");
+    textarea.value = "";
+
+    // Optionally refresh visible comments (but only approved ones show)
     loadComments();
   } catch (err) {
     console.error("Error submitting comment:", err);
-    alert("Failed to submit comment. Check console for details.");
+    alert("❌ Failed to submit comment. Check console for details.");
   }
 });
 
-// Load comments on page load
+// Initial load
 loadComments();
 </script>
 
