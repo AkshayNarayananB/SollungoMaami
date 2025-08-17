@@ -1,4 +1,13 @@
-<!-- Comments.astro -->
+---
+// Props
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+import { supabase } from '../db/supabase';
+---
+
 <section id="comments-section" class="mt-8">
   <h2 class="text-xl font-bold mb-4">Comments</h2>
   <div id="comments-list" class="space-y-4"></div>
@@ -18,51 +27,63 @@
 </section>
 
 <script is:client>
-import { createClient } from "@supabase/supabase-js";
+import { supabase } from '../db/supabase';
 
-// Initialize Supabase client in the browser only
-const supabase = createClient(
-  import.meta.env.PUBLIC_SUPABASE_URL,
-  import.meta.env.PUBLIC_SUPABASE_ANON_KEY
-);
+const form = document.getElementById('comment-form');
+const commentsList = document.getElementById('comments-list');
+const blogSlug = Astro.props.slug;
 
-const blogId = Astro.props.slug; // or get from path if not passed
-const form = document.getElementById("comment-form");
-const commentsList = document.getElementById("comments-list");
-
+// Load comments
 async function loadComments() {
-  const { data, error } = await supabase
-    .from("comments")
-    .select("*")
-    .eq("slug", blogId)
-    .eq("approved", true)
-    .order("timestamp", { ascending: true });
-  if (error) return console.error(error);
+  try {
+    const { data, error } = await supabase
+      .from('Comments') // Match your table name exactly (case-sensitive)
+      .select('*')
+      .eq('slug', blogSlug)
+      .eq('approved', true)
+      .order('timestamp', { ascending: true });
 
-  commentsList.innerHTML = "";
-  data.forEach((row) => {
-    const el = document.createElement("div");
-    el.className = "p-3 bg-gray-100 rounded";
-    el.innerHTML = `
-      <p>${row.comment}</p>
-      ${row.reply ? `<div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">Reply: ${row.reply}</div>` : ""}
-    `;
-    commentsList.appendChild(el);
-  });
+    if (error) throw error;
+
+    commentsList.innerHTML = '';
+    data.forEach(row => {
+      const el = document.createElement('div');
+      el.className = 'p-3 bg-gray-100 rounded';
+      el.innerHTML = `
+        <p>${row.comment}</p>
+        ${row.reply ? `<div class="ml-4 mt-2 p-2 bg-gray-200 rounded text-sm text-gray-700">Reply: ${row.reply}</div>` : ''}
+      `;
+      commentsList.appendChild(el);
+    });
+  } catch (err) {
+    console.error('Error loading comments:', err);
+  }
 }
 
-form.addEventListener("submit", async (e) => {
+// Handle form submission
+form.addEventListener('submit', async e => {
   e.preventDefault();
-  const comment = form.querySelector("textarea").value.trim();
+
+  const textarea = form.querySelector('textarea[name="comment"]');
+  const comment = textarea.value.trim();
   if (!comment) return;
 
-  const { error } = await supabase.from("comments").insert([{ slug: blogId, comment, approved: false }]);
-  if (error) return console.error(error);
+  try {
+    const { data, error } = await supabase
+      .from('Comments') // Case-sensitive
+      .insert([{ slug: blogSlug, comment, approved: false }]); // moderation
 
-  alert("Comment submitted for approval");
-  form.reset();
-  loadComments();
+    if (error) throw error;
+
+    alert('Your comment has been submitted for approval.');
+    textarea.value = '';
+    loadComments();
+  } catch (err) {
+    console.error('Error submitting comment:', err);
+    alert('Failed to submit comment.');
+  }
 });
 
+// Initial load
 loadComments();
 </script>
