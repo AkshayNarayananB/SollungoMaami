@@ -3,8 +3,9 @@ import { getCollection } from "astro:content";
 import { IdToSlug } from "../../utils/hash";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { render } from "astro:content";
-import Comments from '../../components/Comments.astro';
+import Comments from "../../components/Comments.astro";
 
+// Generate static paths for posts
 export async function getStaticPaths() {
   const postEntries = await getCollection("posts");
   return postEntries.map((entry) => ({
@@ -13,11 +14,12 @@ export async function getStaticPaths() {
   }));
 }
 
+// Get the current post entry
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-// Generate a slug to pass to Comments
-const slug = IdToSlug(entry.id);
 
+// Generate a slug to pass to Comments component
+const slug = IdToSlug(entry.id);
 ---
 
 {
@@ -27,7 +29,6 @@ const slug = IdToSlug(entry.id);
       subTitle={entry.data.description}
       bannerImage={entry.data.image}
       published={entry.data.published}
-      {/* image={entry.data.image} */}
     >
       <div
         class="hidden"
@@ -37,14 +38,17 @@ const slug = IdToSlug(entry.id);
       >
         {entry.data.title}
       </div>
+
       <div data-pagefind-body>
         <Content />
       </div>
-      <!-- Include Comments component -->
+
+      <!-- Comments section -->
       <Comments slug={slug} />
     </PostLayout>
   )
 }
+
 {
   entry.data.licenseName && (
     <PostLayout
@@ -64,12 +68,13 @@ const slug = IdToSlug(entry.id);
       >
         {entry.data.title}
       </div>
+
       <div data-pagefind-body>
         <Content />
       </div>
-      <!-- Include Comments component -->
+
+      <!-- Comments section -->
       <Comments slug={slug} />
     </PostLayout>
   )
 }
-<!-- <Fragment set:html={tocHTMLString} /> -->
