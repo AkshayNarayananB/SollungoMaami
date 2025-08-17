@@ -1,35 +1,36 @@
 ---
-// Comments.astro
-import { db } from "../db/firebase";
-import { collection, addDoc, query, orderBy, onSnapshot, Timestamp } from "firebase/firestore";
-const { slug } = Astro.props;
+// src/components/Comments.astro
+const { slug, title } = Astro.props;
+const pageUrl = `${Astro.site}/posts/${slug}`;
+const pageIdentifier = slug;
 ---
-<section>
-  <form id="comment-form">
-    <textarea name="comment" required></textarea>
-    <button type="submit">Submit</button>
-  </form>
-  <div id="comments-list"></div>
+
+<section class="comments-section">
+  <h2 class="text-xl font-bold mb-4">Comments</h2>
+  <div id="disqus_thread"></div>
 </section>
-<script is:client="load">
-  const slug = Astro.props.slug;
-  const form = document.querySelector("#comment-form");
-  console.log("form object:", form);
-  if (form) {
-    form.addEventListener("submit", async (e) => {
-      console.log("Submit handler called");
-      e.preventDefault();
-      const val = form.comment.value.trim();
-      if (!val) return;
-      try {
-        await addDoc(collection(db, "comments_" + slug), {
-          comment: val,
-          timestamp: Timestamp.fromDate(new Date())
-        });
-        form.reset();
-      } catch (err) {
-        console.error("Error:", err);
-      }
-    });
-  }
+
+<script is:client>
+  const pageUrl = `${Astro.site}/posts/${slug}`;
+  const pageIdentifier = slug;
+
+  var disqus_config = function () {
+    this.page.url = pageUrl;         // Dynamic canonical URL for this post
+    this.page.identifier = pageIdentifier; // Unique identifier for this post
+  };
+
+  (function() { // Load Disqus script
+    var d = document, s = d.createElement('script');
+    s.src = 'https://sollungomaami.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
 </script>
+
+<noscript>
+  Please enable JavaScript to view the 
+  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+<!-- Optional: Load comment count -->
+<script id="dsq-count-scr" src="//sollungomaami.disqus.com/count.js" async></script>
