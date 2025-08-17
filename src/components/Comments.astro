@@ -1,21 +1,23 @@
 // src/components/Comments.astro
 const { slug } = Astro.props;
-import { db } from "../db/firebase";
-import { collection, addDoc, query, orderBy, onSnapshot } from "firebase/firestore";
 ---
 
 <section class="comments-section">
-  <h2 class="text-xl font-bold mb-4">Comments</h2>
-  <div id="comments-list" class="space-y-4"></div>
+  <h2 class="text-xl font-bold mb-4">Comments</h2>
+  <div id="comments-list" class="space-y-4"></div>
 
-  <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
-    <form id="comment-form" class="space-y-2" data-slug={slug}>
-    <textarea name="comment" placeholder="Write your comment..." required class="w-full p-2 rounded border"></textarea>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
-  </form>
+  <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
+  <form id="comment-form" class="space-y-2" data-slug={slug}>
+    <textarea name="comment" placeholder="Write your comment..." required class="w-full p-2 rounded border"></textarea>
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+  </form>
 </section>
 
 <script is:client>
+  // Import the necessary Firestore functions and the db instance here
+  import { db } from "../db/firebase"; 
+  import { collection, addDoc, query, orderBy, onSnapshot } from "firebase/firestore";
+
   // Access the form element and retrieve the slug from its data attribute
   const form = document.querySelector("#comment-form");
   const slug = form.dataset.slug;
