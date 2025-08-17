@@ -1,4 +1,3 @@
----
 // src/components/Comments.astro
 const { slug } = Astro.props;
 import { db } from "../db/firebase";
@@ -6,53 +5,53 @@ import { collection, addDoc, query, orderBy, onSnapshot } from "firebase/firesto
 ---
 
 <section class="comments-section">
-  <h2 class="text-xl font-bold mb-4">Comments</h2>
-  <div id="comments-list" class="space-y-4"></div>
+  <h2 class="text-xl font-bold mb-4">Comments</h2>
+  <div id="comments-list" class="space-y-4"></div>
 
-  <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
-  <form id="comment-form" class="space-y-2">
-    <textarea name="comment" placeholder="Write your comment..." required class="w-full p-2 rounded border"></textarea>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
-  </form>
+  <h3 class="text-lg font-semibold mt-6">Leave a Comment</h3>
+    <form id="comment-form" class="space-y-2" data-slug={slug}>
+    <textarea name="comment" placeholder="Write your comment..." required class="w-full p-2 rounded border"></textarea>
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+  </form>
 </section>
 
 <script is:client>
-const slug = Astro.props.slug;
+  // Access the form element and retrieve the slug from its data attribute
+  const form = document.querySelector("#comment-form");
+  const slug = form.dataset.slug;
 
-// Use querySelector inside the client script itself
-const form = document.querySelector("#comment-form");
-const commentsList = document.querySelector("#comments-list");
-const commentsRef = collection(db, "comments_" + slug);
+  if (form) {
+    const commentsList = document.querySelector("#comments-list");
+    const commentsRef = collection(db, "comments_" + slug);
 
-// Real-time listener
-const q = query(commentsRef, orderBy("timestamp", "asc"));
-onSnapshot(q, (snapshot) => {
-  commentsList.innerHTML = "";
-  snapshot.forEach(doc => {
-    const data = doc.data();
-    const div = document.createElement("div");
-    div.className = "p-3 bg-gray-100 rounded";
-    div.innerHTML = `<p>${data.comment}</p>`;
-    commentsList.appendChild(div);
-  });
-});
-
-// Bind submit **after form exists**
-if (form) {
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // ✅ stop reload
-    const val = form.comment.value.trim();
-    if (!val) return;
-
-    try {
-      await addDoc(commentsRef, {
-        comment: val,
-        timestamp: new Date()
+    // Real-time listener
+    const q = query(commentsRef, orderBy("timestamp", "asc"));
+    onSnapshot(q, (snapshot) => {
+      commentsList.innerHTML = "";
+      snapshot.forEach(doc => {
+        const data = doc.data();
+        const div = document.createElement("div");
+        div.className = "p-3 bg-gray-100 rounded";
+        div.innerHTML = `<p>${data.comment}</p>`;
+        commentsList.appendChild(div);
       });
-      form.reset();
-    } catch (err) {
-      console.error("🔥 Firestore error:", err);
-    }
-  });
-}
+    });
+
+    // Bind submit after form exists
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault(); // ✅ stop reload
+      const val = form.comment.value.trim();
+      if (!val) return;
+
+      try {
+        await addDoc(commentsRef, {
+          comment: val,
+          timestamp: new Date()
+        });
+        form.reset();
+      } catch (err) {
+        console.error("🔥 Firestore error:", err);
+      }
+    });
+  }
 </script>
