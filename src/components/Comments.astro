@@ -24,45 +24,46 @@ const { slug } = Astro.props;
 import { db } from '../db/firebase';
 import { collection, addDoc, query, orderBy, onSnapshot } from 'firebase/firestore';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const section = document.querySelector('.comments-section');
-  const slug = section.dataset.slug;
+// Slug passed from Astro
+const slug = Astro.props.slug;
 
-  const commentsList = section.querySelector('.comments-list');
-  const form = section.querySelector('.comment-form');
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("#comment-form");
+  const commentsList = document.querySelector("#comments-list");
 
-  const commentsRef = collection(db, 'comments_' + slug);
+  // Use a unique collection per post
+  const commentsRef = collection(db, `comments_${slug}`);
 
-  // 🔹 Real-time listener
-  const q = query(commentsRef, orderBy('timestamp', 'asc'));
+  // Real-time listener: load existing + future comments
+  const q = query(commentsRef, orderBy("timestamp", "asc"));
   onSnapshot(q, (snapshot) => {
-    commentsList.innerHTML = '';
+    commentsList.innerHTML = ""; // clear before re-render
     snapshot.forEach(doc => {
       const data = doc.data();
-      const div = document.createElement('div');
-      div.className = 'p-3 bg-gray-100 rounded';
-      div.innerHTML = `<p>${data.comment}</p>`;
+      const div = document.createElement("div");
+      div.className = "p-3 bg-gray-100 rounded";
+      div.textContent = data.comment;
       commentsList.appendChild(div);
     });
   });
 
-  // 🔹 Handle form submission
-  form.addEventListener('submit', async (e) => {
+  // Handle form submission
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const textarea = form.querySelector('textarea');
-    const comment = textarea.value.trim();
-    if (!comment) return;
+    const val = form.comment.value.trim();
+    if (!val) return;
 
     try {
       await addDoc(commentsRef, {
-        comment,
+        comment: val,
         timestamp: new Date()
       });
-      textarea.value = '';
+      console.log("✅ Saved to Firestore");
+      form.reset();
     } catch (err) {
-      console.error('Error adding comment:', err);
-      alert('Failed to submit comment.');
+      console.error("🔥 Firestore error:", err);
     }
   });
 });
 </script>
+
