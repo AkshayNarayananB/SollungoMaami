@@ -79,8 +79,8 @@ Drop chopped pieces into the prepared curd/lemon water to prevent darkening and 
 💧 Soak chana dal, toor dal, and red chilies for **30–45 minutes**.  
 
 ### 2 Prepare Banana Flower  
-    When ready to cook, drain the water completely using a strainer.
-    clean it in running water to discard the butter milk.
+   When ready to cook, drain the water completely using a strainer.
+   clean it in running water to discard the butter milk.
 🍛 Pressure cook with turmeric powder (**2 whistles**).  
 💧 Drain completely — no moisture should remain.
 
