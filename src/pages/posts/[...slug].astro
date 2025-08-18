@@ -17,14 +17,21 @@ const { Content } = await render(entry);
 
 // Generate slug for passing to Comments component
 const slug = IdToSlug(entry.id);
+
+// Conditionally set the license and banner image props based on licenseName
+const licenseProp = entry.data.licenseName
+  ? { name: entry.data.licenseName, url: entry.data.licenseUrl }
+  : undefined;
+
+const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.image;
 ---
 
 <PostLayout
   title={entry.data.title}
   subTitle={entry.data.description}
-  bannerImage={entry.data.image || entry.data.cover}
+  bannerImage={bannerImageProp}
   published={entry.data.published}
-  license={entry.data.licenseName ? { name: entry.data.licenseName, url: entry.data.licenseUrl } : undefined}
+  license={licenseProp}
   author={entry.data.author}
   sourceLink={entry.data.sourceLink}
 >
@@ -48,89 +55,94 @@ const slug = IdToSlug(entry.id);
       <textarea name="comment" placeholder="Write a comment..." required class="border p-2 mb-2 w-full"></textarea>
       <button type="submit" class="bg-blue-500 text-white p-2 rounded">Post</button>
     </form>
-
     <ul id="comments" class="space-y-4"></ul>
   </section>
 
   <script type="module" is:inline>
-    import { createClient } from "https://esm.sh/@supabase/supabase-js"
+    // It's a good practice to wrap the script in a DOMContentLoaded listener
+    // to ensure the elements exist before the script runs.
+    document.addEventListener('DOMContentLoaded', () => {
+      import { createClient } from "https://esm.sh/@supabase/supabase-js"
 
-    const supabase = createClient("https://gktqkxihzxqjeaeorshn.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdrdHFreGloenhxamVhZW9yc2huIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzNDcxNDQsImV4cCI6MjA3MDkyMzE0NH0.yD0zt6Ud4c6uEsP52UppSjNOu-RoyDdMBKMkOnZzRYA");
-    
-    // This is the correct way to handle the slug in an inline script
-    // by injecting the server-side variable.
-    const slug = `${slug}`;
-
-    const commentsList = document.getElementById("comments");
-    const form = document.getElementById("comment-form");
-
-    // Check if the form element exists before adding the event listener.
-    // This adds a layer of safety.
-    if (form) {
-      form.addEventListener("submit", async (e) => {
-        // Prevent the default form submission behavior (page reload)
-        e.preventDefault(); 
-        
-        const fd = new FormData(form);
-        await supabase.from("comments").insert([{
-          name: fd.get("name"),
-          comment: fd.get("comment"),
-          slug: slug
-        }]);
-        form.reset();
-        loadComments();
-      });
-    }
-
-    async function loadComments() {
-      const { data } = await supabase.from("comments").select("*").eq("slug", slug).order("created_at", { ascending: false });
+      const supabase = createClient("https://gktqkxihzxqjeaeorshn.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdrdHFreGloenhxamVhZW9yc2huIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzNDcxNDQsImV4cCI6MjA3MDkyMzE0NH0.yD0zt6Ud4c6uEsP52UppSjNOu-RoyDdMBKMkOnZzRYA");
       
-      commentsList.innerHTML = data
-        .filter(c => !c.parent_id)
-        .map(c => renderComment(c, data))
-        .join("");
-    }
+      const slug = `{slug}`;
 
-    function renderComment(c, allComments) {
-      const replies = allComments.filter(r => r.parent_id === c.id);
-      const replyHTML = replies.map(r => 
-        `<div class="ml-6 mt-2 p-2 border-l bg-gray-50"><b>Owner Reply:</b> ${r.comment}</div>`
-      ).join("");
+      const commentsList = document.getElementById("comments");
+      const form = document.getElementById("comment-form");
 
-      return `
-        <li class="p-3 border rounded">
-          <b>${c.name}</b>: ${c.comment}
-          <div class="mt-2">
-            <button onclick="showReplyBox('${c.id}')" class="text-sm text-blue-500">Reply (Owner only)</button>
-            <div id="reply-box-${c.id}" class="hidden mt-2">
-              <textarea id="reply-input-${c.id}" class="border p-2 w-full" placeholder="Write reply..."></textarea>
-              <button onclick="postReply('${c.id}')" class="bg-green-500 text-white p-1 mt-1 rounded">Post Reply</button>
+      if (form) {
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault(); 
+          
+          const fd = new FormData(form);
+          await supabase.from("comments").insert([{
+            name: fd.get("name"),
+            comment: fd.get("comment"),
+            slug: slug
+          }]);
+          form.reset();
+          loadComments();
+        });
+      }
+
+      async function loadComments() {
+        const { data } = await supabase.from("comments").select("*").eq("slug", slug).order("created_at", { ascending: false });
+        
+        const comments = data || [];
+
+        commentsList.innerHTML = comments
+          .filter(c => !c.parent_id)
+          .map(c => renderComment(c, comments))
+          .join("");
+      }
+
+      function renderComment(c, allComments) {
+        const replies = allComments.filter(r => r.parent_id === c.id);
+        const replyHTML = replies.map(r => 
+          `<div class="ml-6 mt-2 p-2 border-l bg-gray-50"><b>Owner Reply:</b> ${r.comment}</div>`
+        ).join("");
+
+        return `
+          <li class="p-3 border rounded">
+            <b>${c.name}</b>: ${c.comment}
+            <div class="mt-2">
+              <button onclick="showReplyBox('${c.id}')" class="text-sm text-blue-500">Reply (Owner only)</button>
+              <div id="reply-box-${c.id}" class="hidden mt-2">
+                <textarea id="reply-input-${c.id}" class="border p-2 w-full" placeholder="Write reply..."></textarea>
+                <button onclick="postReply('${c.id}')" class="bg-green-500 text-white p-1 mt-1 rounded">Post Reply</button>
+              </div>
             </div>
-          </div>
-          ${replyHTML}
-        </li>
-      `;
-    }
+            ${replyHTML}
+          </li>
+        `;
+      }
 
-    window.showReplyBox = (id) => {
-      document.getElementById(`reply-box-${id}`).classList.toggle("hidden");
-    };
+      window.showReplyBox = (id) => {
+        const replyBox = document.getElementById(`reply-box-${id}`);
+        if (replyBox) {
+          replyBox.classList.toggle("hidden");
+        }
+      };
 
-    window.postReply = async (parentId) => {
-      const input = document.getElementById(`reply-input-${parentId}`);
-      const replyText = input.value.trim();
-      if (!replyText) return;
+      window.postReply = async (parentId) => {
+        const input = document.getElementById(`reply-input-${parentId}`);
+        if (!input) return;
 
-      await supabase.from("comments").insert([{
-        name: "Owner",
-        comment: replyText,
-        slug: slug,
-        parent_id: parentId
-      }]);
-      input.value = "";
+        const replyText = input.value.trim();
+        if (!replyText) return;
+
+        await supabase.from("comments").insert([{
+          name: "Owner",
+          comment: replyText,
+          slug: slug,
+          parent_id: parentId
+        }]);
+        input.value = "";
+        loadComments();
+      };
+
       loadComments();
-    };
-
-    loadComments();
+    });
   </script>
 </PostLayout>
