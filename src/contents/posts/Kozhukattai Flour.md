@@ -5,13 +5,16 @@ description: Perfect rice flour batter recipe for making soft and smooth Kozhuka
 tags: [South Indian, festival]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702100/kozhukattai_flour.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/idiyappamflour.png" 
+  
 ---
 
 # 🥄 Kozhukattai Flour Recipe | Perfect for Kozhukattai & Idiyappam
 
 A simple yet essential batter recipe using rice flour, perfect for making traditional steamed dumplings and string hoppers!
 
+---
+![idiyappamflour](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/idiyappamflour.png)
 ---
 
 ## 🌾 Ingredients
@@ -68,4 +71,9 @@ A simple yet essential batter recipe using rice flour, perfect for making tradit
 - Steamed Kozhukattai (rice dumplings)  
 - Idiyappam (string hoppers)  
 
-> Traditionally, Kozhukattai batter is made by soaking and grinding rice, then cooking. This recipe uses readymade rice flour for convenience without compromising texture.  
+> Traditionally, Kozhukattai batter is made by soaking and grinding rice, then cooking. This recipe uses readymade rice flour for convenience without compromising texture.
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/W9e4geYVkM4?si=mwsnflUvrW_14i7v)
