@@ -5,7 +5,7 @@ description: A nourishing South Indian soup made with curry leaves, moong dal, a
 tags: [ Soup]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karuveppilai soup.png"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karuveppilai%20soup.png"  
 
 ---
 
