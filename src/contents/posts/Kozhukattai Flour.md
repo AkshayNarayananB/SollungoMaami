@@ -31,9 +31,11 @@ A simple yet essential batter recipe using rice flour, perfect for making tradit
 🥄 Aim for a dosa batter-like consistency. Do **not** add all the water at once.  
 
 ### Step 2: Cook the Batter  
-🔥 Heat sesame oil in a heavy-bottomed kadai or pan.  
-⚠️ Add the rice flour mixture as soon as the oil heats (do not let oil get too hot).  
-🥄 Immediately start mixing. Initially, oil may gather at corners — this is normal.  
+🥄 In a heavy-bottomed kadai or pan, add the sesame oil first.  
+🍚 Immediately pour in the rice flour batter. Mix the oil and batter well.  
+⚠️ **Do not switch on the flame yet** — if the oil becomes even slightly warm, the batter will start forming lumps.  
+🔥 Once oil and batter are combined smoothly, switch on the flame to **medium-low** and keep stirring continuously.  
+👉 At first, oil may gather at the corners — this is normal. Continue mixing until the batter thickens into a soft dough.  
 
 ### Step 3: Continuous Mixing  
 ⏰ Keep stirring without pause for about 5 minutes on medium flame.  
