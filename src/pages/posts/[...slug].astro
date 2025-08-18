@@ -59,7 +59,7 @@ const slug = IdToSlug(entry.id);
     
     // This is the correct way to handle the slug in an inline script
     // by injecting the server-side variable.
-    const slug = `{slug}`;
+    const slug = `${slug}`;
 
     const commentsList = document.getElementById("comments");
     const form = document.getElementById("comment-form");
