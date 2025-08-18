@@ -5,7 +5,8 @@ description: Spice up your mornings with the authentic taste of Kerala’s Kadal
 tags: [south indian side dish]
 category: Recipe
 draft: false
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1752853323/kadalacurry.png"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kadalacurry.png" 
+
 ---
 
 # Kadala Curry Recipe | Classic Kerala Black Chana Curry
