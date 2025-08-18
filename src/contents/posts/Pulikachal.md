@@ -39,9 +39,6 @@ The aroma alone evokes memories of home kitchens, where every meal is infused wi
 - Salt – to taste
 - Oil – 250 g (generous amount)
 
-### Optional for Grinding
-- ½ tsp roasted fenugreek seeds (set aside)
-- Ground masala from roasted coriander, red chili, and fenugreek
 
 ---
 
@@ -75,7 +72,8 @@ The aroma alone evokes memories of home kitchens, where every meal is infused wi
 ---
 
 ## 🍽️ Serving Suggestions
-- Serve as a side with **steamed rice**.  
+- Serve as a side with **steamed rice**.
+- Mix with cooked rice to make puliyodharai**.
 - Pairs well with **curd rice or plain rice meals**.  
 - Can be used as a **tamarind chutney for snacks**.
 
