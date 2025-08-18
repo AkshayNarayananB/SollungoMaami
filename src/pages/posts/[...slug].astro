@@ -19,221 +19,118 @@ const { Content } = await render(entry);
 const slug = IdToSlug(entry.id);
 ---
 
-{
-  !entry.data.licenseName && (
-    <PostLayout
-      title={entry.data.title}
-      subTitle={entry.data.description}
-      bannerImage={entry.data.image}
-      published={entry.data.published}
-    >
-      <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
-        {entry.data.title}
-      </div>
-      <div data-pagefind-body>
-        <Content />
-      </div>
+<PostLayout
+  title={entry.data.title}
+  subTitle={entry.data.description}
+  bannerImage={entry.data.image || entry.data.cover}
+  published={entry.data.published}
+  license={entry.data.licenseName ? { name: entry.data.licenseName, url: entry.data.licenseUrl } : undefined}
+  author={entry.data.author}
+  sourceLink={entry.data.sourceLink}
+>
+  <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
+    {entry.data.title}
+  </div>
+  <div data-pagefind-body>
+    <Content />
+  </div>
 
-      <!-- Facebook Comments -->
-      <div class="fb-comments" 
-        data-href={`https://sollungomaami.vercel.app/posts/${slug}`} 
-        data-width="100%" 
-        data-numposts="5">
-      </div>
+  <div class="fb-comments" 
+    data-href={`https://sollungomaami.vercel.app/posts/${slug}`} 
+    data-width="100%" 
+    data-numposts="5">
+  </div>
 
-      <!-- Custom Comment Section -->
-      <section class="mt-10">
-        <h2 class="text-xl font-bold mb-4">Comments</h2>
-        <form id="comment-form" class="mb-6">
-          <input type="text" name="name" placeholder="Your name" required class="border p-2 mb-2 w-full"/>
-          <textarea name="comment" placeholder="Write a comment..." required class="border p-2 mb-2 w-full"></textarea>
-          <button type="submit" class="bg-blue-500 text-white p-2 rounded">Post</button>
-        </form>
+  <section class="mt-10">
+    <h2 class="text-xl font-bold mb-4">Comments</h2>
+    <form id="comment-form" class="mb-6">
+      <input type="text" name="name" placeholder="Your name" required class="border p-2 mb-2 w-full"/>
+      <textarea name="comment" placeholder="Write a comment..." required class="border p-2 mb-2 w-full"></textarea>
+      <button type="submit" class="bg-blue-500 text-white p-2 rounded">Post</button>
+    </form>
 
-        <ul id="comments" class="space-y-4"></ul>
-      </section>
+    <ul id="comments" class="space-y-4"></ul>
+  </section>
 
-      <script type="module" is:inline>
-        import { createClient } from "https://esm.sh/@supabase/supabase-js"
+  <script type="module" is:inline>
+    import { createClient } from "https://esm.sh/@supabase/supabase-js"
 
-        const supabase = createClient("https://YOUR_PROJECT.supabase.co", "YOUR_PUBLIC_ANON_KEY")
-        const slug = `${slug}`;
-        const commentsList = document.getElementById("comments")
-        const form = document.getElementById("comment-form")
+    const supabase = createClient("https://gktqkxihzxqjeaeorshn.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdrdHFreGloenhxamVhZW9yc2huIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzNDcxNDQsImV4cCI6MjA3MDkyMzE0NH0.yD0zt6Ud4c6uEsP52UppSjNOu-RoyDdMBKMkOnZzRYA");
+    
+    // This is the correct way to handle the slug in an inline script
+    // by injecting the server-side variable.
+    const slug = `{slug}`;
 
-        async function loadComments() {
-          let { data } = await supabase.from("comments").select("*").eq("slug", `${slug}`).order("created_at", { ascending: false })
-          
-          commentsList.innerHTML = data
-            .filter(c => !c.parent_id)
-            .map(c => renderComment(c, data))
-            .join("")
-        }
+    const commentsList = document.getElementById("comments");
+    const form = document.getElementById("comment-form");
 
-        function renderComment(c, allComments) {
-          let replies = allComments.filter(r => r.parent_id === c.id)
-          let replyHTML = replies.map(r => 
-            `<div class="ml-6 mt-2 p-2 border-l bg-gray-50"><b>Owner Reply:</b> ${r.comment}</div>`
-          ).join("")
+    // Check if the form element exists before adding the event listener.
+    // This adds a layer of safety.
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        // Prevent the default form submission behavior (page reload)
+        e.preventDefault(); 
+        
+        const fd = new FormData(form);
+        await supabase.from("comments").insert([{
+          name: fd.get("name"),
+          comment: fd.get("comment"),
+          slug: slug
+        }]);
+        form.reset();
+        loadComments();
+      });
+    }
 
-          return `
-            <li class="p-3 border rounded">
-              <b>${c.name}</b>: ${c.comment}
-              <div class="mt-2">
-                <button onclick="showReplyBox('${c.id}')" class="text-sm text-blue-500">Reply (Owner only)</button>
-                <div id="reply-box-${c.id}" class="hidden mt-2">
-                  <textarea id="reply-input-${c.id}" class="border p-2 w-full" placeholder="Write reply..."></textarea>
-                  <button onclick="postReply('${c.id}')" class="bg-green-500 text-white p-1 mt-1 rounded">Post Reply</button>
-                </div>
-              </div>
-              ${replyHTML}
-            </li>
-          `
-        }
+    async function loadComments() {
+      const { data } = await supabase.from("comments").select("*").eq("slug", slug).order("created_at", { ascending: false });
+      
+      commentsList.innerHTML = data
+        .filter(c => !c.parent_id)
+        .map(c => renderComment(c, data))
+        .join("");
+    }
 
-        form.addEventListener("submit", async (e) => {
-          e.preventDefault()
-          const fd = new FormData(form)
-          await supabase.from("comments").insert([{
-            name: fd.get("name"),
-            comment: fd.get("comment"),
-            slug: `${slug}`
-          }])
-          form.reset()
-          loadComments()
-        })
+    function renderComment(c, allComments) {
+      const replies = allComments.filter(r => r.parent_id === c.id);
+      const replyHTML = replies.map(r => 
+        `<div class="ml-6 mt-2 p-2 border-l bg-gray-50"><b>Owner Reply:</b> ${r.comment}</div>`
+      ).join("");
 
-        window.showReplyBox = (id) => {
-          document.getElementById(`reply-box-${id}`).classList.toggle("hidden")
-        }
+      return `
+        <li class="p-3 border rounded">
+          <b>${c.name}</b>: ${c.comment}
+          <div class="mt-2">
+            <button onclick="showReplyBox('${c.id}')" class="text-sm text-blue-500">Reply (Owner only)</button>
+            <div id="reply-box-${c.id}" class="hidden mt-2">
+              <textarea id="reply-input-${c.id}" class="border p-2 w-full" placeholder="Write reply..."></textarea>
+              <button onclick="postReply('${c.id}')" class="bg-green-500 text-white p-1 mt-1 rounded">Post Reply</button>
+            </div>
+          </div>
+          ${replyHTML}
+        </li>
+      `;
+    }
 
-        window.postReply = async (parentId) => {
-          const input = document.getElementById(`reply-input-${parentId}`)
-          const replyText = input.value.trim()
-          if (!replyText) return
+    window.showReplyBox = (id) => {
+      document.getElementById(`reply-box-${id}`).classList.toggle("hidden");
+    };
 
-          await supabase.from("comments").insert([{
-            name: "Owner",
-            comment: replyText,
-            slug: `${slug}`,
-            parent_id: parentId
-          }])
-          input.value = ""
-          loadComments()
-        }
+    window.postReply = async (parentId) => {
+      const input = document.getElementById(`reply-input-${parentId}`);
+      const replyText = input.value.trim();
+      if (!replyText) return;
 
-        loadComments()
-      </script>
-    </PostLayout>
-  )
-}
-{
-  entry.data.licenseName && (
-    <PostLayout
-      title={entry.data.title}
-      subTitle={entry.data.description}
-      bannerImage={entry.data.cover}
-      published={entry.data.published}
-      license={{ name: entry.data.licenseName, url: entry.data.licenseUrl }}
-      author={entry.data.author}
-      sourceLink={entry.data.sourceLink}
-    >
-      <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
-        {entry.data.title}
-      </div>
-      <div data-pagefind-body>
-        <Content />
-      </div>
+      await supabase.from("comments").insert([{
+        name: "Owner",
+        comment: replyText,
+        slug: slug,
+        parent_id: parentId
+      }]);
+      input.value = "";
+      loadComments();
+    };
 
-      <!-- Facebook Comments -->
-      <div class="fb-comments" 
-        data-href={`https://sollungomaami.vercel.app/posts/${slug}`} 
-        data-width="100%" 
-        data-numposts="5">
-      </div>
-
-      <!-- Custom Comment Section -->
-      <section class="mt-10">
-        <h2 class="text-xl font-bold mb-4">Comments</h2>
-        <form id="comment-form" class="mb-6">
-          <input type="text" name="name" placeholder="Your name" required class="border p-2 mb-2 w-full"/>
-          <textarea name="comment" placeholder="Write a comment..." required class="border p-2 mb-2 w-full"></textarea>
-          <button type="submit" class="bg-blue-500 text-white p-2 rounded">Post</button>
-        </form>
-
-        <ul id="comments" class="space-y-4"></ul>
-      </section>
-
-      <script type="module" is:inline>
-        import { createClient } from "https://esm.sh/@supabase/supabase-js"
-
-        const supabase = createClient("https://gktqkxihzxqjeaeorshn.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdrdHFreGloenhxamVhZW9yc2huIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzNDcxNDQsImV4cCI6MjA3MDkyMzE0NH0.yD0zt6Ud4c6uEsP52UppSjNOu-RoyDdMBKMkOnZzRYA")
-        const commentsList = document.getElementById("comments")
-        const form = document.getElementById("comment-form")
-
-        async function loadComments() {
-          let { data } = await supabase.from("comments").select("*").eq("slug", `${slug}`).order("created_at", { ascending: false })
-          
-          commentsList.innerHTML = data
-            .filter(c => !c.parent_id)
-            .map(c => renderComment(c, data))
-            .join("")
-        }
-
-        function renderComment(c, allComments) {
-          let replies = allComments.filter(r => r.parent_id === c.id)
-          let replyHTML = replies.map(r => 
-            `<div class="ml-6 mt-2 p-2 border-l bg-gray-50"><b>Owner Reply:</b> ${r.comment}</div>`
-          ).join("")
-
-          return `
-            <li class="p-3 border rounded">
-              <b>${c.name}</b>: ${c.comment}
-              <div class="mt-2">
-                <button onclick="showReplyBox('${c.id}')" class="text-sm text-blue-500">Reply (Owner only)</button>
-                <div id="reply-box-${c.id}" class="hidden mt-2">
-                  <textarea id="reply-input-${c.id}" class="border p-2 w-full" placeholder="Write reply..."></textarea>
-                  <button onclick="postReply('${c.id}')" class="bg-green-500 text-white p-1 mt-1 rounded">Post Reply</button>
-                </div>
-              </div>
-              ${replyHTML}
-            </li>
-          `
-        }
-
-        form.addEventListener("submit", async (e) => {
-          e.preventDefault()
-          const fd = new FormData(form)
-          await supabase.from("comments").insert([{
-            name: fd.get("name"),
-            comment: fd.get("comment"),
-            slug: `${slug}`
-          }])
-          form.reset()
-          loadComments()
-        })
-
-        window.showReplyBox = (id) => {
-          document.getElementById(`reply-box-${id}`).classList.toggle("hidden")
-        }
-
-        window.postReply = async (parentId) => {
-          const input = document.getElementById(`reply-input-${parentId}`)
-          const replyText = input.value.trim()
-          if (!replyText) return
-
-          await supabase.from("comments").insert([{
-            name: "Owner",
-            comment: replyText,
-            slug: `${slug}`,
-            parent_id: parentId
-          }])
-          input.value = ""
-          loadComments()
-        }
-
-        loadComments()
-      </script>
-    </PostLayout>
-  )
-}
+    loadComments();
+  </script>
+</PostLayout>
