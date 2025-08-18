@@ -2,7 +2,7 @@
 title: Soya Chunk Pepper Fry  
 published: 2025-08-18  
 description: A protein-packed South Indian-style stir fry made with soya chunks, onions, tomatoes, and freshly ground spices — finished with a punch of black pepper!  
-tags: [south indian, soya recipes, high protein, side dish]  
+tags: [ side dish]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/soyachunkpepperfry.png"  
