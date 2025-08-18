@@ -1,3 +1,4 @@
+---
 title: Green Peas Masala  
 published: 2025-08-18  
 description: A flavorful North-Indian style curry made with green peas, onion-cashew paste, and aromatic spices. Perfect to pair with roti, naan, or jeera rice!  
