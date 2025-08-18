@@ -5,7 +5,7 @@ description: Crispy, masala-coated Elephant Yam fry made with tamarind, onions, 
 tags: [side dish]
 category: Recipe
 draft: false
-image:  "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karunai%20Kizhangu%20Fry.png"
+image:  "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karunaiKizhanguFry.png"
 
 ---
 
@@ -20,7 +20,7 @@ The result? Crispy golden pieces on the outside, soft and flavorful inside — t
 
 It’s usually enjoyed with sambar rice, rasam rice, or even curd rice, adding a crunchy, tangy-spicy bite to the meal. For many, this fry brings back memories of Sunday lunches at home with the family.
 ---
-![karunai kizhangu Fry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Karunai%20Kizhangu%20Fry.png)
+![karunai kizhangu Fry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/KarunaiKizhanguFry.png)
 ---
 
 ## 🛒 Ingredients
