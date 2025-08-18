@@ -5,7 +5,7 @@ description: Crispy, masala-coated Elephant Yam fry made with tamarind, onions, 
 tags: [side dish]
 category: Recipe
 draft: false
-image:  "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karunaiKizhanguFry.png"
+image:  "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/KarunaiKizhanguFry.png"
 
 ---
 
