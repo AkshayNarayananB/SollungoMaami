@@ -2,7 +2,7 @@
 title: Pudina Pulao  
 published: 2025-07-28  
 description: Refresh your taste buds with this aromatic Pudina Pulao — a wholesome rice dish flavored with mint, coriander, and a fragrant spice blend.  
-tags: [South Indian, Pulao, Rice, Mint, One-Pot]  
+tags: [ Rice,  One-Pot]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/pudinapulao.png"  
