@@ -2,7 +2,7 @@
 title: Rava Upma  
 published: 2025-08-18  
 description: A South Indian breakfast classic — soft and fluffy Rava Upma with roasted semolina, tempered spices, and a touch of ghee for comfort and flavor.  
-tags: [South Indian, Breakfast, Upma, Vegetarian, Comfort Food]  
+tags: [Tiffin]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ravaupma.png"  
