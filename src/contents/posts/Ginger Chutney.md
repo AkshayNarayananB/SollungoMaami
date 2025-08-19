@@ -2,7 +2,7 @@
 title: Ginger Chutney  
 published: 2025-08-18  
 description: ✨ A spicy, tangy, and slightly sweet chutney that wakes up your taste buds — perfect with idli, dosa, or even hot rice with ghee! ✨  
-tags: [south indian side dish, chutney, traditional]  
+tags: [chutney]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/gingerchutney.png"  
