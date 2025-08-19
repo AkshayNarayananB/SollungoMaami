@@ -2,7 +2,7 @@
 title: Thavala Adai  
 published: 2025-08-18  
 description: A crispy, golden South Indian spiced rice-lentil pancake — crunchy outside, soft inside, and bursting with traditional flavors!  
-tags: [ tiffin]  
+tags: [ Tiffin]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/thavalaadai.png"  
