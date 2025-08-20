@@ -35,9 +35,10 @@ Unlike other places where people worship individual Ganesha idols during **Vinay
 
 ## 📜 Temple History  
 
-- The deity was originally **installed by Sage Agastya**.  
-- Later, during a severe drought, **Gautama Maharshi** instructed the villagers to unearth the buried deity.  
-- From then on, Ganesha blessed the land and restored prosperity.  
+- The origins of this sacred shrine trace back to the great Sage Agastya**, who first installed the deity here.
+- Centuries later, when the village was struck by a severe drought, **Gautama Maharshi** happened to pass through. Moved by the plight of the people, he advised the Agrahara community to search beneath the earth for a hidden idol of Ganesha.
+- ✨ Following his guidance, the villagers unearthed the deity — the very form of Ganapathi that still resides in the temple today. 
+- It is believed that once the idol was reinstated and worshipped, Ganesha blessed the land with prosperity, bringing rains and relief to the drought-stricken village. 
 
 ---
 
@@ -82,4 +83,33 @@ Mrs. **Latha Ganesan**, a respected resident of Ganapathi Agraharam, is renowned
 - Relish the **divine prasadam — kozhukattai and sweet pongal.**  
 
 ---
+
 “Where faith, folklore, and food come together — Ganapathi Agraharam is not just a temple, but a way of life.”  
+
+---
+
+📺 For more detailed information about the temple, please watch the YouTube channel link given below.
+
+---
+
+## 📍 Location
+
+🛕 Ganapathi Agraharam is located in Papanasam Taluk, Thanjavur district.
+
+🚗 Around 25 km from Kumbakonam.
+
+🚗 Only 10 km from Thiruvaiyaru.
+
+This makes it easily accessible for devotees and travelers exploring the Cauvery belt temples of Tamil Nadu.
+
+---
+
+## ⏰ Temple Timings
+
+The temple is open daily for devotees during the following hours:
+
+🌅 Morning: 6:00 AM – 12:00 Noon
+
+🌇 Evening: 5:00 PM – 8:00 PM
+
+---
