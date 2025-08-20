@@ -15,10 +15,10 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-// Generate slug for passing to Comments component
+// Generate slug
 const slug = IdToSlug(entry.id);
 
-// Conditionally set the license and banner image props based on licenseName
+// Conditionally set the license and banner image props
 const licenseProp = entry.data.licenseName
   ? { name: entry.data.licenseName, url: entry.data.licenseUrl }
   : undefined;
@@ -38,62 +38,35 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
   <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
     {entry.data.title}
   </div>
+
   <div data-pagefind-body>
     <Content />
   </div>
 
-  <div class="fb-comments" 
-    data-href={`https://sollungomaami.vercel.app/posts/${slug}`} 
-    data-width="100%" 
-    data-numposts="5">
-  </div>
-
+  <!-- Disqus Comments -->
   <section class="mt-10">
     <h2 class="text-xl font-bold mb-4">Comments</h2>
-    <form id="comment-form" class="mb-6">
-      <input type="text" name="name" placeholder="Your name" required class="border p-2 mb-2 w-full"/>
-      <textarea name="comment" placeholder="Write a comment..." required class="border p-2 mb-2 w-full"></textarea>
-      <button type="submit" class="bg-blue-500 text-white p-2 rounded">Post</button>
-    </form>
-    <ul id="comments" class="space-y-4"></ul>
+
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      */
+      var disqus_config = function () {
+        this.page.url = `https://sollungomaami.vercel.app/posts/${slug}`;  // Dynamic URL
+        this.page.identifier = slug; // Unique ID per post
+      };
+
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://sollungomaami.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the 
+      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
   </section>
-
-  <script type="module" is:inline>
-    // This is the problematic line. The string literal with `{}` is not being
-    // evaluated correctly by client-side scripts.
-    // We will fix this by using the correct Astro syntax.
-    // The previous syntax `${'${slug}'}` also works, but this is the simplest and clearest.
-    
-    // This is the fix for the syntax error with Swup
-    const slug = '{' + 'slug' + '}'; 
-    // This line is a workaround because Astro's SSR can mess with the string.
-    // A better way is to pass the slug as a data attribute and read it.
-    
-    // For a simple and direct fix, we use this:
-    const slugLiteral = '{' + 'slug' + '}'; // This is not correct
-
-    // The correct way is to use a direct variable injection as was originally
-    // intended, and troubleshoot why Swup is misinterpreting it.
-    // The most common cause is the `is:inline` directive's placement.
-
-    // Let's try the correct, standard Astro method again, and add
-    // some console logs for debugging.
-    
-    // We will use the direct injection. The SyntaxError is likely from Swup
-    // failing to re-run the script correctly.
-    // There is no easy fix for Swup's behavior without deeper changes to how it
-    // handles scripts.
-    
-    // The best approach is to avoid the inline script and pass the slug
-    // to a dedicated client-side component.
-    
-    // But since the user wants to fix the current file, we'll try a different
-    // approach for passing the slug.
-    
-    // We will inject the slug into a data attribute on an element, and then
-    // the script will read it. This is the most robust solution for client-side
-    // scripts.
-    
-    // I am now removing the script and replacing it with a new solution.
-  </script>
 </PostLayout>
