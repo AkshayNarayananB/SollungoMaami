@@ -93,14 +93,23 @@ Vadakari is a beloved South Indian side dish known for pairing beautifully with 
 - Let cool to room temperature.  
 - Blend roasted ingredients along with little water into a thick, smooth paste. Set aside.  
 
-### Step 3: Roast the Soaked Lentils  
-- Dry roast soaked and drained chana dal until lightly golden. Set aside.  
+### Step 3: Prepare and Fry Lentil Pakodas
+
+- Drain the soaked lentils completely to remove excess water.
+- Transfer them to a mixer jar, add salt and a pinch of hing (asafoetida), and grind into a coarse paste — do not add water while grinding.
+- You can now cook this mixture in two ways:
+### Deep Fry (Traditional Method):
+Heat oil in a kadai, drop small portions of the mixture as mini pakodas, and fry until lightly golden. (No need to over-fry since they’ll go into the gravy.)
+
+### Steam (Healthy Method):
+Place small portions of the mixture in an idli plate or steamer and steam for 7–8 minutes. Once cooled, crumble them gently before adding to the gravy.
 
 ### Step 4: Prepare the Base  
-- Heat oil in a pan over medium heat.  
-- Sauté chopped onions until golden brown.  
+- Heat oil in a pan over medium heat.
+- Add clove, bayleaf and cinnamom. saute it.
+- Saute chopped onions until golden brown.  
 - Add tomatoes and cook until soft and mushy.  
-- Add fresh mint leaves and sauté for a minute.  
+- Add fresh mint leaves and saute for a minute.  
 
 ### Step 5: Combine and Cook  
 - Add the spice paste to the pan, mix well.  
@@ -141,7 +150,6 @@ Vadakari is a beloved South Indian side dish known for pairing beautifully with 
 
 - Vegetable vadakari: add carrots, beans, drumsticks  
 - Coconut milk version: substitute some water with coconut milk  
-- Protein boost: add boiled eggs or paneer pieces  
 - Regional variations: each South Indian state has unique touches  
 
 ---
@@ -162,6 +170,10 @@ Packed with plant-based protein, fiber, and essential nutrients. Naturally glute
 ---
 
 Enjoy the comforting and exciting flavors of this traditional Vadakari — a beloved South Indian classic that’s sure to become your family favorite!
+
+
+---
+
 
 
 
