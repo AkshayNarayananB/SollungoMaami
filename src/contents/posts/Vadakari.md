@@ -16,6 +16,9 @@ Vada Curry is a beloved South Indian side dish known for pairing beautifully wit
 
 ---
 
+![paruppuusili](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vadacurry.png)
+
+---
 ## 🌿 Health Benefits
 
 **Chana Dal (Split Chickpeas):**  
