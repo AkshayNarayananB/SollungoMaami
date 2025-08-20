@@ -5,7 +5,7 @@ description: A timeless South Indian lentil curry bursting with flavors from roa
 tags: [side dish]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702101/vadacurry.png"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vadacurry.png"   
 
 ---
 
