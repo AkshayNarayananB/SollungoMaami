@@ -2,7 +2,7 @@
 title: Thirupullabhoothangudi Valvil Ramar Temple  
 published: 2025-08-20  
 description: One of the 108 Divya Desams near Kumbakonam, where Lord Rama rests in a rare reclining form, commemorating the divine episode of Jatayu Moksham.  
-tags: [Temple, Kumbakonam, Divya Desam, Lord Rama, Travel]  
+tags: [Temple, Kumbakonam, Divya Desam]  
 category: Travel & Culture  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar.png"  
