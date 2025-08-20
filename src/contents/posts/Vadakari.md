@@ -6,6 +6,7 @@ tags: [side dish]
 category: Recipe  
 draft: false  
 image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702101/vadacurry.png"  
+
 ---
 
 # 🍲 Vada Curry (South Indian Spiced Lentil Curry)
@@ -16,7 +17,7 @@ Vada Curry is a beloved South Indian side dish known for pairing beautifully wit
 
 ---
 
-![paruppuusili](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vadacurry.png)
+![vadacurry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vadacurry.png)
 
 ---
 ## 🌿 Health Benefits
