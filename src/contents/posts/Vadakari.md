@@ -2,17 +2,17 @@
 title: Vadakari (South Indian Spiced Lentil Curry)
 published: 2025-01-01
 description: A timeless South Indian lentil curry bursting with flavors from roasted spices, coconut, and fresh herbs. Perfect with dosa, idiyappam, or rice.  
-tags: [south indian side dish]  
+tags: [side dish]  
 category: Recipe  
 draft: false  
-image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702101/vadakari_lentil_curry.jpg"  
+image: "https://res.cloudinary.com/dupwt6i5f/image/upload/v1753702101/vadacurry.png"  
 ---
 
-# 🍲 Vadakari (South Indian Spiced Lentil Curry)
+# 🍲 Vada Curry (South Indian Spiced Lentil Curry)
 
 *"A timeless classic that transforms simple lentils into a feast - the perfect companion for your favorite South Indian breakfast!"*
 
-Vadakari is a beloved South Indian side dish known for pairing beautifully with dosa and idiyappam. Each household has its unique version, reflecting rich family traditions and regional flavors.
+Vada Curry is a beloved South Indian side dish known for pairing beautifully with dosa and idiyappam. Each household has its unique version, reflecting rich family traditions and regional flavors.
 
 ---
 
@@ -20,16 +20,11 @@ Vadakari is a beloved South Indian side dish known for pairing beautifully with 
 
 **Chana Dal (Split Chickpeas):**  
 - High protein for muscle building and repair  
-- Rich in fiber promoting digestion and satiety  
-- Iron-rich, preventing anemia and boosting energy  
-- Low glycemic index helps control blood sugar  
-- Heart healthy with potassium and magnesium  
+- Rich in fiber, Iron-rich, Low glycemic 
 
 **Coconut:**  
 - Healthy fats (MCTs) for brain health  
-- Fiber-rich for digestive wellness  
-- Mineral rich (manganese, copper, selenium)  
-- Natural energy booster  
+- Fiber-rich, Mineral rich, Natural energy booster  
 
 **Spices & Aromatics:**  
 - Turmeric: anti-inflammatory & antioxidant  
@@ -174,7 +169,9 @@ Enjoy the comforting and exciting flavors of this traditional Vadakari — a bel
 
 ---
 
+## 🎥 Video Tutorial  
 
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/Q2b4gGa-_PE?si=DE3i9eAgnOG6fGiZ) 
 
 
 
