@@ -121,3 +121,6 @@ The temple is open daily for devotees during the following hours:
 🌇 Evening: 5:00 PM – 8:00 PM
 
 ---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/f_V0RqwqW3I?si=O2E6FngqG3vMq_qe)
