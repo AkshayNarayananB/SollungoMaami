@@ -13,7 +13,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ A sacred shrine near Kumbakonam where Lord Rama grants darshan in a unique reclining posture, blessing devotees with peace, prosperity, and ancestral relief. ✨  
 
-![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar.png)
+![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar1.png)
 
 ---
 
@@ -34,6 +34,9 @@ Since Sita was not present, **Bhumadevi** (Goddess Earth) manifested from a gold
 
 ---
 
+![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar2.png)
+
+---
 ## 🛕 Deity & Iconography  
 
 - **Main Deity:** *Valvil Ramar* (a reclining form of Lord Rama).  
@@ -58,6 +61,10 @@ Since Sita was not present, **Bhumadevi** (Goddess Earth) manifested from a gold
 - Mandapam (Halls)
 - Prakaram (Corridors)
 - Temple Tanks (Theertham)
+
+---
+
+![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar3.png)
 
 ---
 
