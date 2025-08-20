@@ -51,6 +51,16 @@ Since Sita was not present, **Bhumadevi** (Goddess Earth) manifested from a gold
 
 ---
 
+🏛️ Key Characteristics of Dravidian Architecture (Dravidian style = pyramid-shaped vimanas, tall gopurams, pillared halls, temple tanks, and richly carved stone structures — all part of South Indian temple architecture.)
+- Gopuram (Gateway Tower)
+- Vimana (Sanctum Tower)
+- Garbhagriha (Sanctum Sanctorum)
+- Mandapam (Halls)
+- Prakaram (Corridors)
+- Temple Tanks (Theertham)
+
+---
+
 ## ⏰ Temple Timings  
 
 - 🌅 **Morning**: 7:30 AM – 12:00 Noon  
@@ -78,3 +88,4 @@ Daily poojas are performed **six times a day** in the **Pancharatra Agama tradit
 “An ancient Divya Desam where Lord Rama rests in rare form, granting peace and prosperity — a must-visit for spiritual seekers in and around Kumbakonam.”  
 
 ---
+
