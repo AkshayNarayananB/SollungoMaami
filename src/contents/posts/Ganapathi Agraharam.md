@@ -2,7 +2,7 @@
 title: Ganapathi Agraharam Temple, Papanasam  
 published: 2025-08-20  
 description: A sacred village temple in Thanjavur where traditions, legends, and unique Vinayagar Chaturthi celebrations bring the community together.  
-tags: [Temple, Thanjavur, Tradition, Culture, Vinayagar Chaturthi]  
+tags: [Temple, Thanjavur]  
 category: Travel & Culture  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam.png"  
