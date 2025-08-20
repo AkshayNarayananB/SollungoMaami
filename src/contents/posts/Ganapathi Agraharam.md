@@ -13,7 +13,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ A divine abode where history, legends, and rituals keep the cultural heartbeat of the Agrahara alive. ✨  
 
-![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam.png)
+![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam1.png)
 
 ---
 
@@ -32,7 +32,9 @@ Unlike other places where people worship individual Ganesha idols during **Vinay
 💫 **Legend says**: Once when someone prepared *kozhukattai* for a separate idol, the neivedyam transformed into **scorpions** — believed to be a result of breaking the temple’s **niyamanam (rule of practice).**  
 
 ---
+![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam3.png)
 
+---
 ## 📜 Temple History  
 
 - The origins of this sacred shrine trace back to the great Sage Agastya**, who first installed the deity here.
@@ -42,6 +44,9 @@ Unlike other places where people worship individual Ganesha idols during **Vinay
 
 ---
 
+![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam4.png)
+
+---
 ## 🐍 Sarpa Vinayakar  
 
 During preparations for a **Kumbabhishekam (Samprokshanam)**, workers cleaning the sanctum heard a snake’s hiss. Ignoring it, one fell sick with a fever that resisted all remedies.  
@@ -64,6 +69,9 @@ When villagers suffered from hunger and illness, **Periyava** advised them to do
 
 ---
 
+![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam2.png)
+
+---
 ## 🥟 Kozhukattai Neivedyam  
 
 The main offering for Pillaiyar here is **kozhukattai** of many varieties.  
