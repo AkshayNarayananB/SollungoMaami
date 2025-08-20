@@ -11,9 +11,9 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 # Karuppu Kavuni Arisi Dosai Recipe | Healthy South Indian Breakfast  
 
-“Enjoy a wholesome, traditional breakfast with the nutty aroma and rich flavor of Karuppu Kavuni Arisi Dosai!”  
+“✨ Crispy edges, soft inside, and naturally fermented — the timeless goodness of Karuppu Kavuni Arisi Dosai! ✨” 
 
-This dosa combines **black Kavuni rice** with **idli rice and urad dal**, creating a naturally fermented batter that is both nutritious and flavorful. Perfect for breakfast or as a light snack, it is high in fiber, iron, and antioxidants.  
+✨ Karuppu Kavuni Arisi Dosai is a wholesome South Indian breakfast that brings together the nutty aroma of black Kavuni rice and the soft texture of idli rice. Naturally fermented to perfection, this dosa is not only light and crispy but also rich in nutrients — packed with fiber, iron, and antioxidants. Loved in Agraharam kitchens for generations, it’s a perfect blend of taste, tradition, and health that can turn any morning into a comforting feast. 
 
 ![kavunidosai](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kavunidosai.png)  
 
@@ -80,6 +80,9 @@ This dosa combines **black Kavuni rice** with **idli rice and urad dal**, creati
 
 ---
 
+“✨ Traditional, nutritious, and irresistibly tasty — Karuppu Kavuni Arisi Dosai! ✨”
+
+---
 ## Video Tutorial  
 
 [![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)]()
