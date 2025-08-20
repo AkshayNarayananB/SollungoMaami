@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-// Generate slug
+// Generate slug for this post
 const slug = IdToSlug(entry.id);
 
 // Conditionally set the license and banner image props
@@ -35,10 +35,12 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
   author={entry.data.author}
   sourceLink={entry.data.sourceLink}
 >
+  <!-- Hidden title for Pagefind search indexing -->
   <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
     {entry.data.title}
   </div>
 
+  <!-- Post content -->
   <div data-pagefind-body>
     <Content />
   </div>
@@ -48,22 +50,25 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
     <h2 class="text-xl font-bold mb-4">Comments</h2>
 
     <div id="disqus_thread"></div>
-    <script>
-      /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      */
+
+    <script type="module" is:inline>
+      // Pass slug to Disqus
+      const disqusSlug = '{slug}';
+      const disqusURL = `https://sollungomaami.vercel.app/posts/${disqusSlug}`;
+
       var disqus_config = function () {
-        this.page.url = `https://sollungomaami.vercel.app/posts/${slug}`;  // Dynamic URL
-        this.page.identifier = slug; // Unique ID per post
+        this.page.url = disqusURL;           // Post URL
+        this.page.identifier = disqusSlug;   // Unique identifier per post
       };
 
-      (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
+      (function() {
+        const d = document, s = d.createElement('script');
         s.src = 'https://sollungomaami.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
     </script>
+
     <noscript>
       Please enable JavaScript to view the 
       <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
