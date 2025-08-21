@@ -45,13 +45,13 @@ Murungai Keerai (drumstick leaves) is one of the most powerful superfoods in tra
 
 2. **🥘 Prepare the Base**  
    - Heat ghee in a soup pan.  
-   - Add black pepper + cumin seeds, sauté for few seconds.  
-   - Add garlic, sauté until raw smell fades.  
-   - Add chopped onions, sauté until translucent.  
+   - Add black pepper + cumin seeds, saute for few seconds.  
+   - Add garlic, saute until raw smell fades.  
+   - Add chopped onions, saute until translucent.  
    - Add tomatoes and cook until mushy.  
 
 3. **🥒 Add Drumsticks & Greens**  
-   - Add drumstick pieces, sauté briefly.  
+   - Add drumstick pieces, saute briefly.  
    - Add drumstick leaves, mix well.  
    - Pour sufficient water and cook until leaves are fully done.  
 
@@ -83,7 +83,6 @@ Murungai Keerai (drumstick leaves) is one of the most powerful superfoods in tra
 ## 🍽️ Serving Suggestions  
 
 - Best enjoyed **as a warm evening soup 🥣**.  
-- Can also be poured over **hot steamed rice 🍚** with a dollop of ghee.  
 
 ---
 
