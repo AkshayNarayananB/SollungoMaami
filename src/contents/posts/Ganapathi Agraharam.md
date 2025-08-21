@@ -5,7 +5,7 @@ description: A sacred village temple in Thanjavur where traditions, legends, and
 tags: [Temple, Thanjavur]  
 category: Travel & Culture  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam.png"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam.jpg"  
 
 ---
 
@@ -13,7 +13,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ A divine abode where history, legends, and rituals keep the cultural heartbeat of the Agrahara alive. ✨  
 
-![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam1.png)
+![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam1.jpg)
 
 ---
 
@@ -32,7 +32,7 @@ Unlike other places where people worship individual Ganesha idols during **Vinay
 💫 **Legend says**: Once when someone prepared *kozhukattai* for a separate idol, the neivedyam transformed into **scorpions** — believed to be a result of breaking the temple’s **niyamanam (rule of practice).**  
 
 ---
-![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam3.png)
+![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam3.jpg)
 
 ---
 ## 📜 Temple History  
@@ -44,7 +44,7 @@ Unlike other places where people worship individual Ganesha idols during **Vinay
 
 ---
 
-![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam4.png)
+![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam4.jpg)
 
 ---
 ## 🐍 Sarpa Vinayakar  
@@ -69,7 +69,7 @@ When villagers suffered from hunger and illness, **Periyava** advised them to do
 
 ---
 
-![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam2.png)
+![ganapathiagraharam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ganapathiagraharam2.jpg)
 
 ---
 ## 🥟 Kozhukattai Neivedyam  
