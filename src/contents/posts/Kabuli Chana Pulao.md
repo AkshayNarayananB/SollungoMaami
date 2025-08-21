@@ -96,7 +96,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## 🍽️ Serving Suggestions  
 
-- Serve hot with **onion raita 🥒, papad, or pickle 🍋**.  
+- Serve hot with **onion raita , papad, or pickle **.  
 - Pairs well with a simple curry or as a standalone meal.  
 
 ---
