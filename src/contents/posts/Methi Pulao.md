@@ -5,7 +5,7 @@ description: ✨ “The magic of methi leaves blended with rice, spices, and veg
 tags: [ Rice, One-Pot]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/methipulao.png"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/methipulao.jpg"  
 ---
 
 # 🌿 Methi Pulao Recipe | Fenugreek Veggie Rice  
@@ -17,7 +17,7 @@ Unlike regular pulao, this recipe balances the slight bitterness of fenugreek wi
 
 ---
 
-![methipulao](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/methipulao.png)  
+![methipulao](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/methipulao.jpg)  
 
 ---
 
