@@ -47,7 +47,7 @@ Vazhaithandu (banana stem) is a traditional South Indian superfood, rich in fibe
    - Heat oil in a soup pan.  
    - Add ginger and garlic; saute until raw smell disappears.  
    - Add black pepper, cumin, and green chili; saute for 1 minute.  
-   - Add onions; sauté until translucent.  
+   - Add onions; saute until translucent.  
    - Add turmeric powder and mix well.  
 
 3. **🥤 Cook Banana Stem**  
@@ -81,7 +81,6 @@ Vazhaithandu (banana stem) is a traditional South Indian superfood, rich in fibe
 ## 🍽️ Serving Suggestions  
 
 - Best enjoyed **as a warm, detoxifying soup 🥣**.  
-- Can be paired with steamed rice or eaten on its own.  
 
 ---
 
