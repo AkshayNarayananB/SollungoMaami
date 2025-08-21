@@ -102,3 +102,6 @@ This rice is a great choice for **lunchboxes 🍱, quick weekday meals 🍲, or 
 👉 *Karuveppilai Sadam is not just tasty but also a nutritious, traditional South Indian rice dish that brings health and flavor together in every bite.*  
 
 ---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/HuMz6D2RZuA?si=4_7NhqW7KdJ_QjUU)
