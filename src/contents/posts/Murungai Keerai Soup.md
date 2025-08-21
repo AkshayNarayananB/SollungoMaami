@@ -105,3 +105,6 @@ Murungai Keerai (drumstick leaves) is one of the most powerful superfoods in tra
 👉 *Murungai Keerai Soup is not just a comforting traditional recipe, but also a powerhouse of nutrition and immunity — a must-try for wholesome health.*  
 
 ---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/WU-d33EASuk?si=ShWv5IyYEI-cGM4_)
