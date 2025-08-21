@@ -5,7 +5,7 @@ description: One of the 108 Divya Desams near Kumbakonam, where Lord Rama rests 
 tags: [Temple, Kumbakonam, Divya Desam]  
 category: Travel & Culture  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar.png"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar.jpg"  
 
 ---
 
@@ -13,7 +13,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ A sacred shrine near Kumbakonam where Lord Rama grants darshan in a unique reclining posture, blessing devotees with peace, prosperity, and ancestral relief. ✨  
 
-![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar1.png)
+![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar1.jpg)
 
 ---
 
@@ -34,7 +34,7 @@ Since Sita was not present, **Bhumadevi** (Goddess Earth) manifested from a gold
 
 ---
 
-![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar2.png)
+![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar2.jpg)
 
 ---
 ## 🛕 Deity & Iconography  
@@ -64,7 +64,7 @@ Since Sita was not present, **Bhumadevi** (Goddess Earth) manifested from a gold
 
 ---
 
-![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar3.png)
+![valvilramar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/valvilramar3.jpg)
 
 ---
 
