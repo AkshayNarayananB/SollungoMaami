@@ -1,8 +1,8 @@
 ---
 title: Murungai Keerai Soup  
 published: 2025-08-20  
-description: ✨ A wholesome, immunity-boosting soup made with drumstick leaves, drumsticks, dal, and spices — comforting, nourishing, and deeply traditional! ✨  
-tags: [ Soup, Healthy, South Indian ]  
+description: ✨ “Wholesome, hearty, and power-packed — Murungai Keerai Soup for strength in every sip.” ✨  
+tags: [ Soup]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/murungaikeeraisoup.png"  
@@ -12,8 +12,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ *“A warm, nutritious, and immunity-boosting soup that blends the goodness of drumstick leaves, dal, and spices — perfect for both health and taste!”* ✨  
 
-Murungai Keerai Soup (Drumstick Leaves Soup) is a **traditional South Indian healthy soup** made with **drumstick leaves 🌿, fresh drumsticks 🥒, dal 🫘, and aromatic spices 🌸**.  
-This soup is light yet filling, packed with essential vitamins, minerals, and protein. It is often enjoyed as a **healing home remedy** for colds, fatigue, and to improve overall strength. With its rich aroma of ghee and pepper, this soup is both comforting and deeply nourishing — a perfect blend of **taste and wellness in a bowl**.  
+Murungai Keerai (drumstick leaves) is one of the most powerful superfoods in traditional South Indian cooking. Known as the “powerhouse of nutrients,” these tiny green leaves are packed with iron, calcium, antioxidants, and vitamins that strengthen the body and boost immunity. In Tamil homes, murungai keerai is often turned into comforting recipes like soups, kootu, poriyal, and adai, making it both healthy and delicious. Murungai Keerai Soup, in particular with its rich aroma of ghee and pepper, is a light, comforting  deeply nourishing and healing dish — perfect for sipping warm on a cool evening or when you need a natural boost of energy.  
 
 ---
 
