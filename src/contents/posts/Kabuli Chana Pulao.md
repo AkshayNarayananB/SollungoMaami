@@ -89,7 +89,8 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 - ✅ Soaking chana overnight ensures even cooking.  
 - ✅ Use chana cooking water for added flavor and nutrients.  
-- ✅ Resting after cooking makes rice grains fluffy and non-sticky.  
+- ✅ Resting after cooking makes rice grains fluffy and non-sticky.
+- ✅ Can also add cashews for extra richness. 
 
 ---
 
