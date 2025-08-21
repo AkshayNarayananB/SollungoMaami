@@ -53,18 +53,18 @@ This rice is a great choice for **lunchboxes 🍱, quick weekday meals 🍲, or 
 
 ### Step 1 – Prepare Karuveppilai Thogayal  
 1. Heat oil in a kadai, fry urad dal until light brown.  
-2. Add dry red chilies and sauté for 2 minutes.  
+2. Add dry red chilies and saute for 2 minutes.  
 3. Add curry leaves and roast well on medium flame for 10–15 minutes until crisp. (Important for long shelf life).  
-4. Add hing, sauté for a second.  
-5. Add tamarind, coconut, and coriander leaves, sauté briefly, and switch off flame.  
+4. Add hing, saute for a second.  
+5. Add tamarind, coconut, and coriander leaves, saute briefly, and switch off flame.  
 6. Once cooled, grind with salt and jaggery into a slightly coarse paste using very little water.  
 
 ### Step 2 – Mix with Rice  
 1. Spread cooked rice on a plate, drizzle a little sesame oil, and let it cool to room temperature.  
 2. In a kadai, heat oil, splutter mustard seeds.  
 3. Add urad dal, chana dal, and groundnuts; fry until golden brown.  
-4. Add hing and red chilies, sauté briefly.  
-5. Add prepared **karuveppilai thogayal** and sauté well with tempering.  
+4. Add hing and red chilies, saute briefly.  
+5. Add prepared **karuveppilai thogayal** and saute well with tempering.  
 6. Add cooled rice, loosen lumps with hand if needed, and mix gently.  
 7. Adjust salt and finish with 1 tsp ghee for extra flavor.  
 
