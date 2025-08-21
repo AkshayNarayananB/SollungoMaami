@@ -1,7 +1,7 @@
 ---
 title: Methi Pulao  
 published: 2025-08-20  
-description: ✨ A fragrant one-pot pulao enriched with the goodness of fresh fenugreek leaves, wholesome veggies, and toasted bread for a unique crunch! ✨  
+description: ✨ “The magic of methi leaves blended with rice, spices, and veggies — a one-pot wonder packed with flavor and nutrition!” ✨
 tags: [ Rice, One-Pot]  
 category: Recipe  
 draft: false  
@@ -14,7 +14,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 Methi Pulao is a hearty and flavorful rice dish made with **fresh methi leaves 🌿, mixed vegetables 🥕🥔🫘, aromatic spices 🌸, and toasted bread cubes 🍞**.  
 Unlike regular pulao, this recipe balances the slight bitterness of fenugreek with the sweetness of vegetables and the fragrance of basmati rice.  
-The toasted bread pieces absorb the flavors of the rice, giving a delightful bite in every spoonful.  
+The toasted bread pieces absorb the flavors of the rice, giving a delightful bite in every spoonful. Perfect for lunch, dinner, or even lunchbox meals, this dish is tasty, filling, and nourishing. 
 
 ---
 
