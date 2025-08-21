@@ -65,8 +65,8 @@ Unlike regular pulao, this recipe balances the slight bitterness of fenugreek wi
 
 3. **🥘 Prepare the Masala Base**  
    - Heat oil + ghee in a kadai.  
-   - Add bay leaf, cloves, cinnamon, and green chili. Sauté for a minute.  
-   - Add sliced onion and sauté until translucent.  
+   - Add bay leaf, cloves, cinnamon, and green chili. Saute for a minute.  
+   - Add sliced onion and saute until translucent.  
    - Add ginger-garlic paste and cook until raw smell disappears.  
    - Add methi leaves, sauté until they shrink and soften.  
 
