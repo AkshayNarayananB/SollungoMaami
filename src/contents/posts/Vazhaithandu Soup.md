@@ -5,7 +5,7 @@ description: ✨ “A healthy, comforting, and nutrient-packed soup that blends 
 tags: [ Soup ]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/bananasoup.png"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/bananasoup.jpg"
 ---
 
 # 🍲 Vazhaithandu Soup | Banana Stem Soup  
@@ -16,7 +16,7 @@ Vazhaithandu (banana stem) is a traditional South Indian superfood, rich in fibe
 
 ---
 
-![banana_stem_soup](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/bananasoup.png)
+![banana_stem_soup](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/bananasoup.jpg)
 
 ---
 
