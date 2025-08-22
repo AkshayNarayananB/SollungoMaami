@@ -12,7 +12,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ *“Where tangy tamarind, earthy brinjals, and bold spices come together for a comforting curry!”* ✨  
 
-Brinjal Masala is a flavorful South Indian-style curry that combines the softness of brinjals with the tang of tamarind, the sweetness of jaggery, and the richness of freshly ground spices. It’s a rustic dish that balances spice, tang, and a touch of sweetness — making it perfect with hot steamed rice, chapati, or dosa.  
+🍆 Brinjal Masala (Kathirikai Masala Curry) is a hearty South Indian dish that transforms the humble brinjal into a flavor-packed delicacy. Simmered with tangy tamarind pulp, aromatic spices, and a touch of jaggery for balance, this curry offers the perfect blend of spicy, tangy, and slightly sweet notes. Whether served with hot rice, roti, or dosa, it’s a comforting dish that brings traditional home-style cooking to your table.  
 
 ---
 ![brinjalmasala](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjalmasala.png)  
@@ -115,3 +115,8 @@ Brinjal Masala is a flavorful South Indian-style curry that combines the softnes
 - Jaggery is a healthier sweetener rich in minerals  
 
 ---
+“Simple brinjals, bold South Indian flavors.”
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/w_3FRmCrQgs?si=v-Jv4TlgmPNHhtwF)
