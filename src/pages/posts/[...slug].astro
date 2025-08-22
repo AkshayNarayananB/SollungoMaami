@@ -51,24 +51,27 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
 
   <div id="disqus_thread"></div>
 
-   <script is:inline>
-  var disqus_config = function () {
-    this.page.url = `https://www.sollungomaami.com/posts/${Astro.props.entry.data.slug}`;
-    this.page.identifier = Astro.props.entry.data.slug;
-  };
+  <script is:inline>
+    // Get the slug directly from the URL parameters
+    const slug = Astro.params.slug;
 
-  console.log("🔍 Disqus config:", {
-    url: `https://www.sollungomaami.com/posts/${Astro.props.entry.data.slug}`,
-    id: Astro.props.entry.data.slug
-  });
+    var disqus_config = function () {
+      this.page.url = `https://www.sollungomaami.com/posts/${slug}`;
+      this.page.identifier = slug;
+    };
 
-  (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://sollungomaami.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
+    console.log("🔍 Disqus config:", {
+      url: `https://www.sollungomaami.com/posts/${slug}`,
+      id: slug
+    });
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://sollungomaami.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
 
   <noscript>
     Please enable JavaScript to view the 
