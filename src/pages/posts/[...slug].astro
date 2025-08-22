@@ -52,20 +52,23 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
   <div id="disqus_thread"></div>
 
   <script is:inline>
-    var disqus_config = function () {
-      // IMPORTANT: these must be unique per post
-      this.page.url = "https://www.sollungomaami.com/posts/${slug}";
-      this.page.identifier = "${slug}";
-      console.log("Disqus slug:", "${slug}");
-    };
+  var disqus_config = function () {
+    this.page.url = "https://www.sollungomaami.com/posts/{slug}";
+    this.page.identifier = "{slug}";
+  };
 
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://sollungomaami.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
+  console.log("🔍 Disqus config:", {
+    url: "https://www.sollungomaami.com/posts/{slug}",
+    id: "{slug}"
+  });
+
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://sollungomaami.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
 
   <noscript>
     Please enable JavaScript to view the 
