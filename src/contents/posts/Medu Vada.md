@@ -2,7 +2,7 @@
 title: Perfect Medu Vada  
 published: 2025-07-28  
 description: A crispy golden South Indian snack that's fluffy on the inside and crunchy on the outside — a beloved classic perfect for breakfast or evening tea!  
-tags: [South Indian, Snack, Festival]  
+tags: [South Indian, Snacks, Festival]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/meduvada.png" 
