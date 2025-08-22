@@ -18,23 +18,6 @@ This Cauliflower Sabzi is a simple yet flavorful North Indian-style curry where 
 ![cauliflowersabzi](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/cauliflowersabzi.png)  
 ---
 
-## 🌿 Health Benefits  
-
-### Cauliflower  
-- Rich in Vitamin C, Vitamin K, and folate  
-- High in fiber — supports digestion and weight management  
-
-
-### Yogurt (Curd)  
-- Good source of protein and calcium  
-- Contains probiotics for gut health  
-
-### Kasuri Methi (Dried Fenugreek Leaves)  
-- Aids digestion and boosts metabolism  
-- Helps regulate blood sugar levels  
-
----
-
 ## 🛒 Ingredients  
 
 ### For Marination:  
@@ -115,6 +98,21 @@ This Cauliflower Sabzi is a simple yet flavorful North Indian-style curry where 
 - **Aloo Gobi Sabzi:** Add boiled potatoes along with cauliflower  
 - **Creamy Cauliflower Curry:** Add cashew paste or fresh cream for a gravy version  
 - **Vegan Option:** Replace yogurt with cashew or coconut yogurt  
+
+## 🌿 Health Benefits  
+
+### Cauliflower  
+- Rich in Vitamin C, Vitamin K, and folate  
+- High in fiber — supports digestion and weight management  
+
+
+### Yogurt (Curd)  
+- Good source of protein and calcium  
+- Contains probiotics for gut health  
+
+### Kasuri Methi (Dried Fenugreek Leaves)  
+- Aids digestion and boosts metabolism  
+- Helps regulate blood sugar levels  
 
 ---
 ✨ “Light on the tummy, rich on flavor — your perfect weekday sabzi.” ✨
