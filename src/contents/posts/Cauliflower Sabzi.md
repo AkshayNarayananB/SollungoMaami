@@ -2,7 +2,7 @@
 title: Cauliflower Sabzi | Spiced & Flavorful Dry Curry  
 published: 2025-08-22  
 description: A wholesome and aromatic cauliflower sabzi marinated in yogurt and Indian spices, sautéed with onions, and finished with kasuri methi — perfect with roti or rice.  
-tags: [North Indian side dish, Cauliflower Curry, Vegetarian]  
+tags: [Sabzi]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/cauliflowersabzi.png"  
