@@ -2,7 +2,7 @@
 title: Cabbage Pakoda | No Onion No Garlic  
 published: 2025-08-22  
 description: Crispy golden pakodas made with shredded cabbage, besan, rice flour, and spices — a perfect tea-time snack without onion and garlic.  
-tags: [Snacks, Pakoda, Tea-time, Vegetarian]  
+tags: [Snacks, Indian Street Food, No onion no garlic]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/cabbagepakoda.png"  
