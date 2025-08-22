@@ -51,15 +51,15 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
 
   <div id="disqus_thread"></div>
 
-    <script is:inline>
+   <script is:inline>
   var disqus_config = function () {
-    this.page.url = `https://www.sollungomaami.com/posts/${"<%= slug %>"}`;
-    this.page.identifier = `<%= slug %>`;
+    this.page.url = `https://www.sollungomaami.com/posts/${Astro.props.entry.data.slug}`;
+    this.page.identifier = Astro.props.entry.data.slug;
   };
 
   console.log("🔍 Disqus config:", {
-    url: `https://www.sollungomaami.com/posts/${"<%= slug %>"}`,
-    id: `<%= slug %>`
+    url: `https://www.sollungomaami.com/posts/${Astro.props.entry.data.slug}`,
+    id: Astro.props.entry.data.slug
   });
 
   (function() { // DON'T EDIT BELOW THIS LINE
@@ -68,7 +68,7 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();
-  </script>
+</script>
 
   <noscript>
     Please enable JavaScript to view the 
