@@ -12,7 +12,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ *“Crispy, crunchy, and masala-coated — a perfect tea-time delight with every bite!”* ✨  
 
-Cabbage Pakoda is a crispy South Indian-style snack made without onion and garlic, perfect for fasting days, festive times, or when you want a light yet satisfying treat. The shredded cabbage binds beautifully with besan, rice flour, and spices to create crunchy golden pakoras that pair wonderfully with a hot cup of tea or coffee. Simple to prepare, these pakodas are a comfort snack that never fails to impress!  
+🥬 Cabbage Pakoda is a crunchy, golden fried snack that turns humble cabbage into a tea-time superstar. Made without onion and garlic, it’s a festive-friendly treat that’s light, crisp, and full of flavor. The shredded cabbage binds beautifully with besan, rice flour, and spices to create rustic, crunchy fritters that pair perfectly with hot chai or coffee. Whether for a rainy evening, a family get-together, or a quick snack craving, these pakodas are comfort food at its best!
 
 ---
 ![cabbagepakoda](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/cabbagepakoda.png)  
