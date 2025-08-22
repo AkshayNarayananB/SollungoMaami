@@ -2,7 +2,7 @@
 title: Zucchini Fritters Recipe - Crispy & Healthy Snack  
 published: 2025-07-28  
 description: Turn simple veggies into extraordinary bites — crispy outside, tender inside, and loved by all! Perfect for breakfast or an evening snack, these fritters combine zucchini, carrots, and aromatic spices for a delicious and healthy treat.  
-tags: [Snack,Gluten-Free]  
+tags: [Snacks,Gluten-Free]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/zucchini.png" 
