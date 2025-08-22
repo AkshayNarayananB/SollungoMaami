@@ -104,3 +104,7 @@ Cabbage Pakoda is a crispy South Indian-style snack made without onion and garli
 ✨ “Crisp, crunchy, and soul-satisfying — pakodas made healthier with cabbage!” ✨
 
 ---
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/o_UkoV1Zk2M?si=WrloDzaIGhNK4zZf)
