@@ -51,14 +51,14 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
 
     <div id="disqus_thread"></div>
 
-    <script type="module" is:inline>
+    <script is:inline>
       // Pass slug to Disqus
-      const disqusSlug = '{slug}';
-      const disqusURL = `https://sollungomaami.vercel.app/posts/${disqusSlug}`;
+      const disqusSlug = "${slug}";
+      const disqusURL = "https://sollungomaami.vercel.app/posts/${slug}";
 
       var disqus_config = function () {
-        this.page.url = disqusURL;           // Post URL
-        this.page.identifier = disqusSlug;   // Unique identifier per post
+        this.page.url = disqusURL;          // Post URL
+        this.page.identifier = disqusSlug;  // Unique identifier per post
       };
 
       (function() {
