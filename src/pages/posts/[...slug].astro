@@ -46,32 +46,29 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
   </div>
 
   <!-- Disqus Comments -->
-  <section class="mt-10">
-    <h2 class="text-xl font-bold mb-4">Comments</h2>
+<section class="mt-10">
+  <h2 class="text-xl font-bold mb-4">Comments</h2>
 
-    <div id="disqus_thread"></div>
+  <div id="disqus_thread"></div>
 
-    <script is:inline>
-      // Pass slug to Disqus
-      const disqusSlug = "${slug}";
-      const disqusURL = "https://sollungomaami.vercel.app";
+  <script is:inline>
+    var disqus_config = function () {
+      // IMPORTANT: these must be unique per post
+      this.page.url = "https://sollungomaami.vercel.app/posts/${slug}";
+      this.page.identifier = "${slug}";
+    };
 
-      var disqus_config = function () {
-        this.page.url = disqusURL;          // Post URL
-        this.page.identifier = disqusSlug;  // Unique identifier per post
-      };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://sollungomaami.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
 
-      (function() {
-        const d = document, s = d.createElement('script');
-        s.src = 'https://sollungomaami.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
-
-    <noscript>
-      Please enable JavaScript to view the 
-      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>
-  </section>
+  <noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</section>
 </PostLayout>
