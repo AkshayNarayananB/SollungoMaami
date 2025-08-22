@@ -12,8 +12,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ *“Where Indo-Chinese meets Indian masalas — a fiery, crunchy, saucy noodle dish that’s pure street-food magic!”* ✨  
 
-These Spicy Indian-Style Noodles are the perfect fusion dish — combining the saucy flavors of Indo-Chinese cuisine with the punch of Indian spices. Loaded with crunchy vegetables, sambar masala, pav bhaji masala, and a hint of vinegar, this quick stir-fry is a true crowd-pleaser. Perfect for weeknight dinners or when you’re craving street-style comfort food at home!  
-
+🍜 Spicy Indian-Style Noodles are the perfect blend of Indo-Chinese street food and bold Indian masalas. Loaded with crunchy vegetables, tossed in soy, tomato, and vinegar, and spiced up with sambar powder and pav bhaji masala, these noodles are fiery, tangy, and absolutely irresistible. Quick to make and packed with flavors, it’s a favorite comfort food for kids and adults alike — perfect for weeknight dinners, party menus, or when those desi street food cravings strike!
 ---
 ![indian_noodles](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/indian_noodles.png)  
 ---
@@ -123,6 +122,8 @@ These Spicy Indian-Style Noodles are the perfect fusion dish — combining the s
 - Black pepper — boosts metabolism and immunity  
 - Soy sauce & vinegar — bring a tangy, umami punch  
 
+---
+✨ “Desi tadka meets street-style noodles — spicy, saucy, and soul-satisfying!” ✨
 ---
 ## Video Tutorial
 
