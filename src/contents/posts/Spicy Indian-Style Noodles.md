@@ -18,24 +18,6 @@ These Spicy Indian-Style Noodles are the perfect fusion dish — combining the s
 ![indian_noodles](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/indian_noodles.png)  
 ---
 
-## 🌿 Health Benefits  
-
-### Vegetables (Carrot, Beans, Cabbage, Capsicum)  
-- High in dietary fiber — supports digestion  
-- Rich in vitamins A, C, and antioxidants  
-- Low in calories, keeps meals light yet filling  
-
-### Noodles  
-- Instant source of energy (carbs for fuel)  
-- When paired with veggies, becomes a balanced one-pot meal  
-
-### Spices & Sauces  
-- Sambar powder & garam masala — aid digestion and add warmth  
-- Black pepper — boosts metabolism and immunity  
-- Soy sauce & vinegar — bring a tangy, umami punch  
-
----
-
 ## 🛒 Ingredients  
 
 ### Main Ingredients:  
@@ -125,3 +107,23 @@ These Spicy Indian-Style Noodles are the perfect fusion dish — combining the s
 - **Schezwan Noodles:** Replace tomato sauce with schezwan chutney for fiery flavor  
 
 ---
+## 🌿 Health Benefits  
+
+### Vegetables (Carrot, Beans, Cabbage, Capsicum)  
+- High in dietary fiber — supports digestion  
+- Rich in vitamins A, C, and antioxidants  
+- Low in calories, keeps meals light yet filling  
+
+### Noodles  
+- Instant source of energy (carbs for fuel)  
+- When paired with veggies, becomes a balanced one-pot meal  
+
+### Spices & Sauces  
+- Sambar powder & garam masala — aid digestion and add warmth  
+- Black pepper — boosts metabolism and immunity  
+- Soy sauce & vinegar — bring a tangy, umami punch  
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/dgE3zQ8TY8Q?si=FL6r3apYDCRFd5_6)
