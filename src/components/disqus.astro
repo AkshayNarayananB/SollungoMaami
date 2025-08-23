@@ -4,21 +4,22 @@ export interface Props {
 }
 
 const { slug } = Astro.props;
-const DISQUS_SHORTNAME = "sollungomaami"; // <-- **Check this value!**
-const disqus_config = `
-  var disqus_config = function () {
-    this.page.url = '${Astro.url.origin}/${slug}';
-    this.page.identifier = '${slug}';
-  };
-`;
+const DISQUS_SHORTNAME = "sollungomaami"; 
 ---
 <script>
-  {disqus_config}
+  var disqus_config = function () {
+    this.page.url = `${Astro.url.origin}/${slug}`;
+    this.page.identifier = `${slug}`;
+  };
+</script>
+
+<div id="disqus_thread"></div>
+
+<script>
   (function() {
     var d = document, s = d.createElement('script');
-    s.src = 'https://' + DISQUS_SHORTNAME + '.disqus.com/embed.js';
+    s.src = `https://${DISQUS_SHORTNAME}.disqus.com/embed.js`;
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();
 </script>
-<div id="disqus_thread"></div>
