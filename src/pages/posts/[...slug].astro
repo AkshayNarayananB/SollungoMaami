@@ -52,11 +52,18 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
       data-page-id={slug}
       data-page-url={pageUrl}
       data-page-title={entry.data.title}
-      data-theme="auto"
     ></div>
     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
     <script>
+      function setCusdisTheme() {
+        const isDarkMode = document.documentElement.classList.contains('dark');
+        const cusdisThread = document.getElementById('cusdis_thread');
+        if (cusdisThread) {
+          cusdisThread.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+        }
+      }
+
       function resizeCusdis() {
         const iframe = document.querySelector('#cusdis_thread iframe');
         if (iframe) {
@@ -66,12 +73,21 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
           });
         }
       }
-
+      
+      // Set the theme on initial page load
+      setCusdisTheme();
       // Initial resize on page load
       resizeCusdis();
-
-      // Listen for a new page load in Astro (for View Transitions)
-      document.addEventListener('astro:page-load', resizeCusdis);
+      
+      // Listen for changes to the `dark` class
+      const observer = new MutationObserver(setCusdisTheme);
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+      
+      // Also handle Astro View Transitions
+      document.addEventListener('astro:page-load', () => {
+        setCusdisTheme();
+        resizeCusdis();
+      });
     </script>
   </section>
 </PostLayout>
