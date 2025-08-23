@@ -54,5 +54,23 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
       data-page-title={entry.data.title}
     ></div>
     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+    <script>
+      function resizeCusdis() {
+        const iframe = document.querySelector('#cusdis_thread iframe');
+        if (iframe) {
+          iframe.addEventListener('load', () => {
+            const scrollHeight = iframe.contentWindow.document.body.scrollHeight;
+            iframe.style.height = `${scrollHeight}px`;
+          });
+        }
+      }
+
+      // Initial resize on page load
+      resizeCusdis();
+
+      // Listen for a new page load in Astro (for View Transitions)
+      document.addEventListener('astro:page-load', resizeCusdis);
+    </script>
   </section>
 </PostLayout>
