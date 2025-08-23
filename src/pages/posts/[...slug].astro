@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import { IdToSlug } from "../../utils/hash";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { render } from "astro:content";
+import Disqus from '../../components/disqus.astro'; // import your Disqus component
 
 export async function getStaticPaths() {
   const postEntries = await getCollection("posts");
@@ -44,40 +45,9 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
     <Content />
   </div>
 
-  <!-- Disqus Comments --><section class="mt-10">
-  <h2 class="text-xl font-bold mb-4">Comments</h2>
-  <div id="disqus_thread"></div>
-
-  <script is:inline>
-    (function() {
-      const slug = "{slug}";
-      const disqusShortname = "sollungomaami";
-
-      // Remove previous embed if it exists (Swup page transitions)
-      const existing = document.getElementById('disqus_thread');
-      if (existing) existing.innerHTML = '';
-
-      // Configure Disqus
-      var disqus_config = function () {
-        this.page.url = "https://www.sollungomaami.com/posts/" + slug;
-        this.page.identifier = slug;
-      };
-
-      // Remove existing script to avoid double loading
-      const oldScript = document.querySelector('script[src*="' + disqusShortname + '.disqus.com/embed.js"]');
-      if (oldScript) oldScript.remove();
-
-      // Load Disqus
-      var d = document, s = d.createElement('script');
-      s.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-
-  <noscript>
-    Please enable JavaScript to view the 
-    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-  </noscript>
-</section>
+  <!-- Disqus Comments -->
+  <section class="mt-10">
+    <h2 class="text-xl font-bold mb-4">Comments</h2>
+    <Disqus slug={slug} /> <!-- Use the Disqus component here -->
+  </section>
 </PostLayout>
