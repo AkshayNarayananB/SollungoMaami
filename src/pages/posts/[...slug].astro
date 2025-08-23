@@ -5,7 +5,6 @@ import PostLayout from "../../layouts/PostLayout.astro";
 import { render } from "astro:content";
 import { Disqus } from 'astro-disqus';
 
-
 export async function getStaticPaths() {
   const postEntries = await getCollection("posts");
   return postEntries.map((entry) => ({
