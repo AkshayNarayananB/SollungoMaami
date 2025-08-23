@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import { IdToSlug } from "../../utils/hash";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { render } from "astro:content";
-import { Disqus } from 'astro-disqus';
 
 export async function getStaticPaths() {
   const postEntries = await getCollection("posts");
@@ -25,13 +24,6 @@ const licenseProp = entry.data.licenseName
   : undefined;
 
 const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.image;
-
-// Set the Disqus URL and identifier to be passed as props
-const disqusUrl = `${Astro.url.origin}/posts/${slug}`;
-const disqusIdentifier = slug;
-
-// Replace 'YOUR_DISQUS_SHORTNAME' with your actual shortname
-const disqusShortname = 'YOUR_DISQUS_SHORTNAME';
 ---
 <PostLayout
   title={entry.data.title}
@@ -52,10 +44,12 @@ const disqusShortname = 'YOUR_DISQUS_SHORTNAME';
 
   <section class="mt-10">
     <h2 class="text-xl font-bold mb-4">Comments</h2>
-    <Disqus
-      embed={`https://sollungomaami.disqus.com/embed.js`}
-      url={disqusUrl}
-      identifier={disqusIdentifier}
-    />
+    <script src="https://utteranc.es/client.js"
+            repo="AkshayNarayananB/SollungoMaami"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
   </section>
 </PostLayout>
