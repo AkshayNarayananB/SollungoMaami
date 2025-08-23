@@ -140,3 +140,20 @@
   border-radius: 0.75rem !important;
   scrollbar-width: thin;
 }
+/* --- FIX for Disqus 'parseColor' error --- */
+/*
+ * This rule prevents the Disqus embed from inheriting a CSS color
+ * that it cannot parse, such as oklch().
+ */
+#disqus_thread,
+#disqus_thread * {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+
+/* Dark mode override */
+.dark #disqus_thread,
+.dark #disqus_thread * {
+  background-color: #1a1a1a !important;
+  color: #eeeeee !important;
+}
