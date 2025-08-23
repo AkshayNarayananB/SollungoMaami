@@ -17,6 +17,7 @@ const { Content } = await render(entry);
 
 // Generate slug for this post
 const slug = IdToSlug(entry.id);
+const pageUrl = `${Astro.url.origin}/posts/${slug}`;
 
 // Conditionally set the license and banner image props
 const licenseProp = entry.data.licenseName
@@ -44,12 +45,14 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
 
   <section class="mt-10">
     <h2 class="text-xl font-bold mb-4">Comments</h2>
-    <script src="https://utteranc.es/client.js"
-            repo="AkshayNarayananB/SollungoMaami"
-            issue-term="pathname"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <div
+      id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="7e04c8d6-9261-4adc-ace4-43d930a713e4"
+      data-page-id={slug}
+      data-page-url={pageUrl}
+      data-page-title={entry.data.title}
+    ></div>
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
   </section>
 </PostLayout>
