@@ -50,22 +50,26 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
     <div id="disqus_thread"></div>
 
     <script is:inline>
-      // Inject the server-side slug directly into client-side JS
-      var disqus_config = function () {
-        this.page.url = "https://www.sollungomaami.com/posts/{slug}";
-        this.page.identifier = "{slug}";
-      };
-    </script>
+  // Only declare once to avoid Swup re-run errors
+  window.disqusSlug = window.disqusSlug || "{slug}";
 
-    <!-- Embed Disqus script separately to ensure it runs after config -->
-    <script is:inline>
-      (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://sollungomaami.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
+  var disqus_config = function () {
+    this.page.url = "https://www.sollungomaami.com/posts/" + window.disqusSlug;
+    this.page.identifier = window.disqusSlug;
+  };
+</script>
+
+<script is:inline>
+  (function() {
+    if (window.disqusLoaded) return; // prevent loading twice
+    window.disqusLoaded = true;
+
+    var d = document, s = d.createElement('script');
+    s.src = 'https://sollungomaami.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
 
     <noscript>
       Please enable JavaScript to view the 
