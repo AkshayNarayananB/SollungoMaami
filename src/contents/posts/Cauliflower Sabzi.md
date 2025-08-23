@@ -119,4 +119,4 @@ This Cauliflower Sabzi is a simple yet flavorful North Indian-style curry where 
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/_HIkOxSQI98?si=X1FAWzRTu-0mgwZS)
+[![Watch the video](https://img.youtube.com/vi/_HIkOxSQI98/0.jpg)](https://youtu.be/_HIkOxSQI98?si=X1FAWzRTu-0mgwZS)
