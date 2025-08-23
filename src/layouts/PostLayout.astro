@@ -77,4 +77,11 @@ const blogId = Astro.url.pathname.replace(/^\/|\/$/g, "");
   @apply flex flex-col;
   font-size: var(--primary-font);
 }
+/* Disqus override to prevent parseColor errors */
+#disqus_thread,
+#disqus_thread * {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #ccc !important;
+}
 </style>
