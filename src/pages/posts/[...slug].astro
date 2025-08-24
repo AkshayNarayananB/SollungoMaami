@@ -15,9 +15,15 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
+// Generate slug for this post
 const slug = IdToSlug(entry.id);
 const pageUrl = `${Astro.url.origin}/posts/${slug}`;
-const licenseProp = entry.data.licenseName ? { name: entry.data.licenseName, url: entry.data.licenseUrl } : undefined;
+
+// Conditionally set the license and banner image props
+const licenseProp = entry.data.licenseName
+  ? { name: entry.data.licenseName, url: entry.data.licenseUrl }
+  : undefined;
+
 const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.image;
 ---
 <PostLayout
@@ -50,46 +56,26 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
     <script>
-      function updateCusdis() {
-        // Find the Cusdis container
-        const cusdisThread = document.getElementById('cusdis_thread');
-        if (!cusdisThread) return;
-        
-        // Determine the current theme
-        const isDarkMode = document.documentElement.classList.contains('dark');
-        const theme = isDarkMode ? 'dark' : 'light';
-
-        // Check if the theme needs to be changed
-        if (cusdisThread.getAttribute('data-theme') !== theme) {
-            cusdisThread.setAttribute('data-theme', theme);
-
-            // Force Cusdis to reload with the new theme
-            // This is the key step to fix the color issue
-            window.Cusdis.setTheme(theme);
-        }
-
-        // Handle resizing
+      function resizeCusdis() {
         const iframe = document.querySelector('#cusdis_thread iframe');
         if (iframe) {
-            iframe.addEventListener('load', () => {
-                const scrollHeight = iframe.contentWindow.document.body.scrollHeight;
-                iframe.style.height = `${scrollHeight}px`;
-            });
+          iframe.addEventListener('load', () => {
+            // Get the scroll height of the content inside the iframe
+            const scrollHeight = iframe.contentWindow.document.body.scrollHeight;
+            // Set the iframe's height to match its content
+            iframe.style.height = `${scrollHeight}px`;
+          });
         }
       }
 
-      // Initial execution after a short delay
-      setTimeout(updateCusdis, 500);
+      // Run the resizing function after a short delay to account for the async script loading
+      setTimeout(resizeCusdis, 500);
 
-      // Listen for a new page load in Astro
+      // Handle Astro View Transitions
       document.addEventListener('astro:page-load', () => {
-        // Re-run the function on the new page after a delay
-        setTimeout(updateCusdis, 500);
+        // Run the resize logic on a new page load
+        setTimeout(resizeCusdis, 500);
       });
-
-      // Listen for theme changes on the `<html>` element
-      const observer = new MutationObserver(updateCusdis);
-      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
     </script>
   </section>
 </PostLayout>
