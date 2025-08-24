@@ -5,11 +5,11 @@ import PostLayout from "../../layouts/PostLayout.astro";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
-  const postEntries = await getCollection("posts");
-  return postEntries.map((entry) => ({
-    params: { slug: IdToSlug(entry.id) },
-    props: { entry },
-  }));
+  const postEntries = await getCollection("posts");
+  return postEntries.map((entry) => ({
+    params: { slug: IdToSlug(entry.id) },
+    props: { entry },
+  }));
 }
 
 const { entry } = Astro.props;
@@ -21,64 +21,64 @@ const pageUrl = `${Astro.url.origin}/posts/${slug}`;
 
 // Conditionally set the license and banner image props
 const licenseProp = entry.data.licenseName
-  ? { name: entry.data.licenseName, url: entry.data.licenseUrl }
-  : undefined;
+  ? { name: entry.data.licenseName, url: entry.data.licenseUrl }
+  : undefined;
 
 const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.image;
 ---
 <PostLayout
-  title={entry.data.title}
-  subTitle={entry.data.description}
-  bannerImage={bannerImageProp}
-  published={entry.data.published}
-  license={licenseProp}
-  author={entry.data.author}
-  sourceLink={entry.data.sourceLink}
+  title={entry.data.title}
+  subTitle={entry.data.description}
+  bannerImage={bannerImageProp}
+  published={entry.data.published}
+  license={licenseProp}
+  author={entry.data.author}
+  sourceLink={entry.data.sourceLink}
 >
-  <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
-    {entry.data.title}
-  </div>
 
-  <div data-pagefind-body>
-    <Content />
-  </div>
+  <style>
+    #cusdis_thread iframe {
+      height: 500px; /* Default for larger screens */
+      width: 100%; /* Ensure the iframe takes up the full width */
+    }
 
-  <section class="mt-10">
-    <h2 class="text-xl font-bold mb-4"> Comments</h2>
-    <div
-  id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="7e04c8d6-9261-4adc-ace4-43d930a713e4"
-  data-page-id={slug}
-  data-page-url={pageUrl}
-  data-page-title={entry.data.title}
-  data-theme="light"
-></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    @media (max-width: 768px) {
+      #cusdis_thread iframe {
+        height: 70vh; /* Taller on mobile for better viewing */
+      }
+    }
+  </style>
 
-    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
+    {entry.data.title}
+  </div>
 
-    <script>
-      function resizeCusdis() {
-        const iframe = document.querySelector('#cusdis_thread iframe');
-        if (iframe) {
-          iframe.addEventListener('load', () => {
-            // Get the scroll height of the content inside the iframe
-            const scrollHeight = iframe.contentWindow.document.body.scrollHeight;
-            // Set the iframe's height to match its content
-            iframe.style.height = `${scrollHeight}px`;
-          });
-        }
-      }
+  <div data-pagefind-body>
+    <Content />
+  </div>
 
-      // Run the resizing function after a short delay to account for the async script loading
-      setTimeout(resizeCusdis, 500);
+  <section class="mt-10">
+    <h2 class="text-xl font-bold mb-4"> Comments</h2>
+    <div
+      id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="7e04c8d6-9261-4adc-ace4-43d930a713e4"
+      data-page-id={slug}
+      data-page-url={pageUrl}
+      data-page-title={entry.data.title}
+      data-theme="dark"
+    ></div>
 
-      // Handle Astro View Transitions
-      document.addEventListener('astro:page-load', () => {
-        // Run the resize logic on a new page load
-        setTimeout(resizeCusdis, 500);
-      });
-    </script>
-  </section>
+    <script>
+      const htmlElement = document.documentElement;
+      const isDark = htmlElement.classList.contains('dark') || htmlElement.getAttribute('data-theme') === 'dark';
+      const cusdisThread = document.getElementById('cusdis_thread');
+      if (cusdisThread) {
+        cusdisThread.setAttribute('data-theme', isDark ? 'dark' : 'light');
+      }
+    </script>
+
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+  </section>
 </PostLayout>
