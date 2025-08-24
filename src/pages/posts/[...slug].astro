@@ -15,15 +15,9 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-// Generate slug for this post
 const slug = IdToSlug(entry.id);
 const pageUrl = `${Astro.url.origin}/posts/${slug}`;
-
-// Conditionally set the license and banner image props
-const licenseProp = entry.data.licenseName
-  ? { name: entry.data.licenseName, url: entry.data.licenseUrl }
-  : undefined;
-
+const licenseProp = entry.data.licenseName ? { name: entry.data.licenseName, url: entry.data.licenseUrl } : undefined;
 const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.image;
 ---
 <PostLayout
@@ -57,38 +51,45 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
 
     <script>
       function updateCusdis() {
-        // Check for the dark mode class
-        const isDarkMode = document.documentElement.classList.contains('dark');
+        // Find the Cusdis container
         const cusdisThread = document.getElementById('cusdis_thread');
+        if (!cusdisThread) return;
+        
+        // Determine the current theme
+        const isDarkMode = document.documentElement.classList.contains('dark');
+        const theme = isDarkMode ? 'dark' : 'light';
 
-        if (cusdisThread) {
-          // Manually set the data-theme attribute
-          cusdisThread.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+        // Check if the theme needs to be changed
+        if (cusdisThread.getAttribute('data-theme') !== theme) {
+            cusdisThread.setAttribute('data-theme', theme);
 
-          // Find the Cusdis iframe
-          const iframe = document.querySelector('#cusdis_thread iframe');
-          if (iframe) {
-            // Resize the iframe after it has fully loaded
+            // Force Cusdis to reload with the new theme
+            // This is the key step to fix the color issue
+            window.Cusdis.setTheme(theme);
+        }
+
+        // Handle resizing
+        const iframe = document.querySelector('#cusdis_thread iframe');
+        if (iframe) {
             iframe.addEventListener('load', () => {
-              const scrollHeight = iframe.contentWindow.document.body.scrollHeight;
-              iframe.style.height = `${scrollHeight}px`;
+                const scrollHeight = iframe.contentWindow.document.body.scrollHeight;
+                iframe.style.height = `${scrollHeight}px`;
             });
-          }
         }
       }
 
-      // Run the update function after a short delay to ensure Cusdis is loaded
+      // Initial execution after a short delay
       setTimeout(updateCusdis, 500);
 
-      // Listen for changes to the `dark` class using a MutationObserver
-      const observer = new MutationObserver(updateCusdis);
-      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-
-      // Handle Astro View Transitions
+      // Listen for a new page load in Astro
       document.addEventListener('astro:page-load', () => {
-        // Run the function again on new page loads
+        // Re-run the function on the new page after a delay
         setTimeout(updateCusdis, 500);
       });
+
+      // Listen for theme changes on the `<html>` element
+      const observer = new MutationObserver(updateCusdis);
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
     </script>
   </section>
 </PostLayout>
