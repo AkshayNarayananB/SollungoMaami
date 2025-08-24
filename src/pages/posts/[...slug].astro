@@ -56,37 +56,38 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
     <script>
-      function setCusdisTheme() {
+      function updateCusdis() {
+        // Check for the dark mode class
         const isDarkMode = document.documentElement.classList.contains('dark');
         const cusdisThread = document.getElementById('cusdis_thread');
+
         if (cusdisThread) {
+          // Manually set the data-theme attribute
           cusdisThread.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+
+          // Find the Cusdis iframe
+          const iframe = document.querySelector('#cusdis_thread iframe');
+          if (iframe) {
+            // Resize the iframe after it has fully loaded
+            iframe.addEventListener('load', () => {
+              const scrollHeight = iframe.contentWindow.document.body.scrollHeight;
+              iframe.style.height = `${scrollHeight}px`;
+            });
+          }
         }
       }
 
-      function resizeCusdis() {
-        const iframe = document.querySelector('#cusdis_thread iframe');
-        if (iframe) {
-          iframe.addEventListener('load', () => {
-            const scrollHeight = iframe.contentWindow.document.body.scrollHeight;
-            iframe.style.height = `${scrollHeight}px`;
-          });
-        }
-      }
-      
-      // Set the theme on initial page load
-      setCusdisTheme();
-      // Initial resize on page load
-      resizeCusdis();
-      
-      // Listen for changes to the `dark` class
-      const observer = new MutationObserver(setCusdisTheme);
+      // Run the update function after a short delay to ensure Cusdis is loaded
+      setTimeout(updateCusdis, 500);
+
+      // Listen for changes to the `dark` class using a MutationObserver
+      const observer = new MutationObserver(updateCusdis);
       observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-      
-      // Also handle Astro View Transitions
+
+      // Handle Astro View Transitions
       document.addEventListener('astro:page-load', () => {
-        setCusdisTheme();
-        resizeCusdis();
+        // Run the function again on new page loads
+        setTimeout(updateCusdis, 500);
       });
     </script>
   </section>
