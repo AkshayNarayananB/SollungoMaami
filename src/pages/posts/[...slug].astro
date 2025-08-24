@@ -37,17 +37,11 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
 >
 
   <style>
-    #cusdis_thread iframe {
-      height: 500px; /* Default for larger screens */
-      width: 100%; /* Ensure the iframe takes up the full width */
-    }
-
-    @media (max-width: 768px) {
-      #cusdis_thread iframe {
-        height: 70vh; /* Taller on mobile for better viewing */
-      }
-    }
-  </style>
+  #cusdis_thread iframe {
+    height: 500px;
+    width: 100%;
+  }
+</style>
 
   <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
     {entry.data.title}
