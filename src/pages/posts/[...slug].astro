@@ -45,19 +45,16 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
 
   <section class="mt-10">
     <h2 class="text-xl font-bold mb-4"> Comments</h2>
-    <script>
-      // Get the theme from the <html> element
-      const htmlElement = document.documentElement;
-      const isDark = htmlElement.classList.contains('dark') || htmlElement.getAttribute('data-theme') === 'dark';
-
-      // Get the cusdis_thread element
-      const cusdisThread = document.getElementById('cusdis_thread');
-
-      // Set the data-theme attribute based on the page's theme
-      if (cusdisThread) {
-        cusdisThread.setAttribute('data-theme', isDark ? 'dark' : 'light');
-      }
-    </script>
+    <div
+  id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="7e04c8d6-9261-4adc-ace4-43d930a713e4"
+  data-page-id={slug}
+  data-page-url={pageUrl}
+  data-page-title={entry.data.title}
+  data-theme="auto"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
