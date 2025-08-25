@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
  
 ---
 
-# 🥔 Seppankizhangu Roast | Elephant Yam Roast
+#  Seppankizhangu Roast | Elephant Yam Roast
 
 **“Crispy, spicy, and deeply comforting — Seppankizhangu Roast that steals the show!”**
 
@@ -22,15 +22,15 @@ A beloved South Indian side dish featuring tender elephant yam roasted to crispy
 
 ## 📝 Ingredients
 
-- 🥔 Seppankizhangu (Elephant Yam) – ½ kg  
-- 🌾 Rice flour – 1 to 2 tbsp  
-- 🌶️ Sambar powder – 1 to 2 tsp (adjust to taste)  
-- 🧂 Salt – to taste  
-- 🔸 Hing (Asafoetida) – a pinch  
-- 🛢️ Oil (sesame or sunflower) – for cooking  
-- 🌱 Mustard seeds – 1 tsp  
-- 🌾 Urad dal – 1 tsp  
-- 🧈 Ghee – 1 tbsp  
+-  Seppankizhangu (Elephant Yam) – ½ kg  
+-  Rice flour – 1 to 2 tbsp  
+-  Sambar powder – 1 to 2 tsp (adjust to taste)  
+-  Salt – to taste  
+-  Hing (Asafoetida) – a pinch  
+-  Oil (sesame or sunflower) – for cooking  
+-  Mustard seeds – 1 tsp  
+-  Urad dal – 1 tsp  
+-  Ghee – 1 tbsp  
 
 ---
 
@@ -89,4 +89,4 @@ Add 1 tbsp ghee, mix gently, cover for a minute to retain aroma.
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/IzbVjk-_WHM?si=LOlSjuwveq3hZxx2)
+[![Watch the video](https://img.youtube.com/vi/IzbVjk-_WHM/0.jpg)](https://youtu.be/IzbVjk-_WHM?si=LOlSjuwveq3hZxx2)
