@@ -49,37 +49,37 @@ A classic melt-in-your-mouth sweet that's perfect for festivals and celebrations
 **Rest:** Cover dough and set aside for 30 minutes.
 
 ### Preparing the Sugar Syrup  
-In a pan, combine sugar and water.  
-Heat on medium, stirring until sugar dissolves.  
-Boil for about 5 minutes until slightly sticky (one-string consistency).  
-Turn off heat; add cardamom powder and lemon juice. Mix and set aside.
+- In a pan, combine sugar and water.  
+- Heat on medium, stirring until sugar dissolves.  
+- Boil for about 5 minutes until slightly sticky (one-string consistency).  
+- Turn off heat; add cardamom powder and lemon juice. Mix and set aside.
 
 ### Shaping the Badusha  
-Knead dough again until smooth and pliable.  
-Divide dough into small portions.  
-Roll each into a ball and flatten into a disc.  
-Using thumb, press a hole in the center to form classic Badusha shape.  
+- Knead dough again until smooth and pliable.  
+- Divide dough into small portions.  
+- Roll each into a ball and flatten into a disc.  
+- Using thumb, press a hole in the center to form classic Badusha shape.  
 
 ### Frying the Badusha  
-Heat oil in a deep pan on medium heat (warm, not hot).  
-Test oil with small dough piece – should sink then slowly rise.  
-Fry shaped Badushas gently; they sink initially.  
-Cook on medium flame, stirring gently, until they rise and turn golden brown (~4–5 mins).  
-Flip carefully for even frying.
+- Heat oil in a deep pan on medium heat (warm, not hot).  
+- Test oil with small dough piece – should sink then slowly rise.  
+- Fry shaped Badushas gently; they sink initially.  
+- Cook on medium flame, stirring gently, until they rise and turn golden brown (~4–5 mins).  
+- Flip carefully for even frying.
 
 ### Soaking in Syrup  
-Warm sugar syrup if cooled.  
-Immediately soak hot fried Badushas in warm syrup.  
-Turn after 1 minute to soak both sides.  
-Let soak for 2–3 minutes until syrup is absorbed.
+- Warm sugar syrup if cooled.  
+- Immediately soak hot fried Badushas in warm syrup.  
+- Turn after 1 minute to soak both sides.  
+- Let soak for 2–3 minutes until syrup is absorbed.
 
 ---
 
 ## 🍽️ Serving Suggestions
 
-- 🍽️ Serve warm or at room temperature  
-- 🎉 Ideal for Diwali, Dussehra, weddings, and celebrations  
-- ☕ Pairs wonderfully with afternoon tea or coffee  
+-  Serve warm or at room temperature  
+-  Ideal for Diwali, Dussehra, weddings, and celebrations  
+-  Pairs wonderfully with afternoon tea or coffee  
 
 ---
 
