@@ -8,11 +8,11 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjalmasala.png"  
 ---
 
-# 🍆 Brinjal Masala | Kathirikai Masala Curry  
+# Brinjal Masala | Kathirikai Masala Curry  
 
 ✨ *“Where tangy tamarind, earthy brinjals, and bold spices come together for a comforting curry!”* ✨  
 
-🍆 Brinjal Masala (Kathirikai Masala Curry) is a hearty South Indian dish that transforms the humble brinjal into a flavor-packed delicacy. Simmered with tangy tamarind pulp, aromatic spices, and a touch of jaggery for balance, this curry offers the perfect blend of spicy, tangy, and slightly sweet notes. Whether served with hot rice, roti, or dosa, it’s a comforting dish that brings traditional home-style cooking to your table.  
+Brinjal Masala (Kathirikai Masala Curry) is a hearty South Indian dish that transforms the humble brinjal into a flavor-packed delicacy. Simmered with tangy tamarind pulp, aromatic spices, and a touch of jaggery for balance, this curry offers the perfect blend of spicy, tangy, and slightly sweet notes. Whether served with hot rice, roti, or dosa, it’s a comforting dish that brings traditional home-style cooking to your table.  
 
 ---
 ![brinjalmasala](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjalmasala.png)  
@@ -21,28 +21,28 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 ## 🛒 Ingredients  
 
 ### Main Ingredients:  
-- 🍆 Brinjal – 500 gms (chopped, soaked in water)  
-- 🧅 Onion – 2 (roughly chopped & ground to paste)  
-- 🍅 Tomato – 2 (chopped)  
-- 🌶️ Green chili – 2 (slit)  
-- 🧄 Ginger garlic paste – 1 tbsp  
-- 🌿 Coriander leaves – handful  
-- 🛢️ Oil – as required  
-- 💧 Water – as needed  
-- 🧂 Salt – to taste  
-- 🍯 Jaggery – 1 tbsp  
-- 🍋 Tamarind pulp – 1 cup  
+-  Brinjal – 500 gms (chopped, soaked in water)  
+-  Onion – 2 (roughly chopped & ground to paste)  
+-  Tomato – 2 (chopped)  
+-  Green chili – 2 (slit)  
+-  Ginger garlic paste – 1 tbsp  
+-  Coriander leaves – handful  
+-  Oil – as required  
+-  Water – as needed  
+-  Salt – to taste  
+-  Jaggery – 1 tbsp  
+-  Tamarind pulp – 1 cup  
 
 ### Masala & Whole Spices:  
-- 🌿 Turmeric powder – ½ tsp  
-- 🌿 Coriander powder – 1 tsp  
-- 🌿 Cumin powder – 1 tsp  
-- 🌿 Garam masala – 1 tsp  
-- 🌸 Hing – a pinch  
-- 🌿 Fennel seeds – ½ tsp  
-- 🌿 Cloves – 2  
-- 🌿 Cinnamon – 1 small stick  
-- 🌿 Bay leaf – 1  
+-  Turmeric powder – ½ tsp  
+-  Coriander powder – 1 tsp  
+-  Cumin powder – 1 tsp  
+-  Garam masala – 1 tsp  
+-  Hing – a pinch  
+-  Fennel seeds – ½ tsp  
+-  Cloves – 2  
+-  Cinnamon – 1 small stick  
+-  Bay leaf – 1  
 
 ---
 
@@ -119,4 +119,4 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/w_3FRmCrQgs?si=v-Jv4TlgmPNHhtwF)
+[![Watch the video](https://img.youtube.com/vi/w_3FRmCrQgs/0.jpg)](https://youtu.be/w_3FRmCrQgs?si=v-Jv4TlgmPNHhtwF)
