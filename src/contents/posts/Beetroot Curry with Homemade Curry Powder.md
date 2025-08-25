@@ -1,5 +1,5 @@
 ---
-title: "🥗 Beetroot Curry with Homemade Curry Powder"
+title: " Beetroot Curry with Homemade Curry Powder"
 published: 2025-07-28
 description: A crunchy, colorful South Indian-style beetroot stir-fry with roasted peanuts, fresh coconut, and homemade curry podi.
 tags: [Vegan, Gluten-Free, Side Dish for rice]
@@ -8,7 +8,7 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/beetroot curry.png"
 ---
 
-# 🥗 Beetroot Curry with Homemade Curry Powder
+#  Beetroot Curry with Homemade Curry Powder
 
 
 > “A crunchy, colorful curry with the goodness of beetroot and the magic of podi!”
@@ -77,9 +77,9 @@ This vibrant **South Indian beetroot curry** is simple yet packed with flavor. R
 
 ## 💡 Tips
 
-- 🌶️ Adjust the curry powder based on your heat tolerance.  
-- 🥜 Roasted peanuts add delightful crunch — don’t skip them!  
-- ✨ Homemade curry podi gives this dish depth far beyond regular beetroot poriyal.
+-  Adjust the curry powder based on your heat tolerance.  
+-  Roasted peanuts add delightful crunch — don’t skip them!  
+-  Homemade curry podi gives this dish depth far beyond regular beetroot poriyal.
 
 ---
 
