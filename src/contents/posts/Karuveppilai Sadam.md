@@ -12,9 +12,9 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ *“A fragrant, tangy, and healthy rice dish where the goodness of curry leaves blends with roasted spices and rice — a perfect balance of taste and tradition!”* ✨  
 
-Karuveppilai Sadam is a **traditional South Indian variety rice** made with **roasted curry leaves thogayal 🌿, tempered dals 🫘, crunchy peanuts 🥜, and aromatic spices 🌶️**.  
+Karuveppilai Sadam is a **traditional South Indian variety rice** made with **roasted curry leaves thogayal , tempered dals , crunchy peanuts , and aromatic spices **.  
 The star ingredient, curry leaves, not only gives an **irresistible aroma** but also boosts health with its iron-rich, digestion-friendly properties.  
-This rice is a great choice for **lunchboxes 🍱, quick weekday meals 🍲, or even as prasadam during special occasions 🙏**.  
+This rice is a great choice for **lunchboxes , quick weekday meals , or even as prasadam during special occasions **.  
 
 ---
 
