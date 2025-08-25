@@ -10,10 +10,10 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## ✨ Ingredients
 
-- 🌾 **Besan flour (gram flour)** – 1 cup (250 ml measuring cup)  
-- 🍬 **Sugar** – 2 cups  
-- 💧 **Water** – 1¼ cups  
-- 🧈 **Ghee** – 2 to 2½ cups  
+-  **Besan flour (gram flour)** – 1 cup (250 ml measuring cup)  
+-  **Sugar** – 2 cups  
+-  **Water** – 1¼ cups  
+-  **Ghee** – 2 to 2½ cups  
 
 ---
 ![mysore pak](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysore%20pak.jpg)
@@ -50,10 +50,10 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ---
 
-## 🍲 Making the Mysore Pak
+##  Making the Mysore Pak
 
 ### 5️⃣ Combine Besan with Sugar Syrup
-- Slowly add roasted besan to sugar syrup.  
+- Slowly add roasted besan to sugar syrup on low flame.  
 - Stir continuously until smooth and flowing, removing any lumps at the bottom.  
 
 ### 6️⃣ Add Ghee Gradually
@@ -118,4 +118,4 @@ Start with smaller quantity (½ cup besan) to practice before making larger batc
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/I_yKUPhXbaQ?si=cnxGqwlK3Iy9fh7D)
+[![Watch the video](https://img.youtube.com/vi/I_yKUPhXbaQ/0.jpg)](https://youtu.be/I_yKUPhXbaQ?si=cnxGqwlK3Iy9fh7D)
