@@ -98,4 +98,4 @@ Daily poojas are performed **six times a day** in the **Pancharatra Agama tradit
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/_ArB1XzAWgM?si=gDHMWmQOSilagbwk)
+[![Watch the video](https://img.youtube.com/vi/_ArB1XzAWgM/0.jpg)](https://youtu.be/_ArB1XzAWgM?si=gDHMWmQOSilagbwk)
