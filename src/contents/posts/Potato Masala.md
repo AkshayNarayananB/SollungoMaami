@@ -1,5 +1,5 @@
 ---
-title: "🥔 Potato Masala Recipe | Perfect Side Dish for Puri, Dosa, or Chapati"
+title: " Potato Masala Recipe | Perfect Side Dish for Puri, Dosa, or Chapati"
 published: 2025-07-28
 description: A mildly spiced, comforting potato curry with green peas — the perfect companion for poori and South Indian breakfasts.
 tags: [south indian side dish, Vegan, Gluten-Free]
@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 draft: false
 ---
 
-# 🥔 Potato Masala Recipe
+#  Potato Masala Recipe
 
 > “Soft-spiced potatoes meet crispy pooris — a match made in flavor heaven!”
 
@@ -21,21 +21,21 @@ A classic, mildly spiced **potato curry** that perfectly complements fluffy **po
 
 ## 🛒 Ingredients
 
-🥔 **Potatoes** – 500g (boiled and lightly mashed)  
-🧅 **Onions** – 3 medium, finely chopped  
-🌱 **Green peas** – 1 cup (frozen or fresh)  
-🛢️ **Oil** – 2–3 tbsp  
-🌰 **Mustard seeds** – 1 tsp  
-🌾 **Chana dal** – 1 tsp  
-⚫ **Urad dal** – 1 tsp  
-💨 **Hing (asafoetida)** – a pinch  
-🍃 **Curry leaves** – 8–10  
-🧄 **Ginger** – 1-inch piece, finely chopped  
-🌶️ **Green chilies** – 3–4, finely chopped  
-✨ **Turmeric powder** – 1¼ tsp  
-🧂 **Salt** – to taste  
-💧 **Water** – as required  
-🌿 **Fresh coriander leaves** – for garnish
+ **Potatoes** – 500g (boiled and lightly mashed)  
+ **Onions** – 3 medium, finely chopped  
+ **Green peas** – 1 cup (frozen or fresh)  
+ **Oil** – 2–3 tbsp  
+ **Mustard seeds** – 1 tsp  
+ **Chana dal** – 1 tsp  
+ **Urad dal** – 1 tsp  
+ **Hing (asafoetida)** – a pinch  
+ **Curry leaves** – 8–10  
+ **Ginger** – 1-inch piece, finely chopped  
+ **Green chilies** – 3–4, finely chopped  
+ **Turmeric powder** – 1¼ tsp  
+ **Salt** – to taste  
+ **Water** – as required  
+ **Fresh coriander leaves** – for garnish
 
 ---
 
@@ -43,8 +43,8 @@ A classic, mildly spiced **potato curry** that perfectly complements fluffy **po
 
 ### 🔹 Preparing the Potatoes:
 
-1. 🧼 Wash and cook potatoes in a pressure cooker for **3 whistles** with enough water.  
-2. ❄️ Let pressure release naturally. Cool, peel, and lightly mash. Keep some chunks for texture.
+1.  Wash and cook potatoes in a pressure cooker for **3 whistles** with enough water.  
+2.  Let pressure release naturally. Cool, peel, and lightly mash. Keep some chunks for texture.
 
 ### 🔸 Making the Masala:
 
@@ -52,7 +52,7 @@ A classic, mildly spiced **potato curry** that perfectly complements fluffy **po
 2.  Add mustard seeds; let them splutter.  
 3.  Add chana dal & urad dal. Fry till golden.  
 4.  Add curry leaves & hing. Mix well.  
-5.  Add chopped ginger & green chilies. Sauté 1–2 mins.  
+5.  Add chopped ginger & green chilies. Saute 1–2 mins.  
 6.  Add onions. Cook ~5 mins until translucent.  
 7.  Add turmeric. Mix and cook 1 minute.  
 8.  Add mashed potatoes. Combine well.  
@@ -77,8 +77,6 @@ This **Potato Masala** goes perfectly with:
 ## 💡 Tips for Perfect Results
 
 - ✅ **Texture:** Leave some chunky bits in mashed potatoes  
-- 🧅 **Onions:** Cook thoroughly for sweetness and depth  
-- 💧 **Consistency:** Slightly thick — neither watery nor too dry  
 - 🌱 **Peas:** Optional  
 - 🌶️ **Spice:** Adjust green chilies to your heat level
 
@@ -116,4 +114,4 @@ This **Potato Masala** goes perfectly with:
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/EW-QWm90xQs?si=Ofa8VStSuzIAeyLv)
+[![Watch the video](https://img.youtube.com/vi/EW-QWm90xQs/0.jpg)](https://youtu.be/EW-QWm90xQs?si=Ofa8VStSuzIAeyLv)
