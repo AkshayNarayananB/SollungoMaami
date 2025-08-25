@@ -8,7 +8,7 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/godhuma rava sweet.jpg" 
 ---
 
-# 🍚 Godhuma Rava Akkaravadisal | Wheat Semolina Sweet
+#  Godhuma Rava Akkaravadisal | Wheat Semolina Sweet
 
 A rich, traditional South Indian sweet perfect for festivals and special occasions.
 
@@ -20,13 +20,13 @@ Akkaravadisal is a beloved South Indian sweet traditionally made with rice, but 
 
 ## ✨ Ingredients
 
-- 🌾 Godhuma rava (wheat semolina/broken wheat) – ½ cup  
-- 🥛 Milk – 3 cups (or more as needed)  
-- 🧈 Ghee – 3 to 4 tbsp  
-- 🍬 Jaggery (powdered or small pieces) – ½ cup  
-- 🌿 Cardamom powder – ½ tsp  
-- 🥜 Cashew nuts – 4–5  
-- 🌿 Pachha karpooram (edible camphor) – a pinch (optional)  
+-  Godhuma rava (wheat semolina/broken wheat) – ½ cup  
+-  Milk – 3 cups (or more as needed)  
+-  Ghee – 3 to 4 tbsp  
+-  Jaggery (powdered or small pieces) – ½ cup  
+-  Cardamom powder – ½ tsp  
+-  Cashew nuts – 4–5  
+-  Pachha karpooram (edible camphor) – a pinch (optional)  
 
 ---
 
@@ -129,6 +129,6 @@ This wheat rava version is not only delicious but also more nutritious than the 
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/VMphhqsKDZ0?si=7YUUOghCwkL45jjL)
+[![Watch the video](https://img.youtube.com/vi/VMphhqsKDZ0/0.jpg)](https://youtu.be/VMphhqsKDZ0?si=7YUUOghCwkL45jjL)
 
 
