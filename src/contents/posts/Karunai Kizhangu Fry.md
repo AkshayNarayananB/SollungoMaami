@@ -91,4 +91,4 @@ It’s usually enjoyed with sambar rice, rasam rice, or even curd rice, adding a
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/OF72DYE2l4w?si=1Av6eAUPdSUzivj4)
+[![Watch the video](https://img.youtube.com/vi/OF72DYE2l4w/0.jpg)](https://youtu.be/OF72DYE2l4w?si=1Av6eAUPdSUzivj4)
