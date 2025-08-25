@@ -20,11 +20,11 @@ Just 3 ingredients — melt-in-mouth coconut barfi!
 
 ## ✨ Ingredients
 
-- 🥥 Grated coconut (fresh or desiccated) – 1 cup  
-- 🍬 Sugar – 1½ cups  
-- 🌿 Cardamom powder – ¼ tsp  
-- 🧈 Ghee – 2 to 3 tbsp  
-- 🥜 Roasted cashews (chopped) – 2 to 3 tbsp  
+-  Grated coconut (fresh or desiccated) – 1 cup  
+-  Sugar – 1½ cups  
+-  Cardamom powder – ¼ tsp  
+-  Ghee – 2 to 3 tbsp  
+-  Roasted cashews (chopped) – 2 to 3 tbsp  
 
 ---
 
@@ -37,7 +37,7 @@ Just 3 ingredients — melt-in-mouth coconut barfi!
 
 ### Making the Sugar Syrup  
  In a heavy-bottomed pan, add sugar and cook on medium heat.  
- Stir continuously until sugar melts and forms a thick syrup (soft ball stage).  
+ Stir continuously until sugar melts and forms a thick syrup.   
 
 ### Adding Coconut  
  Add grated coconut to hot sugar syrup.  
@@ -83,5 +83,5 @@ This traditional coconut barfi is especially popular during festivals in the mon
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/SPYRfqGCHc4?si=VMWmbPfXW2eFyhoo)
+[![Watch the video](https://img.youtube.com/vi/SPYRfqGCHc4/0.jpg)](https://youtu.be/SPYRfqGCHc4?si=VMWmbPfXW2eFyhoo)
 
