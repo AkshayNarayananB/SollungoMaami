@@ -25,27 +25,27 @@ This rice is a great choice for **lunchboxes 🍱, quick weekday meals 🍲, or 
 ## 🛒 Ingredients  
 
 ### For Karuveppilai Thogayal  
-- 🌿 **Curry leaves** – 2 cups  
-- 🌰 **Urad dal** – 2 tbsp  
-- 🌶️ **Dry red chilies** – 12–15  
-- 🍋 **Tamarind** – small gooseberry size  
-- 🌱 **Coriander leaves** – ½ cup  
-- 🥥 **Grated coconut** – ½ cup  
-- 🍯 **Jaggery** – 1 tsp  
-- 🛢️ **Oil** – 2–3 tbsp  
-- 🌸 **Hing** – a pinch  
-- 🧂 **Salt** – as required  
+-  **Curry leaves** – 2 cups  
+-  **Urad dal** – 2 tbsp  
+-  **Dry red chilies** – 12–15  
+-  **Tamarind** – small gooseberry size  
+-  **Coriander leaves** – ½ cup  
+-  **Grated coconut** – ½ cup  
+-  **Jaggery** – 1 tsp  
+-  **Oil** – 2–3 tbsp  
+-  **Hing** – a pinch  
+-  **Salt** – as required  
 
 ### For Mixing with Rice  
-- 🍚 **Cooked rice** – 1 cup  
-- 🌰 **Urad dal** – 1 tsp  
-- 🌰 **Chana dal** – 1 tsp  
-- 🥜 **Groundnut** – 1 tbsp  
-- 🌶️ **Dry red chilies** – 1–2  
-- 🌸 **Hing** – a pinch  
-- 🧂 **Salt** – as required  
-- 🧈 **Ghee** – 1 tsp  
-- 🛢️ **Oil** – 2 tbsp  
+-  **Cooked rice** – 1 cup  
+-  **Urad dal** – 1 tsp  
+-  **Chana dal** – 1 tsp  
+-  **Groundnut** – 1 tbsp  
+-  **Dry red chilies** – 1–2  
+-  **Hing** – a pinch  
+-  **Salt** – as required  
+-  **Ghee** – 1 tsp  
+-  **Oil** – 2 tbsp  
 
 ---
 
@@ -72,31 +72,31 @@ This rice is a great choice for **lunchboxes 🍱, quick weekday meals 🍲, or 
 
 ## 🌟 Tips  
 
-- 🌿 Roast curry leaves thoroughly to avoid raw taste and increase shelf life.  
-- 🥥 Adding coconut gives a rich flavor, but you can skip for longer storage.  
-- 🍋 A pinch of jaggery balances the spice and tang beautifully.  
+-  Roast curry leaves thoroughly to avoid raw taste and increase shelf life.  
+-  Adding coconut gives a rich flavor, but you can skip for longer storage.  
+-  A pinch of jaggery balances the spice and tang beautifully.  
 
 ---
 
 ## 🍽️ Serving Suggestions  
 
-- Serve with **raita 🥛** or **potato fry 🥔**.  
-- Perfect for **lunchbox meals 🍱** or a simple **weekday dinner 🍲**.  
+- Serve with **raita 🥛** or **potato fry **.  
+- Perfect for **lunchbox meals ** or a simple **weekday dinner **.  
 
 ---
 
 ## 💪 Nutritional Benefits  
 
-**🌿 Curry Leaves**  
+** Curry Leaves**  
 - Rich in iron, calcium, and antioxidants. Improves hair growth, digestion, and overall immunity.  
 
-**🥥 Coconut**  
+** Coconut**  
 - Adds healthy fats and enhances energy.  
 
-**🫘 Lentils & Peanuts**  
+** Lentils & Peanuts**  
 - Provide plant-based protein and crunch for satiety.  
 
-**🍚 Rice**  
+** Rice**  
 - Quick energy source and easily digestible.  
 
 👉 *Karuveppilai Sadam is not just tasty but also a nutritious, traditional South Indian rice dish that brings health and flavor together in every bite.*  
@@ -104,4 +104,4 @@ This rice is a great choice for **lunchboxes 🍱, quick weekday meals 🍲, or 
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/HuMz6D2RZuA?si=4_7NhqW7KdJ_QjUU)
+[![Watch the video](https://img.youtube.com/vi/HuMz6D2RZuA/0.jpg)](https://youtu.be/HuMz6D2RZuA?si=4_7NhqW7KdJ_QjUU)
