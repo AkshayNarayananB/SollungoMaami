@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
   
 ---
 
-# 🍆 Kathirikai Rasavangi | Classic Tangy Brinjal Sambar
+#  Kathirikai Rasavangi | Classic Tangy Brinjal Sambar
 
 **"Bold flavors, tender brinjal — a timeless Tamil favorite."**
 
@@ -22,30 +22,30 @@ Kathirikai Rasavangi is a thick and flavorful sambar from Tamil Nadu featuring p
 ## 📝 Ingredients
 
 ### Main Ingredients  
-- 🍆 Long Purple Brinjal – 3 to 4, cut into long pieces  
-- 🌾 Chana Dal – 1 cup (50 g)  
-- 🌾 Toor Dal – 1 cup (50 g)  
-- 🌾 Moong Dal – 2 tbsp  
-- 🟡 Turmeric Powder – 1 tsp  
-- 🍋 Tamarind – small lemon-sized ball  
-- 🔸 Hing (Asafoetida) – a pinch  
-- 🧂 Salt – to taste  
-- 🌿 Curry Leaves – handful  
+-  Long Purple Brinjal – 3 to 4, cut into long pieces  
+-  Chana Dal – 1 cup (50 g)  
+-  Toor Dal – 1 cup (50 g)  
+-  Moong Dal – 2 tbsp  
+-  Turmeric Powder – 1 tsp  
+-  Tamarind – small lemon-sized ball  
+-  Hing (Asafoetida) – a pinch  
+-  Salt – to taste  
+-  Curry Leaves – handful  
 
 ### To Grind (Roasted Paste)  
-- 🌾 Chana Dal – 2 tbsp  
-- 🌿 Coriander Seeds – 2 tbsp  
-- 🌾 Urad Dal – 1 tbsp  
-- 🌶️ Dry Red Chilies – 7 to 8  
-- ⚫ Black Pepper – ½ tsp  
-- 🥥 Fresh Grated Coconut – ½ cup  
+-  Chana Dal – 2 tbsp  
+-  Coriander Seeds – 2 tbsp  
+-  Urad Dal – 1 tbsp  
+-  Dry Red Chilies – 7 to 8  
+-  Black Pepper – ½ tsp  
+-  Fresh Grated Coconut – ½ cup  
 
 ### For Tempering  
-- 🛢️ Sesame Oil – 2 tbsp  
-- 🌱 Mustard Seeds – 1 tbsp  
-- 🌾 Urad Dal – 1 tbsp  
-- 🌾 Chana Dal – 1 tbsp  
-- 🔸 Hing – a pinch  
+-  Sesame Oil – 2 tbsp  
+-  Mustard Seeds – 1 tbsp  
+-  Urad Dal – 1 tbsp  
+-  Chana Dal – 1 tbsp  
+-  Hing – a pinch  
 
 ---
 
@@ -65,7 +65,7 @@ Kathirikai Rasavangi is a thick and flavorful sambar from Tamil Nadu featuring p
 ### Sauté Brinjal  
 6. Heat 2–3 tbsp gingelly (sesame) oil in a heavy-bottomed pot.  
 7. Add 2 slit green chilies and a pinch of hing.  
-8. Add brinjal pieces and sauté for 1–2 minutes.
+8. Add brinjal pieces and saute for 1–2 minutes.
 
 ### Add Tamarind Water  
 9. Pour in the tamarind extract. Cook the brinjals in tamarind water on medium flame for 5–10 minutes until soft and raw smell fades.
@@ -85,19 +85,19 @@ Kathirikai Rasavangi is a thick and flavorful sambar from Tamil Nadu featuring p
 
 ## 💡 Points to Remember
 
-- ❗ Do not add extra water for brinjal — they release moisture naturally.  
-- 🥄 Rasavangi is traditionally thick — avoid diluting flavor with excess water.  
-- 🌶️ Spice it up with 3–4 green chilies if you prefer more heat.  
-- 🍆 Handle brinjal gently — stir softly to avoid mashing the pieces.
+-  Do not add extra water for brinjal — they release moisture naturally.  
+-  Rasavangi is traditionally thick — avoid diluting flavor with excess water.  
+-  Spice it up with 3–4 green chilies if you prefer more heat.  
+-  Handle brinjal gently — stir softly to avoid mashing the pieces.
 
 ---
 
 ## 🍽️ Serving Suggestions
 
 Serve hot with:  
-- 🍚 Steamed rice  
-- 🥔 Potato roast  
-- 🥦 Simple vegetable stir-fry  
+-  Steamed rice  
+-  Potato roast  
+-  Simple vegetable stir-fry  
 
 Perfect for hearty weekday lunches or traditional Tamil festive meals!
 
@@ -106,7 +106,7 @@ Perfect for hearty weekday lunches or traditional Tamil festive meals!
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/wZjHRnKrdZU?si=9dsuu2LVeI_1f6pV)
+[![Watch the video](https://img.youtube.com/vi/wZjHRnKrdZU/0.jpg)](https://youtu.be/wZjHRnKrdZU?si=9dsuu2LVeI_1f6pV)
 
 
 
