@@ -18,21 +18,6 @@ This authentic Chettinad Vendakka Mandi is a traditional South Indian delicacy t
 ![vendakai](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vendakai.png)
 ---
 
-## 🌿 Health Benefits
-
-### Ladies Finger (Vendakka/Okra)
-- High in fiber — promotes digestion and helps control blood sugar  
-- Rich in vitamins C, K, and folate  
-- Low in calories — great for weight management, Supports bone health & Boosts immunity
-- 
-### Gingelly Oil (Sesame Oil)
-- Contains healthy monounsaturated fats  
-- Heart protective — helps maintain healthy cholesterol levels  
-- Natural anti-inflammatory  
-- Good for skin health — rich in vitamin E and antioxidants  
-
----
-
 ## 🛒 Ingredients
 
 ### For the Mandi:
@@ -75,7 +60,7 @@ This authentic Chettinad Vendakka Mandi is a traditional South Indian delicacy t
 - Add mustard seeds, urad dal, fenugreek seeds and let mustard seeds splutter.  
 - Add chopped garlic and onion.  
 - Then add slit green chilies and dry red chilies.  
-- Sauté on medium-low flame until onions are golden and chilies soften.
+- Saute on medium-low flame until onions are golden and chilies soften.
 
 ### Step 4: Combine and Cook  
 - Add fried ladies finger back to the pan.  
@@ -120,14 +105,25 @@ This authentic Chettinad Vendakka Mandi is a traditional South Indian delicacy t
 
 - Brinjal Mandi: Replace ladies finger with small brinjals  
 - Mixed Vegetable Mandi: Add drumsticks, pumpkin, or bottle gourd  
-- Protein Addition: Add boiled eggs or small fish for a non-vegetarian version  
 
 ---
+## 🌿 Health Benefits
 
+### Ladies Finger (Vendakka/Okra)
+- High in fiber — promotes digestion and helps control blood sugar  
+- Rich in vitamins C, K, and  Low in calories
+- 
+### Gingelly Oil (Sesame Oil)
+- Contains healthy monounsaturated fats  
+- Heart protective — helps maintain healthy cholesterol levels  
+- Natural anti-inflammatory  
+- Good for skin health — rich in vitamin E and antioxidants  
+
+---
 Experience the bold, rustic flavors of Chettinad with this tangy, spicy Vendakka Mandi — a delicious way to elevate humble okra in your daily meals!
 
 
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/Fleui6v9_lE?si=zs5RpwQ9ESCrYuKo)
+[![Watch the video](https://img.youtube.com/vi/Fleui6v9_lE/0.jpg)](https://youtu.be/Fleui6v9_lE?si=zs5RpwQ9ESCrYuKo)
