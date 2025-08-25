@@ -12,7 +12,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ✨ *“A hearty pulao that combines the nutty flavor of chickpeas with fragrant basmati rice and traditional spices — simple, satisfying, and nourishing!”* ✨  
 
-✨ Kabuli Chana Pulao is a wholesome and comforting one-pot rice dish made with soft protein-rich chickpeas 🫘, fragrant basmati rice 🍚, fresh mint 🌿, and aromatic spices 🌸. Unlike biryani, this pulao is lighter yet filling, with the natural nutty flavor of chana blending beautifully with the rice and masala. Easy to prepare in a pressure cooker, it’s the perfect choice for weekday meals, lunchboxes, or even a quick festive spread. Served hot with onion raita, pickle, and crispy papad, this pulao makes for a complete and satisfying meal that’s both hearty and nourishing. ✨
+✨ Kabuli Chana Pulao is a wholesome and comforting one-pot rice dish made with soft protein-rich chickpeas , fragrant basmati rice , fresh mint , and aromatic spices . Unlike biryani, this pulao is lighter yet filling, with the natural nutty flavor of chana blending beautifully with the rice and masala. Easy to prepare in a pressure cooker, it’s the perfect choice for weekday meals, lunchboxes, or even a quick festive spread. Served hot with onion raita, pickle, and crispy papad, this pulao makes for a complete and satisfying meal that’s both hearty and nourishing. ✨
 
 ---
 
