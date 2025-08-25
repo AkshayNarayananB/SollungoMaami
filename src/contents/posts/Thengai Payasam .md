@@ -19,15 +19,15 @@ A divine offering especially prepared during the auspicious Aadi month and for G
 ---
 ## ✨ Ingredients
 
-- 🍚 Raw rice – 1 to 1½ tbsp  
-- 🥥 Fresh grated coconut – ½ cup  
-- 🍯 Jaggery (powdered or pieces) – ½ cup + 1 tbsp  
-- 🧈 Ghee – 1 to 2 tbsp  
-- 🌿 Cardamom powder – ½ tsp  
-- 🥛 Boiled milk (room temperature) – 2 to 3 cups  
-- 🥜 Cashew nuts – 4 to 5  
-- 💧 Water – as required  
-- 🌸 Pinch of saffron (optional)  
+-  Raw rice – 1 to 1½ tbsp  
+-  Fresh grated coconut – ½ cup  
+-  Jaggery (powdered or pieces) – ½ cup + 1 tbsp  
+-  Ghee – 1 to 2 tbsp  
+-  Cardamom powder – ½ tsp  
+-  Boiled milk (room temperature) – 2 to 3 cups  
+-  Cashew nuts – 4 to 5  
+-  Water – as required  
+-  Pinch of saffron (optional)  
 
 ---
 
@@ -58,35 +58,26 @@ A divine offering especially prepared during the auspicious Aadi month and for G
 
 ## 🍽️ Serving Suggestions
 
-- 🔥 Serve warm or at room temperature  
-- 🌰 Garnish with additional fried cashews or almonds  
-- 🎉 Perfect for festivals, temple offerings, and traditional meals  
+-  Serve warm or at room temperature  
+-  Garnish with additional fried cashews or almonds  
+-  Perfect for festivals, temple offerings, and traditional meals  
 
 ---
 
 ## 💡 Tips for Perfect Results
 
-- 🕰️ Always soak rice for smooth grinding  
-- 🔄 Stir continuously to avoid lumps  
-- 🍯 Use good quality jaggery for richer flavor  
-- 🥛 Add milk only after cooling to prevent curdling  
-- 💧 Keep payasam slightly thin during cooking; it thickens on cooling  
-
----
-
-## 🌿 Variations
-
-- 🥛 Use condensed milk for extra richness  
-- 🥥 Substitute thick coconut milk for regular milk for stronger coconut flavor  
-- 🥜 Add chopped almonds, pistachios, or raisins along with cashews  
-- 🍬 Adjust jaggery quantity to taste  
+-  Always soak rice for smooth grinding  
+-  Stir continuously to avoid lumps  
+-  Use good quality jaggery for richer flavor  
+-  Add milk only after cooling to prevent curdling  
+-  Keep payasam slightly thin during cooking; it thickens on cooling  
 
 ---
 
 ## 🥥 Cultural Significance
 
 - 🪔 Prepared during Aadi month for Goddess worship  
-- 🙏 Important offering in Aadi Parappu and Lalitha Saraswathi poojas  
+- 🙏 Important offering in Aadi Pirappu or Aadi Pandigai and Lalithambigai poojas.  
 - 🎊 Celebrated in South Indian festivals  
 
 ---
@@ -101,10 +92,10 @@ A divine offering especially prepared during the auspicious Aadi month and for G
 
 ## 🥦 Nutritional Benefits
 
-- 🥥 Coconut: healthy fats and minerals  
-- 🍚 Rice: energy and easy digestion  
-- 🍯 Jaggery: iron and natural minerals  
-- 🥛 Milk: calcium and protein  
+-  Coconut: healthy fats and minerals  
+-  Rice: energy and easy digestion  
+-  Jaggery: iron and natural minerals  
+-  Milk: calcium and protein  
 
 ---
 
@@ -113,5 +104,5 @@ This recipe serves 4-6 people and brings a rich, traditional flavor to your fest
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/zDQ39nzi5uk?si=vtxAdyqersOSMsBP)
+[![Watch the video](https://img.youtube.com/vi/zDQ39nzi5uk/0.jpg)](https://youtu.be/zDQ39nzi5uk?si=vtxAdyqersOSMsBP)
 
