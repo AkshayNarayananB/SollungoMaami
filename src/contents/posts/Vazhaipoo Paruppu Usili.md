@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
   
 ---
 
-# 🌼 Vazhaipoo Paruppu Usili | Healthy Banana Flower Lentil Stir-fry
+#  Vazhaipoo Paruppu Usili | Healthy Banana Flower Lentil Stir-fry
 
 “Nutritious, delicious, and packed with flavor — Vazhaipoo Paruppu Usili, the wholesome stir-fry your family will love!”
 
@@ -20,17 +20,17 @@ This traditional **Tamil-style dish** combines protein-rich lentils with finely 
 ---
 ## ✨ Ingredients
 
-🌱 **Chana dal** – ¼ cup  
-🌱 **Toor dal** – ¼ cup  
-✨ **Turmeric powder** – ¼ tsp  
-🌶️ **Red chilies** – 5 to 6  
-🌸 **Banana flower (vazhaipoo)** – 1 whole, chopped & squeezed  
-🌾 **Mustard seeds** – 1 tsp  
-🌿 **Curry leaves** – a few  
-💨 **Asafoetida (hing)** – a pinch  
-🧂 **Salt** – to taste  
-🛢️ **Oil** – 2 tbsp  
-💧 **Water** – as needed  
+ **Chana dal** – ¼ cup  
+ **Toor dal** – ¼ cup  
+ **Turmeric powder** – ¼ tsp  
+ **Red chilies** – 5 to 6  
+ **Banana flower (vazhaipoo)** – 1 whole, chopped & squeezed  
+ **Mustard seeds** – 1 tsp  
+ **Curry leaves** – a few  
+ **Asafoetida (hing)** – a pinch  
+ **Salt** – to taste  
+ **Oil** – 2 tbsp  
+ **Water** – as needed  
 
 ---
 
@@ -76,57 +76,54 @@ Drop chopped pieces into the prepared curd/lemon water to prevent darkening and 
 ## 👩‍🍳 Instructions
 
 ### 1 Soak Lentils  
-💧 Soak chana dal, toor dal, and red chilies for **30–45 minutes**.  
+ 1. Soak chana dal, toor dal, and red chilies for **30–45 minutes**.  
 
 ### 2 Prepare Banana Flower  
-  When ready to cook, drain the water completely using a strainer. 
-  Clean it in running water to discard the butter milk.
-🍛 Pressure cook with turmeric powder (**2 whistles**).  
-💧 Drain completely — no moisture should remain.
+ 1. When ready to cook, drain the water completely using a strainer. 
+ 2. Clean it in running water to discard the butter milk.
+ 3. Pressure cook with turmeric powder (**2 whistles**).  
+ 4. Drain completely — no moisture should remain.
 
 ### 3 Grind Dal Mixture  
-⚙️ Add dal along with red chili, hing, and salt to a mixer.  
-🌀 Pulse grind to a **coarse texture** (add a tsp of water only if needed).
+ 1. Add dal along with red chili, hing, and salt to a mixer.  
+ 2. Pulse grind to a **coarse texture** (add a tsp of water only if needed).
 
 ### 4 Steam Cook 
-Place the grounded dal mixture into greased idli plates, spreading evenly. Steam in an idli steamer for 5–7 minutes on medium heat.
-To check doneness, gently touch the surface — it should feel firm and non-sticky.
-Once steamed, carefully remove from the idli plates and set aside. Allow it to cool completely to room temperature, then crumble it finely using your fingers.
+1. Place the grounded dal mixture into greased idli plates, spreading evenly. Steam in an idli steamer for 5–7 minutes on medium heat.
+2. To check doneness, gently touch the surface — it should feel firm and non-sticky.
+3. Once steamed, carefully remove from the idli plates and set aside. Allow it to cool completely to room temperature, then crumble it finely using your fingers.
 
 ### 5 Temper and Cook  
-🔥 Heat oil in a pan. Add mustard seeds, (optional) urad dal, curry leaves, and hing.  
-🌾 Sauté for a minute.
+1. Heat oil in a pan. Add mustard seeds, (optional) urad dal, curry leaves, and hing.  
+2. Saute for a minute.
+3. Add crumbled dal mixture. Stir continuously on **low flame** for 2 minutes to cook and reduce oil absorption.
+4. When the dal starts leaving the sides of the kadai without sticking, add the chopped banana flower.
+5. Adjust salt. Mix and cook for **5 minutes**, stirring often.
+6. Turn off heat once mixture is soft and blended well.
 
-🥣 Add crumbled dal mixture. Stir continuously on **low flame** for 2 minutes to cook and reduce oil absorption.
-   When the dal starts leaving the sides of the kadai without sticking, add the chopped banana flower.
-   
-🧂 Adjust salt. Mix and cook for **5 minutes**, stirring often.
-
-✅ Turn off heat once mixture is soft and blended well.
-
----
+ ---
 
 ## 🍽️ Serving Suggestions
 
-🍚 Serve hot with **steamed rice + sambar or rasam**  
-🥦 Pair with a light **vegetable stir-fry** for a balanced meal  
+ Serve hot with **steamed rice + sambar or rasam**  
+ Pair with a light **vegetable stir-fry** for a balanced meal  
 
 ---
 
 ## 💡 Tips for Perfect Usili
 
-✔️ Squeeze banana flower well to remove moisture and bitterness  
-✔️ Stir often while cooking dal to prevent lumps and burning  
-✔️ Cook dal mixture before adding vazhaipoo to reduce oil usage  
-🌶️ Adjust chili count based on spice preference
+ Squeeze banana flower well to remove moisture and bitterness  
+ Stir often while cooking dal to prevent lumps and burning  
+ Cook dal mixture before adding vazhaipoo to reduce oil usage  
+ Adjust chili count based on spice preference
 
 ---
 
 ## 🌿 Health Benefits
 
-🌸 **Banana Flower** – Rich in fiber, vitamins C & E, antioxidants  
-🍛 **Lentils** – Great source of plant-based protein, folate, and iron  
-💪 Helps with **digestion**, **blood sugar control**, and **immunity**
+ **Banana Flower** – Rich in fiber, vitamins C & E, antioxidants  
+ **Lentils** – Great source of plant-based protein, folate, and iron  
+ Helps with **digestion**, **blood sugar control**, and **immunity**
 
 ---
 
@@ -137,4 +134,4 @@ Once steamed, carefully remove from the idli plates and set aside. Allow it to c
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/rk_leztmg3Q?si=07ElDdQlbnq0Gb7_)
+[![Watch the video](https://img.youtube.com/vi/rk_leztmg3Q/0.jpg)](https://youtu.be/rk_leztmg3Q?si=07ElDdQlbnq0Gb7_)
