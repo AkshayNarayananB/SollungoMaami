@@ -77,7 +77,7 @@ A delicious and aromatic paneer dish that's perfect for lunch boxes and family m
 - Add cloves and peppercorns; let them crackle.  
 - Add chopped onions and fry until light brown.  
 - Add cashew nuts (optional).  
-- Add ginger-garlic paste; sauté until raw smell disappears.  
+- Add ginger-garlic paste; saute until raw smell disappears.  
 - Add chopped tomatoes and cook until soft and mushy.  
 - Let the mixture cool; then grind to a smooth paste.  
 
@@ -137,4 +137,4 @@ Enjoy this aromatic and flavorful Kadai Paneer that brings restaurant taste righ
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/t4-DP_17Upg?si=MuszRG1hMi3jprml)
+[![Watch the video](https://img.youtube.com/vi/t4-DP_17Upg/0.jpg)](https://youtu.be/t4-DP_17Upg?si=MuszRG1hMi3jprml)
