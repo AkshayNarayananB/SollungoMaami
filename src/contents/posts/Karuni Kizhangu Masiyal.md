@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
   
 ---
 
-# 🍠 Karuni Kizhangu Masiyal | Elephant Yam Mash | Healthy & Easy
+#  Karuni Kizhangu Masiyal | Elephant Yam Mash | Healthy & Easy
 
 **"Wholesome, hearty, and full of flavor — the perfect companion for your hot rice!"**
 
@@ -21,19 +21,19 @@ Karuni Kizhangu (Elephant Yam) is a nutritious vegetable popular in South Indian
 
 ## 🛒 Ingredients
 
-- 🍠 Karuni Kizhangu (Elephant Yam) – 500 g (peeled and cut into big pieces)  
-- 🟡 Moong dal – ½ cup (washed)  
-- 🌿 Turmeric powder – ¼ tsp  
-- 🍅 Tomato – 2 (roughly chopped)  
-- 🌿 Ginger – 1 to 1.5 inch piece (finely chopped)  
-- 🌶️ Green chilies – 2 to 3  
-- 🍋 Lemon – ½ to 1 (freshly squeezed)  
-- 🌱 Asafoetida (hing) – a pinch  
-- 🌿 Mustard seeds – 1 tsp  
-- 🛢️ Oil – 1 to 2 tbsp  
-- 🧂 Salt – to taste  
-- 💧 Water – as needed  
-- 🍃 Coriander leaves – handful (chopped)  
+-  Karuni Kizhangu (Elephant Yam) – 500 g (peeled and cut into big pieces)  
+-  Moong dal – ½ cup (washed)  
+-  Turmeric powder – ¼ tsp  
+-  Tomato – 2 (roughly chopped)  
+-  Ginger – 1 to 1.5 inch piece (finely chopped)  
+-  Green chilies – 2 to 3  
+-  Lemon – ½ to 1 (freshly squeezed)  
+-  Asafoetida (hing) – a pinch  
+-  Mustard seeds – 1 tsp  
+-  Oil – 1 to 2 tbsp  
+-  Salt – to taste  
+-  Water – as needed  
+-  Coriander leaves – handful (chopped)  
 
 ---
 
@@ -81,4 +81,4 @@ Enjoy this healthy, flavorful Elephant Yam Masiyal as a comforting and nutritiou
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/c9o5G2Kc-Ak?si=8MybYB5tAU9vUr-a)
+[![Watch the video](https://img.youtube.com/vi/c9o5G2Kc-Ak/0.jpg)](https://youtu.be/c9o5G2Kc-Ak?si=8MybYB5tAU9vUr-a)
