@@ -8,7 +8,7 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Godhuma%20dosai.png"
 ---
 
-# 🟤 Wheat Dosa Recipe | Godhumai Dosai (Quick & Crispy)
+#  Wheat Dosa Recipe | Godhumai Dosai (Quick & Crispy)
 
 “Quick, crispy, and wholesome — Godhumai Dosai is the dosa your mornings need!”
 
@@ -22,15 +22,15 @@ It's healthy, beginner-friendly, and comes together in just minutes.
 
 ## 🛒 Ingredients
 
-- 🟤 **Wheat Flour (Godhumai Maavu)** – 2 cups  
-- 🍚 **Rice Flour** – 1 cup  
-- 🔸 **Asafoetida (Hing)** – a pinch  
-- 🌶️ **Green Chilies** – 2 to 3, finely chopped  
-- 🌿 **Curry Leaves** – a few, finely chopped  
-- 🥄 **Cumin Seeds (Jeera)** – 2 tsp  
-- 🧂 **Salt** – to taste  
-- 💧 **Water** – as needed (approx. 3 to 3½ cups)  
-- 🛢️ **Oil** – for cooking  
+-  **Wheat Flour (Godhumai Maavu)** – 2 cups  
+-  **Rice Flour** – 1 cup  
+-  **Asafoetida (Hing)** – a pinch  
+-  **Green Chilies** – 2 to 3, finely chopped  
+-  **Curry Leaves** – a few, finely chopped  
+-  **Cumin Seeds (Jeera)** – 2 tsp  
+-  **Salt** – to taste  
+-  **Water** – as needed (approx. 3 to 3½ cups)  
+-  **Oil** – for cooking  
 
 ---
 
@@ -108,4 +108,4 @@ Also works as a light dinner or a healthy snack with curd and pickle.
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/OCZ2jJoeWDs?si=K4kFm4_E5AlaCZgT)
+[![Watch the video](https://img.youtube.com/vi/OCZ2jJoeWDs/0.jpg)](https://youtu.be/OCZ2jJoeWDs?si=K4kFm4_E5AlaCZgT)
