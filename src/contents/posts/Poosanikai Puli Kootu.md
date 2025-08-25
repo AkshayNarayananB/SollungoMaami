@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
   
 ---
 
-# 🍲 Poosanikai Puli Kootu | Ash Gourd Tamarind Curry
+#  Poosanikai Puli Kootu | Ash Gourd Tamarind Curry
 
 **"Where tradition meets nutrition — one spoonful of comfort, a bowlful of health!"**
 
@@ -21,42 +21,42 @@ This classic South Indian Puli Kootu features tender ash gourd simmered with len
 ## 🛒 Ingredients
 
 ### For the Spice Paste  
-- 🌿 Coriander seeds – 1 tbsp  
-- 🌰 Chana dal (split chickpeas) – 1 tbsp  
-- 🌰 Urad dal (split black gram) – 1 tbsp  
-- 🌶️ Red chilies – 7 to 8  
-- ⚫ Black pepper – 1 tsp  
-- 🌾 Fenugreek seeds – 1 tsp  
-- 🥥 Fresh grated coconut – 1 cup  
-- 💧 Water – as needed  
+-  Coriander seeds – 1 tbsp  
+-  Chana dal (split chickpeas) – 1 tbsp  
+-  Urad dal (split black gram) – 1 tbsp  
+-  Red chilies – 7 to 8  
+-  Black pepper – 1 tsp  
+-  Fenugreek seeds – 1 tsp  
+-  Fresh grated coconut – 1 cup  
+-  Water – as needed  
 
 ### For the Lentil Base  
-- 🌱 Moong dal (split green gram) – 1 tbsp  
-- 🌰 Chana dal – 3 tbsp  
-- 🌰 Urad dal – 3 tbsp
--     Jackfruit seed (optional)
-- 🌟 Turmeric powder – ¼ tsp  
-- 💧 Water – as needed
+-  Moong dal (split green gram) – 1 tbsp  
+-  Chana dal – 3 tbsp  
+-  Urad dal – 3 tbsp
+-  Jackfruit seed (optional)
+-  Turmeric powder – ¼ tsp  
+-  Water – as needed
   
 ### Kaubli chana and Peanuts
 -  If using kaubli chana, peanuts (Pressure work seperatly and keep it ready)
 - 
 ### For the Kootu  
-- 🛢️ Oil – 3 to 4 tbsp  
-- 🌶️ Green chilies – 2, slit  
-- 🍅 Tomatoes – 2 medium, chopped  
-- 🍈 Ash gourd (poosanikai) – 2 cups, chopped  
-- 🟢 Green peas – ½ cup (fresh or frozen)  
-- 🍋 Tamarind paste – 2 tbsp (or 1 lemon-sized tamarind ball soaked in water)  
-- 🧂 Salt – to taste  
-- 🍃 Curry leaves  
-- 🌿 Fresh coriander leaves, chopped  
+-  Oil – 3 to 4 tbsp  
+-  Green chilies – 2, slit  
+-  Tomatoes – 2 medium, chopped  
+-  Ash gourd (poosanikai) – 2 cups, chopped  
+-  Green peas – ½ cup (fresh or frozen)  
+-  Tamarind paste – 2 tbsp (or 1 lemon-sized tamarind ball soaked in water)  
+-  Salt – to taste  
+-  Curry leaves  
+-  Fresh coriander leaves, chopped  
 
 ### For Tempering  
-- 🛢️ Oil – 1 tbsp  
-- ⚫ Mustard seeds – 1 tsp  
-- 🌰 Urad dal – 1 tsp  
-- 🌿 Asafoetida (hing) – a pinch  
+-  Oil – 1 tbsp  
+-  Mustard seeds – 1 tsp  
+-  Urad dal – 1 tsp  
+-  Asafoetida (hing) – a pinch  
 
 ---
 
@@ -75,7 +75,7 @@ This classic South Indian Puli Kootu features tender ash gourd simmered with len
 
 ### Step 3: Make the Kootu  
 - Heat oil in a thick-bottomed pan over medium flame.  
-- Add slit green chilies, sauté for 2 minutes.  
+- Add slit green chilies, saute for 2 minutes.  
 - Add chopped tomatoes, cook until soft and mushy.  
 - Add chopped ash gourd and cook for 3–4 minutes.  
 - Add cooked chana, peanuts and green peas.  
@@ -121,7 +121,7 @@ This authentic South Indian recipe balances tangy tamarind, aromatic spices, and
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/uEOxJMKi3Jc?si=tuX4oTVIMf_TosG5)
+[![Watch the video](https://img.youtube.com/vi/uEOxJMKi3Jc/0.jpg)](https://youtu.be/uEOxJMKi3Jc?si=tuX4oTVIMf_TosG5)
 
 
 
