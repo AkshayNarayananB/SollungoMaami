@@ -65,32 +65,32 @@ Frozen peas make this recipe quick and easy without compromising taste.
    - Puree the tomatoes separately and set aside.  
 
 2. **Saute Whole Spices**  
-   Heat 4–5 tbsp oil in a kadai.  
-   Add clove, cinnamon, and bay leaf. Saute for a few seconds until aromatic.  
+   - Heat 4–5 tbsp oil in a kadai.  
+   - Add clove, cinnamon, and bay leaf. Saute for a few seconds until aromatic.  
 
 3. **Add Ginger-Garlic Paste**  
-   Add the ground ginger-garlic-green chili paste.  
-   Saute until the raw smell disappears.  
+   - Add the ground ginger-garlic-green chili paste.  
+   - Saute until the raw smell disappears.  
 
 4. **Cook Onions & Peas**  
-   Add finely chopped onion and saute until light golden.  
-   Add frozen peas and saute for 1 minute.  
+   - Add finely chopped onion and saute until light golden.  
+   - Add frozen peas and saute for 1 minute.  
 
 5. **Add Tomato Puree & Spices**  
-   Stir in the tomato puree.  
-   Add turmeric, coriander powder, cumin powder, red chili powder, garam masala, and salt.  
-   Mix well. Cover and cook on medium-low for 5 minutes until peas soften.  
+   - Stir in the tomato puree.  
+   - Add turmeric, coriander powder, cumin powder, red chili powder, garam masala, and salt.  
+   - Mix well. Cover and cook on medium-low for 5 minutes until peas soften.  
    (Stir occasionally to avoid burning.)  
 
 6. **Add Cashew Paste**  
-   Mix in the onion-cashew paste.  
-   Add water as needed to adjust consistency.  
-   Cover and cook for 5–7 minutes, stirring in between.  
-   Taste and adjust salt if required.  
+   - Mix in the onion-cashew paste.  
+   - Add water as needed to adjust consistency.  
+   - Cover and cook for 5–7 minutes, stirring in between.  
+   - Taste and adjust salt if required.  
 
 7. **Finish with Kasuri Methi**  
-   Add crushed kasuri methi. Mix well.  
-   Switch off the flame and cover immediately to lock in flavor.  
+   - Add crushed kasuri methi. Mix well.  
+   - Switch off the flame and cover immediately to lock in flavor.  
 
 ---
 
@@ -104,9 +104,9 @@ Frozen peas make this recipe quick and easy without compromising taste.
 
 ## 🍽️ Serving Suggestions
 
-- 🍛 With jeera rice or plain steamed basmati rice  
-- 🫓 With roti, chapati, phulka, or naan  
-- A perfect curry for lunch or dinner gatherings  
+-  With jeera rice or plain steamed basmati rice  
+-  With roti, chapati, phulka, or naan  
+-  A perfect curry for lunch or dinner gatherings  
 
 ---
 
