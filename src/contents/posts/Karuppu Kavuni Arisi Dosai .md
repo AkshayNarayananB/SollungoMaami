@@ -21,13 +21,13 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## 🛒 Ingredients  
 
-- 🌾 **Idli rice** – 1 cup  
-- 🌾 **Karuppu Kavuni rice** – 1 cup  
-- 🌰 **Urad dal** – ½ cup  
-- 🌿 **Fenugreek seeds** – 1 tsp  
-- 🌾 **Aval (poha)** – handful  
-- 🧂 **Salt** – as required  
-- 🛢️ **Oil** – for cooking dosa  
+-  **Idli rice** – 1 cup  
+-  **Karuppu Kavuni rice** – 1 cup  
+-  **Urad dal** – ½ cup  
+-  **Fenugreek seeds** – 1 tsp  
+-  **Aval (poha)** – handful  
+-  **Salt** – as required  
+-  **Oil** – for cooking dosa  
 
 ---
 
@@ -40,7 +40,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ### 🔸 Step 2: Grind Batter  
 1. Drain the soaked rice completely.  
-2. Grind in a mixer as you would for normal dosa, either in **batches or all at once**.  
+2. Have used grinder to grind as normal dosa batter. (If using mixer do in **batches**.)  
 3. Transfer to a bowl, add **salt**, mix well, and let it **ferment for 8 hours or overnight**.  
 
 ### 🔸 Step 3: Check Batter Consistency  
@@ -67,7 +67,6 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 ## 🍽️ Serving Suggestions  
 
 - Serve with **coconut chutney, ginger chutney, or sambar**.  
-- Can be paired with **ghee or butter** for added richness.  
 
 ---
 
