@@ -26,19 +26,19 @@ When used in this soup, curry leaves release their natural oils and blend beauti
 
 ## 🛒 Ingredients  
 
-- 🌿 **Curry leaves** – 1½ cups  
-- 🌰 **Moong dal** – ½ cup  
-- 🧅 **Onions** – 2 medium, sliced  
-- ⚫ **Black pepper** – 2 tsp  
-- 🌿 **Cumin seeds (jeera)** – 1 tsp  
-- 🍃 **Bay leaf** – 1  
-- 🛢️ **Oil** – 1 tbsp  
-- 🧈 **Ghee** – 1 tbsp  
-- 🧄 **Ginger garlic paste** – 1 tbsp  
-- 🌕 **Turmeric powder** – ¼ tsp  
-- 🌿 **Asafoetida (hing)** – a pinch  
-- 🧂 **Salt** – to taste  
-- 🍬 **Jaggery or sugar** – 1 tsp  
+-  **Curry leaves** – 1½ cups  
+-  **Moong dal** – ½ cup  
+-  **Onions** – 2 medium, sliced  
+-  **Black pepper** – 2 tsp  
+-  **Cumin seeds (jeera)** – 1 tsp  
+-  **Bay leaf** – 1  
+-  **Oil** – 1 tbsp  
+-  **Ghee** – 1 tbsp  
+-  **Ginger garlic paste** – 1 tbsp  
+-  **Turmeric powder** – ¼ tsp  
+-  **Asafoetida (hing)** – a pinch  
+-  **Salt** – to taste  
+-  **Jaggery or sugar** – 1 tsp  
 
 ---
 
@@ -46,12 +46,12 @@ When used in this soup, curry leaves release their natural oils and blend beauti
 
 1. **Prepare the Base**  
    - In a pressure cooker, heat oil and ghee.  
-   - Add bay leaf, black pepper, and cumin seeds. Sauté for a few seconds until aromatic.  
+   - Add bay leaf, black pepper, and cumin seeds. Saute for a few seconds until aromatic.  
 
 2. **Add Aromatics**  
-   - Add sliced onions and sauté until translucent.  
+   - Add sliced onions and saute until translucent.  
    - Add ginger garlic paste and fry until the raw smell disappears.  
-   - Add curry leaves and sauté for 2–3 minutes.  
+   - Add curry leaves and saute for 2–3 minutes.  
 
 3. **Cook the Dal**  
    - Add washed moong dal, turmeric powder, and sufficient water.  
@@ -81,9 +81,9 @@ When used in this soup, curry leaves release their natural oils and blend beauti
 
 ## 🍵 Health Benefits  
 
-- 🌿 **Curry leaves** – Good for digestion, hair, and skin health.  
-- ⚡ **Black pepper** – Improves metabolism and clears sinuses.  
-- 🌰 **Moong dal** – Light, protein-rich, and easy to digest.  
+-  **Curry leaves** – Good for digestion, hair, and skin health.  
+-  **Black pepper** – Improves metabolism and clears sinuses.  
+-  **Moong dal** – Light, protein-rich, and easy to digest.  
 
 ---
 👌 Karuveppilai (Curry Leaves) Soup is both tasty and medicinal — perfect for digestion and immunity!
@@ -91,4 +91,4 @@ When used in this soup, curry leaves release their natural oils and blend beauti
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/f9oePbSGDyo?si=FjvFXAspv582xgwh)
+[![Watch the video](https://img.youtube.com/vi/f9oePbSGDyo/0.jpg)](https://youtu.be/f9oePbSGDyo?si=FjvFXAspv582xgwh)
