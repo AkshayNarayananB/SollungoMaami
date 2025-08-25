@@ -8,7 +8,7 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjal capsicum.png"  
 ---
 
-# 🍆🌶️ Brinjal Capsicum Sabzi | Easy Dry Sabzi for Chapathi & Pulka
+# Brinjal Capsicum Sabzi | Easy Dry Sabzi for Chapathi & Pulka
 
 “Everyday ingredients, extraordinary taste — Brinjal Capsicum magic in every bite!”
 
@@ -41,7 +41,7 @@ A simple, flavorful, and healthy dry vegetable sabzi made with brinjal (eggplant
    Heat oil in a pan on medium flame. Add mustard seeds and let them splutter. Add a pinch of asafoetida.
 
 3. **Cook capsicum:**  
-   Add chopped capsicum and sauté for about 1 minute, keeping it crunchy.
+   Add chopped capsicum and saute for about 1 minute, keeping it crunchy.
 
 4. **Add brinjal and cook:**  
    Add the brinjal, mix well so the vegetables are coated with oil. Cover and cook on low flame for 5 to 7 minutes.
@@ -66,4 +66,4 @@ Serve this Brinjal Capsicum Sabzi hot with chapathi, pulka, or as a side with ri
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/6oqURPBbeQk?si=vIok6gp3qVlaeoDp)
+[![Watch the video](https://img.youtube.com/vi/6oqURPBbeQk/0.jpg)](https://youtu.be/6oqURPBbeQk?si=vIok6gp3qVlaeoDp)
