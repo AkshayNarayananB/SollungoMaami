@@ -17,7 +17,7 @@ A simple yet essential batter recipe using rice flour, perfect for making tradit
 ![idiyappamflour](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/idiyappamflour.png)
 ---
 
-## 🌾 Ingredients
+##  Ingredients
 
 - 1 cup rice flour (any packed brand)  
 - 1 tsp salt  
@@ -76,4 +76,4 @@ A simple yet essential batter recipe using rice flour, perfect for making tradit
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/W9e4geYVkM4?si=mwsnflUvrW_14i7v)
+[![Watch the video](https://img.youtube.com/vi/W9e4geYVkM4/0.jpg)](https://youtu.be/W9e4geYVkM4?si=mwsnflUvrW_14i7v)
