@@ -1,5 +1,5 @@
 ---
-title: Pulikachal
+title: Pulikachal (Puliyotharai)
 published: 2025-08-18
 description: “Pulikachal is a tangy, spicy, and aromatic tamarind paste made with roasted spices, peanuts, and curry leaves, perfect for elevating any South Indian meal.”
 tags: [Rice Mix]
@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ---
 
-# 🌶️ Pulikachal | Tangy Tamarind Paste
+#  Pulikachal | Tangy Tamarind Paste
 
 *A tangy and aromatic South Indian tamarind chutney/paste perfect with rice and meals.*
 
@@ -69,37 +69,43 @@ The aroma alone evokes memories of home kitchens, where every meal is infused wi
 3. Once thick and oil separates on top, reduce to low flame for 2–3 minutes.  
 4. Turn off the flame and let it cool.
 
+### Step 5: Mixing Rice with Pulikachal
+1. Mixing Rice with Pulikachal
+2. Cook rice (preferably raw rice / sona masoori) until soft and fluffy.
+3. Spread the hot rice on a wide plate or vessel, drizzle a little sesame oil (to avoid sticking).
+4. Add 2–3 spoons of Pulikachal (tamarind paste mix) over the rice.
+5. Gently mix with a flat spoon or your hand (once rice cools slightly), ensuring the paste coats every grain evenly.
+6. Taste and adjust by adding more Pulikachal or oil if needed.
+
 ---
 
 ## 🍽️ Serving Suggestions
-- Serve as a side with **steamed rice**.
-- Mix with cooked rice to make puliyodharai**.
-- Pairs well with **curd rice or plain rice meals**.  
-- Can be used as a **tamarind chutney for snacks**.
+-  Serve with papad, vadagam, or curd on the side for a complete meal.
 
 ---
 
 ## 💡 Tips for Success
-- 🔥 Stir frequently while cooking to prevent burning.  
-- 🌶️ Adjust red chili quantity to control spice level.  
-- 🥜 Use fresh peanuts and roast well for a nutty flavor.  
-- 🌿 Add curry leaves at the start for aromatic flavor infusion.
+-  Stir frequently while cooking to prevent burning.  
+-  Adjust red chili quantity to control spice level.  
+-  Use fresh peanuts and roast well for a nutty flavor.  
+-  Add curry leaves at the start for aromatic flavor infusion.
+  
 
 ---
 
 ## 🥄 Storage
-- 🏠 Store in an airtight container in the refrigerator for 2–3 months.  
-- 🥄 Always use dry spoon while serving to have more shelf life.
-- 🔥 Reheat gently before serving.  
-- ❄️ Can be frozen for longer storage.
+-  Store in an airtight container in the refrigerator for 2–3 months.  
+-  Always use dry spoon while serving to have more shelf life.
+-  Reheat gently before serving.  
+-  Can be frozen for longer storage.
 
 ---
 
 ## 🌿 Nutritional Benefits
-- 💪 Protein from peanuts and chana dal  
-- 🌾 Fiber from tamarind and spices  
-- 🌶️ Antioxidants from dry red chilies and fenugreek  
-- 🌿 Digestive benefits from curry leaves and mustard seeds  
+-  Protein from peanuts and chana dal  
+-  Fiber from tamarind and spices  
+-  Antioxidants from dry red chilies and fenugreek  
+-  Digestive benefits from curry leaves and mustard seeds  
 
 ---
 
@@ -109,4 +115,4 @@ The aroma alone evokes memories of home kitchens, where every meal is infused wi
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/XvksY1kdn1k?si=hFvUnWw5py91TKX-)
+[![Watch the video](https://img.youtube.com/vi/XvksY1kdn1k/0.jpg)](https://youtu.be/XvksY1kdn1k?si=hFvUnWw5py91TKX-)
