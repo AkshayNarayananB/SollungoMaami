@@ -54,15 +54,15 @@ Its robust flavors come from a blend of aromatic spices such as cloves, cinnamon
 
 2. **Make the Gravy Paste**  
     Heat 2 tablespoons of oil in a pan. Add cloves and cinnamon sticks.  
-    Add chopped ginger, garlic, and 3–4 dry red chilies. Sauté well.  
-    Add chopped onions and sauté until golden.  
+    Add chopped ginger, garlic, and 3–4 dry red chilies. Saute well.  
+    Add chopped onions and saute until golden.  
     Add chopped tomatoes and cook until soft.  
     Add turmeric, coriander, chili powder, and garam masala. Mix well.  
     Add grated coconut and some water, then grind this mixture to a smooth paste.
 
 3. **Cook the Kadala Curry**  
     Heat 2 tablespoons of oil in a thick pan. Add 2 dry red chilies and fry briefly.  
-    Add finely chopped onions and sauté until golden.  
+    Add finely chopped onions and saute until golden.  
     Add curry leaves and a pinch of hing. Mix well.  
     Add the prepared gravy paste and water to adjust consistency.  
     Add salt to taste and bring it to a boil on medium-high flame.  
@@ -96,11 +96,11 @@ Also pairs well with steamed rice or chapathi.
 
 ## 🥦 Nutritional Benefits
 
-**🫘 Black Chana (Kadala)**  
+** Black Chana (Kadala)**  
 - Rich in plant-based protein, supports muscle repair.  
 - High in fiber, promotes digestion and gut health.
 
-**🌿 Spices (Turmeric, Coriander, Red Chili)**  
+** Spices (Turmeric, Coriander, Red Chili)**  
 - Turmeric: anti-inflammatory.  
 - Coriander: aids digestion and is antioxidant-rich.  
 - Red chili: boosts metabolism and contains vitamin C.
@@ -108,4 +108,4 @@ Also pairs well with steamed rice or chapathi.
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/GfsSDbAZhYU?si=HdKx1Kp4yVVVnP2C)
+[![Watch the video](https://img.youtube.com/vi/GfsSDbAZhYU/0.jpg)](https://youtu.be/GfsSDbAZhYU?si=HdKx1Kp4yVVVnP2C)
