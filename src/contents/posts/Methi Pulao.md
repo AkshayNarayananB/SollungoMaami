@@ -24,34 +24,34 @@ Unlike regular pulao, this recipe balances the slight bitterness of fenugreek wi
 ## 🛒 Ingredients  
 
 ### For the Pulao  
-- 🌾 **Basmati rice** – 1 cup (soaked 30 min)  
-- 🌿 **Fresh Methi leaves** – 1 bunch  
-- 🧅 **Onion** – 2 (sliced)  
-- 🍅 **Tomato** – 1 (chopped)  
-- 🥕 **Carrot** – 1 cup (chopped)  
-- 🫘 **Beans** – 1 cup (chopped)  
-- 🥔 **Potato** – 1 cup (chopped)  
-- 🌱 **Frozen green peas** – 1 cup  
-- 🧄 **Ginger garlic paste** – 1 tsp  
-- 🌶️ **Green chili** – 1–2  
-- 🧂 **Salt** – as needed  
-- 🧈 **Oil** – 2 tbsp  
-- 🧈 **Ghee** – 2 tbsp  
+-  **Basmati rice** – 1 cup (soaked 30 min)  
+-  **Fresh Methi leaves** – 1 bunch  
+-  **Onion** – 2 (sliced)  
+-  **Tomato** – 1 (chopped)  
+-  **Carrot** – 1 cup (chopped)  
+-  **Beans** – 1 cup (chopped)  
+-  **Potato** – 1 cup (chopped)  
+-  **Frozen green peas** – 1 cup  
+-  **Ginger garlic paste** – 1 tsp  
+-  **Green chili** – 1–2  
+-  **Salt** – as needed  
+-  **Oil** – 2 tbsp  
+-  **Ghee** – 2 tbsp  
 
 ### Whole Spices  
-- 🍃 **Bay leaf** – 1  
-- 🌸 **Cloves** – 2  
-- 🌿 **Cinnamon stick** – 1 inch  
+-  **Bay leaf** – 1  
+-  **Cloves** – 2  
+-  **Cinnamon stick** – 1 inch  
 
 ### Spice Powders  
-- 🌼 **Turmeric powder** – 1 tsp  
-- 🌿 **Coriander powder** – 1 tsp  
-- 🌶️ **Red chili powder** – 1 tsp  
-- 🥄 **Garam masala** – 1 tsp  
-- 🌸 **Hing** – a pinch  
+-  **Turmeric powder** – 1 tsp  
+-  **Coriander powder** – 1 tsp  
+-  **Red chili powder** – 1 tsp  
+-  **Garam masala** – 1 tsp  
+-  **Hing** – a pinch  
 
 ### For the Bread Topping  
-- 🍞 **Bread slices** – 2–3 (toasted & shallow fried in ghee)  
+-  **Bread slices** – 2–3 (toasted & shallow fried in ghee)  
 
 ---
 
@@ -68,7 +68,7 @@ Unlike regular pulao, this recipe balances the slight bitterness of fenugreek wi
    - Add bay leaf, cloves, cinnamon, and green chili. Saute for a minute.  
    - Add sliced onion and saute until translucent.  
    - Add ginger-garlic paste and cook until raw smell disappears.  
-   - Add methi leaves, sauté until they shrink and soften.  
+   - Add methi leaves, saute until they shrink and soften.  
 
 4. **🥦 Add Vegetables & Spices**  
    - Add tomatoes, carrots, beans, potato, and peas.  
