@@ -22,21 +22,21 @@ This vibrant **South Indian beetroot curry** is simple yet packed with flavor. R
 
 ## 🛒 Ingredients
 
-🥬 **Beetroot** – 500g, peeled and finely chopped  
-🥜 **Roasted peanuts** – 2 to 3 tbsp  
-💧 **Water**  
-🥥 **Grated coconut** – ½ cup  
-🌶️ **Homemade curry powder (podi)** – 1½ to 2 tbsp  
-🧂 **Salt** – to taste  
+**Beetroot** – 500g, peeled and finely chopped  
+**Roasted peanuts** – 2 to 3 tbsp  
+**Water**  
+**Grated coconut** – ½ cup  
+**Homemade curry powder (podi)** – 1½ to 2 tbsp  
+**Salt** – to taste  
 
 ### 🌾 For Tempering:
 
-🌰 **Chana dal** – 1 tsp  
-⚫ **Urad dal** – 1 tsp  
-🌶️ **Dry red chilies** – 1 to 2  
-🌱 **Mustard seeds** – ½ tsp  
-💨 **Asafoetida (hing)** – a pinch  
-🛢️ **Oil** – 1 to 2 tbsp
+**Chana dal** – 1 tsp  
+**Urad dal** – 1 tsp  
+**Dry red chilies** – 1 to 2  
+**Mustard seeds** – ½ tsp  
+**Asafoetida (hing)** – a pinch  
+**Oil** – 1 to 2 tbsp
 
 ---
 
@@ -47,7 +47,7 @@ This vibrant **South Indian beetroot curry** is simple yet packed with flavor. R
 - Heat oil in a pan.  
 - Add mustard seeds and let them splutter.  
 - Add chana dal, urad dal, dry red chilies, and a pinch of hing.  
-- Sauté until dals turn golden and aromatic.
+- Saute until dals turn golden and aromatic.
 
 ### 🔹 2. Cook Beetroot:
 
@@ -93,4 +93,4 @@ This vibrant **South Indian beetroot curry** is simple yet packed with flavor. R
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/3XQyO_O2XaM?si=n8h3kp3Dz-HVOI-5)
+[![Watch the video](https://img.youtube.com/vi/3XQyO_O2XaM/0.jpg)](https://youtu.be/3XQyO_O2XaM?si=n8h3kp3Dz-HVOI-5)
