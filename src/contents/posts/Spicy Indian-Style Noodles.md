@@ -8,11 +8,12 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/indian_noodles.png"  
 ---
 
-# 🍜 Spicy Indian-Style Noodles  
+# Spicy Indian-Style Noodles  
 
 ✨ *“Where Indo-Chinese meets Indian masalas — a fiery, crunchy, saucy noodle dish that’s pure street-food magic!”* ✨  
 
-🍜 Spicy Indian-Style Noodles are the perfect blend of Indo-Chinese street food and bold Indian masalas. Loaded with crunchy vegetables, tossed in soy, tomato, and vinegar, and spiced up with sambar powder and pav bhaji masala, these noodles are fiery, tangy, and absolutely irresistible. Quick to make and packed with flavors, it’s a favorite comfort food for kids and adults alike — perfect for weeknight dinners, party menus, or when those desi street food cravings strike!
+Spicy Indian-Style Noodles are the prefect blend of Indo-Chinese Street food and bold Indian masalas. Loaded with crunchy vegetables, tossed in soy, tomato and vinegar and spiced up with samabr powder and pav bhaji masala, these noodles are fiery, tangy, and absolutely irresistible. Quick to make and packed with flavors, it's a favorite comfort food for kids and adults alike -perfect for weeknight dinners or when those desi street food cravings strike!
+
 ---
 ![indian_noodles](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/indian_noodles.png)  
 ---
@@ -20,30 +21,30 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 ## 🛒 Ingredients  
 
 ### Main Ingredients:  
-- 🍜 Noodles – 2 to 3 cakes (as per pack instructions)  
-- 🧅 Onion – 2 (sliced)  
-- 🥕 Carrot – 1 (julienned)  
-- 🫑 Capsicum – 1 (sliced)  
-- 🥬 Cabbage – 1 cup (grated)  
-- 🫘 Beans – 10 to 15 (sliced thin)  
-- 🌶️ Green chili – 2 (slit)  
-- 🧄 Ginger garlic paste – 1 tbsp  
-- 🛢️ Oil – 4 tbsp  
-- 💧 Water – as needed to cook noodles  
+-  Noodles – 2 to 3 cakes (as per pack instructions)  
+-  Onion – 2 (sliced)  
+-  Carrot – 1 (julienned)  
+-  Capsicum – 1 (sliced)  
+-  Cabbage – 1 cup (grated)  
+-  Beans – 10 to 15 (sliced thin)  
+-  Green chili – 2 (slit)  
+-  Ginger garlic paste – 1 tbsp  
+-  Oil – 4 tbsp  
+-  Water – as needed to cook noodles  
 
 ### Sauces:  
-- 🍅 Tomato sauce – 2 tbsp  
-- 🥢 Soy sauce – 2 tbsp  
-- 🍶 Vinegar – 1 tbsp  
+-  Tomato sauce – 2 tbsp  
+-  Soy sauce – 2 tbsp  
+-  Vinegar – 1 tbsp  
 
 ### Masala Mix:  
-- 🌶️ Sambar powder – 2 tbsp  
-- 🌰 Garam masala – 1 tsp  
-- 🍛 Pav bhaji masala – 1 tsp  
-- 🌿 Chaat masala – ¼ tsp  
-- ⚫ Crushed black pepper – 1 tsp  
-- 🧂 Salt – to taste  
-- 🌸 Hing – a pinch  
+-  Sambar powder – 2 tbsp  
+-  Garam masala – 1 tsp  
+-  Pav bhaji masala – 1 tsp  
+-  Chaat masala – ¼ tsp  
+-  Crushed black pepper – 1 tsp  
+-  Salt – to taste  
+-  Hing – a pinch  
 
 ---
 
@@ -57,7 +58,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ### Step 2: Stir-Fry Veggies  
 - Heat oil in a wide pan.  
-- Add slit green chilies and onions, sauté briefly.  
+- Add slit green chilies and onions, saute briefly.  
 - Add ginger garlic paste, fry until raw smell disappears.  
 - Add carrots, beans, capsicum, and cabbage.  
 - Stir-fry on high flame for 2–3 minutes (retain crunch).  
@@ -79,14 +80,13 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 - Serve hot with a drizzle of chili sauce for extra spice  
 - Pair with Manchurian or Gobi 65 for a full street-food style meal  
-- Pack in lunch boxes for kids and adults alike  
 
 ---
 
 ## 💡 Tips  
 
 - Always stir-fry on **high flame** to retain crunch in veggies  
-- Do not overcook noodles — they should be firm (al dente)  
+- Do not overcook noodles — they should be firm.  
 - Adjust chili, pepper, and masala powders to suit your spice level  
 - For extra flavor, add a splash of schezwan sauce  
 
@@ -127,4 +127,4 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/dgE3zQ8TY8Q?si=FL6r3apYDCRFd5_6)
+[![Watch the video](https://img.youtube.com/vi/dgE3zQ8TY8Q/0.jpg)](https://youtu.be/dgE3zQ8TY8Q?si=FL6r3apYDCRFd5_6)
