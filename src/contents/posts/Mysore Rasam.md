@@ -9,14 +9,14 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
   
 ---
 
-# 🍲 Mysore Rasam | The Aromatic Soul of Karnataka
+#  Mysore Rasam | The Aromatic Soul of Karnataka
 
 *Where tradition meets taste — a symphony of spices in every spoonful!*
 
 ---
 ![mysorerasam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysorerasam.png)
 ---
-## 🥘 Ingredients
+##  Ingredients
 
 ### For the Dal:  
 - 🔸 1 cup toor dal (pigeon pea lentils)  
@@ -53,12 +53,12 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## 👩‍🍳 Instructions
 
-### 🍲 Prepare the Dal  
+###  Prepare the Dal  
 1️⃣ Clean and wash toor dal thoroughly.  
 2️⃣ Add water and turmeric powder, pressure cook for 3 whistles.  
 3️⃣ Mash the cooked dal and set aside.  
 
-### 🌶️ Make the Spice Paste  
+###  Make the Spice Paste  
 1️⃣ Heat ghee in a kadai on medium flame.  
 2️⃣ Add coriander seeds, chana dal, and black pepper; fry until dal turns golden brown.  
 3️⃣ Add cumin seeds and dried red chillies; fry well.  
@@ -66,7 +66,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 5️⃣ Cool completely, transfer to mixer jar.  
 6️⃣ Add little water and grind to a fine paste.  
 
-### 🍅 Prepare the Rasam  
+###  Prepare the Rasam  
 1️⃣ Heat ghee in a kadai.  
 2️⃣ Add chopped tomatoes and fry until soft.  
 3️⃣ Add tamarind water and curry leaves; boil for 5-10 minutes.  
@@ -75,7 +75,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 6️⃣ Stir in chopped coriander leaves.  
 7️⃣ Keep on low flame and boil for 2-3 minutes.  
 8️⃣ (Optional) Add a small piece of jaggery for subtle sweetness.  
-9️⃣ Switch off the flame once it starts boiling.  
+9️⃣ Switch off the flame once it starts to give first boil.  
 
 ### ✨ Tempering  
 1️⃣ Heat ghee in a ladle.  
@@ -86,11 +86,11 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## 🍽️ Serving Suggestions
 
-- 🍚 Mix Mysore Rasam with steamed rice for a comforting meal.  
-- 🥣 Sip as a warm digestive soup before or after meals.  
-- 🍞 Pair with dosa, idli, or vada.  
-- 🥗 Serve with papad and pickle for a light evening meal.  
-- 🎉 A festival essential for traditional South Indian feasts.  
+-  Mix Mysore Rasam with steamed rice for a comforting meal.  
+-  Sip as a warm digestive soup before or after meals.  
+-  Pair with dosa, idli, or vada.  
+-  Serve with papad and pickle for a light evening meal.  
+- A festival essential for traditional South Indian feasts.  
 
 ---
 
@@ -130,4 +130,4 @@ Enjoy this soulful Mysore Rasam that fills your kitchen with the authentic aroma
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/_sq2Qp8OM5Y?si=dJc1tNlWZpvR8q4P)
+[![Watch the video](https://img.youtube.com/vi/_sq2Qp8OM5Y/0.jpg)](https://youtu.be/_sq2Qp8OM5Y?si=dJc1tNlWZpvR8q4P)
