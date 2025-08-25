@@ -8,7 +8,7 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kanchiidli.jpg"  
 ---
 
-# 🥣 Kanchipuram Idli Recipe | Traditional South Indian Spiced Idli
+# Kanchipuram Idli Recipe | Traditional South Indian Spiced Idli
 
 “Spice-kissed, fluffy, and full of heritage — Kanchipuram Idli, a royal start to your day!”
 
@@ -66,7 +66,7 @@ Traditionally served as **prasadam** at the **Varadaraja Perumal Temple**, it ha
 - Once fermented, mix the batter again.  
 - Add **oil** and **dry ginger powder**. Stir to combine.  
 - Heat **ghee** in a pan. Add **crushed black pepper and cumin**.  
-- Sauté for 2–3 minutes on low-medium flame to release aroma.  
+- Saute for 2–3 minutes on low-medium flame to release aroma.  
 - Add this hot spiced ghee into the batter. Mix thoroughly but gently.
 
 ---
@@ -116,5 +116,5 @@ Traditionally served as **prasadam** at the **Varadaraja Perumal Temple**, it ha
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/uYPpyQZWSJ8?si=IDydlqspXpSaGtYN)
+[![Watch the video](https://img.youtube.com/vi/uYPpyQZWSJ8/0.jpg)](https://youtu.be/uYPpyQZWSJ8?si=IDydlqspXpSaGtYN)
 
