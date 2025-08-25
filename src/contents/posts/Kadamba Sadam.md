@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
   
 ---
 
-# 🍚 Kadamba Sadam | Traditional Mixed Rice for Festivals & Fasting
+#  Kadamba Sadam | Traditional Mixed Rice for Festivals & Fasting
 
 A comforting South Indian rice dish ideal for Navaratri and religious occasions — no onion, no garlic, just pure traditional flavors!
 
@@ -20,63 +20,63 @@ A comforting South Indian rice dish ideal for Navaratri and religious occasions 
 ## 🛒 Ingredients
 
 ### For Rice & Dal:  
-- 🍚 Raw rice – 3¼ cups  
-- 🫘 Toor dal – 1¼ cups  
-- 💧 Water – as needed for cooking  
+-  Raw rice – 3¼ cups  
+-  Toor dal – 1¼ cups  
+-  Water – as needed for cooking  
 
 ### For Masala Paste:  
-- 🫒 Oil – 2 tbsp  
-- 🫘 Chana dal – 2 tbsp  
-- 🌿 Coriander seeds – 2 tbsp  
-- 🫘 Urad dal – 1 tbsp  
-- ⚫ Black pepper – 1½ tbsp  
-- 🌶️ Red chillies – 6-7 (add 2-3 more for extra spice)  
-- 🌱 Fenugreek seeds – 1½ tbsp  
-- 🧄 Asafoetida – pinch  
-- 🥥 Grated coconut – ¾ to 1 cup  
-- 💧 Water – for grinding  
+-  Oil – 2 tbsp  
+-  Chana dal – 2 tbsp  
+-  Coriander seeds – 2 tbsp  
+-  Urad dal – 1 tbsp  
+-  Black pepper – 1½ tbsp  
+-  Red chillies – 6-7 (add 2-3 more for extra spice)  
+-  Fenugreek seeds – 1½ tbsp  
+-  Asafoetida – pinch  
+-  Grated coconut – ¾ to 1 cup  
+-  Water – for grinding  
 
 ### For Vegetable Curry:  
-- 🫒 Sesame oil – 4-5 tbsp  
-- 🫚 Ginger – 1 inch piece, finely chopped  
-- 🌶️ Green chillies – 2-3, slit  
-- 🍅 Tomatoes – 2 medium, roughly chopped  
-- 🥕 Mixed vegetables – 2 cups (your choice)  
-- 🟢 Frozen peas – ½ cup (optional)  
-- 🥜 Peanuts – handful (optional)  
-- 🧄 Asafoetida – pinch  
-- 🍋 Tamarind water – ½ cup  
-- 🧂 Salt – to taste  
-- 🍃 Curry leaves – 8-10 leaves  
-- 🌟 Turmeric powder – 1 tsp  
+-  Sesame oil – 4-5 tbsp  
+-  Ginger – 1 inch piece, finely chopped  
+-  Green chillies – 2-3, slit  
+-  Tomatoes – 2 medium, roughly chopped  
+-  Mixed vegetables – 2 cups (your choice)  
+-  Frozen peas – ½ cup (optional)  
+-  Peanuts – handful (optional)  
+-  Asafoetida – pinch  
+-  Tamarind water – ½ cup  
+-  Salt – to taste  
+-  Curry leaves – 8-10 leaves  
+-  Turmeric powder – 1 tsp  
 
 ### For Tempering:  
-- 🫒 Sesame oil – 2-3 tbsp  
-- 🌱 Mustard seeds – 1 tsp  
-- 🧄 Asafoetida – pinch  
-- 🥜 Cashews – handful (optional)  
-- 🧈 Ghee – 2 tbsp  
-- 🌿 Fresh coriander leaves – 2 tbsp, chopped  
+-  Sesame oil – 2-3 tbsp  
+-  Mustard seeds – 1 tsp  
+-  Asafoetida – pinch  
+-  Cashews – handful (optional)  
+-  Ghee – 2 tbsp  
+-  Fresh coriander leaves – 2 tbsp, chopped  
 
 ---
 
 ## 👩‍🍳 Instructions
 
 ### Preparing Rice & Dal  
- Wash raw rice and toor dal thoroughly.  
+Wash raw rice and toor dal thoroughly.  
 In a pressure cooker, add rice, dal, and enough water. Cook to a pongal-like mushy consistency.  
 
 ### Making Masala Paste  
 Heat 2 tbsp oil in a kadai.  
 Add chana dal, coriander seeds, urad dal, black pepper, and red chillies. Roast on medium flame till golden.  
 Add fenugreek seeds, roast for 1 minute.  
-Add asafoetida and grated coconut, sauté for 1 minute.  
+Add asafoetida and grated coconut, saute for 1 minute.  
 Turn off flame, cool mixture.  
 Grind with little water to a smooth paste.  
 
 ### Preparing Vegetable Curry  
 Heat 4-5 tbsp sesame oil in a wide vessel.  
-Add chopped ginger and slit green chillies; sauté till ginger is cooked.  
+Add chopped ginger and slit green chillies; saute till ginger is cooked.  
 Add chopped tomatoes; cook until soft.  
 Add mixed vegetables, peas, and peanuts (if using). Mix well.  
 Season with asafoetida, tamarind water, salt, curry leaves, turmeric powder.  
@@ -143,4 +143,4 @@ Enjoy this easy, wholesome Kadamba Sadam — a festive classic that brings famil
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/rWXC8KSU-VY?si=lQDWBpJCuGWok_b1)
+[![Watch the video](https://img.youtube.com/vi/rWXC8KSU-VY/0.jpg)](https://youtu.be/rWXC8KSU-VY?si=lQDWBpJCuGWok_b1)
