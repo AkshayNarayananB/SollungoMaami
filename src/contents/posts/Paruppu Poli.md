@@ -8,7 +8,7 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/paruppu poli.jpg" 
 ---
 
-# 🌾 Paruppu Poli | Sweet Chana Dal Stuffed Flatbread
+#  Paruppu Poli | Sweet Chana Dal Stuffed Flatbread
 
 A beloved traditional South Indian sweet made especially during festivals like **Bhogi**, **Yugadi**, and **Avani Avittam**.
 
@@ -20,23 +20,23 @@ A beloved traditional South Indian sweet made especially during festivals like *
 ## ✨ Ingredients
 
 ### For Dough:  
-🌾 Maida (All-purpose flour) – 2 cups  
-💛 Turmeric powder – ¼ tsp  
-🧂 Salt – ¼ tsp  
-💧 Water – as needed  
-🥥 Gingelly oil – 1½ cups (for kneading & soaking)  
+ Maida (All-purpose flour) – 2 cups  
+ Turmeric powder – ¼ tsp  
+ Salt – ¼ tsp  
+ Water – as needed  
+ Gingelly oil – 1½ cups (for kneading & soaking)  
 
 ### For Stuffing (Puranam):  
-🌱 Chana dal (Kadalai paruppu) – 1 cup  
-💧 Water – 2 cups (for cooking dal)  
-🥥 Grated coconut – 1 cup  
-🍬 Jaggery – 2 cups  
-🌿 Cardamom powder – 1 tsp  
+ Chana dal (Kadalai paruppu) – 1 cup  
+ Water – 2 cups (for cooking dal)  
+ Grated coconut – 1 cup  
+ Jaggery – 2 cups  
+ Cardamom powder – 1 tsp  
 
 ### For Cooking:  
-🧈 Ghee – 1½ tsp for each poli  
-🍃 Banana leaf or plastic sheet – for pressing poli  
-🔥 Dosa tawa  
+ Ghee – 1½ tsp for each poli  
+ Banana leaf or plastic sheet – for pressing poli  
+ Dosa tawa  
 
 ---
 
@@ -51,8 +51,8 @@ A beloved traditional South Indian sweet made especially during festivals like *
 
 ### 🔸 Preparing the Stuffing (Puranam):  
 1. Dry roast chana dal until light golden and fragrant.  
-2. Add water and cook until soft (about 10 mins). Mash to test softness.  
-3. Add grated coconut, jaggery, and cardamom powder. Stir till jaggery melts.  
+2. Add water and cook until soft (about 10 mins). Mash to test softness. (Can pressure cook also). 
+3. Add grated coconut, jaggery, and cardamom powder to the cooked dal. Stir till jaggery melts.  
 4. Cool the mixture, then grind into a thick, smooth paste with no water.  
 5. Shape into lemon-sized balls and set aside.  
 
@@ -83,4 +83,4 @@ Serve warm with a dollop of ghee on top. Stays good for 1–2 days and perfect a
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/hco5BV__yd4?si=JkvFE4e0YEB8jE5q)
+[![Watch the video](https://img.youtube.com/vi/_sq2Qp8OM5Y/0.jpg)](https://youtu.be/hco5BV__yd4?si=JkvFE4e0YEB8jE5q)
