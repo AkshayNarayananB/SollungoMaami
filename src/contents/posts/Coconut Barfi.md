@@ -31,51 +31,51 @@ Just 3 ingredients — melt-in-mouth coconut barfi!
 ## 👩‍🍳 Instructions
 
 ### Preparation  
- Grease a plate or tray with ghee and set aside.  
- Chop roasted cashews into small pieces.  
- Keep all ingredients ready as the process moves quickly.  
+ - Grease a plate or tray with ghee and set aside.
+ - Chop roasted cashews into small pieces.  
+ - Keep all ingredients ready as the process moves quickly.  
 
 ### Making the Sugar Syrup  
- In a heavy-bottomed pan, add sugar and cook on medium heat.  
- Stir continuously until sugar melts and forms a thick syrup.   
+ - In a heavy-bottomed pan, add sugar and cook on medium heat.  
+ - Stir continuously until sugar melts and forms a thick syrup.   
 
 ### Adding Coconut  
- Add grated coconut to hot sugar syrup.  
- Reduce heat to medium-low.  
- Stir continuously and cook for 2–3 minutes until boiling.  
- Continue stirring as mixture thickens.  
+ - Add grated coconut to hot sugar syrup.  
+ - Reduce heat to medium-low.  
+ - Stir continuously and cook for 2–3 minutes until boiling.  
+ - Continue stirring as mixture thickens.  
 
 ### Flavoring and Final Cooking  
- Add cardamom powder and mix well.  
- Increase heat to medium and stir for 5 minutes until mixture thickens and leaves sides of pan.  
- Add roasted cashews and mix well.  
+ - Add cardamom powder and mix well.  
+ - Increase heat to medium and stir for 5 minutes until mixture thickens and leaves sides of pan.  
+ - Add roasted cashews and mix well.  
 
 ### Setting the Barfi  
- Keep stirring continuously as mixture can splutter.  
- When mixture thickens and leaves pan sides, turn off heat.  
- Immediately transfer to greased plate.  
- Level quickly with ladle/spatula and press gently to even out.  
+ - Keep stirring continuously as mixture can splutter.  
+ - When mixture thickens and leaves pan sides, turn off heat.  
+ - Immediately transfer to greased plate.  
+ - Level quickly with ladle/spatula and press gently to even out.  
 
 ### Cutting  
- Cut while warm using a sharp knife for neat shapes.  
- Cutting cold barfi may cause breakage.  
+ - Cut while warm using a sharp knife for neat shapes.  
+ - Cutting cold barfi may cause breakage.  
 
 ---
 
 ## ✅ Tips  
 
-- ✔️ Continuous stirring is crucial throughout the process.  
-- ✔️ Have all ingredients ready before starting.  
-- ✔️ Work quickly once mixture is ready.  
-- ✔️ Perfect for festivals and celebrations.  
-- ✔️ Great way to use fresh coconut.  
+-  Continuous stirring is crucial throughout the process.  
+-  Have all ingredients ready before starting.  
+-  Work quickly once mixture is ready.  
+-  Perfect for festivals and celebrations.  
+-  Great way to use fresh coconut.  
 
 ---
 
 ## 🍽️ Serving  
 
-- 🍽️ Serve at room temperature.  
-- 🛍️ Store in an airtight container for up to one week.  
+-  Serve at room temperature.  
+-  Store in an airtight container for up to one week.  
 
 ---
 
