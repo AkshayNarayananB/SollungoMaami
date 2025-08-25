@@ -38,21 +38,21 @@ Chow Chow, also known as chayote squash, is a versatile vegetable popular in Sou
 
 ## 👩‍🍳 Instructions
 
-1. 🧽 Peel the chow chow and thoroughly wash the skin 2–3 times under running water. Use only the middle portion of the skin, discarding the top and bottom parts.  
+1.  Peel the chow chow and thoroughly wash the skin 2–3 times under running water. Use only the middle portion of the skin, discarding the top and bottom parts.  
 
-2. 🔥 Heat oil in a pan. Add urad dal and chana dal, roasting until golden and aromatic.  
+2.  Heat oil in a pan. Add urad dal and chana dal, roasting until golden and aromatic.  
 
-3. 🌶️ Add dry red chilies and fry for 1 minute, then add a pinch of asafoetida.  
+3.  Add dry red chilies and fry for 1 minute, then add a pinch of asafoetida.  
 
-4. 🍳 Add the chow chow skin pieces and sauté on medium-low heat for 5 to 10 minutes, stirring occasionally. This helps the skin shrink and softens it without burning the dals.
+4.  Add the chow chow skin pieces and saute on medium-low heat for 5 to 10 minutes, stirring occasionally. This helps the skin shrink and softens it without burning the dals.
 
 5.  Add tamarind and saute for 1 minute.
 
-6. 🥥 Once cooked, add grated coconut and mix well. Turn off the heat and allow the mixture to cool to room temperature.  
+6.  Once cooked, add grated coconut and mix well. Turn off the heat and allow the mixture to cool to room temperature.  
 
-7. 🌀 Transfer the mixture to a blender, add salt, and grind gradually with water into a thick paste.  
+7.  Transfer the mixture to a blender, add salt, and grind gradually with water into a thick paste.  
 
-8. 🍳 For tempering: Heat oil in a small pan. Add mustard seeds, urad dal, curry leaves, and a pinch of asafoetida. Once they splutter, pour this tempering over the ground thogayal and mix well.  
+8.  For tempering: Heat oil in a small pan. Add mustard seeds, urad dal, curry leaves, and a pinch of asafoetida. Once they splutter, pour this tempering over the ground thogayal and mix well.  
 
 ---
 
@@ -79,4 +79,4 @@ Enjoy this nutritious and flavorful South Indian thogayal that transforms a humb
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/G8jC8YSCNnA?si=HzyoQNbBB4MGJerz)
+[![Watch the video](https://img.youtube.com/vi/G8jC8YSCNnA/0.jpg)](https://youtu.be/G8jC8YSCNnA?si=HzyoQNbBB4MGJerz)
