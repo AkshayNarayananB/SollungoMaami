@@ -109,18 +109,10 @@ Let soak for 2–3 minutes until syrup is absorbed.
 
 ---
 
-## 🌟 Variations
-
-- 🌰 **Stuffed Badusha:** Fill with khoya or dry fruits before shaping  
-- 🌹 **Flavored Syrup:** Add rose water or saffron to sugar syrup  
-- 🍬 **Mini Badusha:** Make smaller sizes for bite-sized treats  
-
----
-
 **Yield:** About 12–15 medium-sized Badushas.  
 **Note:** Mastery comes with practice—focus on dough softness, correct oil temperature, and proper soaking for perfect results!
 
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/68VOVjN1Fyg?si=LRPfFVjnCiAbKgKM)
+[![Watch the video](https://img.youtube.com/vi/68VOVjN1Fyg/0.jpg)](https://youtu.be/68VOVjN1Fyg?si=LRPfFVjnCiAbKgKM)
