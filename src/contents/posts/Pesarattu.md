@@ -29,17 +29,17 @@ For an authentic Andhra touch, try the famous **MLA Pesarattu** — stuffed with
 
 ## 🛒 Ingredients  
 
-- 🌱 **Green moong dal** – 2 cups  
-- 🌾 **Rice** – ½ cup  
-- 🌰 **Urad dal** – 1 tbsp  
-- 🌶️ **Green chilies** – 3  
-- 🌶️ **Dry red chilies** – 4–5  
-- 🧄 **Ginger** – 2-inch piece (peeled & chopped)  
-- 🌿 **Fresh coriander leaves** – handful (with stems)  
-- ✨ **Hing (asafoetida)** – a pinch  
-- 🧂 **Salt** – as required  
-- 💧 **Water** – as needed  
-- 🛢️ **Oil** – for making dosa  
+-  **Green moong dal** – 2 cups  
+-  **Rice** – ½ cup  
+-  **Urad dal** – 1 tbsp  
+-  **Green chilies** – 3  
+-  **Dry red chilies** – 4–5  
+-  **Ginger** – 2-inch piece (peeled & chopped)  
+-  **Fresh coriander leaves** – handful (with stems)  
+-  **Hing (asafoetida)** – a pinch  
+-  **Salt** – as required  
+-  **Water** – as needed  
+-  **Oil** – for making dosa  
 
 ---
 
@@ -107,4 +107,4 @@ For an authentic Andhra touch, try the famous **MLA Pesarattu** — stuffed with
 
 ---
 ## Video Tutorial
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/9F7ii6X-xJo?si=GqpAKxx1sR2gsGnD)
+[![Watch the video](https://img.youtube.com/vi/9F7ii6X-xJo/0.jpg)](https://youtu.be/9F7ii6X-xJo?si=GqpAKxx1sR2gsGnD)
