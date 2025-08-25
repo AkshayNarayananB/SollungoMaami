@@ -10,7 +10,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 # 🍅 Thakkali Thokku | Spicy Tamil-Style Tomato Preserve
 
-🌶️ **"Bold, tangy, and fiery — Thakkali Thokku, your everyday flavor booster!"**
+ **"Bold, tangy, and fiery — Thakkali Thokku, your everyday flavor booster!"**
 
 Thakkali Thokku is a spicy and tangy tomato pickle from Tamil Nadu, slow-cooked with mustard seeds, curry leaves, and aromatic spices. This versatile chutney pairs wonderfully with rice, dosa, idli, or chapati, adding a burst of traditional flavor to every meal.
 
@@ -19,12 +19,12 @@ Thakkali Thokku is a spicy and tangy tomato pickle from Tamil Nadu, slow-cooked 
 ---
 ## 📝 Ingredients
 
-🍅 Ripe Tomatoes – 7 to 8  
-🧂 Salt – to taste  
-🔸 Hing (Asafoetida) – a pinch  
-🌶️ Sambar Powder – 2 to 3 tsp (adjust to taste)  
-🌱 Mustard Seeds – ½ tsp  
-🛢️ Sesame Oil – 7 to 8 tbsp  
+** Ripe Tomatoes – 7 to 8  
+** Salt – to taste  
+** Hing (Asafoetida) – a pinch  
+** Sambar Powder – 2 to 3 tsp (adjust to taste)  
+** Mustard Seeds – ½ tsp  
+** Sesame Oil – 7 to 8 tbsp  
 
 ---
 
@@ -58,10 +58,10 @@ Thakkali Thokku is a spicy and tangy tomato pickle from Tamil Nadu, slow-cooked 
 
 ## 💡 Tips & Storage Notes
 
-- 🍅 Adjust sambar powder if tomatoes are too sour or sweet.  
-- 🛢️ Use generous amount of sesame oil for authentic flavor and longer shelf life.  
-- ❄️ Refrigerate after a day for freshness; always use dry spoons to serve.  
-- 🔥 Slow cooking is key to developing flavor and preservation.
+-  Adjust sambar powder if tomatoes are too sour or sweet.  
+-  Use generous amount of sesame oil for authentic flavor and longer shelf life.  
+-  Refrigerate after a day for freshness; always use dry spoons to serve.  
+-  Slow cooking is key to developing flavor and preservation.
 
 ---
 
@@ -71,5 +71,5 @@ Pairs perfectly with idli, dosa, chapati, curd rice, pongal, or upma. Also great
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/VxBgvUk75Ho?si=3emO8OA-NvM6W6-F)
+[![Watch the video](https://img.youtube.com/vi/VxBgvUk75Ho/0.jpg)](https://youtu.be/VxBgvUk75Ho?si=3emO8OA-NvM6W6-F)
 
