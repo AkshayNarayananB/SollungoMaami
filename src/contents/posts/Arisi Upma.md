@@ -40,45 +40,45 @@ Simple spices, grated coconut, and a final drizzle of ghee elevate this dish fro
 ## 👩‍🍳 Instructions
 
 1. **Grind the Base**  
-   Add raw rice, toor dal, and black pepper to a dry mixer jar.  
-   Pulse to a coarse texture — like rava or fine upma rava.
+   - Add raw rice, toor dal, and black pepper to a dry mixer jar.  
+   - Pulse to a coarse texture — like rava or fine upma rava.
 
 2. **Prepare the Pan**  
-   Use a **vengala panai** or heavy-bottomed vessel.  
-   Heat 2–3 tbsp oil.
+   - Use a **vengala panai** or heavy-bottomed vessel.  
+   - Heat 2–3 tbsp oil.
 
 3. **Tempering**  
-   Once hot, add mustard seeds and let them splutter.  
-   Then add urad dal (if using), hing, curry leaves, and dry red chilies or Mor Milagai.  
+   - Once hot, add mustard seeds and let them splutter.  
+   - Then add urad dal (if using), hing, curry leaves, and dry red chilies or Mor Milagai.  
    🔸 *If using Mor Milagai, fry them **first** before mustard seeds — they need longer cooking.*
 
 4. **Add Water & Coconut**  
-   Pour in the measured water. Add grated coconut and salt.  
-   Bring to a rolling boil.
+   - Pour in the measured water. Add grated coconut and salt.  
+   - Bring to a rolling boil.
 
 5. **Add Ground Powder**  
-   Lower the flame. Slowly add the ground rice-dal mixture while stirring continuously to avoid lumps.
+   - Lower the flame. Slowly add the ground rice-dal mixture while stirring continuously to avoid lumps.
 
 6. **Cook & Cover**  
-   Keep stirring until the mixture thickens slightly.  
-   Cover with a **flat lid**, and place a bowl of water on top (traditional **dum** method).
+   - Keep stirring until the mixture thickens slightly.  
+   - Cover with a **flat lid**, and place a bowl of water on top (traditional **dum** method).
 
 7. **Stir Occasionally**  
-   Every 2–3 minutes, open the lid, stir the upma to prevent sticking, and cover again.  
-   Cook this way for **10–12 minutes on low flame**.
+   - Every 2–3 minutes, open the lid, stir the upma to prevent sticking, and cover again.  
+   - Cook this way for **10–12 minutes on low flame**.
 
 8. **Finish with Ghee**  
-   Add a spoon of ghee at the end. Stir gently. Serve hot.
+   - Add a spoon of ghee at the end. Stir gently. Serve hot.
 
 ---
 
 ## 🌟 Tips & Variations
 
-- 🛢️ **Coconut oil** adds a fragrant, traditional touch — use it instead of sunflower oil for more flavor.  
-- 🧈 A final spoon of **ghee** brings richness and aroma.  
-- 🔥 For a **crispy bottom layer**, continue cooking on low for 20–25 minutes, stirring occasionally.  
-- 🧂 **Mor Milagai** already contains salt — reduce added salt accordingly.  
-- 💧 Keep a little extra hot water on hand — you can add it if the mixture thickens too quickly.
+-  **Coconut oil** adds a fragrant, traditional touch — use it instead of sunflower oil for more flavor.  
+-  A final spoon of **ghee** brings richness and aroma.  
+-  For a **crispy bottom layer**, continue cooking on low for 20–25 minutes, stirring occasionally.  
+-  **Mor Milagai** already contains salt — reduce added salt accordingly.  
+-  Keep a little extra hot water on hand — you can add it if the mixture thickens too quickly.
 
 ---
 
@@ -86,11 +86,11 @@ Simple spices, grated coconut, and a final drizzle of ghee elevate this dish fro
 
 - Best served **hot** right out of the pan.  
 - Traditionally paired with:
-  - 🥣 **Puli Kootu** (Tamarind lentil curry)  
-  - 🥘 **Gostu** (Brinjal gravy)  
+  -  **Puli Kootu** (Tamarind lentil curry)  
+  -  **Gostu** (Brinjal gravy)  
 - Also goes well with:
-  - 🥥 **Coconut Chutney**  
-  - 🧂 **Pickle or plain curd**  
+  -  **Coconut Chutney**  
+  -  **Pickle or plain curd**  
 
 Simple, soulful, and absolutely comforting — this is everyday Tamil food at its finest.
 
