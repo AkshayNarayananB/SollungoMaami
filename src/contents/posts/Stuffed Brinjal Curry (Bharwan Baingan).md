@@ -8,9 +8,9 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/stuffed brinjal.png"  
 ---
 
-# 🍆 Stuffed Brinjal Curry (Bharwan Baingan)
+#  Stuffed Brinjal Curry (Bharwan Baingan)
 
-🌶️ **"Boldly spiced, perfectly stuffed — Bharwan Baingan that steals the show!"**
+ **"Boldly spiced, perfectly stuffed — Bharwan Baingan that steals the show!"**
 
 Stuffed Brinjal Curry, also known as Bharwan Baingan, is a flavorful delicacy from Maharashtra and Andhra Pradesh where tender eggplants are filled with a spiced, aromatic masala and cooked to perfection. This curry pairs beautifully with steamed rice or roti.
 
@@ -21,28 +21,28 @@ Stuffed Brinjal Curry, also known as Bharwan Baingan, is a flavorful delicacy fr
 ## 📝 Ingredients
 
 ### For the Curry:  
-- 🍆 25 small brinjals (eggplants)  
-- 🍅 2 large tomatoes, chopped  
-- 🧅 2 medium onions, chopped  
-- 🧂 Salt to taste  
-- 🌿 1 tsp turmeric powder  
-- 🌿 2 tsp coriander powder  
-- 🌿 1 tsp cumin powder  
-- 🌿 1 tsp garam masala  
-- 🌱 Pinch of hing (asafoetida)  
-- 🌿 Fresh coriander leaves for garnish  
-- 🛢️ 3-4 tbsp oil  
+-  25 small brinjals (eggplants)  
+-  2 large tomatoes, chopped  
+-  2 medium onions, chopped  
+-  Salt to taste  
+-  1 tsp turmeric powder  
+-  2 tsp coriander powder  
+-  1 tsp cumin powder  
+-  1 tsp garam masala  
+-  Pinch of hing (asafoetida)  
+-  Fresh coriander leaves for garnish  
+-  3-4 tbsp oil  
  
 
 ### For the Stuffing Paste:  
-- 🥜 1 cup peanuts  
-- 🌰 1 tbsp sesame seeds  
-- 🥥 ½ cup grated coconut  
-- 🌿 1 inch piece ginger, chopped  
-- 🧄 3-4 garlic cloves  
-- 🌶️ 4-5 red chilies  
-- 🧅 1 medium onion  
-- 💧 Water as required  
+-  1 cup peanuts  
+-  1 tbsp sesame seeds  
+-  ½ cup grated coconut  
+-  1 inch piece ginger, chopped  
+-  3-4 garlic cloves  
+-  4-5 red chilies  
+-  1 medium onion  
+-  Water as required  
 
 ---
 
@@ -63,7 +63,7 @@ Stuffed Brinjal Curry, also known as Bharwan Baingan, is a flavorful delicacy fr
 
 ### Cooking the Curry:  
 1. Heat 2-3 tbsp oil in a heavy-bottomed pan over medium heat.  
-2. Sauté chopped onions until light brown.  
+2. Saute chopped onions until light brown.  
 3. Add chopped tomatoes and cook until mushy.  
 4. Season with salt, turmeric powder, coriander powder, cumin powder, garam masala, and hing. Mix well.  
 5. Add any leftover stuffing paste and combine.  
@@ -105,9 +105,7 @@ This recipe serves 4-6 people and yields about 25 stuffed brinjals. Enjoy this a
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/BmuIFuZ7KRw?si=SpZnoRinIkNOTVbz)
+[![Watch the video](https://img.youtube.com/vi/BmuIFuZ7KRw/0.jpg)](https://youtu.be/BmuIFuZ7KRw?si=SpZnoRinIkNOTVbz)
 
 
-## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/BmuIFuZ7KRw?si=G5TQr2aayofomAIS)
