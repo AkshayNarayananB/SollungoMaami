@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
   
 ---
 
-# 🌿 Turnip (Knool Kohl) Sambar | Hearty & Flavorful Tamil Style
+#  Turnip (Knool Kohl) Sambar | Hearty & Flavorful Tamil Style
 
 **"Earthy turnip meets classic sambar — a soulful bowl of Tamil tradition!"**
 
@@ -20,18 +20,18 @@ Turnip Sambar is a hearty and flavorful Tamil-style lentil stew made with tender
 ---
 ## 📝 Ingredients
 
-- ⚪ Turnip (Knool Kohl) – 3 to 4 medium-sized, peeled & chopped  
-- 🌾 Toor Dal – 1 cup  
-- 🍅 Tomato – 1, chopped  
-- 🌶️ Green Chilies – 2, chopped  
-- 🌿 Curry Leaves – a few  
-- 🌿 Fresh Coriander Leaves – handful, chopped  
-- 🟡 Turmeric Powder – ¼ tsp  
-- 🔸 Hing (Asafoetida) – a pinch  
-- 🧂 Salt – to taste  
-- 🛢️ Oil (preferably gingelly/sesame oil) – 2 tbsp  
-- Tamarind – lemon-sized ball, soaked in water  
-- 🌶️ Sambar Powder – 2 tbsp  
+-  Turnip (Knool Kohl) – 3 to 4 medium-sized, peeled & chopped  
+-  Toor Dal – 1 cup  
+-  Tomato – 1, chopped  
+-  Green Chilies – 2, chopped  
+-  Curry Leaves – a few  
+-  Fresh Coriander Leaves – handful, chopped  
+-  Turmeric Powder – ¼ tsp  
+-  Hing (Asafoetida) – a pinch  
+-  Salt – to taste  
+-  Oil (preferably gingelly/sesame oil) – 2 tbsp  
+-  Tamarind – lemon-sized ball, soaked in water  
+-  Sambar Powder – 2 tbsp  
 
 ---
 
@@ -45,7 +45,7 @@ Turnip Sambar is a hearty and flavorful Tamil-style lentil stew made with tender
 ### Tempering  
 3. Heat 2 tbsp gingelly oil in a heavy-bottomed kadai. Add mustard seeds and let them splutter.  
 
-4. Add chopped green chilies and chopped tomato. Sauté until tomatoes turn juicy (~2–3 minutes).
+4. Add chopped green chilies and chopped tomato. Saute until tomatoes turn juicy (~2–3 minutes).
 
 ### Add Curry Leaves & Cooked Turnip  
 5. Add curry leaves. Then add the cooked turnip along with any cooking water. Mix well.
@@ -67,8 +67,11 @@ Turnip Sambar is a hearty and flavorful Tamil-style lentil stew made with tender
 - Also pairs beautifully with idli or dosa.
 
 ---
+## 💡 Health Benefits
+
+- Turnip is fiber-rich veggies that boost digestion, heart health, and immunity. Packed with vitamin C, potassium, and antioxidants, they support strong bones, glowing skin, and blood sugar control.
 
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/sS-CHSLoq8M?si=NtbPHOdErnHMH3fY)
+[![Watch the video](https://img.youtube.com/vi/sS-CHSLoq8M/0.jpg)](https://youtu.be/sS-CHSLoq8M?si=NtbPHOdErnHMH3fY)
