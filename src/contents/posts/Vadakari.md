@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ---
 
-# 🍲 Vada Curry (South Indian Spiced Lentil Curry)
+#  Vada Curry (South Indian Spiced Lentil Curry)
 
 *"A timeless classic that transforms simple lentils into a feast - the perfect companion for your favorite South Indian breakfast!"*
 
@@ -20,25 +20,6 @@ Vada Curry is a beloved South Indian side dish known for pairing beautifully wit
 ![vadacurry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vadacurry.png)
 
 ---
-## 🌿 Health Benefits
-
-**Chana Dal (Split Chickpeas):**  
-- High protein for muscle building and repair  
-- Rich in fiber, Iron-rich, Low glycemic 
-
-**Coconut:**  
-- Healthy fats (MCTs) for brain health  
-- Fiber-rich, Mineral rich, Natural energy booster  
-
-**Spices & Aromatics:**  
-- Turmeric: anti-inflammatory & antioxidant  
-- Ginger: aids digestion & anti-nausea  
-- Garlic: immune & heart health  
-- Mint: digestive aid & cooling  
-- Coriander: antioxidants & detox support  
-
----
-
 ## 🛒 Ingredients
 
 ### For Soaking  
@@ -144,27 +125,29 @@ Place small portions of the mixture in an idli plate or steamer and steam for 7�
 - Use fresh mint and coriander for freshness  
 
 ---
-
-## 🌈 Variations
-
-- Vegetable vadakari: add carrots, beans, drumsticks  
-- Coconut milk version: substitute some water with coconut milk  
-- Regional variations: each South Indian state has unique touches  
-
----
-
 ## 🧊 Storage
 
 - Refrigerate up to 3 days  
 - Reheat gently, add water if needed  
 - Flavors improve overnight  
-- Can be frozen up to 1 month  
 
 ---
+## 🌿 Health Benefits
 
-## 🍴 Nutritional Information
+**Chana Dal (Split Chickpeas):**  
+- High protein for muscle building and repair  
+- Rich in fiber, Iron-rich, Low glycemic 
 
-Packed with plant-based protein, fiber, and essential nutrients. Naturally gluten-free and vegan (when oil is used instead of ghee), this dish offers a wholesome, satisfying meal full of flavor and tradition.
+**Coconut:**  
+- Healthy fats (MCTs) for brain health  
+- Fiber-rich, Mineral rich, Natural energy booster  
+
+**Spices & Aromatics:**  
+- Turmeric: anti-inflammatory & antioxidant  
+- Ginger: aids digestion & anti-nausea  
+- Garlic: immune & heart health  
+- Mint: digestive aid & cooling  
+- Coriander: antioxidants & detox support  
 
 ---
 
@@ -175,7 +158,7 @@ Enjoy the comforting and exciting flavors of this traditional Vadakari — a bel
 
 ## 🎥 Video Tutorial  
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/Q2b4gGa-_PE?si=DE3i9eAgnOG6fGiZ) 
+[![Watch the video](https://img.youtube.com/vi/Q2b4gGa-_PE/0.jpg)](https://youtu.be/Q2b4gGa-_PE?si=DE3i9eAgnOG6fGiZ) 
 
 
 
