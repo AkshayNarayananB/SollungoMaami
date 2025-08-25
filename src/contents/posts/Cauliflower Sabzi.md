@@ -8,7 +8,7 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/cauliflowersabzi.png"  
 ---
 
-# 🥦 Cauliflower Sabzi | Spiced & Flavorful Dry Curry  
+#  Cauliflower Sabzi | Spiced & Flavorful Dry Curry  
 
 ✨ *“Golden florets, rich spices, and a touch of kasuri methi magic!”* ✨  
 
@@ -21,24 +21,24 @@ This Cauliflower Sabzi is a simple yet flavorful North Indian-style curry where 
 ## 🛒 Ingredients  
 
 ### For Marination:  
-- 🥦 Cauliflower – 1 (cut into florets)  
-- 🥛 Curd – 2 tbsp  
-- 🌼 Turmeric powder – ½ tsp  
-- 🌿 Coriander powder – 1 tsp  
-- 🌶️ Red chili powder – 1 tsp  
-- 🌰 Garam masala – 1 tsp  
-- ⚫ Black pepper powder – 1 tsp  
-- 🧂 Salt – to taste  
-- 🌸 Hing – a pinch  
+-  Cauliflower – 1 (cut into florets)  
+-  Curd – 2 tbsp  
+-  Turmeric powder – ½ tsp  
+-  Coriander powder – 1 tsp  
+-  Red chili powder – 1 tsp  
+-  Garam masala – 1 tsp  
+-  Black pepper powder – 1 tsp  
+-  Salt – to taste  
+-  Hing – a pinch  
 
 ### For Cooking:  
-- 🛢️ Oil – 2 to 3 tbsp  
-- 🌱 Fennel seeds or cumin seeds – ½ tsp  
-- 🧅 Onion – 2 (sliced)  
-- 🧄 Ginger garlic paste – 1 tbsp  
-- 🌿 Kasuri methi – 1 tsp (crushed)  
-- 💧 Water – as required  
-- 🧂 Salt – to taste  
+-  Oil – 2 to 3 tbsp  
+-  Fennel seeds or cumin seeds – ½ tsp  
+-  Onion – 2 (sliced)  
+-  Ginger garlic paste – 1 tbsp  
+-  Kasuri methi – 1 tsp (crushed)  
+-  Water – as required  
+-  Salt – to taste  
 
 ---
 
@@ -81,7 +81,6 @@ This Cauliflower Sabzi is a simple yet flavorful North Indian-style curry where 
 - Resting the marinated cauliflower ensures deeper flavor absorption  
 - Don’t overcook — keep florets slightly firm for better texture  
 - Adjust chili and pepper according to spice preference  
-- For a richer taste, add a splash of fresh cream before finishing  
 
 ---
 
@@ -96,7 +95,6 @@ This Cauliflower Sabzi is a simple yet flavorful North Indian-style curry where 
 ## 🔄 Variations  
 
 - **Aloo Gobi Sabzi:** Add boiled potatoes along with cauliflower  
-- **Creamy Cauliflower Curry:** Add cashew paste or fresh cream for a gravy version  
 - **Vegan Option:** Replace yogurt with cashew or coconut yogurt  
 
 ## 🌿 Health Benefits  
