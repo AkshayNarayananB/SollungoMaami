@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
   
 ---
 
-# 🍩 Badusha Recipe | Traditional Indian Sweet
+#  Badusha Recipe | Traditional Indian Sweet
 
 “Crispy, flaky, syrupy Badusha — a festive favorite!”
 
@@ -25,18 +25,18 @@ A classic melt-in-your-mouth sweet that's perfect for festivals and celebrations
 ## ✨ Ingredients
 
 ### For the Dough  
-- 🌾 Maida (all-purpose flour) – 1 cup (125 ml)  
-- 🍶 Curd (yogurt) – 2 tbsp  
-- 🧈 Ghee – 2 tbsp  
-- 🧂 Pinch of baking soda  
-- 🧂 Pinch of baking powder  
-- 🛢️ Oil – for deep frying  
+-  Maida (all-purpose flour) – 1 cup (125 ml)  
+-  Curd (yogurt) – 2 tbsp  
+-  Ghee – 2 tbsp  
+-  Pinch of baking soda  
+-  Pinch of baking powder  
+-  Oil – for deep frying  
 
 ### For the Sugar Syrup  
-- 🍬 Sugar – 1½ cups  
-- 💧 Water – ¼ cup  
-- 🌿 Cardamom powder – ½ tsp  
-- 🍋 Lemon juice – from ½ lemon  
+-  Sugar – 1½ cups  
+-  Water – ¼ cup  
+-  Cardamom powder – ½ tsp  
+-  Lemon juice – from ½ lemon  
 
 ---
 
@@ -85,27 +85,27 @@ Let soak for 2–3 minutes until syrup is absorbed.
 
 ## 💡 Tips for Perfect Badusha
 
-- ✔️ Dough should be soft but not sticky; resting helps achieve texture  
-- ✔️ Maintain medium oil temperature for even cooking  
-- ✔️ Sugar syrup must reach one-string consistency  
-- ✔️ Soak while both Badusha and syrup are warm for best absorption  
+-  Dough should be soft but not sticky; resting helps achieve texture  
+-  Maintain medium oil temperature for even cooking  
+-  Sugar syrup must reach one-string consistency  
+-  Soak while both Badusha and syrup are warm for best absorption  
 
 ---
 
 ## ⚠️ Troubleshooting
 
-- ❌ **Hard Badusha:** Oil too hot or insufficient soaking  
-- ❌ **Breaks while frying:** Dough too dry or oil temperature wrong  
-- ❌ **Not fluffy:** Insufficient kneading or resting  
-- ❌ **Too sweet:** Reduce sugar or soak less time  
+-  **Hard Badusha:** Oil too hot or insufficient soaking  
+-  **Breaks while frying:** Dough too dry or oil temperature wrong  
+-  **Not fluffy:** Insufficient kneading or resting  
+-  **Too sweet:** Reduce sugar or soak less time  
 
 ---
 
 ## 🛍️ Storage
 
-- 🏺 Store in airtight container up to 1 week  
-- 🧁 Remains soft due to syrup  
-- ⏳ Best eaten within 2–3 days for optimal taste  
+-  Store in airtight container up to 1 week  
+-  Remains soft due to syrup  
+-  Best eaten within 2–3 days for optimal taste  
 
 ---
 
