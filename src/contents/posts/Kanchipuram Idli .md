@@ -83,18 +83,18 @@ Traditionally served as **prasadam** at the **Varadaraja Perumal Temple**, it ha
 
 ## 🌟 Tips & Notes
 
-- 🧄 **Dry ginger powder** is the soul of this recipe — adjust quantity based on your taste.  
-- 🧈 The mix of **oil and ghee** makes the idlis rich and keeps them soft for hours.  
-- 🌶️ The **coarsely crushed spices** give bursts of flavor and slight crunch — don’t skip this step.  
-- 🍶 For authentic taste, use **ghee liberally** in both tempering and serving.
+-  **Dry ginger powder** is the soul of this recipe — adjust quantity based on your taste.  
+-  The mix of **oil and ghee** makes the idlis rich and keeps them soft for hours.  
+-  The **coarsely crushed spices** give bursts of flavor and slight crunch — don’t skip this step.  
+-  For authentic taste, use **ghee liberally** in both tempering and serving.
 
 ---
 
 ## 🍽️ Serving Suggestions
 
 - Best served **hot** with:
-  - 🌶️ **Milagai Podi** with sesame oil  
-  - 🥥 **Coconut chutney**  
+  -  **Milagai Podi** with sesame oil  
+  -  **Coconut chutney**  
 - A **drizzle of ghee** makes it extra divine — especially for kids or prasadam-style serving.
 
 ---
