@@ -18,65 +18,65 @@ A beloved traditional South Indian snack that’s perfect for festivals like Diw
 ---
 ![vellaiappam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vellaiappam.png)
 ---
-## 🥘 Ingredients
+##  Ingredients
 
 ### For the Batter  
-- 🍚 1.5 cups rice  
-- 🌾 1/2 cups urad dal  
-- 🧂 Salt to taste  
-- 🫚 1-inch piece ginger, finely chopped  
-- 🌶️ 3-4 green chillies, finely chopped  
-- 🍃 Few curry leaves, finely chopped  
-- ⚫ 1 to 2 tsp crushed black pepper  
-- 🥛 2 to 3 tbsp thick curd/yogurt  
-- 💧 Water as needed for grinding  
+-  1.5 cups rice  
+-  1/2 cups urad dal  
+-  Salt to taste  
+-  1-inch piece ginger, finely chopped  
+-  3-4 green chillies, finely chopped  
+-  Few curry leaves, finely chopped  
+-  1 to 2 tsp crushed black pepper  
+-  2 to 3 tbsp thick curd/yogurt  
+-  Water as needed for grinding  
 
 ### For Tempering  
-- 🧈 1 tbsp ghee  
-- 🌿 1 tsp mustard seeds  
-- 🌾 1 tsp urad dal  
-- 🧄 Pinch of asafoetida (hing)  
+-  1 tbsp ghee  
+-  1 tsp mustard seeds  
+-  1 tsp urad dal  
+-  Pinch of asafoetida (hing)  
 
 ### For Frying  
-- 🫒 Oil for deep frying  
+-  Oil for deep frying  
 
 ---
 
 ## 👩‍🍳 Instructions
 
 ### Step 1: Prepare the Base  
-- 🧽 Wash rice and urad dal thoroughly.  
-- 🕐 Soak together for 1 hour.  
-- 💧 Drain completely.  
+-  Wash rice and urad dal thoroughly.  
+-  Soak together for 1 hour.  
+-  Drain completely.  
 
 ### Step 2: Grind the Batter  
-- 🔄 Grind rice and dal to a thick paste in mixer.  
-- 🧂 Add salt while grinding.  
-- 💦 Use minimal water (1 tbsp max) to keep batter thick — crucial for crispiness.  
+-  Grind rice and dal to a thick paste in mixer.  
+-  Add salt while grinding.  
+-  Use minimal water (1 tbsp max) to keep batter thick — crucial for crispiness.  
 
 ### Step 3: Season and Rest  
-- 🫚 Mix in chopped ginger, green chillies, curry leaves, and crushed black pepper.  
-- 🥛 Add thick curd, mix well.  
-- 🕐 Let batter rest — prepare in morning for evening frying or night before for morning.  
-- 📦 Cover and set aside to ferment and develop flavor.  
+-  Mix in chopped ginger, green chillies, curry leaves, and crushed black pepper.  
+-  Add thick curd, mix well.  
+-  Let batter rest — prepare in morning for evening frying or night before for morning.  
+-  Cover and set aside to ferment and develop flavor.  
 
 ### Step 4: Prepare Tempering  
-- 🧈 Heat ghee in small pan.  
-- 🌿 Add mustard seeds; let splutter.  
-- 🌾 Add urad dal; fry golden.  
-- 🧄 Add asafoetida; fry few seconds.  
-- 🥄 Pour tempering into rested batter and mix well.  
+-  Heat ghee in small pan.  
+-  Add mustard seeds; let splutter.  
+-  Add urad dal; fry golden.  
+-  Add asafoetida; fry few seconds.  
+-  Pour tempering into rested batter and mix well.  
 
 ### Step 5: Frying Process  
-- 🔥 Heat oil for deep frying.  
-- 🥄 Stir batter well before each use.  
-- 🌊 Drop ladlefuls of batter directly into hot oil (no shaping).  
-- 🥄 Pour hot oil over the appams while frying for quick, even cooking and extra crispiness.  
+-  Heat oil for deep frying.  
+-  Stir batter well before each use.  
+-  Drop ladlefuls of batter directly into hot oil (no shaping).  
+-  Pour hot oil over the appams while frying for quick, even cooking and extra crispiness.  
 
 ### Step 6: Perfect the Cooking  
-- 🔄 Flip appams when bottom is golden brown.  
-- ⏱️ Keep turning until both sides are evenly golden and crispy.  
-- 🌟 Remove and drain on paper towels to absorb excess oil.  
+-  Flip appams when bottom is golden brown.  
+-  Keep turning until both sides are evenly golden and crispy.  
+-  Remove and drain on paper towels to absorb excess oil.  
 
 ---
 
@@ -92,8 +92,8 @@ A beloved traditional South Indian snack that’s perfect for festivals like Diw
 
 ## 🌟 Health Benefits
 
-- 🌱 Probiotic benefits from fermented batter and curd.  
-- 🛡️ Immunity booster spices: pepper and ginger.  
+-  Probiotic benefits from fermented batter and curd.  
+-  Immunity booster spices: pepper and ginger.  
 
 ---
 
@@ -102,7 +102,6 @@ A beloved traditional South Indian snack that’s perfect for festivals like Diw
 - 🪔 Festival celebrations like Diwali & Karthika Deepam  
 - 🌅 Evening tea-time snacks  
 - 👨‍👩‍👧‍👦 Family gatherings and special occasions  
-- 🎁 Gift giving during festive seasons  
 
 ---
 
@@ -119,4 +118,4 @@ Simple ingredients, traditional technique, extraordinary taste — that’s the 
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/fTmSa62sBk0?si=azZB_PUuebvv7a_9)
+[![Watch the video](https://img.youtube.com/vi/fTmSa62sBk0/0.jpg)](https://youtu.be/fTmSa62sBk0?si=azZB_PUuebvv7a_9)
