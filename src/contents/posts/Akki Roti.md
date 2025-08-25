@@ -21,19 +21,19 @@ A beloved staple in Karnataka homes, **Akki Roti** is a gluten-free rice flour f
 
 ### For the Dough
 
-- 🍚 **Rice Flour** – 2 cups  
-- 🧅 **Onion** – 1 medium, finely chopped  
-- 🥕 **Carrot** – 1 small, finely chopped  
-- 🌶️ **Green Chilies** – 2 to 3, finely chopped  
-- 🌿 **Curry Leaves** – 8 to 10 leaves, chopped  
-- 🌱 **Coriander Leaves** – 2 tbsp, chopped  
-- 🥥 **Fresh Grated Coconut** – 2 tbsp  
-- 🌰 **Cumin Seeds** – 1 tsp  
-- ⚫ **Black Pepper** – 1 tsp, crushed or powdered  
-- 🌟 **Asafoetida (Hing)** – a pinch  
-- 🧂 **Salt** – to taste  
-- 💧 **Water** – approx. ¾ to 1 cup (as needed)  
-- 🫒 **Oil** – for cooking
+-  **Rice Flour** – 2 cups  
+-  **Onion** – 1 medium, finely chopped  
+-  **Carrot** – 1 small, finely chopped  
+-  **Green Chilies** – 2 to 3, finely chopped  
+-  **Curry Leaves** – 8 to 10 leaves, chopped  
+-  **Coriander Leaves** – 2 tbsp, chopped  
+-  **Fresh Grated Coconut** – 2 tbsp  
+-  **Cumin Seeds** – 1 tsp  
+-  **Black Pepper** – 1 tsp, crushed or powdered  
+-  **Asafoetida (Hing)** – a pinch  
+-  **Salt** – to taste  
+-  **Water** – approx. ¾ to 1 cup (as needed)  
+-  **Oil** – for cooking
 
 ---
 
@@ -108,5 +108,5 @@ Experience Karnataka’s warmth and health in every bite of this comforting Akki
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/nG-KKRlODqA?si=5KHt-vybFps-HgOT)
+[![Watch the video](https://img.youtube.com/vi/nG-KKRlODqA/0.jpg)](https://youtu.be/nG-KKRlODqA?si=5KHt-vybFps-HgOT)
 
