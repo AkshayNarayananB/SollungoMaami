@@ -23,20 +23,20 @@ This chutney is not just about taste — it’s also a digestive powerhouse. Tra
 
 ## 🛒 Ingredients  
 
-- 🫚 **Ginger** – 250 g (chopped)  
-- 🌰 **Chana dal** – 2 tbsp  
-- 🌰 **Urad dal** – 2 tbsp  
-- 🌿 **Coriander seeds** – 1 tbsp  
-- 🌿 **Jeera (cumin)** – 1 tbsp  
-- 🌶️ **Dry red chilies** – 7–8  
-- 🌿 **Curry leaves** – few  
-- 🍋 **Tamarind** – gooseberry size (soaked in water)  
-- 🍯 **Jaggery** – 1½ to 2 tbsp  
-- ✨ **Hing (asafoetida)** – a pinch  
-- 🧂 **Salt** – to taste  
-- 🛢️ **Oil** – 4–5 tbsp (for sautéing & tempering)  
-- 🌰 **Mustard seeds** – 1 tsp (for tempering)  
-- 🌰 **Urad dal** – 1 tsp (for tempering)  
+-  **Ginger** – 250 g (chopped)  
+-  **Chana dal** – 2 tbsp  
+-  **Urad dal** – 2 tbsp  
+-  **Coriander seeds** – 1 tbsp  
+-  **Jeera (cumin)** – 1 tbsp  
+-  **Dry red chilies** – 7–8  
+-  **Curry leaves** – few  
+-  **Tamarind** – gooseberry size (soaked in water)  
+-  **Jaggery** – 1½ to 2 tbsp  
+-  **Hing (asafoetida)** – a pinch  
+-  **Salt** – to taste  
+-  **Oil** – 4–5 tbsp (for sautéing & tempering)  
+-  **Mustard seeds** – 1 tsp (for tempering)  
+-  **Urad dal** – 1 tsp (for tempering)  
 
 ---
 
@@ -44,15 +44,15 @@ This chutney is not just about taste — it’s also a digestive powerhouse. Tra
 
 ### 🔸 Step 1: Roast Dal & Spices  
 1. Heat 2–3 tbsp oil in a kadai.  
-2. Add chana dal & urad dal, sauté for a minute.  
+2. Add chana dal & urad dal, saute for a minute.  
 3. Add coriander seeds, stir briefly.  
-4. Add jeera and then dry red chilies, sauté until crisp.  
+4. Add jeera and then dry red chilies, saute until crisp.  
 5. Add curry leaves and roast until dals turn light golden brown.  
 6. Switch off flame, cool, and set aside.  
 
 ### 🔸 Step 2: Roast Ginger  
 1. In the same kadai, heat 2 tbsp oil.  
-2. Add chopped ginger and sauté on medium-low for ~15 minutes until light brown and aromatic.  
+2. Add chopped ginger and saute on medium-low for ~15 minutes until light brown and aromatic.  
 3. Allow to cool completely.  
 
 ### 🔸 Step 3: Grind Chutney  
@@ -93,13 +93,13 @@ This chutney is not just about taste — it’s also a digestive powerhouse. Tra
 
 ## 🥦 Nutritional Benefits  
 
-**🫚 Ginger** – Boosts digestion, reduces inflammation, improves immunity.  
-**🌰 Lentils (Chana & Urad Dal)** – High in protein & fiber.  
-**🌱 Coriander & Cumin** – Aid metabolism & gut health.  
-**🌶️ Red Chilies** – Vitamin C rich, improves circulation.  
-**🥭 Tamarind & 🍯 Jaggery** – Balance flavors while adding antioxidants & iron.  
+** Ginger** – Boosts digestion, reduces inflammation, improves immunity.  
+** Lentils (Chana & Urad Dal)** – High in protein & fiber.  
+** Coriander & Cumin** – Aid metabolism & gut health.  
+** Red Chilies** – Vitamin C rich, improves circulation.  
+** Tamarind &  Jaggery** – Balance flavors while adding antioxidants & iron.  
 
 ---
 ## Video Tutorial 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/3ZENb9TeW-g?si=Aq1g1sLYhERq4GR9)
+[![Watch the video](https://img.youtube.com/vi/3ZENb9TeW-g/0.jpg)](https://youtu.be/3ZENb9TeW-g?si=Aq1g1sLYhERq4GR9)
 
