@@ -104,5 +104,5 @@ Enjoy this nutritious South Indian delight warm off the tawa!
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/hnHZSqQJR1w?si=1bcDXs8Cdbu-3umR)
+[![Watch the video](https://img.youtube.com/vi/hnHZSqQJR1w/0.jpg)](https://youtu.be/hnHZSqQJR1w?si=1bcDXs8Cdbu-3umR)
 
