@@ -21,22 +21,22 @@ This recipe is a wholesome vegetarian side dish that pairs beautifully with rice
 
 ## 🛒 Ingredients
 
-- 🌱 **Soya chunks** – 2 cups  
-- 💧 **Water** – 5 to 6 cups (for boiling)  
-- 🧂 **Salt** – as required  
-- 🛢️ **Oil** – 4 to 5 tbsp  
-- 🌿 **Fennel seeds** – 1 tsp  
-- 🌶️ **Green chilies** – 2, slit  
-- 🧅 **Onions** – 2, finely chopped  
-- 🍅 **Tomatoes** – 2, finely chopped  
-- 🧄 **Ginger garlic paste** – 1 tbsp  
-- 🌿 **Cumin powder** – 1 tsp  
-- 🌿 **Coriander powder** – 1 tsp  
-- 🌶️ **Red chili powder** – 1 tsp  
-- 🌕 **Turmeric powder** – 1 tsp  
-- ⚫ **Black pepper powder** – 1 to 1½ tsp  
-- 🌿 **Coriander leaves** – a handful, chopped  
-- 🌿 **Asafoetida (hing)** – a pinch (optional)  
+-  **Soya chunks** – 2 cups  
+-  **Water** – 5 to 6 cups (for boiling)  
+-  **Salt** – as required  
+-  **Oil** – 4 to 5 tbsp  
+-  **Fennel seeds** – 1 tsp  
+-  **Green chilies** – 2, slit  
+-  **Onions** – 2, finely chopped  
+-  **Tomatoes** – 2, finely chopped  
+-  **Ginger garlic paste** – 1 tbsp  
+-  **Cumin powder** – 1 tsp  
+-  **Coriander powder** – 1 tsp  
+-  **Red chili powder** – 1 tsp  
+-  **Turmeric powder** – 1 tsp  
+-  **Black pepper powder** – 1 to 1½ tsp  
+-  **Coriander leaves** – a handful, chopped  
+-  **Asafoetida (hing)** – a pinch (optional)  
 
 ---
 
@@ -97,4 +97,4 @@ This recipe is a wholesome vegetarian side dish that pairs beautifully with rice
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/1ZXqlrnXdgI?si=GPTYy9DykBqpBn-m)
+[![Watch the video](https://img.youtube.com/vi/1ZXqlrnXdgI/0.jpg)](https://youtu.be/1ZXqlrnXdgI?si=GPTYy9DykBqpBn-m)
