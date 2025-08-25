@@ -1,5 +1,5 @@
 ---
-title: "🥔🌿 Radish Potato Sabzi | Quick & Flavorful Dry Curry"
+title: " Radish Potato Sabzi | Quick & Flavorful Dry Curry"
 published: 2025-07-28
 description: A comforting, quick-to-make dry curry made with radish and potatoes, perfect for chapathi, pulka, or rice. Spiced with Indian flavors, ready in 20 minutes!
 tags: [ Sabzi,  Vegan,]
@@ -9,12 +9,9 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 draft: false
 ---
 
-# 🥔🌿 Radish Potato Sabzi | Quick & Flavorful Dry Curry
+#  Radish Potato Sabzi | Quick & Flavorful Dry Curry
 
 > “Turn humble veggies into a delicious, spicy delight with every bite!”  
-> “Simple ingredients, hearty flavors — a sabzi that feels like home!”  
-> “Wholesome, spicy, and ready in minutes — your new everyday favorite!”  
-> “Radish and potato, the perfect duo for a flavorful, comforting sabzi!”
 
 ---
 
@@ -42,16 +39,16 @@ Looking for a quick, healthy, and tasty side dish? This **Radish Potato Sabzi** 
 
 ## 👩‍🍳 Instructions
 
-1. 🔥 Heat oil in a pan. Add cumin seeds and let them splutter.  
-2. 🧅 Add onions and sauté until golden brown.  
-3. 🧄 Add ginger-garlic paste. Sauté until raw smell disappears.  
-4. 🥔 Add radish and potatoes. Mix well.  
-5. 🧂 Sprinkle salt and mix again. Cover with a lid and cook on medium-low for **5–7 minutes**.  
-6. 🔍 Check doneness — radish should turn translucent and lose raw smell.  
-7. 💨 If moisture remains, cook uncovered on high for **1–2 minutes**.  
-8. 🌶️ Add coriander powder, chili powder, and hing. Mix gently.  
-9. 🍲 Cook uncovered for **5 more minutes**, stirring occasionally.  
-10. 🌿 Garnish with chopped coriander leaves. Turn off flame.
+1.  Heat oil in a pan. Add cumin seeds and let them splutter.  
+2.  Add onions and saute until golden brown.  
+3.  Add ginger-garlic paste. Saute until raw smell disappears.  
+4.  Add radish and potatoes. Mix well.  
+5.  Sprinkle salt and mix again. Cover with a lid and cook on medium-low for **5–7 minutes**.  
+6.  Check doneness — radish should turn translucent and lose raw smell.  
+7.  If moisture remains, cook uncovered on high for **1–2 minutes**.  
+8.  Add coriander powder, chili powder, and hing. Mix gently.  
+9.  Cook uncovered for **5 more minutes**, stirring occasionally.  
+10.  Garnish with chopped coriander leaves. Turn off flame.
 
 ---
 
@@ -64,25 +61,25 @@ Looking for a quick, healthy, and tasty side dish? This **Radish Potato Sabzi** 
 
 ## 🔄 Tips & Variations
 
-- ➕ Add **green peas** or **capsicum** for extra flavor and texture  
-- 🍋 Squeeze lemon juice at the end for a fresh twist  
-- 🌶️ Add **garam masala** for more heat  
-- 🔥 Cook on **low flame** for soft veggies and no burning
-- also can use simple sambar powder. 
+-  Add **green peas** or **capsicum** for extra flavor and texture  
+-  Squeeze lemon juice at the end for a fresh twist  
+-  Add **garam masala** for more heat  
+-  Cook on **low flame** for soft veggies and no burning
+-  also can use simple sambar powder. 
 
 ---
 
 ## 🥦 Nutritional Benefits
 
-### 🥔 Potatoes  
+###  Potatoes  
 - Source of **Vitamin C**, **potassium**, and **fiber**  
 - Provide **energy** and **satiety**
 
-### 🌿 Radish (Mullangi)  
+###  Radish (Mullangi)  
 - High in **Vitamin C**, supports **digestion**  
 - Helps in **detoxification** and low in calories
 
-### 🧄 Spices & Onions  
+###  Spices & Onions  
 - **Cumin and hing** promote **gut health**  
 - **Onions** have antioxidants and anti-inflammatory properties
 
@@ -97,4 +94,4 @@ Looking for a quick, healthy, and tasty side dish? This **Radish Potato Sabzi** 
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/YMiiFkGihbg?si=GOUdR5fu2L27yom0)
+[![Watch the video](https://img.youtube.com/vi/YMiiFkGihbg/0.jpg)](https://youtu.be/YMiiFkGihbg?si=GOUdR5fu2L27yom0)
