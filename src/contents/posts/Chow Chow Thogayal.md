@@ -58,19 +58,19 @@ Chow Chow, also known as chayote squash, is a versatile vegetable popular in Sou
 
 ## 🍽️ Serving Suggestions
 
-- 🍚 Serve as a tasty side with hot steamed rice.  
-- 🧈 Mix a spoonful into rice with a drizzle of ghee for extra flavor.  
-- 🫓 Enjoy alongside dosa or chapathi for a wholesome meal.  
+-  Serve as a tasty side with hot steamed rice.  
+-  Mix a spoonful into rice with a drizzle of ghee for extra flavor.  
+-  Enjoy alongside dosa or chapathi for a wholesome meal.  
 
 ---
 
 ## 🌟 Health Benefits of Chow Chow Skin in Thogayal
 
-- 💪 **High Fiber Content:** Promotes healthy digestion and prevents constipation.  
-- 🔄 **Blood Sugar Control:** Low carbohydrates and high fiber help maintain stable glucose levels.  
-- ⚖️ **Weight Management:** Fiber keeps you fuller longer, aiding appetite control.  
-- ✨ **Skin Health:** Rich in antioxidants and Vitamin C for glowing skin.  
-- 👁️ **Eye Health:** Contains nutrients that support good vision.  
+-  **High Fiber Content:** Promotes healthy digestion and prevents constipation.  
+-  **Blood Sugar Control:** Low carbohydrates and high fiber help maintain stable glucose levels.  
+-  **Weight Management:** Fiber keeps you fuller longer, aiding appetite control.  
+-  **Skin Health:** Rich in antioxidants and Vitamin C for glowing skin.  
+-  **Eye Health:** Contains nutrients that support good vision.  
 
 ---
 
