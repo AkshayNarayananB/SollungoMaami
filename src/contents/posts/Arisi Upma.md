@@ -114,4 +114,4 @@ Simple, soulful, and absolutely comforting — this is everyday Tamil food at it
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/MPDrKq7oIDA?si=9p0md0tD_QDkUPpI)
+[![Watch the video](https://img.youtube.com/vi/MPDrKq7oIDA/0.jpg)](https://youtu.be/MPDrKq7oIDA?si=9p0md0tD_QDkUPpI)
