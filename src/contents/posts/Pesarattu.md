@@ -97,11 +97,11 @@ For an authentic Andhra touch, try the famous **MLA Pesarattu** — stuffed with
 
 ## 💪 Nutritional Benefits  
 
-- 🌱 **Green Moong Dal** – High in protein & fiber, keeps you full longer.  
-- 🌾 **Rice & Urad Dal** – Add carbs & texture, provide energy.  
-- 🧄 **Ginger & Chilies** – Aid digestion, boost immunity.  
-- 🌿 **Coriander leaves** – Rich in antioxidants & Vitamin C.  
-- 🥘 **No Fermentation** – Quick, light, and gut-friendly.  
+-  **Green Moong Dal** – High in protein & fiber, keeps you full longer.  
+-  **Rice & Urad Dal** – Add carbs & texture, provide energy.  
+-  **Ginger & Chilies** – Aid digestion, boost immunity.  
+-  **Coriander leaves** – Rich in antioxidants & Vitamin C.  
+-  **No Fermentation** – Quick, light, and gut-friendly.  
 
 👉 Pesarattu is the **perfect mix of taste, health, and tradition** — a superfood breakfast that fuels your day with energy!  
 
