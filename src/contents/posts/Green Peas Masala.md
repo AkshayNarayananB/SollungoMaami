@@ -23,24 +23,24 @@ Frozen peas make this recipe quick and easy without compromising taste.
 ## 🛒 Ingredients
 
 ### Main Ingredients
-- 🟢 Frozen green peas – 1 cup  
-- 🧅 Onion – 1, finely chopped  
-- 🧂 Salt – to taste  
-- 💧 Water – as required  
-- 🌿 Crushed kasuri methi – 1 tbsp  
-- 🌰 Oil – 4 to 5 tbsp  
+-  Frozen green peas – 1 cup  
+-  Onion – 1, finely chopped  
+-  Salt – to taste  
+-  Water – as required  
+-  Crushed kasuri methi – 1 tbsp  
+-  Oil – 4 to 5 tbsp  
 
 ### Whole Spices
-- 🌿 Clove – 1  
-- 🌿 Cinnamon – 1 small stick  
-- 🌿 Bay leaf – 1  
+-  Clove – 1  
+-  Cinnamon – 1 small stick  
+-  Bay leaf – 1  
 
 ### Spice Powders
-- 🌕 Turmeric powder – ½ tsp  
-- 🌿 Coriander powder – 1 tsp  
-- 🌿 Cumin powder – 1 tsp  
-- 🌶️ Red chili powder – 1 tsp  
-- 🌶️ Garam masala – ½ tsp  
+-  Turmeric powder – ½ tsp  
+-  Coriander powder – 1 tsp  
+-  Cumin powder – 1 tsp  
+-  Red chili powder – 1 tsp  
+-  Garam masala – ½ tsp  
 
 ### For Grinding
 1. **Ginger-Garlic Paste**  
@@ -73,7 +73,7 @@ Frozen peas make this recipe quick and easy without compromising taste.
    Saute until the raw smell disappears.  
 
 4. **Cook Onions & Peas**  
-   Add finely chopped onion and sauté until light golden.  
+   Add finely chopped onion and saute until light golden.  
    Add frozen peas and saute for 1 minute.  
 
 5. **Add Tomato Puree & Spices**  
@@ -122,4 +122,4 @@ Frozen peas make this recipe quick and easy without compromising taste.
 ---
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/-VtFSd3ZZIs?si=dLlibRj-lJPsGzEX)
+[![Watch the video](https://img.youtube.com/vi/-VtFSd3ZZIs/0.jpg)](https://youtu.be/-VtFSd3ZZIs?si=dLlibRj-lJPsGzEX)
