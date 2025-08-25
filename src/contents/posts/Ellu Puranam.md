@@ -27,26 +27,26 @@ A simple yet flavorful black sesame and jaggery stuffing that’s perfect for fe
 ## 👩‍🍳 Instructions
 
 ### Step 1: Dry Roast the Sesame  
- Heat a dry kadai (pan) on medium flame without oil.  
- Add black sesame seeds and stir continuously.  
- Roast for 10-15 minutes until seeds heat evenly.  
+ - Heat a dry kadai (pan) on medium flame without oil.  
+ - Add black sesame seeds and stir continuously.  
+ - Roast for 10-15 minutes until seeds heat evenly.  
 
 ### Step 2: Continue Roasting Until Popping  
- Keep stirring for another 5 minutes after 15 minutes.  
- Seeds will begin to pop and burst — listen carefully!  
- Popping sounds indicate perfect roasting.  
- Roast for 1 more minute once popping starts actively, then turn off heat.  
+ - Keep stirring for another 5 minutes after 15 minutes.  
+ - Seeds will begin to pop and burst — listen carefully!  
+ - Popping sounds indicate perfect roasting.  
+ - Roast for 1 more minute once popping starts actively, then turn off heat.  
 
 ### Step 3: Cool and Grind  
- Allow sesame seeds to cool completely to room temperature.  
- Transfer to mixer jar.  
- Add jaggery.  
- Pulse grind gently — do not over-grind.  
- Aim for a coarse powder, not a fine paste.  
+ - Allow sesame seeds to cool completely to room temperature.  
+ - Transfer to mixer jar.  
+ - Add jaggery.  
+ - Pulse grind gently — do not over-grind.  
+ - Aim for a coarse powder, not a fine paste.  
 
 ### Step 4: Final Preparation  
- Sesame puranam is ready to use as stuffing.  
- Should hold shape when pressed, yet remain slightly coarse.  
+ - Sesame puranam is ready to use as stuffing.  
+ - Should hold shape when pressed, yet remain slightly coarse.  
 
 ---
 
