@@ -8,11 +8,11 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/cabbagepakoda.png"  
 ---
 
-# 🥬 Cabbage Pakoda | No Onion No Garlic  
+#  Cabbage Pakoda | No Onion No Garlic  
 
 ✨ *“Crispy, crunchy, and masala-coated — a perfect tea-time delight with every bite!”* ✨  
 
-🥬 Cabbage Pakoda is a crunchy, golden fried snack that turns humble cabbage into a tea-time superstar. Made without onion and garlic, it’s a festive-friendly treat that’s light, crisp, and full of flavor. The shredded cabbage binds beautifully with besan, rice flour, and spices to create rustic, crunchy fritters that pair perfectly with hot chai or coffee. Whether for a rainy evening, a family get-together, or a quick snack craving, these pakodas are comfort food at its best!
+ Cabbage Pakoda is a crunchy, golden fried snack that turns humble cabbage into a tea-time superstar. Made without onion and garlic, it’s a festive-friendly treat that’s light, crisp, and full of flavor. The shredded cabbage binds beautifully with besan, rice flour, and spices to create rustic, crunchy fritters that pair perfectly with hot chai or coffee. Whether for a rainy evening, a family get-together, or a quick snack craving, these pakodas are comfort food at its best!
 
 ---
 ![cabbagepakoda](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/cabbagepakoda.png)  
@@ -21,17 +21,17 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## 🛒 Ingredients  
 
-- 🥬 Cabbage – 500 gms (grated)  
-- 🌾 Rice flour – 2 tbsp  
-- 🌾 Besan flour – 2 cups  
-- 🌶️ Green chili – 2 (finely chopped)  
-- 🌿 Ginger – 1 inch (finely chopped)  
-- 🌶️ Red chili powder – 1 tsp  
-- 🍃 Curry leaves – few (chopped)  
-- 🧂 Salt – to taste  
-- 🌸 Hing – a pinch  
-- 💧 Water – as needed  
-- 🛢️ Oil – to deep fry  
+-  Cabbage – 500 gms (grated)  
+-  Rice flour – 2 tbsp  
+-  Besan flour – 2 cups  
+-  Green chili – 2 (finely chopped)  
+-  Ginger – 1 inch (finely chopped)  
+-  Red chili powder – 1 tsp  
+-  Curry leaves – few (chopped)  
+-  Salt – to taste  
+-  Hing – a pinch  
+-  Water – as needed  
+-  Oil – to deep fry  
 
 ---
 
@@ -83,7 +83,6 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 - Best eaten hot and fresh  
 - Can be stored in an airtight container for 4–5 hours  
-- Re-crisp in a hot oven/tawa before serving if needed  
 
 ---
 ## 🌿 Health Benefits  
@@ -107,4 +106,4 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/o_UkoV1Zk2M?si=WrloDzaIGhNK4zZf)
+[![Watch the video](https://img.youtube.com/vi/o_UkoV1Zk2M/0.jpg)](https://youtu.be/o_UkoV1Zk2M?si=WrloDzaIGhNK4zZf)
