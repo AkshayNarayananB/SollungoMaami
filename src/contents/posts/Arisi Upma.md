@@ -5,7 +5,7 @@ description: A simple, rustic Tamil breakfast made with coarsely ground rice and
 tags: [Tiffin]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/arisiupma.png" 
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/arisi upma.png" 
 ---   
 
 # 🍚 Arisi Upma Recipe | Traditional Rice Upma in Vengala Panai
