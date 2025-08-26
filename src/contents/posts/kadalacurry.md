@@ -49,29 +49,29 @@ Its robust flavors come from a blend of aromatic spices such as cloves, cinnamon
 ## 👩‍🍳 Instructions
 
 1. **Prepare Black Chana**  
-    Soak black chana in water for 6–7 hours.  
-    Pressure cook with enough water for 10–12 whistles until soft. Set aside.
+    - Soak black chana in water for 6–7 hours.  
+    - Pressure cook with enough water for 10–12 whistles until soft. Set aside.
 
 2. **Make the Gravy Paste**  
-    Heat 2 tablespoons of oil in a pan. Add cloves and cinnamon sticks.  
-    Add chopped ginger, garlic, and 3–4 dry red chilies. Saute well.  
-    Add chopped onions and saute until golden.  
-    Add chopped tomatoes and cook until soft.  
-    Add turmeric, coriander, chili powder, and garam masala. Mix well.  
-    Add grated coconut and some water, then grind this mixture to a smooth paste.
+    - Heat 2 tablespoons of oil in a pan. Add cloves and cinnamon sticks.  
+    - Add chopped ginger, garlic, and 3–4 dry red chilies. Saute well.  
+    - Add chopped onions and saute until golden.  
+    - Add chopped tomatoes and cook until soft.  
+    - Add turmeric, coriander, chili powder, and garam masala. Mix well.  
+    - Add grated coconut and some water, then grind this mixture to a smooth paste.
 
 3. **Cook the Kadala Curry**  
-    Heat 2 tablespoons of oil in a thick pan. Add 2 dry red chilies and fry briefly.  
-    Add finely chopped onions and saute until golden.  
-    Add curry leaves and a pinch of hing. Mix well.  
-    Add the prepared gravy paste and water to adjust consistency.  
-    Add salt to taste and bring it to a boil on medium-high flame.  
-    Add the boiled black chana and mix well.  
-    Lower flame to medium-low, cover, and simmer for 10–15 minutes.  
-    Adjust water if needed for desired thickness.
+    - Heat 2 tablespoons of oil in a thick pan. Add 2 dry red chilies and fry briefly.  
+    - Add finely chopped onions and saute until golden.  
+    - Add curry leaves and a pinch of hing. Mix well.  
+    - Add the prepared gravy paste and water to adjust consistency.  
+    - Add salt to taste and bring it to a boil on medium-high flame.  
+    - Add the boiled black chana and mix well.  
+    - Lower flame to medium-low, cover, and simmer for 10–15 minutes.  
+    - Adjust water if needed for desired thickness.
 
 4. **Serve**  
-    Switch off the flame. Serve hot with puttu, appam, or idiyappam.
+    - Switch off the flame. Serve hot with puttu, appam, or idiyappam.
 
 ## 🌟 Tips
 
