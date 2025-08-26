@@ -23,17 +23,17 @@ Looking for a quick, healthy, and tasty side dish? This **Radish Potato Sabzi** 
 
 ## 🛒 Ingredients
 
- **Radish** – 500g (peeled, chopped into small cubes)  
- **Potatoes** – 2 to 3 (peeled and cubed)  
- **Onions** – 2 (sliced or finely chopped)  
- **Ginger-garlic paste** – 1 tbsp  
- **Cumin seeds (jeera)** – 1 tsp  
- **Coriander powder** – 1 tbsp  
- **Red chili powder** – 1 tbsp (adjust to taste)  
- **Asafoetida (hing)** – a pinch  
- **Salt** – to taste  
- **Oil** – 1 to 2 tbsp  
- **Coriander leaves** – handful (chopped)
+ - **Radish** – 500g (peeled, chopped into small cubes)  
+ - **Potatoes** – 2 to 3 (peeled and cubed)  
+ - **Onions** – 2 (sliced or finely chopped)  
+ - **Ginger-garlic paste** – 1 tbsp  
+ - **Cumin seeds (jeera)** – 1 tsp  
+ - **Coriander powder** – 1 tbsp  
+ - **Red chili powder** – 1 tbsp (adjust to taste)  
+ - **Asafoetida (hing)** – a pinch  
+ - **Salt** – to taste  
+ - **Oil** – 1 to 2 tbsp  
+ - **Coriander leaves** – handful (chopped)
 
 ---
 
