@@ -20,23 +20,23 @@ A beloved traditional South Indian sweet made especially during festivals like *
 ## ✨ Ingredients
 
 ### For Dough:  
- Maida (All-purpose flour) – 2 cups  
- Turmeric powder – ¼ tsp  
- Salt – ¼ tsp  
- Water – as needed  
- Gingelly oil – 1½ cups (for kneading & soaking)  
+ - Maida (All-purpose flour) – 2 cups  
+ - Turmeric powder – ¼ tsp  
+ - Salt – ¼ tsp  
+ - Water – as needed  
+ - Gingelly oil – 1½ cups (for kneading & soaking)  
 
 ### For Stuffing (Puranam):  
- Chana dal (Kadalai paruppu) – 1 cup  
- Water – 2 cups (for cooking dal)  
- Grated coconut – 1 cup  
- Jaggery – 2 cups  
- Cardamom powder – 1 tsp  
+ - Chana dal (Kadalai paruppu) – 1 cup  
+ - Water – 2 cups (for cooking dal)  
+ - Grated coconut – 1 cup  
+ - Jaggery – 2 cups  
+ - Cardamom powder – 1 tsp  
 
 ### For Cooking:  
- Ghee – 1½ tsp for each poli  
- Banana leaf or plastic sheet – for pressing poli  
- Dosa tawa  
+ - Ghee – 1½ tsp for each poli  
+ - Banana leaf or plastic sheet – for pressing poli  
+ - Dosa tawa  
 
 ---
 
@@ -83,4 +83,4 @@ Serve warm with a dollop of ghee on top. Stays good for 1–2 days and perfect a
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/_sq2Qp8OM5Y/0.jpg)](https://youtu.be/hco5BV__yd4?si=JkvFE4e0YEB8jE5q)
+[![Watch the video](https://img.youtube.com/vi/hco5BV__yd4/0.jpg)](https://youtu.be/hco5BV__yd4?si=JkvFE4e0YEB8jE5q)
