@@ -21,21 +21,21 @@ A classic, mildly spiced **potato curry** that perfectly complements fluffy **po
 
 ## 🛒 Ingredients
 
- **Potatoes** – 500g (boiled and lightly mashed)  
- **Onions** – 3 medium, finely chopped  
- **Green peas** – 1 cup (frozen or fresh)  
- **Oil** – 2–3 tbsp  
- **Mustard seeds** – 1 tsp  
- **Chana dal** – 1 tsp  
- **Urad dal** – 1 tsp  
- **Hing (asafoetida)** – a pinch  
- **Curry leaves** – 8–10  
- **Ginger** – 1-inch piece, finely chopped  
- **Green chilies** – 3–4, finely chopped  
- **Turmeric powder** – 1¼ tsp  
- **Salt** – to taste  
- **Water** – as required  
- **Fresh coriander leaves** – for garnish
+- **Potatoes** – 500g (boiled and lightly mashed)  
+- **Onions** – 3 medium, finely chopped  
+- **Green peas** – 1 cup (frozen or fresh)  
+- **Oil** – 2–3 tbsp  
+- **Mustard seeds** – 1 tsp  
+- **Chana dal** – 1 tsp  
+- **Urad dal** – 1 tsp
+-  **Hing (asafoetida)** – a pinch  
+- **Curry leaves** – 8–10  
+- **Ginger** – 1-inch piece, finely chopped  
+- **Green chilies** – 3–4, finely chopped  
+- **Turmeric powder** – 1¼ tsp  
+- **Salt** – to taste  
+- **Water** – as required  
+- **Fresh coriander leaves** – for garnish
 
 ---
 
@@ -69,37 +69,37 @@ A classic, mildly spiced **potato curry** that perfectly complements fluffy **po
 
 This **Potato Masala** goes perfectly with:
 
-- 🫓 **Puri** — the classic combo  
-- 🥞 **Dosa** — as a side or stuffing(make it thick to make masala dosa stuffing) 
+-  **Puri** — the classic combo  
+-  **Dosa** — as a side or stuffing(make it thick to make masala dosa stuffing) 
 
 ---
 
 ## 💡 Tips for Perfect Results
 
-- ✅ **Texture:** Leave some chunky bits in mashed potatoes  
-- 🌱 **Peas:** Optional  
-- 🌶️ **Spice:** Adjust green chilies to your heat level
+-  **Texture:** Leave some chunky bits in mashed potatoes  
+-  **Peas:** Optional  
+-  **Spice:** Adjust green chilies to your heat level
 
 ---
 
 ## 🔄 Variations
 
-- 🍅 **Tomato:** Add 1 chopped tomato after onions for tanginess
+-  **Tomato:** Add 1 chopped tomato after onions for tanginess
 
 ---
 
 ## 🧊 Storage
 
-- ❄️ Store in refrigerator for **up to 2 days**  
-- 🔁 Reheat gently with a splash of water  
-- 🕒 Tastes better after a few hours of resting
+-  Store in refrigerator for **up to 2 days**  
+-  Reheat gently with a splash of water  
+-  Tastes better after a few hours of resting
 
 ---
 
 ## 🥦 Nutritional Benefits
 
-- 🧅 **Onions**: Loaded with **antioxidants**, supports **heart health**  
-- ✨ **Turmeric**: Anti-inflammatory and healing properties
+- **Onions**: Loaded with **antioxidants**, supports **heart health**  
+-  **Turmeric**: Anti-inflammatory and healing properties
 
 ---
 
