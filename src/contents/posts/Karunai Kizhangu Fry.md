@@ -18,7 +18,8 @@ image:  "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master
 The yam is first softened in tamarind water to remove its natural itchiness, then coated in a spicy masala, and finally roasted to perfection on a tawa.
 The result? Crispy golden pieces on the outside, soft and flavorful inside — the kind of dish that disappears fast the moment it’s served!
 
-It’s usually enjoyed with sambar rice, rasam rice, or even curd rice, adding a crunchy, tangy-spicy bite to the meal. For many, this fry brings back memories of Sunday lunches at home with the family.
+It's usually enjoyed with sambar rice, rasam rice, or even curd rice, adding a crunchy, tangy-spicy bite to the meal. For many, this fry brings back memories of sunday lunches at home with the family.
+
 ---
 ![karunai kizhangu Fry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/KarunaiKizhanguFry.png)
 ---
