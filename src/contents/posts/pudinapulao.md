@@ -55,28 +55,28 @@ Light on the stomach yet rich in taste, this pulao is perfect for a quick weekda
 ## 👩‍🍳 Instructions  
 
 1. ** Soak Rice**  
-   Wash basmati rice and soak in water for 20–30 minutes. Drain and keep aside.  
+   - Wash basmati rice and soak in water for 20–30 minutes. Drain and keep aside.  
 
 2. ** Make Pudina Paste**  
-   In a mixer, grind pudina, coriander leaves, coconut, green chilies, jeera, black pepper, and lemon juice with a little water to form a smooth paste.  
+   - In a mixer, grind pudina, coriander leaves, coconut, green chilies, jeera, black pepper, and lemon juice with a little water to form a smooth paste.  
 
 3. ** Prepare the Base**  
-   Heat oil + ghee in a kadai. Add bay leaf, cloves, and cinnamon. Saute for a few seconds.  
-   Add sliced onions and saute until translucent.  
-   Add tomatoes and cook until mushy.  
+   - Heat oil + ghee in a kadai. Add bay leaf, cloves, and cinnamon. Saute for a few seconds.  
+   - Add sliced onions and saute until translucent.  
+   - Add tomatoes and cook until mushy.  
 
 4. ** Add Vegetables**  
-   Add carrots, potatoes, and peas. Sprinkle garam masala and a little salt. Cook for 2–3 minutes.  
+   - Add carrots, potatoes, and peas. Sprinkle garam masala and a little salt. Cook for 2–3 minutes.  
 
 5. ** Cook with Rice**  
-   In a rice cooker or pressure cooker, add drained basmati rice, sautéed veggies, and ground pudina paste.  
-   For 1 cup rice, add 1.5 cups water. Adjust salt (water should taste slightly salty before cooking).  
+   - In a rice cooker or pressure cooker, add drained basmati rice, sautéed veggies, and ground pudina paste.  
+   - For 1 cup rice, add 1.5 cups water. Adjust salt (water should taste slightly salty before cooking).  
 
    - **Pressure Cooker:** 1 whistle on high flame, then 3–5 minutes on low.  
    - **Rice Cooker:** Cook until done.  
 
 6. ** Finish with Ghee**  
-   Once cooked, drizzle 1 spoon of ghee, cover, and rest for 5 minutes for enhanced flavor.  
+   - Once cooked, drizzle 1 spoon of ghee, cover, and rest for 5 minutes for enhanced flavor.  
 
 ---
 
