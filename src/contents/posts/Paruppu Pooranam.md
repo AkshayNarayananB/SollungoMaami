@@ -33,35 +33,35 @@ A classic savory filling made with urad dal, tempered with mustard seeds and cur
 ## 👩‍🍳 Instructions
 
 ### Step 1: Prepare the Dal  
- Soak urad dal in water for 1 hour. Drain and rinse well.  
+ - Soak urad dal in water for 1 hour. Drain and rinse well.  
 
 ### Step 2: Grind the Mixture  
- In a mixer jar, combine soaked urad dal, dry red chillies, and a pinch of salt.  
- Pulse grind without water to get a coarse batter-like consistency.  
+ - In a mixer jar, combine soaked urad dal, dry red chillies, and a pinch of salt.  
+ - Pulse grind without water to get a coarse batter-like consistency.  
 
 ### Step 3: Steam the Dal  
- Grease an idli plate lightly with oil.  
- Spread the ground dal mixture evenly.  
- Steam for 10 minutes on medium-high flame.  
- Test doneness — it should not stick when touched.  
+ - Grease an idli plate lightly with oil.  
+ - Spread the ground dal mixture evenly.  
+ - Steam for 10 minutes on medium-high flame.  
+ - Test doneness — it should not stick when touched.  
 
 ### Step 4: Cool and Crumble  
- Let the steamed dal cool to room temperature.  
- Crumble with hands into small pieces to prevent breaking.  
+ - Let the steamed dal cool to room temperature.  
+ - Crumble with hands into small pieces to prevent breaking.  
 
 ### Step 5: Tempering and Final Cooking  
- Heat sesame oil in a kadai or heavy pan.  
- Add mustard seeds; let them splutter.  
- Add asafoetida; let it sizzle briefly.  
- Add crumbled dal; mix well. It may stick initially.  
- Stir continuously for 5 minutes until it stops sticking.  
- Add chopped curry leaves and mix thoroughly.  
- Continue stirring until mixture binds and leaves the pan sides.  
+ - Heat sesame oil in a kadai or heavy pan.  
+ - Add mustard seeds; let them splutter.  
+ - Add asafoetida; let it sizzle briefly.  
+ - Add crumbled dal; mix well. It may stick initially.  
+ - Stir continuously for 5 minutes until it stops sticking.  
+ - Add chopped curry leaves and mix thoroughly.  
+ - Continue stirring until mixture binds and leaves the pan sides.  
 
 ### Step 6: Finish and Cool  
- Turn off heat once mixture is well combined.  
- Transfer to a bowl; add lemon juice and mix.  
- Cool completely before using as filling.  
+ - Turn off heat once mixture is well combined.  
+ - Transfer to a bowl; add lemon juice and mix.  
+ - Cool completely before using as filling.  
 
 ---
 
