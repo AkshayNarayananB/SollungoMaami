@@ -22,21 +22,21 @@ This vibrant **South Indian beetroot curry** is simple yet packed with flavor. R
 
 ## 🛒 Ingredients
 
-**Beetroot** – 500g, peeled and finely chopped  
-**Roasted peanuts** – 2 to 3 tbsp  
-**Water**  
-**Grated coconut** – ½ cup  
-**Homemade curry powder (podi)** – 1½ to 2 tbsp  
-**Salt** – to taste  
+- **Beetroot** – 500g, peeled and finely chopped  
+- **Roasted peanuts** – 2 to 3 tbsp  
+- **Water**  
+- **Grated coconut** – ½ cup  
+- **Homemade curry powder (podi)** – 1½ to 2 tbsp  
+- **Salt** – to taste  
 
 ### 🌾 For Tempering:
 
-**Chana dal** – 1 tsp  
-**Urad dal** – 1 tsp  
-**Dry red chilies** – 1 to 2  
-**Mustard seeds** – ½ tsp  
-**Asafoetida (hing)** – a pinch  
-**Oil** – 1 to 2 tbsp
+- **Chana dal** – 1 tsp  
+- **Urad dal** – 1 tsp  
+- **Dry red chilies** – 1 to 2  
+- **Mustard seeds** – ½ tsp  
+- **Asafoetida (hing)** – a pinch  
+- **Oil** – 1 to 2 tbsp
 
 ---
 
