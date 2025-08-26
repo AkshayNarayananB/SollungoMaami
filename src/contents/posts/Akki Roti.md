@@ -8,7 +8,7 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/akki roti.jpg" 
 ---
 
-# 🫓 Akki Roti Recipe | Traditional Karnataka Flatbread
+#  Akki Roti Recipe | Traditional Karnataka Flatbread
 
 “From Karnataka’s kitchen to your heart — nutrition meets tradition in every bite!”
 
@@ -69,21 +69,21 @@ A beloved staple in Karnataka homes, **Akki Roti** is a gluten-free rice flour f
 
 ## 🍽️ Serving Suggestions
 
-- 🥥 Pairs well with **coconut chutney** or **spicy mint chutney**  
-- 🧈 A dollop of **butter** enhances flavor  
-- 🥛 Goes well with **buttermilk** or **curd**  
-- 📦 Great for **lunch boxes** — stays soft for hours
+-  Pairs well with **coconut chutney** or **spicy mint chutney**  
+-  A dollop of **butter** enhances flavor  
+-  Goes well with **buttermilk** or **curd**  
+-  Great for **lunch boxes** — stays soft for hours
 
 ---
 
 ## 🌟 Tips & Notes
 
-- 💧 **Water Control** – Add gradually; dough must be soft, not sticky  
-- 🔪 **Chop Veggies Finely** – Helps in shaping and even cooking  
-- 🍃 **Banana Leaf Tip** – Adds aroma and makes transfer easy  
-- 🔥 **Cook on Medium Flame** – Ensures even browning  
-- ❄️ **Storage** – Can be refrigerated for 1–2 days and reheated on tawa  
-- 🌶️ **Variations** – Add grated ginger, capsicum, or crushed garlic for new flavors
+-  **Water Control** – Add gradually; dough must be soft, not sticky  
+-  **Chop Veggies Finely** – Helps in shaping and even cooking  
+-  **Banana Leaf Tip** – Adds aroma and makes transfer easy  
+-  **Cook on Medium Flame** – Ensures even browning  
+-  **Storage** – Can be refrigerated for 1–2 days and reheated on tawa  
+-  **Variations** – Add grated ginger, capsicum, or crushed garlic for new flavors
 
 ---
 
