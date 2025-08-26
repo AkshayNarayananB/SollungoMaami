@@ -38,30 +38,30 @@ This fiber-rich, iron-packed flatbread made with **ragi flour (finger millet)** 
 ## 👩‍🍳 Instructions
 
 1. **Make the Dough**  
-   In a large mixing bowl, combine ragi flour and wheat flour.  
-   Add chopped onions, green chilies, grated carrot, chopped capsicum, curry leaves, and coriander leaves.  
-   Sprinkle in salt and a pinch of hing. Mix everything well.  
-   Gradually add water, little by little, to form a soft and pliable dough.  
-   Cover and rest the dough for 10–15 minutes.
+   - In a large mixing bowl, combine ragi flour and wheat flour.  
+   - Add chopped onions, green chilies, grated carrot, chopped capsicum, curry leaves, and coriander leaves.  
+   - Sprinkle in salt and a pinch of hing. Mix everything well.  
+   - Gradually add water, little by little, to form a soft and pliable dough.  
+   - Cover and rest the dough for 10–15 minutes.
 
 2. **Shape the Adai**  
-   Place a piece of butter paper or a banana leaf on a flat surface.  
-   Wet the surface slightly with water to prevent sticking.  
-   Take a small portion of the dough, roll it into a ball, and place it on the paper.  
-   Using wet fingers, gently press and flatten the dough into a medium-thick round adai (not too thin or too thick).  
-   Make a small hole in the center of the adai – this helps it cook evenly.
+   - Place a piece of butter paper or a banana leaf on a flat surface.  
+   - Wet the surface slightly with water to prevent sticking.  
+   - Take a small portion of the dough, roll it into a ball, and place it on the paper.  
+   - Using wet fingers, gently press and flatten the dough into a medium-thick round adai (not too thin or too thick).  
+   - Make a small hole in the center of the adai – this helps it cook evenly.
 
 3. **Cook the Adai**  
-   Heat a dosa tawa (flat griddle) on medium flame.  
-   Carefully flip the butter paper with the adai onto the hot tawa.  
-   Gently press and peel off the butter paper.  
-   Drizzle a little oil around the edges and in the center hole.  
-   Let it cook for 2–3 minutes on medium flame until the base firms up.  
-   Flip and cook the other side.  
-   Continue cooking on low flame if you want it crispier, pressing gently as needed.
+   - Heat a dosa tawa (flat griddle) on medium flame.  
+   - Carefully flip the butter paper with the adai onto the hot tawa.  
+   - Gently press and peel off the butter paper.  
+   - Drizzle a little oil around the edges and in the center hole.  
+   - Let it cook for 2–3 minutes on medium flame until the base firms up.  
+   - Flip and cook the other side.  
+   - Continue cooking on low flame if you want it crispier, pressing gently as needed.
 
 4. **Serve**  
-   Serve hot with coconut chutney, pickle, or plain curd.
+   - Serve hot with coconut chutney, pickle, or plain curd.
 
 ---
 
