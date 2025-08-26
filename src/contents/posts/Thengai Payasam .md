@@ -34,25 +34,25 @@ A divine offering especially prepared during the auspicious Aadi month and for G
 ## 👩‍🍳 Instructions
 
 ### Preparing the Rice-Coconut Base  
- **Soak rice:** Clean and soak raw rice in water for 30 minutes.  
- **Drain and prepare:** Drain water completely from soaked rice.  
- **Grind mixture:** Blend soaked rice and grated coconut with little water to a smooth, thick but pourable paste. Optionally strain for extra smoothness.
+ - **Soak rice:** Clean and soak raw rice in water for 30 minutes.  
+ - **Drain and prepare:** Drain water completely from soaked rice.  
+ - **Grind mixture:** Blend soaked rice and grated coconut with little water to a smooth, thick but pourable paste. Optionally strain for extra smoothness.
 
 ### Cooking the Payasam  
- **Dilute paste:** Transfer to a heavy pan, add 2–2.5 cups water, mix to milk-like consistency.  
- **Cook:** On medium-low heat, stirring continuously for about 5 minutes until smooth and cooked.  
- **Add jaggery:** Stir in jaggery and let it melt completely on low flame (~5 minutes).  
- **Add spices:** Mix in cardamom powder and optional saffron. Simmer 2–3 minutes.
+ - **Dilute paste:** Transfer to a heavy pan, add 2–2.5 cups water, mix to milk-like consistency.  
+ - **Cook:** On medium-low heat, stirring continuously for about 5 minutes until smooth and cooked.  
+ - **Add jaggery:** Stir in jaggery and let it melt completely on low flame (~5 minutes).  
+ - **Add spices:** Mix in cardamom powder and optional saffron. Simmer 2–3 minutes.
 
 ### Preparing the Garnish  
- **Heat ghee:** In a small pan, heat ghee over medium heat.  
- **Fry cashews:** Until golden red.  
- **Add to payasam:** Add cashews with ghee to the payasam and mix well.  
+ - **Heat ghee:** In a small pan, heat ghee over medium heat.  
+ - **Fry cashews:** Until golden red.  
+ - **Add to payasam:** Add cashews with ghee to the payasam and mix well.  
 
 ### Final Touch  
- Turn off heat; let payasam cool 5 minutes.  
- Add boiled milk and stir gently. Adjust consistency if needed.  
- Let rest 10–15 minutes before serving.
+ - Turn off heat; let payasam cool 5 minutes.  
+ - Add boiled milk and stir gently. Adjust consistency if needed.  
+ - Let rest 10–15 minutes before serving.
 
 ---
 
