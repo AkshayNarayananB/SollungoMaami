@@ -43,26 +43,26 @@ This simple one-pot dish can be enjoyed on its own or paired with chutney, pickl
 ## 👩‍🍳 Instructions  
 
 1. ** Roast the Rava**  
-   In a kadai, dry roast rava on medium-low flame until it turns golden brown and aromatic. Keep aside.  
+   - In a kadai, dry roast rava on medium-low flame until it turns golden brown and aromatic. Keep aside.  
 
 2. ** Temper the Spices**  
-   Heat oil in the same kadai.  
-   Add mustard seeds and let them splutter.  
-   Add chana dal and urad dal, saute until light brown.  
-   Add chopped ginger, green chilies, curry leaves, and hing. Fry briefly.  
+   - Heat oil in the same kadai.  
+   - Add mustard seeds and let them splutter.  
+   - Add chana dal and urad dal, saute until light brown.  
+   - Add chopped ginger, green chilies, curry leaves, and hing. Fry briefly.  
 
 3. ** Add Water**  
-   Pour 3 cups of water into the kadai along with salt. Bring to a rolling boil.  
+   - Pour 3 cups of water into the kadai along with salt. Bring to a rolling boil.  
 
 4. ** Cook the Upma**  
-   Reduce the flame to low. Slowly add roasted rava while stirring continuously to avoid lumps.  
-   Stir until the water is absorbed and mixture reaches porridge consistency.  
+   - Reduce the flame to low. Slowly add roasted rava while stirring continuously to avoid lumps.  
+   - Stir until the water is absorbed and mixture reaches porridge consistency.  
 
 5. ** Steam Cook**  
-   Cover and cook for 5 minutes, stirring occasionally to avoid burning.  
+   - Cover and cook for 5 minutes, stirring occasionally to avoid burning.  
 
 6. ** Finish with Ghee**  
-   Add ghee, mix well, cover, and rest for 5 minutes for best flavor.  
+   - Add ghee, mix well, cover, and rest for 5 minutes for best flavor.  
 
 ---
 
