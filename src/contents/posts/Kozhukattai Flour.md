@@ -29,30 +29,30 @@ A simple yet essential batter recipe using rice flour, perfect for making tradit
 ## 👩‍🍳 Instructions
 
 ### Step 1: Prepare the Flour Mixture  
-🥣 In a bowl, combine rice flour and salt. Mix well.  
-💧 Gradually add water little by little while continuously mixing. Use a hand blender for smoother mixing if available.  
-🥄 Aim for a dosa batter-like consistency. Do **not** add all the water at once.  
+- In a bowl, combine rice flour and salt. Mix well.  
+- Gradually add water little by little while continuously mixing. Use a hand blender for smoother mixing if available.  
+- Aim for a dosa batter-like consistency. Do **not** add all the water at once.  
 
 ### Step 2: Cook the Batter  
-🥄 In a heavy-bottomed kadai or pan, add the sesame oil first.  
-🍚 Immediately pour in the rice flour batter. Mix the oil and batter well.  
-⚠️ **Do not switch on the flame yet** — if the oil becomes even slightly warm, the batter will start forming lumps.  
-🔥 Once oil and batter are combined smoothly, switch on the flame to **medium-low** and keep stirring continuously.  
-👉 At first, oil may gather at the corners — this is normal. Continue mixing until the batter thickens into a soft dough.  
+- In a heavy-bottomed kadai or pan, add the sesame oil first.  
+- Immediately pour in the rice flour batter. Mix the oil and batter well.  
+- **Do not switch on the flame yet** — if the oil becomes even slightly warm, the batter will start forming lumps.  
+- Once oil and batter are combined smoothly, switch on the flame to **medium-low** and keep stirring continuously.  
+- At first, oil may gather at the corners — this is normal. Continue mixing until the batter thickens into a soft dough.  
 
 ### Step 3: Continuous Mixing  
-⏰ Keep stirring without pause for about 5 minutes on medium flame.  
-🔥 The batter will thicken gradually. Scrape flour stuck on sides back into the batter.  
-⚠️ Do **not** stop stirring or the batter will become crispy and unusable for Kozhukattai.  
+- Keep stirring without pause for about 5 minutes on medium flame.  
+- The batter will thicken gradually. Scrape flour stuck on sides back into the batter.  
+- Do **not** stop stirring or the batter will become crispy and unusable for Kozhukattai.  
 
 ### Step 4: Final Cooking  
-⏰ Continue stirring for another 2 minutes until the batter is well-cooked and thick.  
-✋ Test readiness: take a small portion, if it doesn’t stick to your palms, it’s ready.  
-🔥 If sticky, cook 2–3 more minutes while stirring.  
+- Continue stirring for another 2 minutes until the batter is well-cooked and thick.  
+- Test readiness: take a small portion, if it doesn’t stick to your palms, it’s ready.  
+- If sticky, cook 2–3 more minutes while stirring.  
 
 ### Step 5: Storage  
-🫙 Transfer batter immediately to another vessel.  
-🔒 Cover tightly to prevent drying out. Uncovered batter dries and becomes hard to shape.  
+- Transfer batter immediately to another vessel.  
+- Cover tightly to prevent drying out. Uncovered batter dries and becomes hard to shape.  
 
 ---
 
