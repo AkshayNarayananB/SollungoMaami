@@ -78,22 +78,22 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## 🌟 Health Benefits
 
-💪 High protein from urad dal  
-🦴 Good source of calcium and magnesium  
-⚡ Complex carbs for sustained energy  
-🧠 Rich in B-vitamins for brain and nerve health  
-🌱 Naturally gluten-free  
-🛡️ Contains antioxidants from spices
+- High protein from urad dal  
+- Good source of calcium and magnesium  
+- Complex carbs for sustained energy  
+- Rich in B-vitamins for brain and nerve health  
+- Naturally gluten-free  
+- Contains antioxidants from spices
 
 ---
 
 ## 🍽️ Serving Suggestions
 
-- 🥥 Serve hot with coconut chutney  
-- 🍅 Enjoy with tomato chutney or tangy sambar  
-- ☕ Pair with filter coffee for an authentic South Indian breakfast  
-- 🎉 A classic dish for festivals, weddings, and special poojas  
-- 🍛 Add to sambar or rasam as a side in traditional meals  
+-  Serve hot with coconut chutney  
+-  Enjoy with tomato chutney or tangy sambar  
+-  Pair with filter coffee for an authentic South Indian breakfast  
+-  A classic dish for festivals, weddings, and special poojas  
+-  Add to sambar or rasam as a side in traditional meals  
 
 ---
 
