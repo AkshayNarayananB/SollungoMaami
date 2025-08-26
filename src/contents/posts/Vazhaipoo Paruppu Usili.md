@@ -20,17 +20,17 @@ This traditional **Tamil-style dish** combines protein-rich lentils with finely 
 ---
 ## ✨ Ingredients
 
- **Chana dal** – ¼ cup  
- **Toor dal** – ¼ cup  
- **Turmeric powder** – ¼ tsp  
- **Red chilies** – 5 to 6  
- **Banana flower (vazhaipoo)** – 1 whole, chopped & squeezed  
- **Mustard seeds** – 1 tsp  
- **Curry leaves** – a few  
- **Asafoetida (hing)** – a pinch  
- **Salt** – to taste  
- **Oil** – 2 tbsp  
- **Water** – as needed  
+ - **Chana dal** – ¼ cup  
+ - **Toor dal** – ¼ cup  
+ - **Turmeric powder** – ¼ tsp  
+ - **Red chilies** – 5 to 6  
+ - **Banana flower (vazhaipoo)** – 1 whole, chopped & squeezed  
+ - **Mustard seeds** – 1 tsp  
+ - **Curry leaves** – a few  
+ - **Asafoetida (hing)** – a pinch  
+ - **Salt** – to taste  
+ - **Oil** – 2 tbsp  
+ - **Water** – as needed  
 
 ---
 
@@ -47,31 +47,31 @@ Tip 2: Keep a bowl of water with a little curd (make like watery butter milk)  n
 
 1. Peel Outer Bracts
 
-Remove the dark purple outer petals (called bracts).
+- Remove the dark purple outer petals (called bracts).
 
-Inside each petal, you’ll find small pale florets — keep them aside for cleaning.
+- Inside each petal, you’ll find small pale florets — keep them aside for cleaning.
 
 2. Clean the Florets
 
-From each floret, remove the hard plastic-like calyx and the stiff matchstick-like style (pistil).
+- From each floret, remove the hard plastic-like calyx and the stiff matchstick-like style (pistil).
 
-Discard these parts; they’re tough and fibrous.
+- Discard these parts; they’re tough and fibrous.
 
 3. Continue Peeling
 
-Keep peeling bracts and cleaning florets until the inner cone turns pale and tender (about baby-pink/cream color).
+- Keep peeling bracts and cleaning florets until the inner cone turns pale and tender (about baby-pink/cream color).
 
-You can chop the tender inner cone directly without cleaning.
+- You can chop the tender inner cone directly without cleaning.
 
 4. Chop the Florets
 
-Collect cleaned florets and tender cone.
+- Collect cleaned florets and tender cone.
 
-Slice thinly using an oiled sharp knife.
+- Slice thinly using an oiled sharp knife.
 
 5. Soak Immediately
 
-Drop chopped pieces into the prepared curd/lemon water to prevent darkening and reduce bitterness.
+- Drop chopped pieces into the prepared curd/lemon water to prevent darkening and reduce bitterness.
 
 ## 👩‍🍳 Instructions
 
