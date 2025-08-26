@@ -20,16 +20,16 @@ Pudina Chutney is a refreshing blend of fresh mint, coriander, and green chilies
 ---
 ## 📝 Ingredients
 
- Fresh Pudina (Mint) Leaves – 1 cup  
- Fresh Coriander Leaves (with stems) – 1 handful  
- Urad Dal – 1 tbsp  
- Chana Dal – 1 tbsp  
- Onion – 1 (roughly chopped)  
- Tomato – 1 (roughly chopped)  
- Dry Red Chilies – 10 to 12  
- Hing (Asafoetida) – a pinch  
- Salt – to taste  
- Oil – 4 to 5 tbsp (divided)  
+ - Fresh Pudina (Mint) Leaves – 1 cup  
+ - Fresh Coriander Leaves (with stems) – 1 handful  
+ - Urad Dal – 1 tbsp  
+ - Chana Dal – 1 tbsp  
+ - Onion – 1 (roughly chopped)  
+ - Tomato – 1 (roughly chopped)  
+ - Dry Red Chilies – 10 to 12  
+ - Hing (Asafoetida) – a pinch  
+ - Salt – to taste  
+ - Oil – 4 to 5 tbsp (divided)  
 
 ---
 
