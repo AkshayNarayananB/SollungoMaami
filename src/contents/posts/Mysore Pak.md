@@ -8,24 +8,19 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysore pak.jpg"  
 ---
 
+✨ Mysore Pak — the royal sweet of Karnataka, is a melt-in-the-mouth delicacy made with just three humble ingredients: gram flour, ghee, and sugar. First created in the royal kitchens of the Mysore Palace for the Wodeyar kings, this golden treat has since become a festive favorite across South India. Its rich aroma of roasted besan, the glossy shine of pure ghee, and that irresistible crumbly-yet-soft texture make it a timeless indulgence enjoyed during festivals, weddings, and celebrations. ✨
+
+---
+
+![mysore pak](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysore%20pak.jpg)
+
+---
 ## ✨ Ingredients
 
 -  **Besan flour (gram flour)** – 1 cup (250 ml measuring cup)  
 -  **Sugar** – 2 cups  
 -  **Water** – 1¼ cups  
 -  **Ghee** – 2 to 2½ cups  
-
----
-![mysore pak](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/mysore%20pak.jpg)
----
-## 🛠️ Equipment Needed
-
-- Large thick-bottomed kadai  
-- Fine strainer  
-- Two stoves (recommended)  
-- Ladle  
-- Greased plate  
-- Helper (highly recommended!)  
 
 ---
 
@@ -80,13 +75,13 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## ✅ Important Tips
 
-- 🔑 Practice on a normal day before special occasions.  
-- 🤝 Having a helper is crucial — one stirs, the other adds ghee.  
-- ⏳ Patience is key — don’t rush ghee addition.  
-- 🔄 Continuous stirring prevents curdling.  
-- ⚠️ Avoid adding ghee too quickly or leaving mixture unattended.  
-- ⚠️ Sieve besan properly to avoid lumps.  
-- ⚠️ Cut at the right time for perfect texture.  
+-  Practice on a normal day before special occasions.  
+-  Having a helper is crucial — one stirs, the other adds ghee.  
+-  Patience is key — don’t rush ghee addition.  
+-  Continuous stirring prevents curdling.  
+-  Avoid adding ghee too quickly or leaving mixture unattended.  
+-  Sieve besan properly to avoid lumps.  
+-  Cut at the right time for perfect texture.  
 
 ---
 
