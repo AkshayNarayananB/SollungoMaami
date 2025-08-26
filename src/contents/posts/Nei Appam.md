@@ -88,5 +88,5 @@ A staple during **Varalakshmi Vratham**, **Vinayaka Chaturthi**, **Krishna Jayan
 
 ## Video Tutorial
 
-[![Watch the video](https://img.youtube.com/vi/_sq2Qp8OM5Y/0.jpg)](https://youtu.be/q--UX1pj-rE?si=Kg1o1_MGumtWf7KQ)
+[![Watch the video](https://img.youtube.com/vi/q--UX1pj-rE/0.jpg)](https://youtu.be/q--UX1pj-rE?si=Kg1o1_MGumtWf7KQ)
 
