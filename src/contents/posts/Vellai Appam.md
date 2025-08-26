@@ -13,7 +13,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 *"From morning prep to evening bliss - Vellai Appam makes every bite worth the wait!"*
 
-A beloved traditional South Indian snack that’s perfect for festivals like Diwali and Karthika Deepam, or just an irresistible evening treat. Crispy, spicy, and golden, these appams are a crunchy delight in every bite.
+A beloved traditional South Indian snack that’s perfect for festivals like Diwali and Karthika Deepam, or just an irresistible evening treat. Crispy, spicy, and golden, these appams are a crunchy delight in every bite. Simple ingredients, traditional technique, extraordinary taste — that’s the magic of **Vellai Appam**. Enjoy this crispy delight anytime, not just festivals!
 
 ---
 ![vellaiappam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vellaiappam.png)
@@ -111,9 +111,6 @@ Serve hot with coconut chutney, tomato chutney, or simply enjoy alongside a cup 
 
 ---
 
-Simple ingredients, traditional technique, extraordinary taste — that’s the magic of **Vellai Appam**. Enjoy this crispy delight anytime, not just festivals!
-
----
 🏆 "Master this recipe once, and Vellai Appam will become your go-to evening delight!"
 
 ## Video Tutorial
