@@ -84,4 +84,4 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 ---
 ## Video Tutorial  
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)]()
+[![Watch the video](https://img.youtube.com/vi/_WFzVT7e_BA/0.jpg)](https://youtu.be/_WFzVT7e_BA?si=pwNXg_l7xKwsa3gr)
