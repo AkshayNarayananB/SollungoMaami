@@ -2,7 +2,7 @@
 title: Karuppu Kavuni Arisi Dosai  
 published: 2025-08-20  
 description: ✨ A traditional South Indian dosa made with a healthy mix of black Kavuni rice and idli rice, fermented to perfection — a wholesome breakfast treat! ✨  
-tags: [breakfast, dosa, South Indian, healthy]  
+tags: [Tiffin]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kavunidosai.png"  
