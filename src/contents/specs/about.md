@@ -19,10 +19,10 @@ The recipes I share here are my way of cooking these dishes — techniques I've 
 But this space is about more than just food.
 
 I'm passionate about preserving and sharing our beautiful traditions — so you'll also find:
--  **Temple information** with contact details for your visits.
--  **Simple kolam designs** you can easily create for daily practice.
 
-These are all part of the rich cultural heritage that makes our traditions so special.
+-  **Temple information** with contact details for your visits.
+
+All of this is part of the rich cultural heritage that makes our traditions so special.
 
 ## For Beginners and Experienced Cooks Alike
 
@@ -43,7 +43,6 @@ There's something special about sharing a meal you made from scratch, and I love
 Feel free to reach out if you have questions about:
 - Recipes
 - Temple visits
-- Kolam designs
 
 I'm always excited to connect with others who love to cook and celebrate our traditions.
 
