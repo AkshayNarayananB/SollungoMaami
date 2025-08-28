@@ -3,7 +3,7 @@ import type { Configuration } from "./src/types/config";
 
 const MaamiConfig: Configuration = {
   title: "Sollungo Maami",
-  subTitle: "Bhikshaam Dehi Cha Paarvati",
+  subTitle: "Spicing life with devotion and flavor",
   brandTitle: "Sollungo Maami",
 
   description: "Blog Site",
@@ -32,7 +32,7 @@ const MaamiConfig: Configuration = {
   ],
 
   username: "Sollungo Maami",
-  sign: "Har Har Mahadev",
+  sign: "🌿 “Recipes & traditions, straight from the heart.”",
   avatarUrl: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ninceyard.jpg",
   socialLinks: [
     {
