@@ -8,14 +8,14 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/soojiappam.png"  
 ---
 
-# 🍯 Sooji Appam Recipe | Traditional South Indian Sweet
+#  Sooji Appam Recipe | Traditional South Indian Sweet
 
 “Golden crisp outside, soft jaggery-sooji filling inside — a festive treat that melts in your mouth!”  
 
 A classic festive delicacy, **Sooji Appam** combines the crunch of a thin maida shell with the sweetness of roasted rava, jaggery, and cardamom. It’s a beloved sweet often made for **Diwali, Gokulashtami, or special occasions**. Crispy, soft, and rich in flavor, this traditional sweet is pure indulgence in every bite.  
 
 ---
-![soojiappam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/soojiappam/png)  
+![soojiappam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/soojiappam.png)  
 ---
 
 ## 🛒 Ingredients  
