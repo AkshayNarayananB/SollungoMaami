@@ -87,3 +87,8 @@ Serve hot, soft **Green Moong Dal Idlis** with chutney or sambar! 🌿
 ---
 
 Enjoy these **soft, fluffy Green Moong Dal Idlis** — a protein-packed, wholesome twist on the traditional South Indian breakfast! 🌿✨  
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/2cLf84OjemE/0.jpg)](https://youtu.be/2cLf84OjemE?si=KDI9gjsc5TbZshUS)
