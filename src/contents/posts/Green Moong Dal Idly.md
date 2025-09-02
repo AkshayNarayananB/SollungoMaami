@@ -2,7 +2,7 @@
 title: Green Moong Dal Idly – Protein-Packed Healthy Breakfast  
 published: 2025-08-31  
 description: Soft, fluffy, and wholesome idlis made with protein-rich green moong dal. A nutritious twist to the traditional South Indian idli — light, filling, and diabetic-friendly!  
-tags: [Idly, Healthy, High-Protein, South Indian]  
+tags: [Tiffin]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/greenmoongdalidly.png"  
