@@ -137,4 +137,9 @@ Your delicious **Veg Wrap** is ready to serve! 🌯✨
 
 ---
 
-Enjoy this **Veg Wrap — a colorful, filling, and flavor-packed roll** that makes veggies exciting in every bite! 🌯🥕🥦  
+Enjoy this **Veg Wrap — a colorful, filling, and flavor-packed roll** that makes veggies exciting in every bite! 🥕🥦  
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/8BQ7_4S8iKs/0.jpg)](https://youtu.be/8BQ7_4S8iKs?si=WvS3mzGWJ0NWKBeP)
