@@ -106,3 +106,8 @@ Your **Kara Chutney** is ready to serve! 🌶️
 ---
 
 Bring the authentic taste of South Indian kitchens to your table with this **bold and spicy Kara Chutney**! 🌶️✨  
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/2JkIAVb7CYg/0.jpg)](https://youtu.be/2JkIAVb7CYg?si=ndinXJZmN_pU0IVJ)
