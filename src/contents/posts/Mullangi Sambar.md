@@ -114,3 +114,7 @@ Serve hot with **steamed rice, idli, dosa, or vada**.
 ---
 
 Enjoy this **traditional Mullangi Sambar** — tangy, spicy, and soulful, just like in a South Indian home! 🥄✨  
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/q15gUP6qdzs/0.jpg)](https://youtu.be/q15gUP6qdzs?si=mqR2-buQdBbJ3Zd9)
