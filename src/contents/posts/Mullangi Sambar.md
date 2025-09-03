@@ -21,7 +21,7 @@ Mullangi (radish) sambar is a beloved **South Indian dish**, pairing the mild sp
 ## 🛒 Ingredients  
 
 ### For Pressure Cooking Dal  
-- **Toor Dal (Pigeon Pea Lentils)** – 1 cup  
+- **Toor Dal** – 1 cup  
 - **Water** – enough to cook  
 - **Turmeric Powder** – ¼ tsp  
 - **Ghee** – ½ tsp  
