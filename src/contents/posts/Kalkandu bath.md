@@ -86,4 +86,9 @@ Your aromatic **Kalkandu Bath** is ready to serve!
 
 ---
 
-Enjoy this **Kalkandu Bath — a divine South Indian prasadam** that fills your home with temple-like aroma and sweetness! ✨🍯  
+Enjoy this **Kalkandu Bath — a divine South Indian prasadam** that fills your home with temple-like aroma and sweetness! ✨🍯 
+
+---
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/hZRz4jKMUh4/0.jpg)](https://youtu.be/hZRz4jKMUh4?si=T-feID1Ry8NZuOZV)
