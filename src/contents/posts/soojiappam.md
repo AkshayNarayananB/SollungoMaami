@@ -112,3 +112,7 @@ Serve hot and enjoy the festive sweetness! 🍯
 ---
 
 Experience the festive joy of **Sooji Appam** — a golden, crispy delight with a heart of sweet jaggery! 🎉  
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/FtEJs-mxQbc/0.jpg)](https://youtu.be/FtEJs-mxQbc?si=UNLhbMSKROOJoI61)
