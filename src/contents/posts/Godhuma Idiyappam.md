@@ -95,4 +95,5 @@ Made with wheat flour and a touch of rice flour for binding, these soft string h
 
 ## 🎥 Video Tutorial  
 
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)
+
+[![Watch the video](https://img.youtube.com/vi/ERYHKRj805Y/0.jpg)](https://youtu.be/ERYHKRj805Y?si=iUhoffey2C2pSxQY)
