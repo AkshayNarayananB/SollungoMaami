@@ -2,7 +2,7 @@
 title: Godhuma Idiyappam – Healthy Wheat String Hoppers  
 published: 2025-09-17  
 description: Soft, healthy, and melt-in-mouth wheat idiyappam – a wholesome South Indian breakfast or dinner that pairs perfectly with kurma, coconut milk, or jaggery syrup.  
-tags: [Tiffin, Healthy, Traditional]  
+tags: [Tiffin]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/IDIYAPPAM.png"
