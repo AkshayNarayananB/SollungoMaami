@@ -5,7 +5,7 @@ description: Soft, healthy, and melt-in-mouth wheat idiyappam – a wholesome So
 tags: [Tiffin, Healthy, Traditional]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/idiyappam.png"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/IDIYAPPAM.png"
 ---
 
 # Godhuma Idiyappam Recipe | Healthy Wheat String Hoppers  
@@ -17,7 +17,7 @@ Made with wheat flour and a touch of rice flour for binding, these soft string h
 
 ---
 
-![Idiyappam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/idiyappam.png)
+![Idiyappam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/IDIYAPPAM.png)
 
 ---
 
