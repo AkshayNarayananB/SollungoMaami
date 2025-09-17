@@ -93,6 +93,9 @@ Made with wheat flour and a touch of rice flour for binding, these soft string h
 
 ---
 
+“From your kitchen to the steamer – soft, healthy idiyappam in minutes!”
+
+---
 ## 🎥 Video Tutorial  
 
 
