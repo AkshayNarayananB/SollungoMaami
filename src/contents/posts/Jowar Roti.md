@@ -5,7 +5,7 @@ description: A wholesome, gluten-free flatbread made from sorghum flour, perfect
 tags: [Tiffin, Gluten-Free]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/jowarroti.jpg" 
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/jowarroti.png" 
 ---
 
 # 🌾 Jowar Roti Recipe | Soft & Healthy Sorghum Flatbread  
@@ -15,7 +15,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 A beloved millet-based flatbread, **Jowar Roti** (Sorghum Roti) is a healthy, gluten-free alternative to wheat rotis. Rich in fiber and minerals, it’s perfect for diabetic-friendly and weight-loss meals. When made with the right technique, these rotis turn out soft and beautifully puffed – just like phulkas!  
 
 ---
-![Jowar Roti](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/jowarroti.jpg)
+![Jowar Roti](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/jowarroti.png)
 ---
 
 ## 🛒 Ingredients  
