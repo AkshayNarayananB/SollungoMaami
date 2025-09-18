@@ -94,4 +94,4 @@ Experience the rustic goodness of soft, fluffy Jowar Rotis — a perfect healthy
 
 ## 🎥 Video Tutorial  
 
-[![Watch the video](https://img.youtube.com/vi/YOUR-VIDEO-ID/0.jpg)](https://youtu.be/YOUR-VIDEO-ID)  
+[![Watch the video](https://img.youtube.com/vi/qCY4j4EZGhc/0.jpg)](https://youtu.be/qCY4j4EZGhc?si=reWNT3MEsLm4e4zU)
