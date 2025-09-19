@@ -117,6 +117,8 @@ Experience the **goodness of greens and lentils** in this delicious Pachai Sunda
 
 ---
 
-## Video Tutorial  
+ 
 
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)
+## 🎥 Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/1ofaBnSJDV4/0.jpg)](https://youtu.be/1ofaBnSJDV4?si=r7jCmNeUAQhw_G2_)
