@@ -5,7 +5,7 @@ description: A wholesome, tangy, and slightly bitter sambar made with fresh turk
 tags: [Sambar]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/pachaisundakkaimethisambar.png"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/sundakkaimethisambar.png"  
 ---
 
 # Pachai Sundakkai Methi Sambar | Healthy South Indian Sambar  
@@ -17,7 +17,7 @@ There’s nothing more comforting than a bowl of homemade sambar. This sambar is
 This traditional South Indian **sambar** is a power-packed dish made with **pachai sundakkai (fresh turkey berries)**, **methi leaves**, and **toor dal**. It combines the slight bitterness of methi, the unique flavor of sundakkai, and the tang of tamarind into a comforting dish that’s perfect with steaming hot rice and a dollop of ghee.  
 
 ---  
-![Pachai Sundakkai Methi Sambar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/pachaisundakkaimethisambar.png)  
+![Pachai Sundakkai Methi Sambar](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/sundakkaimethisambar.png)  
 ---
 
 ⏱️ Recipe Overview
