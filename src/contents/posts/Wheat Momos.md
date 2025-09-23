@@ -128,4 +128,4 @@ Momos are everyone’s favorite street-style snack, but this version is extra sp
 
 ## 🎥 Video Tutorial  
 
-[![Watch the video](https://img.youtube.com/vi/yourvideoid/0.jpg)](https://youtu.be/yourvideoid)  
+[![Watch the video](https://img.youtube.com/vi/Q-EGwkTyTJU/0.jpg)](https://youtu.be/Q-EGwkTyTJU?si=p_sOAQgvllSQd0e1)  
