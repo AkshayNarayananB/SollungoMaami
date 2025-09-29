@@ -101,3 +101,7 @@ Made with rice, mixed dals, and the nutrition-packed banana flower, this adai is
 “Vazhaipoo Adai – a crispy, protein-rich, and traditional South Indian comfort food that turns banana flower into a tasty delight!”  
 
 ---
+
+## 🎥 Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/gqwrS-GX_7I/0.jpg)](https://youtu.be/gqwrS-GX_7I?si=t8_Wotc7_d8ZEA2S)
