@@ -5,7 +5,7 @@ description: A wholesome and crispy South Indian adai made with rice, lentils, a
 tags: [Tiffin, Healthy, Traditional]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/VAZHAIPOO_ADAI.png"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vazhaipooadai.png"
 ---
 
 # Vazhaipoo Adai Recipe | Banana Flower Lentil Pancake  
