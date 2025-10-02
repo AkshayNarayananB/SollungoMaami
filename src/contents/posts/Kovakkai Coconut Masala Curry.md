@@ -37,9 +37,11 @@ Since it’s **made without onion and garlic**, it’s ideal for fasting days, p
 
 ### Vegetables & Base  
 - **Kovakkai (Ivy Gourd)** – 500 gms  
-- **Tomatoes** – 2, finely chopped  
+- **Tomatoes** – 2, finely chopped
+- **Turmeric Powder** – ½ tsp
+- **Garam masala** – ½ tsp
 - **Oil** – 2 tbsp  
-- **Salt** – as required  
+- **Salt** – as required
 - **Coriander Leaves** – finely chopped, for garnish  
 
 ### To Grind (Coconut Paste)  
@@ -65,14 +67,15 @@ Since it’s **made without onion and garlic**, it’s ideal for fasting days, p
 
 ### 3. Mix in Kovakkai  
 - Add steamed kovakkai.  
-- Stir and cook for **2–3 minutes**.  
+- Stir and cook for **2–3 minutes**.
+- Now add ½ tsp turmeric powder, mix, and then add salt  
 
 ### 4. Prepare Coconut Paste  
 - Grind coconut, cashew nuts, fennel, green chilies, ginger, cloves, and cinnamon into a smooth paste using little water.  
 
 ### 5. Make the Curry  
 - Add the ground paste to the kadai.  
-- Mix well, add salt, and water if needed (to adjust consistency).  
+- Pour a little water if needed to adjust the consistency. Finally, sprinkle ½ tsp garam masala, stir well, and let it simmer.”
 
 ### 6. Simmer & Finish  
 - Cook on medium flame for **5–7 minutes** until flavors blend and the curry thickens.  
