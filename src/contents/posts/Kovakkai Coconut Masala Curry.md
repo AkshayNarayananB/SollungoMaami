@@ -18,6 +18,19 @@ Since it’s **made without onion and garlic**, it’s ideal for fasting days, p
 
 ---
 ![Kovakkai Coconut Masala](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kovakkai_coconut_masala.png)
+
+---
+
+## 📌 Recipe Overview  
+
+- **Course:** Main Dish / Curry  
+- **Cuisine:** South Indian  
+- **Prep Time:** 15 minutes  
+- **Cook Time:** 20 minutes  
+- **Total Time:** 35 minutes  
+- **Servings:** 4  
+- **Diet Type:** Satvik, No Onion, No Garlic
+
 ---
 
 ## 🛒 Ingredients  
@@ -106,6 +119,10 @@ Since it’s **made without onion and garlic**, it’s ideal for fasting days, p
 - Keeps well in the refrigerator for **1 day**.  
 - Reheat on stovetop with a splash of water before serving.  
 - Coconut paste can be pre-ground and refrigerated for **up to 2 days**.  
+
+---
+
+👉 This curry is a wonderful way to make kovakkai more exciting and enjoyable, even for those who usually don’t prefer this veggie.
 
 ---
 
