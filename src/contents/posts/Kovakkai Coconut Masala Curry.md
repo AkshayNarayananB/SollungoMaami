@@ -5,7 +5,7 @@ description: A rich, creamy South Indian-style curry made with kovakkai, coconut
 tags: [No onion no garlic, side dish ]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kovakkai_coconut_masala.jpg" 
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kovakkai_coconut_masala.png" 
 ---
 
 # 🥥 Kovakkai Coconut Masala Curry | No Onion No Garlic Recipe  
@@ -17,7 +17,7 @@ Kovakkai (Ivy Gourd/Tindora) is often made as a simple stir-fry in South Indian 
 Since it’s **made without onion and garlic**, it’s ideal for fasting days, poojas, or when you want something light yet wholesome.  
 
 ---
-![Kovakkai Coconut Masala](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kovakkai_coconut_masala.jpg)
+![Kovakkai Coconut Masala](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/kovakkai_coconut_masala.png)
 ---
 
 ## 🛒 Ingredients  
