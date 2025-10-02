@@ -111,5 +111,4 @@ Since it’s **made without onion and garlic**, it’s ideal for fasting days, p
 
 ## 🎥 Video Tutorial  
 
-[![Watch the video](https://img.youtube.com/vi/nG-KKRlODqA/0.jpg)]()  
-*(Replace link with actual video once ready)*  
+ 
