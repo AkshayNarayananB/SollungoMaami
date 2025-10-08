@@ -130,4 +130,4 @@ Being gluten-free and easy to digest, this dish is perfect for those who want a 
 
 ## 🎥 Video Tutorial  
 
-[![Watch the video](https://img.youtube.com/vi//0.jpg)]()
+[![Watch the video](https://img.youtube.com/vi/mtzkgIZYuYM/0.jpg)](https://youtu.be/mtzkgIZYuYM?si=dsAntGqQL3-1Hnur)
