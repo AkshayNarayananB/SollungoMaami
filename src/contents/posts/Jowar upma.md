@@ -5,7 +5,7 @@ description: A colorful, high-fiber South Indian-style millet upma made with jow
 tags: [Millet Recipes, Healthy Breakfast, South Indian Food]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/jowarupma.png"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/20250816_100536.jpg"  
 ---
 
 # 🌾 Jowar Vegetable Upma | Healthy Millet Breakfast Recipe  
@@ -18,7 +18,7 @@ Being gluten-free and easy to digest, this dish is perfect for those who want a 
 
 ---
 
-![Jowar Vegetable Upma](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/jowarupma.png)
+![Jowar Vegetable Upma](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/20250816_100536.jpg)
 
 ---
 
