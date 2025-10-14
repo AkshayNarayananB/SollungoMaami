@@ -139,4 +139,4 @@ Perfect for evening snacks, light dinners, or lunchbox treats — these momos ar
 
 ## 🎥 Video Tutorial  
 
-[![Watch the video](https://img.youtube.com/vi/INSERT_VIDEO_ID_HERE/0.jpg)](https://youtu.be/INSERT_VIDEO_ID_HERE)
+[![Watch the video](https://img.youtube.com/vi/ORCmTYV1pMY/0.jpg)](https://youtu.be/ORCmTYV1pMY?si=yDSVPCNKYUMLjlKg)
