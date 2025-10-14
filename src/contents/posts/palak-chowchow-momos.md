@@ -5,7 +5,7 @@ description: Vibrant and healthy momos made with spinach (palak) dough and a nut
 tags: [Snacks, Momos,Steamed Food]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/palak-chowchow-momos.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/chowchowmomos.png"  
 ---
 
 # 🥟 Palak Chow Chow Momos | Healthy & Colorful Dumplings  
@@ -18,7 +18,7 @@ Perfect for evening snacks, light dinners, or lunchbox treats — these momos ar
 
 ---
 
-![Palak Chow Chow Momos](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/palak-chowchow-momos.jpg)
+![Palak Chow Chow Momos](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/chowchowmomos.png)
 
 ---
 
