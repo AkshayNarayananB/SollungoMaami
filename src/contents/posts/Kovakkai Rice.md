@@ -5,7 +5,7 @@ description: A crunchy, nutty, and flavour-loaded South Indian rice made with ko
 tags: [Variety Rice, South Indian Recipes, Lunch Recipes, Healthy Meal]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/yourusername/blogimages/main/kovakkai-rice.jpg"  
+image: "https://raw.githubusercontent.com/yourusername/blogimages/main/Kovakkai-rice.jpg"  
 ---
 
 # Kovakkai Rice – Flavour-Packed South Indian-Style Spiced Rice  
