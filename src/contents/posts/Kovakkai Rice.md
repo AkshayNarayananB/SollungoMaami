@@ -146,3 +146,11 @@ Serve this **Kovakkai Rice** hot with:
 - A drizzle of **ghee** for extra richness ✨  
 
 ---
+
+✨ “A humble South Indian rice that fills the heart with comfort and the home with aroma!”
+
+---
+
+## 🎥 Video Tutorial  
+
+[![Watch the video](https://img.youtube.com/vi/V8ISaHvAFnw/0.jpg)](https://youtu.be/V8ISaHvAFnw?si=DgqM2aUG4_QcbRYv)
