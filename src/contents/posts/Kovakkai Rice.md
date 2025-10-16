@@ -21,10 +21,10 @@ It’s simple, satisfying, and ideal for lunchboxes, travel meals, or a quick we
 
 ---
 
-![Akki Roti](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Kovakkai-rice.jpg)
+![Kovakkai rice](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Kovakkai-rice.jpg)
 
 ---
-## 🍛 Recipe Overview  
+##  Recipe Overview  
 
 **Prep Time:** 20 mins  
 **Cook Time:** 25 mins  
