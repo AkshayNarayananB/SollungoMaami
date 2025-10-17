@@ -107,3 +107,8 @@ Tastes divine with **rasam rice**, **curd rice**, or **sambar sadam** for a comf
 
 ✨ _A classic from the Tamil kitchen that proves healthy food can be deliciously simple!_ 💚  
 
+---
+
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/eDg935tCmi4/0.jpg)](https://youtu.be/eDg935tCmi4?si=VPxYxzL8AzzhfTk4)
