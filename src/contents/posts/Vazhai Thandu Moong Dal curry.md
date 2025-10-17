@@ -8,7 +8,7 @@ draft: false
 image: "https://yourimageurl.com/vazhaithanducurry.jpg"
 ---
 
-# 🪷 Vazhai Thandu Moong Dal curry – Refreshing Banana Stem Stir-Fry  
+#  Vazhai Thandu Moong Dal curry – Refreshing Banana Stem Stir-Fry  
 
 > **Punch Line:** _A crunchy, cooling, and cleansing curry that keeps your gut happy and your body light!_ 🌿✨  
 
@@ -22,7 +22,7 @@ This **Vazhai Thandu Moong Dal curry** combines the crunch of banana stem, the s
 
 ---
 
-## 🍲 Recipe Overview  
+##  Recipe Overview  
 
 **Preparation Time:** 15 mins  
 **Cooking Time:** 15 mins  
@@ -31,6 +31,9 @@ This **Vazhai Thandu Moong Dal curry** combines the crunch of banana stem, the s
 
 ---
 
+![vazhaithanducurry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vazhaithanducurry.jpg)
+
+---
 ## 📝 Ingredients  
 
 - Vazhai Thandu (Banana Stem) – finely chopped, 1 medium  
