@@ -5,7 +5,7 @@ description: A light, fiber-rich South Indian-style stir-fry made with banana st
 tags: [Side Dish for rice, No onion no garlic]  
 category: Recipe  
 draft: false  
-image: "https://yourimageurl.com/vazhaithanducurry.jpg"
+image: "https://yourimageurl.com/vazahaithanducurry.jpg"
 ---
 
 #  Vazhai Thandu Moong Dal curry – Refreshing Banana Stem Stir-Fry  
@@ -31,7 +31,7 @@ This **Vazhai Thandu Moong Dal curry** combines the crunch of banana stem, the s
 
 ---
 
-![vazhaithanducurry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vazhaithanducurry.jpg)
+![vazahaithanducurry](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vazahaithanducurry.jpg)
 
 ---
 ## 📝 Ingredients  
