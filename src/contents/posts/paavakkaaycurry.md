@@ -8,13 +8,13 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/paavakkaaycurry.png"
 ---
 
-# 🍋 Paavakkai Curry – Tangy, Spicy & Perfectly Roasted Bitter Gourd Delight  
+#  Paavakkai Curry – Tangy, Spicy & Perfectly Roasted Bitter Gourd Delight  
 
-### 🪔 *“Turn bitterness into bliss — one crunchy, flavorful spoon at a time!”*  
+###  *“Turn bitterness into bliss — one crunchy, flavorful spoon at a time!”*  
 
 ---
 
-## 🥘 Introduction  
+##  Introduction  
 Paavakkai (bitter gourd) might not be everyone’s favorite, but this version will change your mind! With freshly ground curry powder and a touch of tangy tomato, it turns into a **crispy, aromatic South Indian side dish** that pairs beautifully with rice or rasam.  
 
 ---
