@@ -1,5 +1,5 @@
 ---
-title: Paavakkai Curry – Tangy, Spicy & Perfectly Roasted Bitter Gourd Delight  
+title: Paagarkkaay Curry – Tangy, Spicy & Perfectly Roasted Bitter Gourd Delight  
 published: 2025-10-28  
 description: A crispy, flavorful South Indian-style bitter gourd curry made with homemade curry powder, roasted to perfection in sesame oil — turning bitterness into pure bliss!  
 tags: [Side Dish for rice,Vegan]  
@@ -8,14 +8,14 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/paavakkaaycurry.png"
 ---
 
-#  Paavakkai Curry – Tangy, Spicy & Perfectly Roasted Bitter Gourd Delight  
+#  Paagarkkaay Curry – Tangy, Spicy & Perfectly Roasted Bitter Gourd Delight  
 
 ###  *“Turn bitterness into bliss — one crunchy, flavorful spoon at a time!”*  
 
 ---
 
 ##  Introduction  
-Paavakkai (bitter gourd) might not be everyone’s favorite, but this version will change your mind! With freshly ground curry powder and a touch of tangy tomato, it turns into a **crispy, aromatic South Indian side dish** that pairs beautifully with rice or rasam.  
+Paagarkkaay (bitter gourd) might not be everyone’s favorite, but this version will change your mind! With freshly ground curry powder and a touch of tangy tomato, it turns into a **crispy, aromatic South Indian side dish** that pairs beautifully with rice or rasam.  
 
 ---
 
@@ -42,7 +42,7 @@ Paavakkai (bitter gourd) might not be everyone’s favorite, but this version wi
 - Fenugreek seeds – 1 tsp  
 
 ### For Curry  
-- Paavakkai (bitter gourd) – 250 g  
+- Paagarkkaay (bitter gourd) – 250 g  
 - Tomato – 1, finely chopped  
 - Mustard seeds – ½ tsp  
 - Urad dal – 1 tsp  
@@ -57,9 +57,9 @@ Paavakkai (bitter gourd) might not be everyone’s favorite, but this version wi
 
 ## 🔥 Preparation Steps  
 
-### Step 1: Soak and Prep the Paavakkai  
+### Step 1: Soak and Prep the Paagarkkaay  
 1. Add salt to a bowl of water.  
-2. Chop paavakkai into small pieces and soak in the salt water for **20–30 mins** to reduce bitterness.  
+2. Chop paagarkkaay into small pieces and soak in the salt water for **20–30 mins** to reduce bitterness.  
 3. **Drain completely and rinse once in running water** to remove excess salt. Set aside.  
 
 ---
@@ -76,7 +76,7 @@ Paavakkai (bitter gourd) might not be everyone’s favorite, but this version wi
 2. Add **mustard seeds**; when they splutter, add **urad dal** and **hing**.  
 3. Once dal turns golden, add **chopped tomato**, **turmeric**, and **salt**.  
 4. Mix well, cover, and cook for **8–10 minutes**.  
-5. Add **drained paavakkai** pieces, saute well.  
+5. Add **drained paagarkkaay** pieces, saute well.  
 6. Add **curry powder generously** and roast uncovered on **medium flame 10–15 minutes**.  
 7. Add **curry leaves**, mix and spread out evenly for roasting.  
 8. Switch off flame, add **lemon juice**, mix, and rest for 5–10 mins.  
@@ -102,4 +102,4 @@ Serve hot with **steamed rice, rasam, or curd rice**. Perfectly roasted, mildly 
 
 ---
 
-✨ *For more authentic South Indian recipes, visit [Sollungo Maami](#) — where traditional taste meets homely love!*  
+✨ *For more authentic South Indian recipes, keep supporting [Sollungo Maami](#) — where traditional taste meets homely love!*  
