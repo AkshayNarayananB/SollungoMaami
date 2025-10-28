@@ -103,3 +103,9 @@ Serve hot with **steamed rice, rasam, or curd rice**. Perfectly roasted, mildly 
 ---
 
 ✨ *For more authentic South Indian recipes, keep supporting [Sollungo Maami](#) — where traditional taste meets homely love!*  
+
+---
+
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/9m84LFnOZ8k/0.jpg)](https://youtu.be/9m84LFnOZ8k?si=maktlpH3O68Y0TDy)
