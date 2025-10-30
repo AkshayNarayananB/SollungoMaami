@@ -10,7 +10,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 # 🌿 Pirandai Podi – Healing, Flavorful & Traditional Herbal Spice Mix  
 
-### 🪔 *“Recipes & traditions, straight from the heart.”*  
+###  *“Recipes & traditions, straight from the heart.”*  
 
 ---
 
