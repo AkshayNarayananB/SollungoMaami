@@ -2,7 +2,7 @@
 title: Kovakkai Rice – Spicy & Nutty South Indian Variety Rice  
 published: 2025-10-16  
 description: A crunchy, nutty, and flavour-loaded South Indian rice made with kovakkai, homemade curry podi, and peanut-sesame powder — a wholesome and aromatic meal perfect for lunchboxes or weekend lunch!  
-tags: [Variety Rice, South Indian Recipes, Lunch Recipes, Healthy Meal]  
+tags: [Rice Varieties]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Kovakkai-rice.jpg" 
