@@ -9,9 +9,9 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ---
 
-# 🍃 Vendakkai Sadam – Crispy Ladies Finger Rice  
+#  Vendakkai Sadam – Crispy Ladies Finger Rice  
 
-### 🪔 *“Recipes & traditions, straight from the heart.”*  
+### *“Recipes & traditions, straight from the heart.”*  
 
 ---
 
