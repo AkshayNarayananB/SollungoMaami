@@ -5,7 +5,7 @@ description: A flavorful South Indian Vendakkai Sadam (Ladies Finger Rice) made 
 tags: [Rice Varieties]
 category: Recipe
 draft: false
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ladiesfingerrice.png"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ladiesfingerrice.jpg"
 
 ---
 
@@ -34,7 +34,7 @@ Every bite has **crispy okra, gentle spices, and homely aroma** — a comforting
 
 ---
 
-![ladiesfingerrice](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ladiesfingerrice.png)
+![ladiesfingerrice](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/ladiesfingerrice.jpg)
 
 ---
 ## 🧂 Ingredients  
