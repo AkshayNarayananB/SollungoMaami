@@ -113,7 +113,7 @@ Pirandai (Adamant Creeper) is a powerful traditional herb used in South Indian k
 
 ## 🎥 Video Tutorial  
 
- [![Watch the video](https://img.youtube.com/vi/eDg935tCmi4/0.jpg)](https://youtu.be/eDg935tCmi4?si=VPxYxzL8AzzhfTk4)
+ [![Watch the video](https://img.youtube.com/vi/Y78318Jj9Hs/0.jpg)](https://youtu.be/Y78318Jj9Hs?si=Gyz0mtbN12jbfQPe)
 
 ---
 ✨ *For more authentic South Indian recipes, visit Sollungo Maami — where traditional taste meets homely love!*  
