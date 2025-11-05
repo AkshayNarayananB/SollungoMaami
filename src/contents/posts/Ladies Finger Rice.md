@@ -1,5 +1,5 @@
 ---
-title: Vendakkai Sadam – Crispy Ladies Finger Rice | Wholesome South Indian Lunch
+title: Vendakkai Pirandai Podi Sadam | Wholesome South Indian Lunch
 published: 2025-10-28
 description: A flavorful South Indian Vendakkai Sadam (Ladies Finger Rice) made with perfectly roasted okra, sesame oil, and aromatic pirandai podi — simple, healthy, and comforting!
 tags: [Rice Varieties]
@@ -9,7 +9,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ---
 
-#  Vendakkai Sadam – Crispy Ladies Finger Rice  
+#  Vendakkai Pirandai Podi Sadam  
 
 ### *“Recipes & traditions, straight from the heart.”*  
 
@@ -105,3 +105,9 @@ Switch off and fluff before serving.
 ---
 
 ✨ *For more traditional South Indian recipes, visit Sollungo Maami — where traditional taste meets homely love!*
+
+---
+
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/Nl8tobXA53I/0.jpg)](https://youtu.be/Nl8tobXA53I?si=oOmYInWWJdrGsMsh)
