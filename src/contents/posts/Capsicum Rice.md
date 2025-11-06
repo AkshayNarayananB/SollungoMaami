@@ -21,6 +21,15 @@ If you're looking for a wholesome, no-onion, no-garlic flavoured rice that still
 
 ## 🍚 Recipe Overview
 
+- Prep Time: 10 minutes
+- Cook Time: 20 minutes
+- Total Time: 30 minutes
+- Serves: 3–4
+- Cuisine: South Indian
+- Course: Main
+
+---
+
 ### **Ingredients**
 - Capsicum – 500 g (finely chopped)
 - Cooked rice – 1 cup (cooled)
@@ -110,5 +119,4 @@ A wholesome recipe suitable for all ages!
 
 ---
 
-## 📝 Closing Note
 A simple yet flavour-packed South Indian rice variety that makes everyday meals delicious. Try it, save it, and share it! 💚
