@@ -27,7 +27,10 @@ If you're looking for a wholesome, no-onion, no-garlic flavoured rice that still
 - Serves: 3–4
 - Cuisine: South Indian
 - Course: Main
+  
+---
 
+![capsicumrice](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/capsicumrice.png)
 ---
 
 ### **Ingredients**
