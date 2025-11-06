@@ -8,13 +8,12 @@ draft: false
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/capsicumrice.png"
 ---
 
-## 🫑✨ Punch Line
-**Simple ingredients, bold flavours, and a super comforting lunchbox favourite — ready in minutes!**
+##  
+** 🫑✨Simple ingredients, bold flavours, and a super comforting lunchbox favourite — ready in minutes!**
 
 ---
 
-## 🌿 Introduction
-Capsicum Pirandai Podi Sadam is a flavorful, easy-to-make South Indian rice variety cooked with crunchy peanuts, aromatic spices, and homemade pirandai podi. Perfect for busy weekdays, travel food, or a satisfying lunchbox meal — this dish brings together heat, aroma, and crunch in every bite.
+## 🌿 Capsicum Pirandai Podi Sadam is a flavorful, easy-to-make South Indian rice variety cooked with crunchy peanuts, aromatic spices, and homemade pirandai podi. Perfect for busy weekdays, travel food, or a satisfying lunchbox meal — this dish brings together heat, aroma, and crunch in every bite.
 
 If you're looking for a wholesome, no-onion, no-garlic flavoured rice that still tastes like heaven, this is a must-try!
 
@@ -124,3 +123,10 @@ A wholesome recipe suitable for all ages!
 ---
 
 A simple yet flavour-packed South Indian rice variety that makes everyday meals delicious. Try it, save it, and share it! 💚
+
+---
+
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/L5V_E_8Jq9c/0.jpg)](https://youtu.be/L5V_E_8Jq9c?si=iNu4mItgxaJq9m2w)
+
