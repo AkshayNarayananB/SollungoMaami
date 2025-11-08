@@ -2,10 +2,10 @@
 title: Curry Leaves Chutney (Karuveppilai Thogayal) – Healthy South Indian Chutney
 published: 2025-11-08
 description: A flavour-packed South Indian chutney made with fresh curry leaves, urad dal, red chilies, tamarind, and coconut. Perfect side dish for rice, idli, dosa — rich in iron, antioxidants & digestive benefits.
-tags: [Chutneys, No onion no garlic, Traditional Recipes]
+tags: [Thogayal, No onion no garlic]
 category: Recipe
 draft: false
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/curryleafchutney.png"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/curryleafthogayal.png"
 ---
 
 ##  
@@ -32,6 +32,9 @@ If you're looking for a healthy homemade chutney recipe without onion and garlic
 
 ---
 
+![curryleafthogayal](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/curryleafthogayal.png)
+
+---
 ### **Ingredients**
 
 - Curry leaves – 2 cups (washed & dried)
