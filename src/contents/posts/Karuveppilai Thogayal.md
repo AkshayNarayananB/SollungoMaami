@@ -116,7 +116,6 @@ Oil-free | Dry roast dal & chilies (flavour slightly varies)
 - Tamari​​nd aids digestion & gut health  
 - Coconut gives healthy fats  
 
-A perfect **immunity-boosting South Indian chutney**.
 
 ---
 
@@ -128,7 +127,17 @@ A perfect **immunity-boosting South Indian chutney**.
 
 ---
 
-A nutritious, earthy, authentic chutney that brings traditional flavour to your plate.  
+A perfect **immunity-boosting South Indian chutney**.
+
+---
+
+A nutritious, earthy, authentic thogayal that brings traditional flavour to your plate.  
 Try it, save it, and share it! 💚
+
+---
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/pV5PQKbdFwE/0.jpg)](https://youtu.be/pV5PQKbdFwE?si=cZe7W-CQmpvj45UL)
+
 
 ---
