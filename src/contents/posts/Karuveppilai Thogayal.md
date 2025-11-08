@@ -21,7 +21,7 @@ If you're looking for a healthy homemade chutney recipe without onion and garlic
 
 ---
 
-## 🍚 Recipe Overview
+##  Recipe Overview
 
 - Prep Time: 5 minutes  
 - Cook Time: 10 minutes  
