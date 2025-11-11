@@ -142,3 +142,7 @@ A **power-packed traditional superfood chutney** for everyday health 🌿
 Try it, save it & share the goodness! 💚
 
 ---
+
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/Kihx9lf_kvs/0.jpg)](https://youtu.be/Kihx9lf_kvs?si=tsjq_gPCSKi6yIGp)
