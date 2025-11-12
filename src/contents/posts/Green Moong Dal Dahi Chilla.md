@@ -170,3 +170,6 @@ Nutritious, filling & super tasty — a guilt-free chaat-style breakfast 💚
 Try it & share your pic with me! ✨  
 
 ---
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/9oPcUH5ZdAY/0.jpg)](https://youtu.be/9oPcUH5ZdAY?si=rcaGKcJy6mBHm3GG)
