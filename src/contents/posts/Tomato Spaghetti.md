@@ -54,7 +54,8 @@ This homemade sauce is simple yet rich — perfect for both kids and adults!
 - Chilli flakes – 1–2 tsp (adjust as per spice)  
 - Basil leaves – handful  
 - Salt – to taste  
-- Pepper powder – 1 tsp  
+- Pepper powder – 1 tsp
+- **Oregano – 1 tsp** 🌿  
 - Grated cheese – as needed  
 
 #### ✅ For Spaghetti  
@@ -82,7 +83,7 @@ This homemade sauce is simple yet rich — perfect for both kids and adults!
 7. Add onions, saute till soft & golden.  
 8. Add chilli flakes, then pour in the blended tomato puree.  
 9. Add salt & let it cook for 20–25 mins on medium flame.  
-10. Finish with pepper powder.  
+10. Finish with **pepper powder and oregano** for that Italian aroma. 🌿    
 
 ---
 
