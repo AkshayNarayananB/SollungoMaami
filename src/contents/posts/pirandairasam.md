@@ -5,7 +5,7 @@ description: Learn how to make nutritious Pirandai Rasam Podi and use it to prep
 tags: [South Indian Recipes,Healthy Recipes,Rasam,Podi]
 category: Recipe
 draft: false
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/pirandairasam.jpg"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Pirandairasam.jpg"
 ---
 
 ##  
@@ -36,7 +36,7 @@ Perfect for daily meals, kids, elders, or anyone looking for a **comforting, sto
 
 ---
 
-![pirandairasam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/pirandairasam.jpg)
+![pirandairasam](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/Pirandairasam.jpg)
 
 ---
 
@@ -140,3 +140,9 @@ With greens | Add finely chopped spinach or drumstick leaves
 
 A **healing, aromatic rasam** that’s easy to make and perfect for everyday meals! 💚  
 Try it and share your cooking experience! ✨
+
+---
+
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/c6sjwWTxhCc/0.jpg)](https://youtu.be/c6sjwWTxhCc?si=rC6f1J_iSlaIONjh)
