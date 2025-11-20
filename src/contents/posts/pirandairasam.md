@@ -15,7 +15,12 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ## 🌿 Pirandai Rasam Podi + Rasam
 
-Pirandai (Cissus Quadrangularis) is a traditional herb known for its **digestive, anti-inflammatory, and bone-strengthening properties**. Making a **rasam podi** from pirandai makes it easy to prepare a **quick, light, and aromatic rasam** anytime.
+Pirandai (Adamant Creeper) is one of those age-old treasures from our grandmothers’ kitchens — known for strengthening bones, improving digestion, and reducing inflammation. But many avoid using it because of its itchiness while handling. The trick? Clean it well, peel the edges, remove the fibers, and sauté/roast it properly — and it turns into a flavour-packed, medicinal ingredient.
+
+This Pirandai Rasam Podi is a wonderful way to include this superfood in your daily cooking.
+It blends toor dal, coriander seeds, pepper, cumin, chillies and a handful of fresh curry leaves… all roasted slowly for that deep aroma. A small amount of podi is enough to make a comforting, earthy, super-healthy rasam that’s perfect for any day.
+
+If you're looking to add variety, wellness, and authentic flavour to your rasam routine, this podi will become your favourite. 🌿🍲💚
 
 This recipe includes:  
 ✅ Pirandai Rasam Podi – a spice and herb powder with roasted dal, pepper, cumin, curry leaves and pirandai  
@@ -117,7 +122,9 @@ Perfect as:
 No tamarind | This version uses only tomatoes  
 Spicy | Add extra red chillies or black pepper  
 Kids-friendly | Reduce pepper and chilli for mild taste  
-With greens | Add finely chopped spinach or drumstick leaves  
+Garlic boost | Add 1–2 cloves garlic while roasting or in rasam for extra aroma and immunity benefits 
+Quick version | Use pre-made store-bought rasam podi, add pirandai separately 
+Light soup style | Use more water to make a thinner rasam, perfect as a digestive drink
 
 ---
 
