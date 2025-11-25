@@ -5,6 +5,7 @@ description: A nutritious South Indian variety rice made with banana flower (vaz
 tags: [Vazhaipoo, Variety Rice, Healthy Recipes, South Indian Food, Lunch Recipes]  
 category: Recipe  
 draft: false  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vazhaipoorice.jpg"  
 ---
 
 #  Vazhaipoo Rice – Nutritious & Flavourful South Indian Variety Rice  
