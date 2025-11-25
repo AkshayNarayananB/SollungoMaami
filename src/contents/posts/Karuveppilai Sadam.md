@@ -2,7 +2,7 @@
 title: Karuveppilai Sadam  
 published: 2025-08-20  
 description: ✨ A traditional South Indian rice dish where roasted curry leaves meet tangy thogayal and tempered spices — flavorful, aromatic, and healthy! ✨  
-tags: [ Rice ]  
+tags: [ Rice Varieties, No onion no garlic, Lunch Box Recipe, Pot Luck Recipe]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/karuveppilaisadam.png"  
