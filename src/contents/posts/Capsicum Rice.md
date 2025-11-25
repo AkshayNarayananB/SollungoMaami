@@ -2,7 +2,7 @@
 title: Capsicum Pirandai Podi Sadam – Flavorful South Indian Capsicum Rice
 published: 2025-11-06
 description: A fragrant South Indian-style rice made with capsicum, roasted peanuts, pirandai podi and warm spices — a wholesome lunchbox recipe packed with flavour and nutrition.
-tags: [Rice Varieties, No onion no garlic]
+tags: [Rice Varieties, No onion no garlic, Lunch Box Recipe, Pot Luck Recipe]
 category: Recipe
 draft: false 
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/capsicumrice.png"
