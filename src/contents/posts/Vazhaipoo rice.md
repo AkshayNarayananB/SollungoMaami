@@ -23,6 +23,9 @@ No grinding, no complicated steps — just easy homestyle cooking packed with tr
 
 ---
 
+![vazhaipoorice](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vazhaipoorice.jpg)
+
+---
 ##  Recipe Overview  
 
 **Prep Time:** 20 mins  
