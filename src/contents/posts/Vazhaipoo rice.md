@@ -136,3 +136,9 @@ Perfect for lunchboxes, college meals, or quick weekday lunch.
 
 ##   
 ✨ *“Simple ingredients, soulful flavours — the beauty of our South Indian kitchen!”*  
+
+---
+
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/LsE8kHXhtCs/0.jpg)](https://youtu.be/LsE8kHXhtCs?si=y8EMzYaaOFSNgc9g)
