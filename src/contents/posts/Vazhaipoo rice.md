@@ -2,7 +2,7 @@
 title: Vazhaipoo Rice – Healthy & Flavourful Banana Flower Variety Rice  
 published: 2025-11-26  
 description: A nutritious South Indian variety rice made with banana flower (vazhaipoo), roasted peanuts, lentils, and aromatic curry powder — wholesome, earthy, and perfect for lunchboxes!  
-tags: [Rice Varieties,Lunch Box Recipes, Pot Luck Recipe, No onion no garlic]  
+tags: [Rice Varieties,Lunch Box Recipe, Pot Luck Recipe, No onion no garlic]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/vazhaipoorice.jpg"  
