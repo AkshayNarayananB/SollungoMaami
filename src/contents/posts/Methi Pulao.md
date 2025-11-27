@@ -127,4 +127,4 @@ Unlike regular pulao, this recipe balances the slight bitterness of fenugreek wi
 
 ## 🎥 Video Tutorial  
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)]()  
+[![Watch the video](https://img.youtube.com/vi/Zz9icuiqRQA/0.jpg)](https://youtu.be/Zz9icuiqRQA?si=3SqLRhBYqF6_kKmH)  
