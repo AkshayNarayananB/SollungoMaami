@@ -2,7 +2,7 @@
 title: Methi Pulao  
 published: 2025-08-20  
 description: ✨ “The magic of methi leaves blended with rice, spices, and veggies — a one-pot wonder packed with flavor and nutrition!” ✨
-tags: [ Rice, One-Pot]  
+tags: [ Rice Varieties, One-Pot, Lunch Box Recipe, Pot Luck Recipe]  
 category: Recipe  
 draft: false  
 image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/methipulao.jpg"  
@@ -41,7 +41,9 @@ Unlike regular pulao, this recipe balances the slight bitterness of fenugreek wi
 ### Whole Spices  
 -  **Bay leaf** – 1  
 -  **Cloves** – 2  
--  **Cinnamon stick** – 1 inch  
+-  **Cinnamon stick** – 1 inch
+-  **Star anise** -  1
+ - **Kalpasi** 
 
 ### Spice Powders  
 -  **Turmeric powder** – 1 tsp  
@@ -65,8 +67,8 @@ Unlike regular pulao, this recipe balances the slight bitterness of fenugreek wi
 
 3. ** Prepare the Masala Base**  
    - Heat oil + ghee in a kadai.  
-   - Add bay leaf, cloves, cinnamon, and green chili. Saute for a minute.  
-   - Add sliced onion and saute until translucent.  
+   - Add bay leaf, cloves, cinnamon, Star anise and Kalpasi. Saute for a minute.  
+   - Add green chili and sliced onion and saute until translucent.  
    - Add ginger-garlic paste and cook until raw smell disappears.  
    - Add methi leaves, saute until they shrink and soften.  
 
