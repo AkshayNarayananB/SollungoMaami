@@ -5,7 +5,7 @@ description: ✨ “Perfectly non-sticky Sabudana Khichdi made with steamed sabu
 tags: [ Breakfast, Fasting Recipe, Indian Tiffin, Gluten-Free ]  
 category: Recipe  
 draft: false  
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/sabudana.jpg"  
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/sabudana1.jpg"  
 ---
 
 #  Sabudana Khichdi Recipe | Non-Sticky & Protein-Rich  
@@ -18,7 +18,7 @@ This khichdi is comforting, nutritious, gluten-free, and pairs wonderfully with 
 
 ---
 
-![sabudana](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/sabudana.jpg)
+![sabudana1](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/sabudana1.jpg)
 
 ---
 
