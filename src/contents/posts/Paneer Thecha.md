@@ -85,11 +85,11 @@ Paneer Thecha is high in protein, low in oil, and bursting with fresh flavours f
 
 ## 🧊 Storage
 
-**The thecha paste alone stays 2–3 days in the fridge in an airtight container.
+- The thecha paste alone stays 2–3 days in the fridge in an airtight container.
 
-**Coated paneer is best cooked fresh.
+- Coated paneer is best cooked fresh.
 
-**Once cooked, paneer thecha stays 24 hours refrigerated; reheat on tawa, not microwave, to keep texture intact.
+- Once cooked, paneer thecha stays 24 hours refrigerated; reheat on tawa, not microwave, to keep texture intact.
 
 ---
 
