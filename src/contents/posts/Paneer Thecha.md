@@ -111,4 +111,8 @@ Paneer Thecha is high in protein, low in oil, and bursting with fresh flavours f
 
 ## 🎥 Video Tutorial  
 
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/dmshEGmMhiI/0.jpg)](https://youtu.be/dmshEGmMhiI?si=-_juKMlHss7uEvBf)
+
 
