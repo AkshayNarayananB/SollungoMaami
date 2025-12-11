@@ -4,6 +4,8 @@ import { IdToSlug } from "../../utils/hash";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { render } from "astro:content";
 
+import LiveComments from "../../components/LiveComments.jsx";
+
 export async function getStaticPaths() {
   const postEntries = await getCollection("posts");
   return postEntries.map((entry) => ({
@@ -50,6 +52,10 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
   <div data-pagefind-body>
     <Content />
   </div>
+
+<section class="mt-10">
+  <LiveComments slug={slug} client:visible />
+</section>
 
 <section class="mt-10">
   <h2 class="text-xl font-bold mb-4">Comments</h2>
