@@ -27,43 +27,52 @@ const { title, published, license, author, sourceLink } = Astro.props;
     class="absolute left-4 top-4 z-10 flex h-24 flex-col justify-between lg:h-28"
   >
     <div class="flex flex-col items-start space-y-1">
-      <p class="!my-0 pl-1 text-sm text-[var(--text-color-lighten)]">Click this card to share with loved ones</p>
-      <p class="!my-0 pl-1 font-bold text-[var(--text-color)]">{title}</p>
+      {/* Reduced to text-xs */}
+      <p class="!my-0 pl-1 text-xs text-[var(--text-color-lighten)]">Click this card to share with loved ones</p>
+      
+      {/* Added text-sm (was default base) */}
+      <p class="!my-0 pl-1 text-sm font-bold text-[var(--text-color)]">{title}</p>
+      
       <a
-        class="rounded-md px-1 py-0.5 text-sm transition-all hover:bg-[var(--primary-color-lighten)]"
+        class="rounded-md px-1 py-0.5 text-xs transition-all hover:bg-[var(--primary-color-lighten)]"
         id={sourceLink ? 'source-link' : 'post-url'}
         href={sourceLink ?? ''}>{sourceLink ?? ''}</a
       >
     </div>
     <div class="ml-1 flex flex-row space-x-4 lg:space-x-8">
       <div class="flex flex-col">
-        <span class="select-none text-sm text-[var(--text-color-lighten)]"
+        {/* Label: Reduced to text-xs */}
+        <span class="select-none text-xs text-[var(--text-color-lighten)]"
           >{i18n(I18nKeys.copy_right_author)}</span
         >
+        {/* Value: Reduced to text-xs / lg:text-sm */}
         <p
-          class="!my-0 line-clamp-1 text-sm text-[var(--text-color)] lg:text-base"
+          class="!my-0 line-clamp-1 text-xs text-[var(--text-color)] lg:text-sm"
         >
           {author ?? MaamiConfig.username}
         </p>
       </div>
       <div class="flex flex-col">
-        <span class="select-none text-sm text-[var(--text-color-lighten)]"
+        {/* Label: Reduced to text-xs */}
+        <span class="select-none text-xs text-[var(--text-color-lighten)]"
           >{i18n(I18nKeys.copy_right_publish_date)}</span
         >
+        {/* Value: Reduced to text-xs / lg:text-sm */}
         <p
-          class="!my-0 line-clamp-1 text-sm text-[var(--text-color)] lg:text-base"
+          class="!my-0 line-clamp-1 text-xs text-[var(--text-color)] lg:text-sm"
         >
           {formatDate(published, MaamiConfig.locale)}
         </p>
       </div>
       <div class="flex flex-col">
-        <span class="select-none text-sm text-[var(--text-color-lighten)]"
+        {/* Label: Reduced to text-xs */}
+        <span class="select-none text-xs text-[var(--text-color-lighten)]"
           >{i18n(I18nKeys.copy_right_license)}</span
         >
         {
           license && license.url && (
             <a
-              class="line-clamp-1 text-sm text-[var(--text-color)] lg:text-base"
+              class="line-clamp-1 text-xs text-[var(--text-color)] lg:text-sm"
               href={license.url}
               target="_blank"
             >
@@ -73,7 +82,7 @@ const { title, published, license, author, sourceLink } = Astro.props;
         }
         {
           license && !license.url && (
-            <p class="!my-0 line-clamp-1 text-sm text-[var(--text-color)] lg:text-base">
+            <p class="!my-0 line-clamp-1 text-xs text-[var(--text-color)] lg:text-sm">
               {license.name}
             </p>
           )
@@ -81,7 +90,7 @@ const { title, published, license, author, sourceLink } = Astro.props;
         {
           !license && (
             <a
-              class="line-clamp-1 text-sm text-[var(--text-color)] lg:text-base"
+              class="line-clamp-1 text-xs text-[var(--text-color)] lg:text-sm"
               href={MaamiConfig.license.url}
               target="_blank"
             >
@@ -103,27 +112,32 @@ const { title, published, license, author, sourceLink } = Astro.props;
   </div>
 </div>
 
-<script client:load>
-  document.getElementById('share-card').addEventListener('click', () => {
-    const shareData = {
-      title: document.title,
-      text: 'Check out this recipe!',
-      url: window.location.href
-    };
+<script>
+  // Note: Removed 'client:load' as it is not valid for standard Astro script tags
+  // This standard script tag will run on the client automatically.
+  const shareCard = document.getElementById('share-card');
+  if (shareCard) {
+    shareCard.addEventListener('click', () => {
+      const shareData = {
+        title: document.title,
+        text: 'Check out this recipe!',
+        url: window.location.href
+      };
 
-    if (navigator.share) {
-      navigator.share(shareData)
-        .catch(err => console.error('Share cancelled', err));
-    } else {
-      navigator.clipboard.writeText(shareData.url)
-        .then(() => {
-          alert('🔗 Link copied to clipboard!');
-        })
-        .catch(err => {
-          console.error('Failed to copy link:', err);
-        });
-    }
-  });
+      if (navigator.share) {
+        navigator.share(shareData)
+          .catch(err => console.error('Share cancelled', err));
+      } else {
+        navigator.clipboard.writeText(shareData.url)
+          .then(() => {
+            alert('🔗 Link copied to clipboard!');
+          })
+          .catch(err => {
+            console.error('Failed to copy link:', err);
+          });
+      }
+    });
+  }
 </script>
 
 <style>
