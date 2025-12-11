@@ -14,6 +14,7 @@ const EMOTES = {
 const LiveComments = ({ slug }) => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
+  const [name, setName] = useState("");
   const [loading, setLoading] = useState(true);
 
   // 1. Listen for Live Updates
@@ -44,6 +45,7 @@ const LiveComments = ({ slug }) => {
     await addDoc(collection(db, "comments"), {
       slug: slug,
       text: newComment,
+      name: name.trim() || "Guest"; //Default as Guest
       createdAt: serverTimestamp(),
       reactions: { thumbsUp: 0, smile: 0, heart: 0 }
     });
@@ -65,6 +67,14 @@ const LiveComments = ({ slug }) => {
 
       {/* Input Form */}
       <form onSubmit={handleSubmit} className="mb-6">
+        {/* 3. New Name Input */}
+        <input
+          type="text"
+          className="w-full p-2 border rounded"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
         <textarea
           className="w-full p-2 border rounded mb-2"
           placeholder="Write a comment..."
@@ -72,7 +82,7 @@ const LiveComments = ({ slug }) => {
           onChange={(e) => setNewComment(e.target.value)}
         />
         <button 
-          type="submit" 
+          type="Submit" 
           className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
         >
           Post Comment
@@ -86,6 +96,9 @@ const LiveComments = ({ slug }) => {
         
         {comments.map((comment) => (
           <div key={comment.id} className="bg-white p-4 rounded shadow-sm border">
+            <p className="font-bold text-sm text-gray-600 mb-1">
+              {comment.name || "Guest"}
+            </p>
             <p className="mb-3 text-gray-800">{comment.text}</p>
             
             {/* Reaction Bar */}
