@@ -56,29 +56,4 @@ const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.i
 <section class="mt-10">
   <LiveComments slug={slug} client:visible />
 </section>
-
-<section class="mt-10">
-  <h2 class="text-xl font-bold mb-4">Comments</h2>
-  <div
-    id="cusdis_thread"
-    style="min-height: 45vh **!important**;" data-host="https://cusdis.com"
-    data-app-id="2edf4203-e812-4053-9847-336448857933"
-    data-page-id={slug}
-    data-page-url={pageUrl}
-    data-page-title={entry.data.title}
-    data-theme="dark"
-  ></div>
-
-    <script>
-      const htmlElement = document.documentElement;
-      const isDark = htmlElement.classList.contains('dark') || htmlElement.getAttribute('data-theme') === 'dark';
-      const cusdisThread = document.getElementById('cusdis_thread');
-      if (cusdisThread) {
-        cusdisThread.setAttribute('data-theme', isDark ? 'dark' : 'light');
-      }
-    </script>
-
-    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-
-  </section>
 </PostLayout>
