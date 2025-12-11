@@ -61,7 +61,7 @@ const LiveComments = ({ slug }) => {
 
   return (
     <div className="p-4 bg-gray-50 rounded-lg mt-8">
-      <h3 className="text-xl font-bold mb-4"> Live Comments</h3>
+      <h3 className="text-xl font-bold mb-4">  Live Comments</h3>
 
       {/* Input Form */}
       <form onSubmit={handleSubmit} className="mb-6">
