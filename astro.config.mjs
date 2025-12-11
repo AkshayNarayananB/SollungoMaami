@@ -1,5 +1,5 @@
 import { defineConfig } from "astro/config";
-
+import react from '@astrojs/react'; // <--- ADD THIS LINE
 import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
@@ -23,6 +23,7 @@ export default defineConfig({
     tailwind(),
     svelte(),
     icon(),
+    react(),
     swup({
       theme: false,
       containers: ["main", "footer", ".banner-inner"],
