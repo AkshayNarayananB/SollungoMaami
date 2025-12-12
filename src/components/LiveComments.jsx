@@ -3,25 +3,35 @@ import { db, auth, googleProvider } from '../lib/firebase';
 import { signInWithPopup, signOut } from "firebase/auth";
 import { 
   collection, addDoc, query, where, orderBy, onSnapshot, 
-  serverTimestamp 
+  serverTimestamp, doc, setDoc, increment // Added new imports
 } from 'firebase/firestore';
 
 // 🔒 SECURITY: Only this email gets admin powers
 const ADMIN_EMAIL = "sollungomaami@gmail.com"; 
 
+const EMOTIONS = [
+  { id: 'like', icon: '👍' },
+  { id: 'heart', icon: '❤️' },
+  { id: 'smile', icon: '😄' }
+];
+
 const LiveComments = ({ slug }) => {
+  // Comment State
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(true);
 
+  // Emoticon State
+  const [reactions, setReactions] = useState({ like: 0, heart: 0, smile: 0 });
+
   // Admin State
   const [user, setUser] = useState(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [replyingTo, setReplyingTo] = useState(null);
 
-  // Listen for Live Updates
+  // 1. Listen for Comments
   useEffect(() => {
     const q = query(
       collection(db, "comments"),
@@ -35,6 +45,24 @@ const LiveComments = ({ slug }) => {
     });
     return () => unsubscribe();
   }, [slug]);
+
+  // 2. Listen for Page Reactions (Emoticons)
+  useEffect(() => {
+    const docRef = doc(db, "emoticons", slug);
+    const unsubscribe = onSnapshot(docRef, (docSnap) => {
+      if (docSnap.exists()) {
+        setReactions(docSnap.data());
+      }
+    });
+    return () => unsubscribe();
+  }, [slug]);
+
+  // Handle Emoticon Click
+  const handleEmoteClick = async (type) => {
+    const docRef = doc(db, "emoticons", slug);
+    // setDoc with merge:true automatically creates the doc if it doesn't exist
+    await setDoc(docRef, { [type]: increment(1) }, { merge: true });
+  };
 
   // Handle Google Login
   const handleAdminLogin = async () => {
@@ -118,6 +146,27 @@ const LiveComments = ({ slug }) => {
 
   return (
     <div className="p-3 bg-gray-50 rounded-lg mt-8 dark:bg-[var(--card-color)]">
+      
+      {/* --- NEW SECTION: PAGE REACTIONS --- */}
+      <div className="flex justify-center items-center gap-8 mb-8 mt-2">
+        {EMOTIONS.map((emote) => (
+          <button
+            key={emote.id}
+            onClick={() => handleEmoteClick(emote.id)}
+            className="relative group w-14 h-14 bg-white dark:bg-[var(--background-color)] rounded-full shadow-sm border border-gray-100 dark:border-gray-700 flex items-center justify-center text-2xl transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-amber-200 active:scale-95"
+          >
+            {emote.icon}
+            {/* Superscript Count Badge */}
+            {(reactions[emote.id] || 0) > 0 && (
+              <span className="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-[10px] font-bold rounded-full shadow-sm ring-2 ring-white dark:ring-[#1e1e1e]">
+                {reactions[emote.id]}
+              </span>
+            )}
+          </button>
+        ))}
+      </div>
+      {/* ----------------------------------- */}
+
       <div className="flex justify-between items-center mb-3">
         <h3 className="text-lg font-bold dark:text-[var(--text-color)]">Comments</h3>
         
@@ -178,14 +227,13 @@ const LiveComments = ({ slug }) => {
         {rootComments.map((comment) => (
           <div key={comment.id} className="group">
             
-            {/* --- MANUAL OVERRIDE SECTION FOR PARENT COMMENT --- */}
+            {/* PARENT COMMENT */}
             <div 
               className={`rounded-lg shadow-sm border transition-all duration-200 ${
                 comment.isAdmin 
                   ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
                   : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
               }`}
-              // HERE IS THE FIX: Explicit pixel values
               style={{ padding: '6px 10px' }} 
             >
               <div 
@@ -219,14 +267,12 @@ const LiveComments = ({ slug }) => {
                 {comment.text}
               </p>
             </div>
-            {/* ------------------------------------------------ */}
         
-            {/* --- MANUAL OVERRIDE SECTION FOR REPLIES --- */}
+            {/* REPLIES */}
             {getReplies(comment.id).map(reply => (
               <div 
                 key={reply.id} 
                 className="ml-6 md:ml-8 mt-1 rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm"
-                // FIX: Explicit pixel values for replies too
                 style={{ padding: '4px 8px' }}
               >
                 <p 
@@ -248,7 +294,6 @@ const LiveComments = ({ slug }) => {
                 </p>
               </div>
             ))}
-            {/* ------------------------------------------- */}
         
             {/* Reply Form */}
             {replyingTo === comment.id && (
