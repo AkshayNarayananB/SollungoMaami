@@ -125,100 +125,136 @@ const LiveComments = ({ slug }) => {
         <h3 className="text-xl font-bold dark:text-[var(--text-color)]">Comments</h3>
         
         {isAdmin ? (
-          <button onClick={handleLogout} className="text-xs text-green-600 font-bold hover:underline">
+          <button onClick={handleLogout} className="text-xs text-amber-600 font-bold hover:underline">
             🔓 Admin (Logout)
           </button>
         ) : (
-          <button onClick={handleAdminLogin} className="text-gray-300 hover:text-blue-500" title="Admin Login">
+          <button onClick={handleAdminLogin} className="text-gray-300 hover:text-amber-500" title="Admin Login">
             🔒
           </button>
         )}
       </div>
-
+    
       {/* Main Input Form */}
       {!replyingTo && (
-        <form onSubmit={handleSubmit} className="mb-8 space-y-2">
-           {!isAdmin && (
-             <div className="flex gap-2">
-               <input
+        <form onSubmit={handleSubmit} className="mb-6 space-y-2">
+          {!isAdmin && (
+            <div className="flex flex-col md:flex-row gap-2">
+              <input
                 type="text"
-                className="flex-1 p-2 border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
+                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
                 placeholder="Name (Optional)"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="email"
-                className="flex-1 p-2 border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
+                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
                 placeholder="Email (Optional, for notifications)"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-             </div>
-           )}
+            </div>
+          )}
           <textarea
-            className="w-full p-2 border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
+            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600 min-h-[80px]"
             placeholder={isAdmin ? "Write an official reply..." : "Write a comment..."}
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
           />
-          <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-            {isAdmin ? "Post as Admin" : "Post Comment"}
+          <button 
+            type="submit" 
+            className="px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold text-sm rounded-lg hover:from-yellow-500 hover:to-orange-600 shadow-md transition-all duration-200"
+          >
+            {isAdmin ? "✍️ Post as Admin" : "💬 Post Comment"}
           </button>
         </form>
       )}
-
+    
       {/* Comment List */}
-      <div className="space-y-3">
-        {loading && <p>Loading comments...</p>}
-        {!loading && rootComments.length === 0 && <p className="text-gray-500">No comments yet.</p>}
+      <div className="space-y-2.5">
+        {loading && <p className="text-sm text-gray-500">Loading comments...</p>}
+        {!loading && rootComments.length === 0 && (
+          <p className="text-sm text-gray-500 text-center py-4">No comments yet. Be the first to comment! 💭</p>
+        )}
         
         {rootComments.map((comment) => (
           <div key={comment.id} className="group">
-            <div className={`p-3 rounded shadow-sm border ${comment.isAdmin ? 'border-blue-200 bg-blue-50 dark:bg-blue-900/20' : 'bg-white dark:bg-[var(--card-color-transparent)]'}`}>
-              <div className="flex justify-between items-start">
-                <p className="font-bold text-sm text-gray-600 dark:text-gray-300 mb-1 flex items-center gap-2">
-                  {comment.name || "Guest"}
+            <div className={`px-3 py-2 rounded-lg shadow-sm border transition-all duration-200 ${
+              comment.isAdmin 
+                ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
+                : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
+            }`}>
+              <div className="flex justify-between items-start mb-1.5">
+                <p className="font-semibold text-sm flex items-center gap-2">
+                  <span className={comment.isAdmin ? 'text-amber-700 dark:text-amber-400' : 'text-gray-700 dark:text-gray-300'}>
+                    {comment.name || "Guest"}
+                  </span>
                   {comment.isAdmin && (
-                    <span className="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded-full border border-blue-200">
-                      Author
+                    <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm">
+                      ✨ AUTHOR
                     </span>
                   )}
                 </p>
                 {isAdmin && (
                   <button 
                     onClick={() => setReplyingTo(comment.id)}
-                    className="text-xs text-blue-500 hover:underline"
+                    className="text-xs text-amber-600 hover:text-amber-700 font-medium hover:underline"
                   >
-                    Reply
+                    Reply ↩️
                   </button>
                 )}
               </div>
-              <p className="mb-1 text-gray-800 dark:text-[var(--text-color)]">{comment.text}</p>
+              <p className="text-sm leading-relaxed text-gray-800 dark:text-[var(--text-color)]">
+                {comment.text}
+              </p>
             </div>
-
+    
+            {/* Replies */}
             {getReplies(comment.id).map(reply => (
-               <div key={reply.id} className="ml-8 mt-2 p-2.5 rounded border-l-4 border-blue-200 bg-gray-50 dark:bg-[var(--background-color)] dark:border-blue-800">
-                  <p className="font-bold text-xs text-gray-600 dark:text-gray-300 mb-1 flex items-center gap-2">
-                    {reply.name}
-                    {reply.isAdmin && <span className="text-blue-600 text-[10px]">● Admin</span>}
-                  </p>
-                  <p className="text-sm text-gray-700 dark:text-[var(--text-color)]">{reply.text}</p>
-               </div>
+              <div 
+                key={reply.id} 
+                className="ml-6 md:ml-8 mt-2 px-3 py-1.5 rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm"
+              >
+                <p className="font-semibold text-xs flex items-center gap-1.5 mb-1">
+                  <span className="text-gray-700 dark:text-gray-300">{reply.name}</span>
+                  {reply.isAdmin && (
+                    <span className="text-amber-600 dark:text-amber-400 text-[10px] font-bold">
+                      ⭐ Admin
+                    </span>
+                  )}
+                </p>
+                <p className="text-sm leading-relaxed text-gray-700 dark:text-[var(--text-color)]">
+                  {reply.text}
+                </p>
+              </div>
             ))}
-
+    
+            {/* Reply Form */}
             {replyingTo === comment.id && (
-              <div className="ml-8 mt-2">
-                <form onSubmit={handleSubmit} className="flex gap-2">
-                   <input 
-                      autoFocus
-                      className="flex-1 p-2 text-sm border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
-                      placeholder={`Replying to ${comment.name}...`}
-                      value={newComment}
-                      onChange={(e) => setNewComment(e.target.value)}
-                   />
-                   <button type="submit" className="px-3 py-1 bg-blue-600 text-white text-sm rounded">Reply</button>
-                   <button onClick={() => setReplyingTo(null)} className="px-3 py-1 bg-gray-300 text-gray-700 text-sm rounded">Cancel</button>
+              <div className="ml-6 md:ml-8 mt-2 p-2.5 bg-amber-50 dark:bg-amber-900/10 rounded-lg border border-amber-200 dark:border-amber-800">
+                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
+                  <input 
+                    autoFocus
+                    className="flex-1 px-3 py-1.5 text-sm border border-amber-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-amber-700"
+                    placeholder={`Replying to ${comment.name}...`}
+                    value={newComment}
+                    onChange={(e) => setNewComment(e.target.value)}
+                  />
+                  <div className="flex gap-2">
+                    <button 
+                      type="submit" 
+                      className="px-3 py-1.5 bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-semibold rounded-lg hover:from-yellow-500 hover:to-orange-600 shadow-sm"
+                    >
+                      Send ✉️
+                    </button>
+                    <button 
+                      onClick={() => setReplyingTo(null)} 
+                      className="px-3 py-1.5 bg-gray-200 text-gray-700 text-xs font-medium rounded-lg hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300"
+                    >
+                      Cancel
+                    </button>
+                  </div>
                 </form>
               </div>
             )}
