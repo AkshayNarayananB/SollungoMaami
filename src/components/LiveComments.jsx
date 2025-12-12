@@ -122,7 +122,7 @@ const LiveComments = ({ slug }) => {
   return (
     <div className="p-3 bg-gray-50 rounded-lg mt-8 dark:bg-[var(--card-color)]">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-xl font-bold dark:text-[var(--text-color)]">Comments</h3>
+        <h3 className="text-xl font-bold dark:text-[var(--text-color)]"> Comments</h3>
         
         {isAdmin ? (
           <button onClick={handleLogout} className="text-xs text-amber-600 font-bold hover:underline">
@@ -185,7 +185,7 @@ const LiveComments = ({ slug }) => {
                 ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
                 : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
             }`}>
-              <div className="flex justify-between items-start mb-1.5">
+              <div className="flex justify-between items-start mb-0.7">
                 <p className="font-semibold text-sm flex items-center gap-2">
                   <span className={comment.isAdmin ? 'text-amber-700 dark:text-amber-400' : 'text-gray-700 dark:text-gray-300'}>
                     {comment.name || "Guest"}
