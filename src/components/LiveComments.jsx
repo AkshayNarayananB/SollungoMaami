@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-// 1. Import auth tools
 import { db, auth, googleProvider } from '../lib/firebase';
 import { signInWithPopup, signOut } from "firebase/auth";
 import { 
   collection, addDoc, query, where, orderBy, onSnapshot, 
-  updateDoc, doc, increment, serverTimestamp 
+  serverTimestamp 
 } from 'firebase/firestore';
-
-const EMOTES = { thumbsUp: "👍", smile: "😄", heart: "❤️" };
 
 // 🔒 SECURITY: Only this email gets admin powers
 const ADMIN_EMAIL = "sollungomaami@gmail.com"; 
@@ -16,10 +13,11 @@ const LiveComments = ({ slug }) => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(true);
 
   // Admin State
-  const [user, setUser] = useState(null); // Holds the logged-in user object
+  const [user, setUser] = useState(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [replyingTo, setReplyingTo] = useState(null);
 
@@ -38,24 +36,20 @@ const LiveComments = ({ slug }) => {
     return () => unsubscribe();
   }, [slug]);
 
-  // 2. Handle Google Login
+  // Handle Google Login
   const handleAdminLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
-      const email = result.user.email;
-      
-      if (email === ADMIN_EMAIL) {
+      if (result.user.email === ADMIN_EMAIL) {
         setUser(result.user);
         setIsAdmin(true);
-        setName("Sollungo Maami"); // Auto-set admin name
+        setName("Sollungo Maami"); 
       } else {
-        await signOut(auth); // Kick them out immediately
-        alert("Access Denied: You are not the admin.");
+        await signOut(auth);
+        alert("Access Denied.");
         setIsAdmin(false);
       }
-    } catch (error) {
-      console.error("Login failed", error);
-    }
+    } catch (error) { console.error(error); }
   };
 
   const handleLogout = async () => {
@@ -65,30 +59,60 @@ const LiveComments = ({ slug }) => {
     setName("");
   };
 
-  // Submit Comment
+  // 2. Submit Logic (Handles Both Email Scenarios)
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!newComment.trim()) return;
 
+    const guestName = name.trim() || "Guest";
+
+    // A. Add to Firebase
     await addDoc(collection(db, "comments"), {
       slug: slug,
       text: newComment,
-      name: name.trim() || "Guest",
+      name: guestName,
+      email: email.trim(), 
       createdAt: serverTimestamp(),
-      reactions: { thumbsUp: 0, smile: 0, heart: 0 },
-      isAdmin: isAdmin, // Tag the comment as official
+      isAdmin: isAdmin,
       replyTo: replyingTo
     });
+
+    // B. EMAIL LOGIC
+    const currentPageLink = window.location.href;
+
+    // SCENARIO 1: You (Admin) are replying -> Email the Guest
+    if (isAdmin && replyingTo) {
+      const parentComment = comments.find(c => c.id === replyingTo);
+      if (parentComment && parentComment.email) {
+        fetch('/api/notify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            type: 'reply',          // Tell API this is a reply
+            to: parentComment.email,
+            link: currentPageLink,
+            message: newComment
+          })
+        }).catch(err => console.error("Failed to notify user", err));
+      }
+    }
+
+    // SCENARIO 2: A Guest is commenting -> Email YOU (Admin)
+    if (!isAdmin) {
+      fetch('/api/notify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'new_comment',    // Tell API this is a new comment for you
+          name: guestName,
+          link: currentPageLink,
+          message: newComment
+        })
+      }).catch(err => console.error("Failed to notify admin", err));
+    }
     
     setNewComment("");
     setReplyingTo(null);
-    // Only clear name if it's a guest
-    if (!isAdmin) setName(""); 
-  };
-
-  const handleReaction = async (commentId, reactionType) => {
-    const commentRef = doc(db, "comments", commentId);
-    await updateDoc(commentRef, { [`reactions.${reactionType}`]: increment(1) });
   };
 
   // Helper filters
@@ -96,14 +120,13 @@ const LiveComments = ({ slug }) => {
   const getReplies = (parentId) => comments.filter(c => c.replyTo === parentId).sort((a,b) => a.createdAt - b.createdAt);
 
   return (
-    <div className="p-4 bg-gray-50 rounded-lg mt-8 dark:bg-[var(--card-color)]">
+    <div className="p-3 bg-gray-50 rounded-lg mt-8 dark:bg-[var(--card-color)]">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-xl font-bold dark:text-[var(--text-color)]"> Live Comments</h3>
+        <h3 className="text-xl font-bold dark:text-[var(--text-color)]">Comments</h3>
         
-        {/* 3. Secure Lock Icon */}
         {isAdmin ? (
           <button onClick={handleLogout} className="text-xs text-green-600 font-bold hover:underline">
-            🔓 Admin Active (Logout)
+            🔓 Admin (Logout)
           </button>
         ) : (
           <button onClick={handleAdminLogin} className="text-gray-300 hover:text-blue-500" title="Admin Login">
@@ -112,17 +135,26 @@ const LiveComments = ({ slug }) => {
         )}
       </div>
 
-      {/* Input Form */}
+      {/* Main Input Form */}
       {!replyingTo && (
         <form onSubmit={handleSubmit} className="mb-8 space-y-2">
            {!isAdmin && (
-             <input
-              type="text"
-              className="w-full p-2 border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
-              placeholder="Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
+             <div className="flex gap-2">
+               <input
+                type="text"
+                className="flex-1 p-2 border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
+                placeholder="Name (Optional)"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                type="email"
+                className="flex-1 p-2 border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
+                placeholder="Email (Optional, for notifications)"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+             </div>
            )}
           <textarea
             className="w-full p-2 border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
@@ -137,14 +169,13 @@ const LiveComments = ({ slug }) => {
       )}
 
       {/* Comment List */}
-      <div className="space-y-6">
+      <div className="space-y-3">
         {loading && <p>Loading comments...</p>}
         {!loading && rootComments.length === 0 && <p className="text-gray-500">No comments yet.</p>}
         
         {rootComments.map((comment) => (
           <div key={comment.id} className="group">
-            {/* PARENT COMMENT */}
-            <div className={`p-4 rounded shadow-sm border ${comment.isAdmin ? 'border-blue-200 bg-blue-50 dark:bg-blue-900/20' : 'bg-white dark:bg-[var(--card-color-transparent)]'}`}>
+            <div className={`p-3 rounded shadow-sm border ${comment.isAdmin ? 'border-blue-200 bg-blue-50 dark:bg-blue-900/20' : 'bg-white dark:bg-[var(--card-color-transparent)]'}`}>
               <div className="flex justify-between items-start">
                 <p className="font-bold text-sm text-gray-600 dark:text-gray-300 mb-1 flex items-center gap-2">
                   {comment.name || "Guest"}
@@ -163,25 +194,11 @@ const LiveComments = ({ slug }) => {
                   </button>
                 )}
               </div>
-              <p className="mb-3 text-gray-800 dark:text-[var(--text-color)]">{comment.text}</p>
-              
-              <div className="flex gap-4 border-t pt-2 dark:border-gray-700">
-                {Object.keys(EMOTES).map((key) => (
-                  <button
-                    key={key}
-                    onClick={() => handleReaction(comment.id, key)}
-                    className="flex items-center gap-1 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 px-2 py-1 rounded transition"
-                  >
-                    <span>{EMOTES[key]}</span>
-                    <span className="font-semibold text-gray-600 dark:text-gray-400">{comment.reactions?.[key] || 0}</span>
-                  </button>
-                ))}
-              </div>
+              <p className="mb-1 text-gray-800 dark:text-[var(--text-color)]">{comment.text}</p>
             </div>
 
-            {/* REPLIES */}
             {getReplies(comment.id).map(reply => (
-               <div key={reply.id} className="ml-8 mt-2 p-3 rounded border-l-4 border-blue-200 bg-gray-50 dark:bg-[var(--background-color)] dark:border-blue-800">
+               <div key={reply.id} className="ml-8 mt-2 p-2.5 rounded border-l-4 border-blue-200 bg-gray-50 dark:bg-[var(--background-color)] dark:border-blue-800">
                   <p className="font-bold text-xs text-gray-600 dark:text-gray-300 mb-1 flex items-center gap-2">
                     {reply.name}
                     {reply.isAdmin && <span className="text-blue-600 text-[10px]">● Admin</span>}
@@ -190,7 +207,6 @@ const LiveComments = ({ slug }) => {
                </div>
             ))}
 
-            {/* REPLY INPUT */}
             {replyingTo === comment.id && (
               <div className="ml-8 mt-2">
                 <form onSubmit={handleSubmit} className="flex gap-2">
