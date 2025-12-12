@@ -92,7 +92,7 @@ export const POST = async ({ request }) => {
         <!-- Call to Action Button -->
         <div style="text-align: center; margin-top: 30px;">
           <a href="${link}" style="display: inline-block; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); color: #ffffff; padding: 14px 30px; text-decoration: none; border-radius: 25px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4); transition: transform 0.2s, box-shadow 0.2s; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
-            👁️ View Reply
+            🔗 View Reply
           </a>
         </div>
         
