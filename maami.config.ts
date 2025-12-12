@@ -8,7 +8,7 @@ const MaamiConfig: Configuration = {
 
   description: "Blog Site",
 
-  site: "https://sollungomaami.vercel.app",
+  site: "https://www.sollungomaami.com",
 
   locale: "en", // set for website language and date format
 
