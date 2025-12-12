@@ -44,8 +44,8 @@ const MaamiConfig: Configuration = {
       link: "https://www.youtube.com/@sollungomaami924",
     },
     {
-      icon: "mdi:spotify",
-      link: "https://open.spotify.com/track/4PTG3Z6ehGkBFwjybzWkR8",
+      icon: "mdi:facebook",
+      link: "https://www.facebook.com/share/1DpuzR6G8q/",
     },
   ],
   maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3
