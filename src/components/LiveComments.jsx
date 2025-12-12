@@ -80,7 +80,6 @@ const LiveComments = ({ slug }) => {
     // B. EMAIL LOGIC
     const currentPageLink = window.location.href;
 
-    // SCENARIO 1: You (Admin) are replying -> Email the Guest
     if (isAdmin && replyingTo) {
       const parentComment = comments.find(c => c.id === replyingTo);
       if (parentComment && parentComment.email) {
@@ -97,7 +96,6 @@ const LiveComments = ({ slug }) => {
       }
     }
 
-    // SCENARIO 2: A Guest is commenting -> Email YOU (Admin)
     if (!isAdmin) {
       fetch('/api/notify', {
         method: 'POST',
@@ -115,7 +113,6 @@ const LiveComments = ({ slug }) => {
     setReplyingTo(null);
   };
 
-  // Helper filters
   const rootComments = comments.filter(c => !c.replyTo);
   const getReplies = (parentId) => comments.filter(c => c.replyTo === parentId).sort((a,b) => a.createdAt - b.createdAt);
 
@@ -172,7 +169,7 @@ const LiveComments = ({ slug }) => {
       )}
       
       {/* Comment List */}
-      <div className="space-y-1.5">
+      <div className="space-y-2">
         {loading && <p className="text-xs text-gray-500">Loading comments...</p>}
         {!loading && rootComments.length === 0 && (
           <p className="text-xs text-gray-500 text-center py-2">No comments yet. Be the first to comment! 💭</p>
@@ -180,18 +177,22 @@ const LiveComments = ({ slug }) => {
         
         {rootComments.map((comment) => (
           <div key={comment.id} className="group">
-            {/* CHANGES HERE: 
-                1. px-3 py-1.5 (Reduced vertical padding)
-                2. mb-0 on header (No margin below name)
-                3. mt-0 on text (No margin above text)
-            */}
-            <div className={`px-3 py-1.5 rounded-lg shadow-sm border transition-all duration-200 ${
-              comment.isAdmin 
-                ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
-                : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
-            }`}>
-              <div className="flex justify-between items-center mb-0">
-                <p className="font-bold text-xs flex items-center gap-1">
+            
+            {/* --- MANUAL OVERRIDE SECTION FOR PARENT COMMENT --- */}
+            <div 
+              className={`rounded-lg shadow-sm border transition-all duration-200 ${
+                comment.isAdmin 
+                  ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
+                  : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
+              }`}
+              // HERE IS THE FIX: Explicit pixel values
+              style={{ padding: '6px 10px' }} 
+            >
+              <div 
+                className="flex justify-between items-center" 
+                style={{ marginBottom: '0px' }}
+              >
+                <p className="font-bold text-xs flex items-center gap-1" style={{ lineHeight: '1' }}>
                   <span className={comment.isAdmin ? 'text-amber-700 dark:text-amber-400' : 'text-gray-700 dark:text-gray-300'}>
                     {comment.name || "Guest"}
                   </span>
@@ -211,18 +212,27 @@ const LiveComments = ({ slug }) => {
                 )}
               </div>
               
-              <p className="text-sm leading-snug text-gray-800 dark:text-[var(--text-color)] mt-0">
+              <p 
+                className="text-sm text-gray-800 dark:text-[var(--text-color)]"
+                style={{ marginTop: '2px', lineHeight: '1.2' }}
+              >
                 {comment.text}
               </p>
             </div>
+            {/* ------------------------------------------------ */}
         
-            {/* REPLIES - Tighter Padding as well (py-1.5) */}
+            {/* --- MANUAL OVERRIDE SECTION FOR REPLIES --- */}
             {getReplies(comment.id).map(reply => (
               <div 
                 key={reply.id} 
-                className="ml-6 md:ml-8 mt-1 px-3 py-1.5 rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm"
+                className="ml-6 md:ml-8 mt-1 rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm"
+                // FIX: Explicit pixel values for replies too
+                style={{ padding: '4px 8px' }}
               >
-                <p className="font-bold text-[11px] flex items-center gap-1.5 mb-0">
+                <p 
+                  className="font-bold text-[11px] flex items-center gap-1.5" 
+                  style={{ marginBottom: '0px', lineHeight: '1' }}
+                >
                   <span className="text-gray-700 dark:text-gray-300">{reply.name}</span>
                   {reply.isAdmin && (
                     <span className="text-amber-600 dark:text-amber-400 text-[9px] font-bold">
@@ -230,11 +240,15 @@ const LiveComments = ({ slug }) => {
                     </span>
                   )}
                 </p>
-                <p className="text-[13px] leading-snug text-gray-700 dark:text-[var(--text-color)] mt-0">
+                <p 
+                  className="text-[13px] text-gray-700 dark:text-[var(--text-color)]"
+                  style={{ marginTop: '2px', lineHeight: '1.2' }}
+                >
                   {reply.text}
                 </p>
               </div>
             ))}
+            {/* ------------------------------------------- */}
         
             {/* Reply Form */}
             {replyingTo === comment.id && (
