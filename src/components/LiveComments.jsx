@@ -180,7 +180,7 @@ const LiveComments = ({ slug }) => {
       </div>
 
       <div className="flex justify-between items-center mb-3">
-        <h3 className="text-lg font-bold dark:text-[var(--text-color)]">Comments</h3>
+        <h3 className="text-lg font-bold dark:text-[var(--text-color)]">. Comments</h3>
         
         {isAdmin ? (
           <button onClick={handleLogout} className="text-[10px] text-amber-600 font-bold hover:underline">
