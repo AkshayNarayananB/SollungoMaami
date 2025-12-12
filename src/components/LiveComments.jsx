@@ -122,7 +122,7 @@ const LiveComments = ({ slug }) => {
   return (
     <div className="p-3 bg-gray-50 rounded-lg mt-8 dark:bg-[var(--card-color)]">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-xl font-bold dark:text-[var(--text-color)]"> Comments</h3>
+        <h3 className="text-xl font-bold dark:text-[var(--text-color)]">. Comments</h3>
         
         {isAdmin ? (
           <button onClick={handleLogout} className="text-xs text-amber-600 font-bold hover:underline">
@@ -143,14 +143,14 @@ const LiveComments = ({ slug }) => {
               <input
                 type="text"
                 className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
-                placeholder="Name (Optional)"
+                placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="email"
                 className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
-                placeholder="Email (Optional, for notifications)"
+                placeholder="Email (Optional, for reply notifications)"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -181,13 +181,13 @@ const LiveComments = ({ slug }) => {
         {rootComments.map((comment) => (
           <div key={comment.id} className="group">
             {/* 1. & 2. REDUCED VERTICAL PADDING & 3. ADJUSTED HEADER FONT SIZE */}
-            <div className={`px-3 **pt-2 pb-1.5** rounded-lg shadow-sm border transition-all duration-200 ${
+            <div className={`px-3 **pt-1 pb-0.5** rounded-lg shadow-sm border transition-all duration-200 ${
               comment.isAdmin 
                 ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
                 : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
             }`}>
               {/* REDUCED MARGIN BELOW HEADER */}
-              <div className="flex justify-between items-start **mb-1**">
+              <div className="flex justify-between items-start **mb-0.5**">
                 {/* REDUCED NAME FONT SIZE */}
                 <p className="font-semibold **text-xs** flex items-center gap-2">
                   <span className={comment.isAdmin ? 'text-amber-700 dark:text-amber-400' : 'text-gray-700 dark:text-gray-300'}>
