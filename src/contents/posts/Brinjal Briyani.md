@@ -182,3 +182,8 @@ Without curd | Add a little coconut milk for creaminess
 
 A briyani that’s **rich, aromatic, comforting and perfect for brinjal lovers**! 💛  
 Try it and share your experience! ✨
+
+---
+## 🎥 Video Tutorial  
+
+ [![Watch the video](https://img.youtube.com/vi/CYEs1vAdr2A/0.jpg)](https://youtu.be/CYEs1vAdr2A?si=0mU37-wvp5ElgCFt)
