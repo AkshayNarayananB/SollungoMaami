@@ -121,15 +121,15 @@ const LiveComments = ({ slug }) => {
 
   return (
     <div className="p-3 bg-gray-50 rounded-lg mt-8 dark:bg-[var(--card-color)]">
-      <div className="flex justify-between items-center mb-4">
-        <h3 className="text-xl font-bold dark:text-[var(--text-color)]">Comments</h3>
+      <div className="flex justify-between items-center mb-3">
+        <h3 className="text-lg font-bold dark:text-[var(--text-color)]">Comments</h3>
         
         {isAdmin ? (
-          <button onClick={handleLogout} className="text-xs text-amber-600 font-bold hover:underline">
+          <button onClick={handleLogout} className="text-[10px] text-amber-600 font-bold hover:underline">
             🔓 Admin (Logout)
           </button>
         ) : (
-          <button onClick={handleAdminLogin} className="text-gray-300 hover:text-amber-500" title="Admin Login">
+          <button onClick={handleAdminLogin} className="text-gray-300 hover:text-amber-500 text-xs" title="Admin Login">
             🔒
           </button>
         )}
@@ -137,19 +137,19 @@ const LiveComments = ({ slug }) => {
       
       {/* Main Input Form */}
       {!replyingTo && (
-        <form onSubmit={handleSubmit} className="mb-6 space-y-2">
+        <form onSubmit={handleSubmit} className="mb-4 space-y-2">
           {!isAdmin && (
             <div className="flex flex-col md:flex-row gap-2">
               <input
                 type="text"
-                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
+                className="flex-1 px-3 py-1.5 text-xs border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
                 placeholder="Name (Optional)"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="email"
-                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
+                className="flex-1 px-3 py-1.5 text-xs border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
                 placeholder="Email (Optional, for notifications)"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -157,14 +157,14 @@ const LiveComments = ({ slug }) => {
             </div>
           )}
           <textarea
-            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600 min-h-[80px]"
+            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600 min-h-[60px]"
             placeholder={isAdmin ? "Write an official reply..." : "Write a comment..."}
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
           />
           <button 
             type="submit" 
-            className="px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold text-sm rounded-lg hover:from-yellow-500 hover:to-orange-600 shadow-md transition-all duration-200"
+            className="px-3 py-1.5 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold text-xs rounded-lg hover:from-yellow-500 hover:to-orange-600 shadow-md transition-all duration-200"
           >
             {isAdmin ? "✍️ Post as Admin" : "💬 Post Comment"}
           </button>
@@ -172,28 +172,31 @@ const LiveComments = ({ slug }) => {
       )}
       
       {/* Comment List */}
-      <div className="space-y-2">
-        {loading && <p className="text-sm text-gray-500">Loading comments...</p>}
+      <div className="space-y-1.5">
+        {loading && <p className="text-xs text-gray-500">Loading comments...</p>}
         {!loading && rootComments.length === 0 && (
-          <p className="text-sm text-gray-500 text-center py-2">No comments yet. Be the first to comment! 💭</p>
+          <p className="text-xs text-gray-500 text-center py-2">No comments yet. Be the first to comment! 💭</p>
         )}
         
         {rootComments.map((comment) => (
           <div key={comment.id} className="group">
-            {/* PARENT COMMENT BOX - Tightened Padding (p-2) */}
-            <div className={`p-2 rounded-lg shadow-sm border transition-all duration-200 ${
+            {/* CHANGES HERE: 
+                1. px-3 py-1.5 (Reduced vertical padding)
+                2. mb-0 on header (No margin below name)
+                3. mt-0 on text (No margin above text)
+            */}
+            <div className={`px-3 py-1.5 rounded-lg shadow-sm border transition-all duration-200 ${
               comment.isAdmin 
                 ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
                 : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
             }`}>
-              {/* HEADER - Reduced Margin (mb-0) */}
               <div className="flex justify-between items-center mb-0">
-                <p className="font-semibold text-xs flex items-center gap-1">
+                <p className="font-bold text-xs flex items-center gap-1">
                   <span className={comment.isAdmin ? 'text-amber-700 dark:text-amber-400' : 'text-gray-700 dark:text-gray-300'}>
                     {comment.name || "Guest"}
                   </span>
                   {comment.isAdmin && (
-                    <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm">
+                    <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow-sm">
                       ✨ AUTHOR
                     </span>
                   )}
@@ -208,27 +211,26 @@ const LiveComments = ({ slug }) => {
                 )}
               </div>
               
-              {/* TEXT - Tighter Leading (leading-snug) */}
-              <p className="text-sm leading-snug text-gray-800 dark:text-[var(--text-color)] mt-0.5">
+              <p className="text-sm leading-snug text-gray-800 dark:text-[var(--text-color)] mt-0">
                 {comment.text}
               </p>
             </div>
         
-            {/* REPLIES - Tighter Padding */}
+            {/* REPLIES - Tighter Padding as well (py-1.5) */}
             {getReplies(comment.id).map(reply => (
               <div 
                 key={reply.id} 
-                className="ml-6 md:ml-8 mt-1 p-2 rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm"
+                className="ml-6 md:ml-8 mt-1 px-3 py-1.5 rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm"
               >
-                <p className="font-semibold text-xs flex items-center gap-1.5 mb-0">
+                <p className="font-bold text-[11px] flex items-center gap-1.5 mb-0">
                   <span className="text-gray-700 dark:text-gray-300">{reply.name}</span>
                   {reply.isAdmin && (
-                    <span className="text-amber-600 dark:text-amber-400 text-[10px] font-bold">
+                    <span className="text-amber-600 dark:text-amber-400 text-[9px] font-bold">
                       ⭐ Admin
                     </span>
                   )}
                 </p>
-                <p className="text-sm leading-snug text-gray-700 dark:text-[var(--text-color)] mt-0.5">
+                <p className="text-[13px] leading-snug text-gray-700 dark:text-[var(--text-color)] mt-0">
                   {reply.text}
                 </p>
               </div>
