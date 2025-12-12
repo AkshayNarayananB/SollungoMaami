@@ -31,6 +31,26 @@ const LiveComments = ({ slug }) => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [replyingTo, setReplyingTo] = useState(null);
 
+  // SESSION PERSISTENCE
+  useEffect(() => {
+    // fired immediately when the component mounts
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      if (currentUser && currentUser.email === ADMIN_EMAIL) {
+        //Admin already logged In
+        setUser(currentUser);
+        setIsAdmin(true);
+        setName("Sollungo Maami");
+      } else {
+        // Not logged in (or wrong email)
+        setUser(null);
+        setIsAdmin(false);
+      }
+    });
+
+    // Cleanup subscription on unmount
+    return () => unsubscribe();
+  }, []);
+
   // 1. Listen for Comments
   useEffect(() => {
     const q = query(
