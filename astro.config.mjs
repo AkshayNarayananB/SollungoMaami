@@ -6,6 +6,7 @@ import tailwind from "@astrojs/tailwind";
 import svelte from "@astrojs/svelte";
 import swup from "@swup/astro";
 import vercel from '@astrojs/vercel/serverless';
+import sitemap from '@astrojs/sitemap';
 
 import rehypeSlug from "rehype-slug";
 import rehypeKatex from "rehype-katex";
@@ -27,6 +28,7 @@ export default defineConfig({
     svelte(),
     icon(),
     react(),
+    sitemap(),
     swup({
       theme: false,
       containers: ["main", "footer", ".banner-inner"],
