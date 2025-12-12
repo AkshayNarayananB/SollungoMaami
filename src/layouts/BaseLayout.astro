@@ -1,12 +1,15 @@
 ---
 import MaamiConfig from "../../maami.config";
 import BaseHead from "../components/BaseHead.astro";
+import Newsletter from '../components/Newsletter.jsx';
 ---
 
 <html lang={MaamiConfig.locale}>
   <BaseHead />
   <body class="overflow-y-hidden">
     <slot />
+
+    <Newsletter client:load />
   </body>
 </html>
 
