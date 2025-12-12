@@ -1,21 +1,21 @@
 ---
-title: Brinjal Biryani – Flavour-Packed, Aromatic & Perfect for Lunch
+title: Brinjal Briyani – Flavour-Packed, Aromatic & Perfect for Lunch
 published: 2025-11-20
-description: A rich and aromatic South Indian-style brinjal biryani made with freshly ground masala, marinated brinjals, herbs, and fragrant basmati rice slow-cooked on dum. Perfect for lunch, dinner, or special weekends.
-tags: [South Indian Recipes,Biryani,Vegetarian Recipes,Brinjal,One Pot Recipes]
+description: A rich and aromatic South Indian-style brinjal briyani made with freshly ground masala, marinated brinjals, herbs, and fragrant basmati rice slow-cooked on dum. Perfect for lunch, dinner, or special weekends.
+tags: [South Indian Recipes,Briyani,Vegetarian Recipes,Brinjal,One Pot Recipes]
 category: Recipe
 draft: false
-image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjalbiryani.jpg"
+image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjalbriyani.jpg"
 ---
 
 ##  
-**🔥 Flavourful Brinjal Biryani — soft, masala-filled brinjals cooked with aromatic rice for a comforting, restaurant-style biryani at home!**  
+**🔥 Flavourful Brinjal Briyani — soft, masala-filled brinjals cooked with aromatic rice for a comforting, restaurant-style briyani at home!**  
 
 ---
 
-##  Brinjal Biryani (Homestyle Version)
+##  Brinjal Briyani (Homestyle Version)
 
-This delicious biryani uses small brinjals marinated in a freshly ground masala loaded with tomatoes, onion, garlic, ginger, chilies, and fragrant whole spices.  
+This delicious briyani uses small brinjals marinated in a freshly ground masala loaded with tomatoes, onion, garlic, ginger, chilies, and fragrant whole spices.  
 Slow dum cooking helps the flavours seep into every grain of rice, giving you a rich, wholesome and aromatic one-pot meal.
 
 Perfect for lunch, dinner or festive weekends — especially for brinjal lovers!
@@ -34,7 +34,7 @@ Perfect for lunch, dinner or festive weekends — especially for brinjal lovers!
 
 ---
 
-![brinjalbiryani](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjalbiryani.jpg)
+![brinjalbriyani](https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/images/brinjalbriyani.jpg)
 
 ---
 
@@ -65,7 +65,7 @@ Perfect for lunch, dinner or festive weekends — especially for brinjal lovers!
 - Salt – as required  
 - Brinjal – **10–12 small** (slit into 4 cuts at the bottom; stem intact)
 
-### ✅ For Biryani
+### ✅ For Briyani
 - Basmati rice – **1 cup** (soaked for 30 min)  
 - Sesame oil – **50 ml (5–6 tbsp)**  
 - Whole spices – bay leaf, clove, cinnamon, star anise  
@@ -109,7 +109,7 @@ Perfect for lunch, dinner or festive weekends — especially for brinjal lovers!
 
 ---
 
-### **Step 5: Layer the Biryani**
+### **Step 5: Layer the Briyani**
 1. Add partially cooked rice to the brinjal mixture gently using a ladle so some rice water goes in.  
 2. Spread evenly without pressing.  
 3. Drizzle saffron milk.  
@@ -119,7 +119,7 @@ Perfect for lunch, dinner or festive weekends — especially for brinjal lovers!
 ---
 
 ### **Step 6: Dum Cooking**
-1. Place the biryani pot over a dosa tawa.  
+1. Place the briyani pot over a dosa tawa.  
 2. Cover tightly and place weight over the lid.  
 3. Cook on **low flame for 20–25 minutes**.  
 4. Open and fluff gently. Rice should be fully cooked with no extra moisture.
@@ -156,7 +156,7 @@ Mild | Reduce green chillies
 Spicy | Add 1–2 dry red chillies while sautéing onions  
 Rich | Add 1 tbsp ghee while layering rice  
 No onion | Skip onions and increase tomatoes  
-With vegetables | Add sautéed potatoes or peas for a mixed biryani feel  
+With vegetables | Add sauteed potatoes or peas for a mixed briyani feel  
 Without curd | Add a little coconut milk for creaminess  
 
 ---
@@ -180,5 +180,5 @@ Without curd | Add a little coconut milk for creaminess
 
 ---
 
-A biryani that’s **rich, aromatic, comforting and perfect for brinjal lovers**! 💛  
+A briyani that’s **rich, aromatic, comforting and perfect for brinjal lovers**! 💛  
 Try it and share your experience! ✨
