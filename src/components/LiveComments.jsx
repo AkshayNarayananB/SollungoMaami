@@ -45,7 +45,7 @@ const LiveComments = ({ slug }) => {
     await addDoc(collection(db, "comments"), {
       slug: slug,
       text: newComment,
-      name: name.trim() || "Guest"; //Default as Guest
+      name: name.trim() || "Guest",
       createdAt: serverTimestamp(),
       reactions: { thumbsUp: 0, smile: 0, heart: 0 }
     });
