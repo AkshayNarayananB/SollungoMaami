@@ -88,7 +88,7 @@ const LiveComments = ({ slug }) => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            type: 'reply',          // Tell API this is a reply
+            type: 'reply',        // Tell API this is a reply
             to: parentComment.email,
             link: currentPageLink,
             message: newComment
@@ -180,13 +180,16 @@ const LiveComments = ({ slug }) => {
         
         {rootComments.map((comment) => (
           <div key={comment.id} className="group">
-            <div className={`px-3 py-2 rounded-lg shadow-sm border transition-all duration-200 ${
+            {/* 1. & 2. REDUCED VERTICAL PADDING & 3. ADJUSTED HEADER FONT SIZE */}
+            <div className={`px-3 **pt-2 pb-1.5** rounded-lg shadow-sm border transition-all duration-200 ${
               comment.isAdmin 
                 ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
                 : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
             }`}>
-              <div className="flex justify-between items-start mb-0.7">
-                <p className="font-semibold text-sm flex items-center gap-2">
+              {/* REDUCED MARGIN BELOW HEADER */}
+              <div className="flex justify-between items-start **mb-1**">
+                {/* REDUCED NAME FONT SIZE */}
+                <p className="font-semibold **text-xs** flex items-center gap-2">
                   <span className={comment.isAdmin ? 'text-amber-700 dark:text-amber-400' : 'text-gray-700 dark:text-gray-300'}>
                     {comment.name || "Guest"}
                   </span>
@@ -209,8 +212,8 @@ const LiveComments = ({ slug }) => {
                 {comment.text}
               </p>
             </div>
-    
-            {/* Replies */}
+        
+            {/* Replies (No changes made here, as this is the target style) */}
             {getReplies(comment.id).map(reply => (
               <div 
                 key={reply.id} 
@@ -229,7 +232,7 @@ const LiveComments = ({ slug }) => {
                 </p>
               </div>
             ))}
-    
+        
             {/* Reply Form */}
             {replyingTo === comment.id && (
               <div className="ml-6 md:ml-8 mt-2 p-2.5 bg-amber-50 dark:bg-amber-900/10 rounded-lg border border-amber-200 dark:border-amber-800">
