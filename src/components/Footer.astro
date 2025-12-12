@@ -4,6 +4,7 @@ import MaamiConfig from "../../maami.config";
 import { i18n } from "../locales/translation";
 import I18nKeys from "../locales/keys";
 import { GetCategories, GetTags } from "../utils/content";
+import SiteViews from "./SiteViews.jsx";
 
 const categories = await GetCategories();
 const tags = await GetTags();
@@ -49,6 +50,7 @@ const tagKeys = [...tags.keys()];
           <p class="line-clamp-1 text-[var(--text-color-lighten)]">
             {MaamiConfig.sign}
           </p>
+          <SiteViews client:only="react" />
         </div>
         <ul class="flex flex-row items-center justify-center space-x-6">
           {
