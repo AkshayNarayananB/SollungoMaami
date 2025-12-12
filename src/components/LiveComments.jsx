@@ -172,25 +172,24 @@ const LiveComments = ({ slug }) => {
       )}
     
       {/* Comment List */}
-      {/* 3. REDUCED VERTICAL SPACE BETWEEN COMMENTS */}
-      <div className="space-y-1.5">
+      <div className="space-y-1">
         {loading && <p className="text-sm text-gray-500">Loading comments...</p>}
         {!loading && rootComments.length === 0 && (
-          <p className="text-sm text-gray-500 text-center py-4">No comments yet. Be the first to comment! 💭</p>
+          <p className="text-sm text-gray-500 text-center py-2">No comments yet. Be the first to comment! 💭</p>
         )}
         
         {rootComments.map((comment) => (
           <div key={comment.id} className="group">
-            {/* 1. REDUCED VERTICAL PADDING */}
-            <div className={`px-3 **py-0.5** rounded-lg shadow-sm border transition-all duration-200 ${
+            {/* 1. & 2. REDUCED VERTICAL PADDING & 3. ADJUSTED HEADER FONT SIZE */}
+            <div className={`px-3 **pt-1 pb-0.5** rounded-lg shadow-sm border transition-all duration-200 ${
               comment.isAdmin 
                 ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
                 : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
             }`}>
-              {/* 2. REDUCED MARGIN BELOW HEADER */}
-              <div className="flex justify-between items-start **mb-0.5**">
-                {/* PREVIOUSLY REDUCED FONT SIZE (TEXT-XS) REMAINS */}
-                <p className="font-semibold text-xs flex items-center gap-1">
+              {/* REDUCED MARGIN BELOW HEADER */}
+              <div className="flex justify-between items-start **mb-1**">
+                {/* REDUCED NAME FONT SIZE */}
+                <p className="font-semibold **text-xs** flex items-center gap-1">
                   <span className={comment.isAdmin ? 'text-amber-700 dark:text-amber-400' : 'text-gray-700 dark:text-gray-300'}>
                     {comment.name || "Guest"}
                   </span>
@@ -214,7 +213,7 @@ const LiveComments = ({ slug }) => {
               </p>
             </div>
         
-            {/* Replies (Also uses py-1.5, so it is consistent now) */}
+            {/* Replies (No changes made here, as this is the target style) */}
             {getReplies(comment.id).map(reply => (
               <div 
                 key={reply.id} 
@@ -258,3 +257,15 @@ const LiveComments = ({ slug }) => {
                     >
                       Cancel
                     </button>
+                  </div>
+                </form>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default LiveComments;
