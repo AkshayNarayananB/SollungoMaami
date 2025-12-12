@@ -143,14 +143,14 @@ const LiveComments = ({ slug }) => {
               <input
                 type="text"
                 className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
-                placeholder="Name"
+                placeholder="Name (Optional)"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="email"
                 className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent dark:bg-[var(--background-color)] dark:text-[var(--text-color)] dark:border-gray-600"
-                placeholder="Email (Optional, for reply notifications)"
+                placeholder="Email (Optional, for notifications)"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -172,7 +172,8 @@ const LiveComments = ({ slug }) => {
       )}
     
       {/* Comment List */}
-      <div className="space-y-1"> 
+      {/* 3. REDUCED VERTICAL SPACE BETWEEN COMMENTS */}
+      <div className="space-y-1.5">
         {loading && <p className="text-sm text-gray-500">Loading comments...</p>}
         {!loading && rootComments.length === 0 && (
           <p className="text-sm text-gray-500 text-center py-4">No comments yet. Be the first to comment! 💭</p>
@@ -180,16 +181,16 @@ const LiveComments = ({ slug }) => {
         
         {rootComments.map((comment) => (
           <div key={comment.id} className="group">
-            {/* Reverting horizontal padding to px-3, keeping vertical padding minimal (py-1) */}
-            <div className={`**px-3 py-1** rounded-lg shadow-sm border transition-all duration-200 ${
+            {/* 1. REDUCED VERTICAL PADDING */}
+            <div className={`px-3 **py-0.5** rounded-lg shadow-sm border transition-all duration-200 ${
               comment.isAdmin 
                 ? 'border-amber-300 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 dark:border-amber-700' 
                 : 'bg-white border-gray-200 hover:border-amber-200 dark:bg-[var(--card-color-transparent)] dark:border-gray-700 dark:hover:border-amber-800'
             }`}>
-              {/* Minimal margin below header remains (mb-0.5) */}
-              <div className="flex justify-between items-start mb-0.5">
-                {/* Header is text-xs for compressed look */}
-                <p className="font-semibold text-xs flex items-center gap-2">
+              {/* 2. REDUCED MARGIN BELOW HEADER */}
+              <div className="flex justify-between items-start **mb-0.5**">
+                {/* PREVIOUSLY REDUCED FONT SIZE (TEXT-XS) REMAINS */}
+                <p className="font-semibold text-xs flex items-center gap-1">
                   <span className={comment.isAdmin ? 'text-amber-700 dark:text-amber-400' : 'text-gray-700 dark:text-gray-300'}>
                     {comment.name || "Guest"}
                   </span>
@@ -208,17 +209,16 @@ const LiveComments = ({ slug }) => {
                   </button>
                 )}
               </div>
-              {/* Line height remains reduced (leading-normal) */}
-              <p className="text-sm leading-normal text-gray-800 dark:text-[var(--text-color)]">
+              <p className="text-sm leading-relaxed text-gray-800 dark:text-[var(--text-color)]">
                 {comment.text}
               </p>
             </div>
         
-            {/* Reverting Replies to their original, larger, but consistent padding (py-1.5) */}
+            {/* Replies (Also uses py-1.5, so it is consistent now) */}
             {getReplies(comment.id).map(reply => (
               <div 
                 key={reply.id} 
-                className="ml-6 md:ml-8 mt-2 px-3 **py-1.5** rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm"
+                className="ml-6 md:ml-8 mt-2 px-3 py-1.5 rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm"
               >
                 <p className="font-semibold text-xs flex items-center gap-1.5 mb-1">
                   <span className="text-gray-700 dark:text-gray-300">{reply.name}</span>
@@ -258,15 +258,3 @@ const LiveComments = ({ slug }) => {
                     >
                       Cancel
                     </button>
-                  </div>
-                </form>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default LiveComments;
