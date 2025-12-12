@@ -6,7 +6,7 @@ const MaamiConfig: Configuration = {
   subTitle: "Spicing life with devotion and flavor",
   brandTitle: "Sollungo Maami",
 
-  description: "Blog Site",
+  description: "Authentic vegetarian recipes, stories, and traditions from Sollungo Maami.",
 
   site: "https://www.sollungomaami.com",
 
