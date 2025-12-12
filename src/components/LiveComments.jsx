@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { db, auth, googleProvider } from '../lib/firebase';
-import { signInWithPopup, signOut } from "firebase/auth";
+import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth"; // Added onAuthStateChanged
 import { 
   collection, addDoc, query, where, orderBy, onSnapshot, 
-  serverTimestamp, doc, setDoc, increment // Added new imports
+  serverTimestamp, doc, setDoc, increment 
 } from 'firebase/firestore';
 
 // 🔒 SECURITY: Only this email gets admin powers
@@ -31,12 +31,12 @@ const LiveComments = ({ slug }) => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [replyingTo, setReplyingTo] = useState(null);
 
-  // SESSION PERSISTENCE
+  // 1. SESSION PERSISTENCE (This is the fix)
   useEffect(() => {
-    // fired immediately when the component mounts
+    // This listener fires immediately when the component mounts
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser && currentUser.email === ADMIN_EMAIL) {
-        //Admin already logged In
+        // User is already logged in from previous session
         setUser(currentUser);
         setIsAdmin(true);
         setName("Sollungo Maami");
@@ -51,7 +51,7 @@ const LiveComments = ({ slug }) => {
     return () => unsubscribe();
   }, []);
 
-  // 1. Listen for Comments
+  // 2. Listen for Comments
   useEffect(() => {
     const q = query(
       collection(db, "comments"),
@@ -66,7 +66,7 @@ const LiveComments = ({ slug }) => {
     return () => unsubscribe();
   }, [slug]);
 
-  // 2. Listen for Page Reactions (Emoticons)
+  // 3. Listen for Page Reactions
   useEffect(() => {
     const docRef = doc(db, "emoticons", slug);
     const unsubscribe = onSnapshot(docRef, (docSnap) => {
@@ -77,33 +77,27 @@ const LiveComments = ({ slug }) => {
     return () => unsubscribe();
   }, [slug]);
 
-  // Handle Emoticon Click
   const handleEmoteClick = async (type) => {
     const docRef = doc(db, "emoticons", slug);
-    // setDoc with merge:true automatically creates the doc if it doesn't exist
     await setDoc(docRef, { [type]: increment(1) }, { merge: true });
   };
 
-  // Handle Google Login
+  // Handle Google Login (Manual Click)
   const handleAdminLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
       if (result.user.email === ADMIN_EMAIL) {
-        setUser(result.user);
-        setIsAdmin(true);
-        setName("Sollungo Maami"); 
+        // State updates handled by onAuthStateChanged automatically
       } else {
         await signOut(auth);
         alert("Access Denied.");
-        setIsAdmin(false);
       }
     } catch (error) { console.error(error); }
   };
 
   const handleLogout = async () => {
     await signOut(auth);
-    setUser(null);
-    setIsAdmin(false);
+    // State updates handled by onAuthStateChanged automatically
     setName("");
   };
 
@@ -167,7 +161,7 @@ const LiveComments = ({ slug }) => {
   return (
     <div className="p-3 bg-gray-50 rounded-lg mt-8 dark:bg-[var(--card-color)]">
       
-      {/* --- NEW SECTION: PAGE REACTIONS --- */}
+      {/* PAGE REACTIONS (Centered Circles) */}
       <div className="flex justify-center items-center gap-8 mb-8 mt-2">
         {EMOTIONS.map((emote) => (
           <button
@@ -176,7 +170,6 @@ const LiveComments = ({ slug }) => {
             className="relative group w-14 h-14 bg-white dark:bg-[var(--background-color)] rounded-full shadow-sm border border-gray-100 dark:border-gray-700 flex items-center justify-center text-2xl transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-amber-200 active:scale-95"
           >
             {emote.icon}
-            {/* Superscript Count Badge */}
             {(reactions[emote.id] || 0) > 0 && (
               <span className="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-[10px] font-bold rounded-full shadow-sm ring-2 ring-white dark:ring-[#1e1e1e]">
                 {reactions[emote.id]}
@@ -185,7 +178,6 @@ const LiveComments = ({ slug }) => {
           </button>
         ))}
       </div>
-      {/* ----------------------------------- */}
 
       <div className="flex justify-between items-center mb-3">
         <h3 className="text-lg font-bold dark:text-[var(--text-color)]">Comments</h3>
@@ -201,7 +193,7 @@ const LiveComments = ({ slug }) => {
         )}
       </div>
       
-      {/* Main Input Form */}
+      {/* Input Form */}
       {!replyingTo && (
         <form onSubmit={handleSubmit} className="mb-4 space-y-2">
           {!isAdmin && (
