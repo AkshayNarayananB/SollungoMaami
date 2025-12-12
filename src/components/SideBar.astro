@@ -5,6 +5,7 @@ import I18nKeys from "../locales/keys";
 import { i18n } from "../locales/translation";
 import { GetCategories, GetTags } from "../utils/content";
 import SocialIcon from "./widgets/SocialIcon.astro";
+import SiteViews from "../SiteViews.jsx";
 
 const tags = await GetTags();
 const categories = await GetCategories();
