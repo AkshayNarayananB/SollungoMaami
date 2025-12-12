@@ -32,6 +32,7 @@ const tagKeys = [...tags.keys()];
       <p class="slogan mt-2 text-center text-[var(--text-color-lighten)]">
         {MaamiConfig.sign}
       </p>
+      <SiteViews client:only="react" />
       {
         MaamiConfig.socialLinks.length > 0 && (
           <div class="mt-1 flex flex-row justify-center">
