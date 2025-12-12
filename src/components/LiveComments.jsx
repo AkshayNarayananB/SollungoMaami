@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { db } from '../lib/firebase';
+// 1. Import auth tools
+import { db, auth, googleProvider } from '../lib/firebase';
+import { signInWithPopup, signOut } from "firebase/auth";
 import { 
   collection, addDoc, query, where, orderBy, onSnapshot, 
   updateDoc, doc, increment, serverTimestamp 
 } from 'firebase/firestore';
 
 const EMOTES = { thumbsUp: "👍", smile: "😄", heart: "❤️" };
-const ADMIN_PIN = "5821"; // 🔒 CHANGE THIS TO YOUR SECRET PIN
+
+// 🔒 SECURITY: Only this email gets admin powers
+const ADMIN_EMAIL = "sollungomaami@gmail.com"; 
 
 const LiveComments = ({ slug }) => {
   const [comments, setComments] = useState([]);
@@ -15,60 +19,71 @@ const LiveComments = ({ slug }) => {
   const [loading, setLoading] = useState(true);
 
   // Admin State
-  const [isAdminMode, setIsAdminMode] = useState(false);
-  const [replyingTo, setReplyingTo] = useState(null); // ID of comment being replied to
+  const [user, setUser] = useState(null); // Holds the logged-in user object
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [replyingTo, setReplyingTo] = useState(null);
 
-  // 1. Listen for Live Updates
+  // Listen for Live Updates
   useEffect(() => {
     const q = query(
       collection(db, "comments"),
       where("slug", "==", slug),
-      orderBy("createdAt", "desc") // Newest first
+      orderBy("createdAt", "desc")
     );
-
     const unsubscribe = onSnapshot(q, (snapshot) => {
-      const liveData = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      }));
+      const liveData = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setComments(liveData);
       setLoading(false);
     });
-
     return () => unsubscribe();
   }, [slug]);
 
-  // 2. Handle Login (Simple PIN check)
-  const handleAdminLogin = () => {
-    const input = prompt("Enter Admin PIN:");
-    if (input === ADMIN_PIN) {
-      setIsAdminMode(true);
-      setName("Sollungo Maami"); // Auto-set your admin name
-    } else {
-      alert("Wrong PIN");
+  // 2. Handle Google Login
+  const handleAdminLogin = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      const email = result.user.email;
+      
+      if (email === ADMIN_EMAIL) {
+        setUser(result.user);
+        setIsAdmin(true);
+        setName("Sollungo Maami"); // Auto-set admin name
+      } else {
+        await signOut(auth); // Kick them out immediately
+        alert("Access Denied: You are not the admin.");
+        setIsAdmin(false);
+      }
+    } catch (error) {
+      console.error("Login failed", error);
     }
   };
 
-  // 3. Submit Comment (Parent or Reply)
+  const handleLogout = async () => {
+    await signOut(auth);
+    setUser(null);
+    setIsAdmin(false);
+    setName("");
+  };
+
+  // Submit Comment
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!newComment.trim()) return;
 
-    const payload = {
+    await addDoc(collection(db, "comments"), {
       slug: slug,
       text: newComment,
       name: name.trim() || "Guest",
       createdAt: serverTimestamp(),
       reactions: { thumbsUp: 0, smile: 0, heart: 0 },
-      isAdmin: isAdminMode, // Mark as admin comment
-      replyTo: replyingTo // If null, it's a main comment. If ID, it's a reply.
-    };
-
-    await addDoc(collection(db, "comments"), payload);
+      isAdmin: isAdmin, // Tag the comment as official
+      replyTo: replyingTo
+    });
     
     setNewComment("");
-    setReplyingTo(null); // Close reply box
-    if (!isAdminMode) setName(""); 
+    setReplyingTo(null);
+    // Only clear name if it's a guest
+    if (!isAdmin) setName(""); 
   };
 
   const handleReaction = async (commentId, reactionType) => {
@@ -76,45 +91,47 @@ const LiveComments = ({ slug }) => {
     await updateDoc(commentRef, { [`reactions.${reactionType}`]: increment(1) });
   };
 
-  // Helper: Separate Parents and Replies
-  // We filter out comments that have a 'replyTo' field for the main list
+  // Helper filters
   const rootComments = comments.filter(c => !c.replyTo);
   const getReplies = (parentId) => comments.filter(c => c.replyTo === parentId).sort((a,b) => a.createdAt - b.createdAt);
 
   return (
     <div className="p-4 bg-gray-50 rounded-lg mt-8 dark:bg-[var(--card-color)]">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-xl font-bold dark:text-[var(--text-color)]">Live Comments</h3>
-        {/* Secret Admin Button */}
-        <button 
-          onClick={handleAdminLogin}
-          className="text-gray-300 hover:text-blue-500 text-xs"
-          title="Admin Login"
-        >
-          {isAdminMode ? "🔓 Admin Active" : "🔒"}
-        </button>
+        <h3 className="text-xl font-bold dark:text-[var(--text-color)]"> Live Comments</h3>
+        
+        {/* 3. Secure Lock Icon */}
+        {isAdmin ? (
+          <button onClick={handleLogout} className="text-xs text-green-600 font-bold hover:underline">
+            🔓 Admin Active (Logout)
+          </button>
+        ) : (
+          <button onClick={handleAdminLogin} className="text-gray-300 hover:text-blue-500" title="Admin Login">
+            🔒
+          </button>
+        )}
       </div>
 
-      {/* Main Input Form (Only show if NOT replying to someone) */}
+      {/* Input Form */}
       {!replyingTo && (
         <form onSubmit={handleSubmit} className="mb-8 space-y-2">
-           {!isAdminMode && (
+           {!isAdmin && (
              <input
               type="text"
               className="w-full p-2 border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
-              placeholder="Name (Optional)"
+              placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
            )}
           <textarea
             className="w-full p-2 border rounded dark:bg-[var(--background-color)] dark:text-[var(--text-color)]"
-            placeholder={isAdminMode ? "Write an official reply..." : "Write a comment..."}
+            placeholder={isAdmin ? "Write an official reply..." : "Write a comment..."}
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
           />
           <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-            {isAdminMode ? "Post as Admin" : "Post Comment"}
+            {isAdmin ? "Post as Admin" : "Post Comment"}
           </button>
         </form>
       )}
@@ -137,8 +154,7 @@ const LiveComments = ({ slug }) => {
                     </span>
                   )}
                 </p>
-                {/* Reply Button (Only visible if Admin is Logged In) */}
-                {isAdminMode && (
+                {isAdmin && (
                   <button 
                     onClick={() => setReplyingTo(comment.id)}
                     className="text-xs text-blue-500 hover:underline"
@@ -147,7 +163,6 @@ const LiveComments = ({ slug }) => {
                   </button>
                 )}
               </div>
-              
               <p className="mb-3 text-gray-800 dark:text-[var(--text-color)]">{comment.text}</p>
               
               <div className="flex gap-4 border-t pt-2 dark:border-gray-700">
@@ -164,7 +179,7 @@ const LiveComments = ({ slug }) => {
               </div>
             </div>
 
-            {/* REPLIES (Indented) */}
+            {/* REPLIES */}
             {getReplies(comment.id).map(reply => (
                <div key={reply.id} className="ml-8 mt-2 p-3 rounded border-l-4 border-blue-200 bg-gray-50 dark:bg-[var(--background-color)] dark:border-blue-800">
                   <p className="font-bold text-xs text-gray-600 dark:text-gray-300 mb-1 flex items-center gap-2">
@@ -175,7 +190,7 @@ const LiveComments = ({ slug }) => {
                </div>
             ))}
 
-            {/* REPLY INPUT (Only shows under the specific comment you clicked "Reply" on) */}
+            {/* REPLY INPUT */}
             {replyingTo === comment.id && (
               <div className="ml-8 mt-2">
                 <form onSubmit={handleSubmit} className="flex gap-2">
