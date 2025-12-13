@@ -15,7 +15,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ---
 
-## 🌿 Introduction  
+##  
 Kovakkai Rice is a traditional South Indian mixed rice recipe that’s bursting with earthy flavours, nutty aroma, and wholesome goodness. This recipe brings together perfectly spiced *kovakkai (ivy gourd)*, aromatic homemade **curry podi**, and a rich, nutty **peanut-sesame podi** — all tossed with fluffy rice.  
 It’s simple, satisfying, and ideal for lunchboxes, travel meals, or a quick weekday lunch.  
 
