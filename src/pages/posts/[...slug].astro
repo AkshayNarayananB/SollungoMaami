@@ -1,4 +1,5 @@
 ---
+// 1. ENABLE LIVE MODE
 export const prerender = false;
 
 import { db } from '../../lib/firebase';
@@ -6,9 +7,9 @@ import { doc, getDoc } from 'firebase/firestore';
 import PostLayout from "../../layouts/PostLayout.astro";
 import LiveComments from "../../components/LiveComments.jsx";
 
-// 1. COMMENT OUT MARKDOWN (To isolate the crash)
-// import { marked } from 'marked';
-// import DOMPurify from 'isomorphic-dompurify';
+// 2. RE-ENABLE MARKDOWN PARSING
+import { marked } from 'marked';
+import DOMPurify from 'isomorphic-dompurify';
 
 const { slug } = Astro.params;
 if (!slug) return Astro.redirect('/404');
@@ -19,7 +20,7 @@ const docSnap = await getDoc(docRef);
 if (!docSnap.exists()) return Astro.redirect('/404');
 const post = docSnap.data();
 
-// 2. SAFE DATE HANDLING
+// 3. SAFE DATE HANDLING
 let publishedDate = new Date();
 try {
   if (post.publishedAt && typeof post.publishedAt.toDate === 'function') {
@@ -29,14 +30,25 @@ try {
   console.log("Date error", e);
 }
 
-// 3. SAFE CATEGORY HANDLING (Array vs String)
+// 4. SAFE CATEGORY HANDLING (Array vs String)
 const categoryDisplay = Array.isArray(post.category) 
   ? post.category[0] // If array, take first item
   : post.category;   // If string, use as is
 
-const rawContent = post.content || "No content found.";
+// 5. PARSE MARKDOWN CONTENT
+const rawContent = post.content || "";
+// marked.parse can sometimes return a Promise, so we await it just in case, 
+// though usually it is synchronous.
+const parsedMarkdown = await marked.parse(rawContent);
+const cleanHTML = DOMPurify.sanitize(parsedMarkdown);
+
 const tags = Array.isArray(post.tags) ? post.tags : [];
 const bannerImageProp = post.licenseName ? post.cover : post.image;
+
+// 6. License Logic
+const licenseProp = post.licenseName
+  ? { name: post.licenseName, url: post.licenseUrl }
+  : undefined;
 ---
 
 <PostLayout
@@ -44,10 +56,16 @@ const bannerImageProp = post.licenseName ? post.cover : post.image;
   subTitle={post.description}
   bannerImage={bannerImageProp}
   published={publishedDate}
+  license={licenseProp}
   author={post.author || "Sollungo Maami"}
+  sourceLink={post.sourceLink}
 >
   
-  {/* Category Pill - NOW SAFE FOR ARRAYS */}
+  <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
+    {post.title}
+  </div>
+
+  {/* Category Pill - SAFE VERSION */}
   <div class="mb-6">
     {categoryDisplay && (
       <span class="inline-block bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-md font-bold uppercase tracking-wider mb-2">
@@ -58,7 +76,7 @@ const bannerImageProp = post.licenseName ? post.cover : post.image;
     {/* Tags Row */}
     {tags.length > 0 && (
       <div class="flex flex-wrap gap-2 mt-2">
-        {tags.map((tag) => (
+        {tags.map((tag: string) => (
           <span class="text-sm text-gray-500 dark:text-gray-400 italic">
             #{tag}
           </span>
@@ -67,10 +85,12 @@ const bannerImageProp = post.licenseName ? post.cover : post.image;
     )}
   </div>
 
-  {/* RAW CONTENT (No Marked) */}
-  {/* If this loads, we know the database connection is perfect. */}
-  <div class="prose prose-lg dark:prose-invert max-w-none whitespace-pre-wrap">
-    {rawContent}
+  {/* RENDERED MARKDOWN HTML */}
+  <div data-pagefind-body>
+    <div 
+      class="prose prose-lg prose-amber dark:prose-invert max-w-none"
+      set:html={cleanHTML} 
+    />
   </div>
 
   <section class="mt-10">
