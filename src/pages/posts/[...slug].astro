@@ -31,8 +31,18 @@ const categoryDisplay = Array.isArray(post.category)
   ? post.category[0] 
   : post.category;
 
-// --- 3. MARKDOWN PARSING (Simplified) ---
-const rawContent = post.content || "";
+let rawContent = post.content || "";
+
+// --- FIX: HEADER PADDING ---
+// 1. Find the hashes (e.g. '###') at start of line
+// 2. Consume any existing spaces (\s*)
+// 3. Replace with: Hash + Real Space + &nbsp; + The Title
+rawContent = rawContent.replace(/^(#+)\s*(.*)/gm, '$1 &nbsp;$2');
+
+// Optional: Ensure newline before headers
+rawContent = rawContent.replace(/^(#+)/gm, '\n$1');
+// -----------------------------------
+
 let htmlContent = "";
 
 try {
