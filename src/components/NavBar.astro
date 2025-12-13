@@ -5,6 +5,7 @@ import { i18n } from "../locales/translation";
 import { Icon } from "astro-icon/components";
 import SearchBar from "./SearchBar.svelte";
 import MobileSearchBar from "./MobileSearchBar.svelte";
+import AdminTools from "./admin/AdminTools.jsx";
 import "astro-pagefind";
 
 const navCount = MaamiConfig.navigators.length;
@@ -50,6 +51,9 @@ const navCount = MaamiConfig.navigators.length;
           </a>
         ))
       }
+      <div class="pl-2">
+        <AdminTools client:only="react" />
+      </div>
     </div>
     <div class="toolbar">
       <div class="lg:hidden">
