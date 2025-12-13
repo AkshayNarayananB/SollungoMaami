@@ -1,45 +1,63 @@
 ---
-import Sidebar from "../components/SideBar.astro";
-import Navbar from "../components/NavBar.astro";
+import Base from "./BaseLayout.astro";
+import NavBar from "../components/NavBar.astro";
+import Banner from "../components/Banner.astro";
 import Footer from "../components/Footer.astro";
+import SideBar from "../components/SideBar.astro";
 import MaamiConfig from "../../maami.config";
 
-interface Props {
+export interface Props {
   title?: string;
   subTitle?: string;
   bannerImage?: string;
-  // This is the new prop we need to pass down
+  slug?: string;
+  // Kept your new prop here
   allPosts?: any[]; 
 }
 
-const { title, subTitle, bannerImage, allPosts } = Astro.props;
+const { title, subTitle, bannerImage, slug, allPosts } = Astro.props;
 ---
 
-<html lang={MaamiConfig.lang} class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title ? `${title} - ${MaamiConfig.title}` : MaamiConfig.title}</title>
-    </head>
-  <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-    
-    <Navbar />
+<Base>
+  <NavBar />
 
-    <main class="container mx-auto px-4 py-8 md:flex md:gap-8">
-      
-      <aside class="md:w-1/4 hidden md:block">
-        <Sidebar allPosts={allPosts} />
-      </aside>
+  {
+    MaamiConfig.bannerStyle == "LOOP" && (
+      <Banner
+        title={title}
+        subTitle={subTitle}
+        bannerImage={bannerImage}
+        slug={slug}
+      />
+    )
+  }
 
-      <div class="md:w-3/4 min-w-0">
-        <slot />
+  <div class="main-container my-10">
+    <div class="flex flex-row items-start xl:space-x-4">
+      <div class="side-bar">
+        <SideBar allPosts={allPosts} />
       </div>
+      <div class="transition-leaving w-full space-y-8">
+        <main class="content onload-animation">
+          <slot />
+        </main>
+        <Footer />
+      </div>
+    </div>
+  </div>
+</Base>
 
-    </main>
+<style>
+  .main-container {
+    @apply w-full md:min-w-[80%] md:max-w-[80%] lg:min-w-[var(--page-width-lg)] lg:max-w-[var(--page-width-lg)] xl:min-w-[var(--page-width-xl)] xl:max-w-[var(--page-width-xl)];
+    @apply md:mx-auto;
+  }
 
-    <Footer />
-    
-  </body>
-</html>
+  .side-bar {
+    @apply hidden min-w-[248px] xl:block;
+  }
+
+  .content {
+    @apply xl:w-[calc(var(--page-width-xl)-264px)];
+  }
+</style>
