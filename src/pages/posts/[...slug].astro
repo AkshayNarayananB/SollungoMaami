@@ -1,66 +1,78 @@
 ---
-// 1. ENABLE LIVE MODE
 export const prerender = false;
 
 import { db } from '../../lib/firebase';
 import { doc, getDoc } from 'firebase/firestore';
-import { marked } from 'marked';
-import DOMPurify from 'isomorphic-dompurify';
-
 import PostLayout from "../../layouts/PostLayout.astro";
 import LiveComments from "../../components/LiveComments.jsx";
 
-// 2. Get the Slug from URL
+// 1. COMMENT OUT MARKDOWN (To isolate the crash)
+// import { marked } from 'marked';
+// import DOMPurify from 'isomorphic-dompurify';
+
 const { slug } = Astro.params;
 if (!slug) return Astro.redirect('/404');
 
-// 3. Fetch from Firebase
 const docRef = doc(db, "blog", slug);
 const docSnap = await getDoc(docRef);
 
 if (!docSnap.exists()) return Astro.redirect('/404');
 const post = docSnap.data();
 
-// 4. PREPARE CONTENT (This replaces <Content />)
-// We convert the raw Markdown string from Firebase into safe HTML
-const rawHTML = marked.parse(post.content || "");
-const cleanHTML = DOMPurify.sanitize(rawHTML);
+// 2. SAFE DATE HANDLING
+let publishedDate = new Date();
+try {
+  if (post.publishedAt && typeof post.publishedAt.toDate === 'function') {
+    publishedDate = post.publishedAt.toDate();
+  }
+} catch (e) {
+  console.log("Date error", e);
+}
 
-// 5. Logic for License & Banner (Copied from your original file)
-const licenseProp = post.licenseName
-  ? { name: post.licenseName, url: post.licenseUrl }
-  : undefined;
+// 3. SAFE CATEGORY HANDLING (Array vs String)
+const categoryDisplay = Array.isArray(post.category) 
+  ? post.category[0] // If array, take first item
+  : post.category;   // If string, use as is
 
+const rawContent = post.content || "No content found.";
+const tags = Array.isArray(post.tags) ? post.tags : [];
 const bannerImageProp = post.licenseName ? post.cover : post.image;
-const publishedDate = post.published ? post.published.toDate() : new Date();
 ---
 
 <PostLayout
-  title={post.title}
+  title={post.title || "Untitled"}
   subTitle={post.description}
   bannerImage={bannerImageProp}
   published={publishedDate}
-  license={licenseProp}
   author={post.author || "Sollungo Maami"}
-  sourceLink={post.sourceLink}
 >
   
-  {/* HIDDEN META FOR SEARCH (Kept from your original) */}
-  <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
-    {post.title}
+  {/* Category Pill - NOW SAFE FOR ARRAYS */}
+  <div class="mb-6">
+    {categoryDisplay && (
+      <span class="inline-block bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-md font-bold uppercase tracking-wider mb-2">
+        {categoryDisplay}
+      </span>
+    )}
+
+    {/* Tags Row */}
+    {tags.length > 0 && (
+      <div class="flex flex-wrap gap-2 mt-2">
+        {tags.map((tag) => (
+          <span class="text-sm text-gray-500 dark:text-gray-400 italic">
+            #{tag}
+          </span>
+        ))}
+      </div>
+    )}
   </div>
 
-  {/* --- HERE IS THE BLOG CONTENT --- */}
-  {/* In static, you used <Content />. 
-      In dynamic, we use this div with set:html to inject the converted text. */}
-  <div data-pagefind-body>
-    <div 
-      class="prose prose-lg prose-amber dark:prose-invert max-w-none"
-      set:html={cleanHTML} 
-    />
+  {/* RAW CONTENT (No Marked) */}
+  {/* If this loads, we know the database connection is perfect. */}
+  <div class="prose prose-lg dark:prose-invert max-w-none whitespace-pre-wrap">
+    {rawContent}
   </div>
 
-  {/* COMMENTS SECTION */}
   <section class="mt-10">
     <LiveComments slug={slug} client:visible />
   </section>
