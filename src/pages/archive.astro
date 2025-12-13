@@ -1,10 +1,42 @@
 ---
+// 1. ENABLE LIVE MODE (SSR)
+export const prerender = false;
+
 import PostArchiveLayout from "../layouts/PostArchiveLayout.astro";
 import I18nKeys from "../locales/keys";
 import { i18n } from "../locales/translation";
-import { GetArchives } from "../utils/content";
 
-const archiveMap = await GetArchives();
+// Firebase Imports
+import { db } from '../lib/firebase';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
+
+// 2. Fetch all posts from Firebase (Newest first)
+const q = query(collection(db, "blog"), orderBy("publishedAt", "desc"));
+const querySnapshot = await getDocs(q);
+
+// 3. Create the "Archive Map" (Year -> Array of Posts)
+const archiveMap = new Map();
+
+querySnapshot.docs.forEach((doc) => {
+  const data = doc.data();
+  const date = data.publishedAt ? data.publishedAt.toDate() : new Date();
+  const year = date.getFullYear();
+
+  // MATCHING YOUR LAYOUT STRUCTURE
+  // Your layout calls: entry.id, entry.title, entry.date, entry.tags
+  const entry = {
+    id: `/posts/${doc.id}`,  // The link to the post
+    title: data.title,
+    date: date,              // Layout expects 'date', not 'published'
+    tags: data.tags || [],
+  };
+
+  // Add to Map
+  if (!archiveMap.has(year)) {
+    archiveMap.set(year, []);
+  }
+  archiveMap.get(year).push(entry);
+});
 ---
 
 <PostArchiveLayout
