@@ -51,7 +51,19 @@ if (postsData) {
   postsData.forEach((data) => {
     // --- Process Category ---
     if (data.category) {
-      const catName = data.category.trim();
+      // 1. Ensure we are working with an array (handles both "String" and ["Array"] data safely)
+      const categories = Array.isArray(data.category) ? data.category : [data.category];
+
+      // 2. Loop through every category in the array
+      categories.forEach((cat) => {
+        const catName = cat.trim();
+        
+        // ... YOUR EXISTING LOGIC GOES HERE ...
+        // (e.g. counting the category, pushing to a list, etc.)
+      });
+    }
+  });
+
       const actualCat = Array.isArray(catName) ? catName[0] : catName;
       const catSlug = slugify(actualCat);
 
@@ -61,18 +73,26 @@ if (postsData) {
       categories.get(catSlug).posts.push(data);
     }
 
-    // --- Process Tags ---
-    if (data.tags && Array.isArray(data.tags)) {
-      data.tags.forEach((t: string) => {
-        const tagName = t.trim();
-        const tagSlug = slugify(tagName);
+// --- Process Tags ---
+if (data.tags && Array.isArray(data.tags)) {
+  data.tags.forEach((t) => {
+    // 1. Safety: Force to string to prevent crashes on bad data
+    const tagName = String(t || "").trim();
+    
+    // 2. Skip empty tags
+    if (!tagName) return;
 
-        if (!tags.has(tagSlug)) {
-          tags.set(tagSlug, { name: tagName, posts: [] });
-        }
-        tags.get(tagSlug).posts.push(data);
-      });
+    const tagSlug = slugify(tagName);
+
+    // 3. Get existing entry or create new one (Single lookup)
+    let tagEntry = tags.get(tagSlug);
+    
+    if (!tagEntry) {
+      tagEntry = { name: tagName, posts: [] };
+      tags.set(tagSlug, tagEntry);
     }
+    
+    tagEntry.posts.push(data);
   });
 }
 
