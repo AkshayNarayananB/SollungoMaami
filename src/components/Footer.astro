@@ -3,18 +3,13 @@ import { Icon } from "astro-icon/components";
 import MaamiConfig from "../../maami.config";
 import { i18n } from "../locales/translation";
 import I18nKeys from "../locales/keys";
-import { GetCategories, GetTags } from "../utils/content";
 import SiteViews from "./SiteViews.jsx";
 
-const categories = await GetCategories();
-const tags = await GetTags();
-
-const categoryKeys = [...categories.keys()];
-const tagKeys = [...tags.keys()];
+// We no longer fetch data server-side here to save reads/build time.
+// Instead, we will load them purely on the client side or using a lightweight script.
 ---
 
 <div class="mx-3 space-y-4">
-  <!-- Owner info card -->
   <div class="rounded-3xl bg-[var(--card-color)] transition-all lg:hidden">
     <div class="flex flex-row md:flex-col md:pt-4">
       <a href="/about" class="relative h-40 w-40 md:hidden">
@@ -67,7 +62,6 @@ const tagKeys = [...tags.keys()];
     </div>
   </div>
 
-  <!-- Category card -->
   <div class="rounded-3xl bg-[var(--card-color)] p-4 transition-all lg:hidden">
     <div class="mb-2 flex flex-row items-center space-x-2 pl-1.5">
       <span class="h-6 w-1 rounded-full bg-[var(--primary-color)]"></span>
@@ -75,60 +69,14 @@ const tagKeys = [...tags.keys()];
         {i18n(I18nKeys.side_bar_categories)}
       </span>
     </div>
-    <div class="relative grid grid-cols-2 gap-1 md:grid-cols-3">
-      {
-        categoryKeys
-          .slice(0, MaamiConfig.maxFooterCategoryChip)
-          .map((category) => (
-            <a
-              href={`/categories/${category}`}
-              class="category flex flex-row items-center justify-between rounded-lg px-2 py-1.5 transition-all hover:bg-[var(--primary-color-lighten)]"
-            >
-              <p class="line-clamp-1 text-[var(--text-color)] transition-all">
-                {categories.get(category)!.name}
-              </p>
-              <span class="rounded-md bg-[var(--primary-color-lighten)] px-2.5 py-0.5 text-[var(--primary-color)]">
-                {categories.get(category)!.posts.length}
-              </span>
-            </a>
-          ))
-      }
-      {
-        categoryKeys.length > MaamiConfig.maxFooterCategoryChip && (
-          <a
-            href={`/categories/${categoryKeys[MaamiConfig.maxFooterCategoryChip]}`}
-            class="category col-span-2 flex flex-row items-center justify-between rounded-lg px-2 py-1.5 transition-all hover:bg-[var(--primary-color-lighten)] md:col-span-3"
-          >
-            <p class="line-clamp-1 text-[var(--text-color)] transition-all">
-              {
-                categories.get(
-                  categoryKeys[MaamiConfig.maxFooterCategoryChip],
-                )!.name
-              }
-            </p>
-            <span class="rounded-md bg-[var(--primary-color-lighten)] px-2.5 py-0.5 text-[var(--primary-color)]">
-              {
-                categories.get(
-                  categoryKeys[MaamiConfig.maxFooterCategoryChip],
-                )!.posts.length
-              }
-            </span>
-          </a>
-          <div class="absolute bottom-0 flex h-11 w-full flex-row items-center justify-center bg-gradient-to-t from-[var(--card-color)] from-25% to-transparent backdrop-blur-sm">
-            <a
-              href="/categories/"
-              class="flex flex-row items-center space-x-1 text-[var(--primary-color)] transition-colors hover:brightness-75 dark:hover:brightness-125"
-            >
-            <span>{i18n(I18nKeys.side_bar_view_more)}</span>
-                <Icon name="mingcute:arrow-right-line" />
-            </a>
-          </div>
-        )
-      }
+    
+    <div id="footer-categories" class="relative grid grid-cols-2 gap-1 md:grid-cols-3 min-h-[60px]">
+       <div class="col-span-2 md:col-span-3 text-sm text-gray-400 animate-pulse px-2">
+         Loading categories...
+       </div>
     </div>
   </div>
 
-  <!-- Tag card -->
   <div class="rounded-3xl bg-[var(--card-color)] p-4 transition-all lg:hidden">
     <div class="mb-2 flex flex-row items-center space-x-2 pl-1.5">
       <span class="h-6 w-1 rounded-full bg-[var(--primary-color)]"></span>
@@ -136,36 +84,14 @@ const tagKeys = [...tags.keys()];
         {i18n(I18nKeys.side_bar_tags)}
       </span>
     </div>
-    <div class="relative flex flex-row flex-wrap">
-      {
-        tagKeys.slice(0, MaamiConfig.maxFooterTagChip + 1).map((tag) => (
-          <a
-            href={`/tags/${tag}`}
-            class="tag m-1 rounded-md bg-[var(--primary-color-lighten)] px-2 py-1 transition-all hover:brightness-95"
-          >
-            <p class="text-sm text-[var(--primary-color)]">
-              {tags.get(tag)!.name}
-            </p>
-          </a>
-        ))
-      }
-      {
-        tagKeys.length >= MaamiConfig.maxFooterCategoryChip + 1 && (
-          <div class="absolute bottom-0 flex h-10 w-full flex-row items-center justify-center bg-gradient-to-t from-[var(--card-color)] from-25% to-transparent backdrop-blur-sm">
-            <a
-              href="/tags/"
-              class="flex flex-row items-center space-x-1 text-[var(--primary-color)] transition-colors hover:brightness-75 dark:hover:brightness-125"
-            >
-              <span>{i18n(I18nKeys.side_bar_view_more)}</span>
-              <Icon name="mingcute:arrow-right-line" />
-            </a>
-          </div>
-        )
-      }
+
+    <div id="footer-tags" class="relative flex flex-row flex-wrap min-h-[60px]">
+       <div class="text-sm text-gray-400 animate-pulse px-2">
+         Loading tags...
+       </div>
     </div>
   </div>
 
-  <!-- Site footer -->
   <footer>
     <div
       class="divide-y divide-dashed divide-black/25 py-4 lg:pt-0 dark:divide-white/25"
@@ -181,10 +107,7 @@ const tagKeys = [...tags.keys()];
         {MaamiConfig.username} All Rights Reserved.
       </p>
       <p>
-        Powered By <a
-          class="link"
-          href="#">Sollungo Maami</a
-        > & <a class="link" href="https://astro.build/">Astro</a>
+        Powered By <a class="link" href="#">Sollungo Maami</a> & <a class="link" href="https://astro.build/">Astro</a>
       </p>
       <p>
         Website Designed & Maintained By <a class="link" href="https://www.linkedin.com/in/akshay-narayanan-tech/">Akshay Narayanan B</a>.
@@ -192,6 +115,91 @@ const tagKeys = [...tags.keys()];
     </div>
   </footer>
 </div>
+
+<script>
+  // CLIENT-SIDE SCRIPT TO FETCH CATEGORIES & TAGS FROM FIRESTORE
+  // This reuses the session cache logic to prevent high reads
+  import { db } from '../../lib/firebase';
+  import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
+
+  const CACHE_KEY_CATS = 'footer_cats_cache';
+  const CACHE_KEY_TAGS = 'footer_tags_cache';
+  const CACHE_TTL = 1000 * 60 * 60; // 1 Hour
+
+  async function fetchWithCache(key, fetcher) {
+    const cached = sessionStorage.getItem(key);
+    if (cached) {
+      const { data, timestamp } = JSON.parse(cached);
+      if (Date.now() - timestamp < CACHE_TTL) return data;
+    }
+    const data = await fetcher();
+    sessionStorage.setItem(key, JSON.stringify({ data, timestamp: Date.now() }));
+    return data;
+  }
+
+  async function initFooter() {
+    // 1. Fetch Categories
+    const catContainer = document.getElementById('footer-categories');
+    if (catContainer) {
+      const categories = await fetchWithCache(CACHE_KEY_CATS, async () => {
+        // In a real app you might aggregate this separately, 
+        // but for now we query the 'categories' collection if you created one,
+        // or just manually query unique blog posts (expensive).
+        // RECOMMENDATION: Create a 'meta' collection in Firebase with a 'stats' doc
+        // that holds { categories: { 'Recipe': 5 }, tags: ['tiffin'] }
+        
+        // Fallback: Fetch latest 20 blogs and aggregate (Cheaper than reading all)
+        const q = query(collection(db, "blog"), limit(20));
+        const snap = await getDocs(q);
+        const catMap = {};
+        snap.forEach(doc => {
+            const d = doc.data();
+            const cats = Array.isArray(d.category) ? d.category : [d.category];
+            cats.forEach(c => { if(c) catMap[c] = (catMap[c] || 0) + 1 });
+        });
+        return catMap;
+      });
+
+      // Render Categories
+      const catEntries = Object.entries(categories).slice(0, 6); // Max 6 chips
+      catContainer.innerHTML = catEntries.map(([name, count]) => `
+        <a href="/categories/${name}" class="category flex flex-row items-center justify-between rounded-lg px-2 py-1.5 transition-all hover:bg-[var(--primary-color-lighten)]">
+          <p class="line-clamp-1 text-[var(--text-color)] transition-all">${name}</p>
+          <span class="rounded-md bg-[var(--primary-color-lighten)] px-2.5 py-0.5 text-[var(--primary-color)]">${count}</span>
+        </a>
+      `).join('');
+      
+      if (catEntries.length === 0) catContainer.innerHTML = '<span class="text-xs p-2">No categories found</span>';
+    }
+
+    // 2. Fetch Tags
+    const tagContainer = document.getElementById('footer-tags');
+    if (tagContainer) {
+      const tags = await fetchWithCache(CACHE_KEY_TAGS, async () => {
+        const q = query(collection(db, "blog"), limit(20));
+        const snap = await getDocs(q);
+        const tagSet = new Set();
+        snap.forEach(doc => {
+            const d = doc.data();
+            if(Array.isArray(d.tags)) d.tags.forEach(t => tagSet.add(t));
+        });
+        return Array.from(tagSet);
+      });
+
+      // Render Tags
+      tagContainer.innerHTML = tags.slice(0, 10).map(tag => `
+        <a href="/tags/${tag}" class="tag m-1 rounded-md bg-[var(--primary-color-lighten)] px-2 py-1 transition-all hover:brightness-95">
+          <p class="text-sm text-[var(--primary-color)]">${tag}</p>
+        </a>
+      `).join('');
+
+      if (tags.length === 0) tagContainer.innerHTML = '<span class="text-xs p-2">No tags found</span>';
+    }
+  }
+
+  // Run on load
+  initFooter();
+</script>
 
 <style>
   .link {
