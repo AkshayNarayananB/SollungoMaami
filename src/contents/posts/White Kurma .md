@@ -1,5 +1,5 @@
 ---
-title: Onion Garlic Free Kurma (White Kurma)
+title: White Kurma
 published: 2025-07-28  
 description: A delicious and aromatic vegetable curry perfect for festivals and fasting days
 tags: [South Indian side dish , No onion no garlic]  
