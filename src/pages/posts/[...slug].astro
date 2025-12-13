@@ -32,7 +32,7 @@ const licenseProp = post.licenseName
   : undefined;
 
 const bannerImageProp = post.licenseName ? post.cover : post.image;
-const publishedDate = post.publishedAt ? post.publishedAt.toDate() : new Date();
+const publishedDate = post.published ? post.published.toDate() : new Date();
 ---
 
 <PostLayout
