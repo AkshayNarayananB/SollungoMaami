@@ -3,7 +3,7 @@ import type { Configuration } from "./src/types/config";
 
 const MaamiConfig: Configuration = {
   title: "Sollungo Maami",
-  subTitle: "Spicing life with devotion and flavor. Site under repair - please check back soon",
+  subTitle: "Spicing life with devotion and flavor",
   brandTitle: "Sollungo Maami",
 
   description: "Authentic vegetarian recipes, stories, and traditions from Sollungo Maami.",
