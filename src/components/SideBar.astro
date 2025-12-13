@@ -21,6 +21,8 @@ const { allPosts: initialPosts } = Astro.props;
 let postsData = initialPosts;
 
 if (!postsData) {
+  // Console log to debug when it fetches on its own (e.g. on About page)
+  // console.log("Sidebar: Fetching its own data..."); 
   try {
     const querySnapshot = await getDocs(collection(db, "blog"));
     postsData = querySnapshot.docs.map(doc => doc.data());
@@ -50,17 +52,17 @@ if (postsData) {
     
     // --- Process Category ---
     if (data.category) {
-      // 1. Ensure we are working with an array
-      const catArray = Array.isArray(data.category) ? data.category : [data.category];
+      // 1. Force into an array (handles string or array safely)
+      const catList = Array.isArray(data.category) ? data.category : [data.category];
 
-      // 2. Loop through every category
-      catArray.forEach((cat) => {
+      // 2. Loop through each category
+      catList.forEach((cat) => {
         const catName = String(cat || "").trim();
         
-        // Skip empty
+        // Safety check: Skip if empty
         if (!catName) return;
 
-        // ALL LOGIC IS NOW SAFELY INSIDE THE LOOP
+        // 3. Create Slug and Map Entry INSIDE the loop
         const catSlug = slugify(catName);
 
         if (!categories.has(catSlug)) {
@@ -87,7 +89,7 @@ if (postsData) {
       });
     }
 
-  }); // End postsData.forEach
+  });
 }
 
 // 5. EXTRACT KEYS
