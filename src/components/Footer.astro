@@ -5,8 +5,44 @@ import { i18n } from "../locales/translation";
 import I18nKeys from "../locales/keys";
 import SiteViews from "./SiteViews.jsx";
 
-// We no longer fetch data server-side here to save reads/build time.
-// Instead, we will load them purely on the client side or using a lightweight script.
+// --- FIREBASE FETCHING LOGIC ---
+import { db } from "../lib/firebase";
+import { collection, getDocs } from "firebase/firestore";
+
+// 1. Fetch all blog posts
+// (Note: This happens on every build if static, or every request if SSR)
+const blogCollection = collection(db, "blog");
+const snapshot = await getDocs(blogCollection);
+
+const categoryCounts: Record<string, number> = {};
+const uniqueTags = new Set<string>();
+
+// 2. Iterate and Aggregate
+snapshot.docs.forEach((doc) => {
+  const data = doc.data();
+
+  // Count Categories
+  if (data.category) {
+    // Handle if category is a String ("Recipe") or Array (["Recipe", "Indian"])
+    const cats = Array.isArray(data.category) ? data.category : [data.category];
+    cats.forEach((cat) => {
+      if (cat) categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+    });
+  }
+
+  // Collect Tags
+  if (Array.isArray(data.tags)) {
+    data.tags.forEach((tag) => uniqueTags.add(tag));
+  }
+});
+
+// 3. Format for the Template
+const categories = Object.entries(categoryCounts)
+  .map(([name, count]) => ({ name, count }))
+  .sort((a, b) => b.count - a.count) // Sort by most popular
+  .slice(0, 6); // Limit to top 6
+
+const tags = Array.from(uniqueTags).slice(0, 15); // Limit to 15 tags
 ---
 
 <div class="mx-3 space-y-4">
@@ -69,11 +105,22 @@ import SiteViews from "./SiteViews.jsx";
         {i18n(I18nKeys.side_bar_categories)}
       </span>
     </div>
-    
-    <div id="footer-categories" class="relative grid grid-cols-2 gap-1 md:grid-cols-3 min-h-[60px]">
-       <div class="col-span-2 md:col-span-3 text-sm text-gray-400 animate-pulse px-2">
-         Loading categories...
-       </div>
+    <div class="relative grid grid-cols-2 gap-1 md:grid-cols-3">
+      {
+        categories.map((category) => (
+          <a
+            href={`/categories/${category.name}`}
+            class="category flex flex-row items-center justify-between rounded-lg px-2 py-1.5 transition-all hover:bg-[var(--primary-color-lighten)]"
+          >
+            <p class="line-clamp-1 text-[var(--text-color)] transition-all">
+              {category.name}
+            </p>
+            <span class="rounded-md bg-[var(--primary-color-lighten)] px-2.5 py-0.5 text-[var(--primary-color)]">
+              {category.count}
+            </span>
+          </a>
+        ))
+      }
     </div>
   </div>
 
@@ -84,11 +131,19 @@ import SiteViews from "./SiteViews.jsx";
         {i18n(I18nKeys.side_bar_tags)}
       </span>
     </div>
-
-    <div id="footer-tags" class="relative flex flex-row flex-wrap min-h-[60px]">
-       <div class="text-sm text-gray-400 animate-pulse px-2">
-         Loading tags...
-       </div>
+    <div class="relative flex flex-row flex-wrap">
+      {
+        tags.map((tag) => (
+          <a
+            href={`/tags/${tag}`}
+            class="tag m-1 rounded-md bg-[var(--primary-color-lighten)] px-2 py-1 transition-all hover:brightness-95"
+          >
+            <p class="text-sm text-[var(--primary-color)]">
+              {tag}
+            </p>
+          </a>
+        ))
+      }
     </div>
   </div>
 
@@ -115,91 +170,6 @@ import SiteViews from "./SiteViews.jsx";
     </div>
   </footer>
 </div>
-
-<script>
-  // CLIENT-SIDE SCRIPT TO FETCH CATEGORIES & TAGS FROM FIRESTORE
-  // This reuses the session cache logic to prevent high reads
-  import { db } from '../lib/firebase';
-  import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
-
-  const CACHE_KEY_CATS = 'footer_cats_cache';
-  const CACHE_KEY_TAGS = 'footer_tags_cache';
-  const CACHE_TTL = 1000 * 60 * 60; // 1 Hour
-
-  async function fetchWithCache(key, fetcher) {
-    const cached = sessionStorage.getItem(key);
-    if (cached) {
-      const { data, timestamp } = JSON.parse(cached);
-      if (Date.now() - timestamp < CACHE_TTL) return data;
-    }
-    const data = await fetcher();
-    sessionStorage.setItem(key, JSON.stringify({ data, timestamp: Date.now() }));
-    return data;
-  }
-
-  async function initFooter() {
-    // 1. Fetch Categories
-    const catContainer = document.getElementById('footer-categories');
-    if (catContainer) {
-      const categories = await fetchWithCache(CACHE_KEY_CATS, async () => {
-        // In a real app you might aggregate this separately, 
-        // but for now we query the 'categories' collection if you created one,
-        // or just manually query unique blog posts (expensive).
-        // RECOMMENDATION: Create a 'meta' collection in Firebase with a 'stats' doc
-        // that holds { categories: { 'Recipe': 5 }, tags: ['tiffin'] }
-        
-        // Fallback: Fetch latest 20 blogs and aggregate (Cheaper than reading all)
-        const q = query(collection(db, "blog"), limit(20));
-        const snap = await getDocs(q);
-        const catMap = {};
-        snap.forEach(doc => {
-            const d = doc.data();
-            const cats = Array.isArray(d.category) ? d.category : [d.category];
-            cats.forEach(c => { if(c) catMap[c] = (catMap[c] || 0) + 1 });
-        });
-        return catMap;
-      });
-
-      // Render Categories
-      const catEntries = Object.entries(categories).slice(0, 6); // Max 6 chips
-      catContainer.innerHTML = catEntries.map(([name, count]) => `
-        <a href="/categories/${name}" class="category flex flex-row items-center justify-between rounded-lg px-2 py-1.5 transition-all hover:bg-[var(--primary-color-lighten)]">
-          <p class="line-clamp-1 text-[var(--text-color)] transition-all">${name}</p>
-          <span class="rounded-md bg-[var(--primary-color-lighten)] px-2.5 py-0.5 text-[var(--primary-color)]">${count}</span>
-        </a>
-      `).join('');
-      
-      if (catEntries.length === 0) catContainer.innerHTML = '<span class="text-xs p-2">No categories found</span>';
-    }
-
-    // 2. Fetch Tags
-    const tagContainer = document.getElementById('footer-tags');
-    if (tagContainer) {
-      const tags = await fetchWithCache(CACHE_KEY_TAGS, async () => {
-        const q = query(collection(db, "blog"), limit(20));
-        const snap = await getDocs(q);
-        const tagSet = new Set();
-        snap.forEach(doc => {
-            const d = doc.data();
-            if(Array.isArray(d.tags)) d.tags.forEach(t => tagSet.add(t));
-        });
-        return Array.from(tagSet);
-      });
-
-      // Render Tags
-      tagContainer.innerHTML = tags.slice(0, 10).map(tag => `
-        <a href="/tags/${tag}" class="tag m-1 rounded-md bg-[var(--primary-color-lighten)] px-2 py-1 transition-all hover:brightness-95">
-          <p class="text-sm text-[var(--primary-color)]">${tag}</p>
-        </a>
-      `).join('');
-
-      if (tags.length === 0) tagContainer.innerHTML = '<span class="text-xs p-2">No tags found</span>';
-    }
-  }
-
-  // Run on load
-  initFooter();
-</script>
 
 <style>
   .link {
