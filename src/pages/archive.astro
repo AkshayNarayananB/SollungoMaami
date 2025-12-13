@@ -11,7 +11,7 @@ import { db } from '../lib/firebase';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 
 // 2. Fetch all posts from Firebase (Newest first)
-const q = query(collection(db, "blog"), orderBy("publishedAt", "desc"));
+const q = query(collection(db, "blog"), orderBy("published", "desc"));
 const querySnapshot = await getDocs(q);
 
 // 3. Create the "Archive Map" (Year -> Array of Posts)
@@ -19,7 +19,7 @@ const archiveMap = new Map();
 
 querySnapshot.docs.forEach((doc) => {
   const data = doc.data();
-  const date = data.publishedAt ? data.publishedAt.toDate() : new Date();
+  const date = data.published ? data.published.toDate() : new Date();
   const year = date.getFullYear();
 
   // MATCHING YOUR LAYOUT STRUCTURE
