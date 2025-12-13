@@ -1,15 +1,11 @@
 ---
-// 1. ENABLE LIVE MODE
 export const prerender = false;
 
 import { db } from '../../lib/firebase';
 import { doc, getDoc } from 'firebase/firestore';
 import PostLayout from "../../layouts/PostLayout.astro";
 import LiveComments from "../../components/LiveComments.jsx";
-
-// 2. RE-ENABLE MARKDOWN PARSING
 import { marked } from 'marked';
-import DOMPurify from 'isomorphic-dompurify';
 
 const { slug } = Astro.params;
 if (!slug) return Astro.redirect('/404');
@@ -20,7 +16,7 @@ const docSnap = await getDoc(docRef);
 if (!docSnap.exists()) return Astro.redirect('/404');
 const post = docSnap.data();
 
-// 3. SAFE DATE HANDLING
+// --- 1. DATE HANDLING ---
 let publishedDate = new Date();
 try {
   if (post.publishedAt && typeof post.publishedAt.toDate === 'function') {
@@ -30,22 +26,28 @@ try {
   console.log("Date error", e);
 }
 
-// 4. SAFE CATEGORY HANDLING (Array vs String)
+// --- 2. CATEGORY HANDLING ---
 const categoryDisplay = Array.isArray(post.category) 
-  ? post.category[0] // If array, take first item
-  : post.category;   // If string, use as is
+  ? post.category[0] 
+  : post.category;
 
-// 5. PARSE MARKDOWN CONTENT
+// --- 3. MARKDOWN PARSING (Simplified) ---
 const rawContent = post.content || "";
-// marked.parse can sometimes return a Promise, so we await it just in case, 
-// though usually it is synchronous.
-const parsedMarkdown = await marked.parse(rawContent);
-const cleanHTML = DOMPurify.sanitize(parsedMarkdown);
+let htmlContent = "";
+
+try {
+  // Force await in case marked returns a Promise
+  const parsed = await marked.parse(rawContent);
+  htmlContent = parsed;
+} catch (e) {
+  console.error("Marked Error:", e);
+  htmlContent = "<p>Error rendering markdown.</p>";
+}
 
 const tags = Array.isArray(post.tags) ? post.tags : [];
 const bannerImageProp = post.licenseName ? post.cover : post.image;
 
-// 6. License Logic
+// 4. License Logic
 const licenseProp = post.licenseName
   ? { name: post.licenseName, url: post.licenseUrl }
   : undefined;
@@ -65,7 +67,7 @@ const licenseProp = post.licenseName
     {post.title}
   </div>
 
-  {/* Category Pill - SAFE VERSION */}
+  {/* Category Pill */}
   <div class="mb-6">
     {categoryDisplay && (
       <span class="inline-block bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-md font-bold uppercase tracking-wider mb-2">
@@ -85,11 +87,11 @@ const licenseProp = post.licenseName
     )}
   </div>
 
-  {/* RENDERED MARKDOWN HTML */}
+  {/* RENDERED HTML */}
   <div data-pagefind-body>
     <div 
       class="prose prose-lg prose-amber dark:prose-invert max-w-none"
-      set:html={cleanHTML} 
+      set:html={htmlContent} 
     />
   </div>
 
