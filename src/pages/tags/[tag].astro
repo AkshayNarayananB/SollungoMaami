@@ -25,7 +25,7 @@ const slugify = (text: string) => {
 const { tag } = Astro.params;
 
 // 4. Fetch ALL posts (Sorted by newest)
-const q = query(collection(db, "blog"), orderBy("publishedAt", "desc"));
+const q = query(collection(db, "blog"), orderBy("published", "desc"));
 const querySnapshot = await getDocs(q);
 
 const archiveMap = new Map();
@@ -50,7 +50,7 @@ querySnapshot.docs.forEach((doc) => {
   });
   
   if (hasMatchingTag) {
-    const date = data.publishedAt ? data.publishedAt.toDate() : new Date();
+    const date = data.published ? data.published.toDate() : new Date();
     const year = date.getFullYear();
 
     // Construct the entry object for Layout
