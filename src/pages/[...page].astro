@@ -12,19 +12,22 @@ import { db } from '../lib/firebase';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 
 // 2. Handle Pagination Logic
+// We use a rest parameter [...page] so this file handles "/", "/2", "/3", etc.
 const { page: pageParam } = Astro.params;
-const currentPage = pageParam ? parseInt(pageParam) : 1;
+
+// If pageParam is undefined (root url), default to 1.
+// We also use explicit base-10 parsing for safety.
+const currentPage = pageParam ? parseInt(pageParam, 10) : 1;
 const pageSize = 6;
 
 // 3. Fetch Data from Firebase
-// We fetch all posts to sort and paginate correctly. 
-// (For a huge blog, you'd use cursors, but this is perfect for <500 posts)
+// (Fetching all docs is fine for <500 posts. For larger scales, consider Firestore cursors)
 const q = query(collection(db, "blog"), orderBy("published", "desc"));
 const querySnapshot = await getDocs(q);
 const allDocs = querySnapshot.docs;
 
 const totalPosts = allDocs.length;
-const lastPage = Math.ceil(totalPosts / pageSize);
+const lastPage = Math.max(1, Math.ceil(totalPosts / pageSize)); // Ensure lastPage is at least 1
 
 // Calculate start/end indices
 const start = (currentPage - 1) * pageSize;
@@ -32,7 +35,6 @@ const end = start + pageSize;
 const paginatedDocs = allDocs.slice(start, end);
 
 // 4. Map Data to match EXACTLY what your template expects
-// Your template expects: entry.id, entry.data.title, entry.rendered.metadata...
 const formattedEntries = paginatedDocs.map(doc => {
   const data = doc.data();
   
@@ -51,9 +53,7 @@ const formattedEntries = paginatedDocs.map(doc => {
       description: data.description,
       image: data.image,
     },
-    // We mock the "Astro Content Collection" structure here
-    // so the complex access in your template works:
-    // (entry.rendered!.metadata as any).frontmatter.readingMetadata
+    // Mocking "Astro Content Collection" structure for compatibility
     rendered: {
       metadata: {
         frontmatter: {
@@ -77,7 +77,7 @@ const page = {
   currentPage,
   lastPage,
   url: {
-    // If we are on page 1, path is '/', otherwise '/2', '/3'
+    // Logic: Page 1 is always '/', subsequent pages are '/2', '/3'
     current: currentPage === 1 ? '/' : `/${currentPage}`,
     prev: currentPage > 1 ? (currentPage - 1 === 1 ? '/' : `/${currentPage - 1}`) : undefined,
     next: currentPage < lastPage ? `/${currentPage + 1}` : undefined,
