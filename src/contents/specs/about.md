@@ -48,4 +48,4 @@ I'm always excited to connect with others who love to cook and celebrate our tra
 
 ## Special thanks to:
 
-- [Akshay Narayanan B](https://github.com/amehime/hexo-theme-shoka) for providing design implementation and website maintenance.
+- [Akshay Narayanan B](https://www.instagram.com/narak._.11/) for providing design implementation and website maintenance.
