@@ -1,59 +1,68 @@
 ---
-import { getCollection } from "astro:content";
-import { IdToSlug } from "../../utils/hash";
-import PostLayout from "../../layouts/PostLayout.astro";
-import { render } from "astro:content";
+// 1. ENABLE LIVE MODE
+export const prerender = false;
 
+import { db } from '../../lib/firebase';
+import { doc, getDoc } from 'firebase/firestore';
+import { marked } from 'marked';
+import DOMPurify from 'isomorphic-dompurify';
+
+import PostLayout from "../../layouts/PostLayout.astro";
 import LiveComments from "../../components/LiveComments.jsx";
 
-export async function getStaticPaths() {
-  const postEntries = await getCollection("posts");
-  return postEntries.map((entry) => ({
-    params: { slug: IdToSlug(entry.id) },
-    props: { entry },
-  }));
-}
+// 2. Get the Slug from URL
+const { slug } = Astro.params;
+if (!slug) return Astro.redirect('/404');
 
-const { entry } = Astro.props;
-const { Content } = await render(entry);
+// 3. Fetch from Firebase
+const docRef = doc(db, "blog", slug);
+const docSnap = await getDoc(docRef);
 
-// Generate slug for this post
-const slug = IdToSlug(entry.id);
-const pageUrl = `${Astro.url.origin}/posts/${slug}`;
+if (!docSnap.exists()) return Astro.redirect('/404');
+const post = docSnap.data();
 
-// Conditionally set the license and banner image props
-const licenseProp = entry.data.licenseName
-  ? { name: entry.data.licenseName, url: entry.data.licenseUrl }
-  : undefined;
+// 4. PREPARE CONTENT (This replaces <Content />)
+// We convert the raw Markdown string from Firebase into safe HTML
+const rawHTML = marked.parse(post.content || "");
+const cleanHTML = DOMPurify.sanitize(rawHTML);
 
-const bannerImageProp = entry.data.licenseName ? entry.data.cover : entry.data.image;
+// 5. Logic for License & Banner (Copied from your original file)
+const licenseProp = post.licenseName
+  ? { name: post.licenseName, url: post.licenseUrl }
+  : undefined;
+
+const bannerImageProp = post.licenseName ? post.cover : post.image;
+const publishedDate = post.publishedAt ? post.publishedAt.toDate() : new Date();
 ---
+
 <PostLayout
-  title={entry.data.title}
-  subTitle={entry.data.description}
-  bannerImage={bannerImageProp}
-  published={entry.data.published}
-  license={licenseProp}
-  author={entry.data.author}
-  sourceLink={entry.data.sourceLink}
+  title={post.title}
+  subTitle={post.description}
+  bannerImage={bannerImageProp}
+  published={publishedDate}
+  license={licenseProp}
+  author={post.author || "Sollungo Maami"}
+  sourceLink={post.sourceLink}
 >
+  
+  {/* HIDDEN META FOR SEARCH (Kept from your original) */}
+  <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
+    {post.title}
+  </div>
 
-  <style>
-  #cusdis_thread iframe {
-    height: 750px;
-    width: 100%;
-  }
-</style>
+  {/* --- HERE IS THE BLOG CONTENT --- */}
+  {/* In static, you used <Content />. 
+      In dynamic, we use this div with set:html to inject the converted text. */}
+  <div data-pagefind-body>
+    <div 
+      class="prose prose-lg prose-amber dark:prose-invert max-w-none"
+      set:html={cleanHTML} 
+    />
+  </div>
 
-  <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
-    {entry.data.title}
-  </div>
+  {/* COMMENTS SECTION */}
+  <section class="mt-10">
+    <LiveComments slug={slug} client:visible />
+  </section>
 
-  <div data-pagefind-body>
-    <Content />
-  </div>
-
-<section class="mt-10">
-  <LiveComments slug={slug} client:visible />
-</section>
 </PostLayout>
