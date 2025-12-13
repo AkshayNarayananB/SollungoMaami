@@ -5,44 +5,84 @@ import { i18n } from "../locales/translation";
 import I18nKeys from "../locales/keys";
 import SiteViews from "./SiteViews.jsx";
 
-// --- FIREBASE FETCHING LOGIC ---
+// 1. FIREBASE IMPORTS
 import { db } from "../lib/firebase";
 import { collection, getDocs } from "firebase/firestore";
 
-// 1. Fetch all blog posts
-// (Note: This happens on every build if static, or every request if SSR)
-const blogCollection = collection(db, "blog");
-const snapshot = await getDocs(blogCollection);
+// 2. FETCH DATA
+let postsData = [];
+try {
+  const querySnapshot = await getDocs(collection(db, "blog"));
+  postsData = querySnapshot.docs.map((doc) => doc.data());
+} catch (e) {
+  console.error("Footer fetch error:", e);
+}
 
-const categoryCounts: Record<string, number> = {};
-const uniqueTags = new Set<string>();
+// 3. UTILITY: SLUGIFY
+const slugify = (text: string) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w\-]+/g, "")
+    .replace(/\-\-+/g, "-");
+};
 
-// 2. Iterate and Aggregate
-snapshot.docs.forEach((doc) => {
-  const data = doc.data();
+// 4. AGGREGATE DATA
+const categories = new Map();
+const tags = new Map();
 
-  // Count Categories
-  if (data.category) {
-    // Handle if category is a String ("Recipe") or Array (["Recipe", "Indian"])
-    const cats = Array.isArray(data.category) ? data.category : [data.category];
-    cats.forEach((cat) => {
-      if (cat) categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
-    });
-  }
+if (postsData) {
+  postsData.forEach((data) => {
+    // --- Process Category ---
+    if (data.category) {
+      const catList = Array.isArray(data.category)
+        ? data.category
+        : [data.category];
 
-  // Collect Tags
-  if (Array.isArray(data.tags)) {
-    data.tags.forEach((tag) => uniqueTags.add(tag));
-  }
+      catList.forEach((cat) => {
+        const catName = String(cat || "").trim();
+        if (!catName) return;
+
+        const catSlug = slugify(catName);
+
+        if (!categories.has(catSlug)) {
+          categories.set(catSlug, { name: catName, posts: [] });
+        }
+        categories.get(catSlug).posts.push(data);
+      });
+    }
+
+    // --- Process Tags ---
+    if (data.tags && Array.isArray(data.tags)) {
+      data.tags.forEach((t) => {
+        const tagName = String(t || "").trim();
+        if (!tagName) return;
+
+        const tagSlug = slugify(tagName);
+
+        let tagEntry = tags.get(tagSlug);
+        if (!tagEntry) {
+          tagEntry = { name: tagName, posts: [] };
+          tags.set(tagSlug, tagEntry);
+        }
+        tagEntry.posts.push(data);
+      });
+    }
+  });
+}
+
+// 5. EXTRACT KEYS & SORT
+// Sort categories by post count (Popularity) for the footer
+const categoryKeys = [...categories.keys()].sort((a, b) => {
+  return categories.get(b).posts.length - categories.get(a).posts.length;
 });
 
-// 3. Format for the Template
-const categories = Object.entries(categoryCounts)
-  .map(([name, count]) => ({ name, count }))
-  .sort((a, b) => b.count - a.count) // Sort by most popular
-  .slice(0, 6); // Limit to top 6
-
-const tags = Array.from(uniqueTags).slice(0, 15); // Limit to 15 tags
+// Sort tags by popularity
+const tagKeys = [...tags.keys()].sort((a, b) => {
+  return tags.get(b).posts.length - tags.get(a).posts.length;
+});
 ---
 
 <div class="mx-3 space-y-4">
@@ -107,16 +147,16 @@ const tags = Array.from(uniqueTags).slice(0, 15); // Limit to 15 tags
     </div>
     <div class="relative grid grid-cols-2 gap-1 md:grid-cols-3">
       {
-        categories.map((category) => (
+        categoryKeys.slice(0, 9).map((slug) => (
           <a
-            href={`/categories/${category.name}`}
+            href={`/categories/${slug}`}
             class="category flex flex-row items-center justify-between rounded-lg px-2 py-1.5 transition-all hover:bg-[var(--primary-color-lighten)]"
           >
             <p class="line-clamp-1 text-[var(--text-color)] transition-all">
-              {category.name}
+              {categories.get(slug).name}
             </p>
             <span class="rounded-md bg-[var(--primary-color-lighten)] px-2.5 py-0.5 text-[var(--primary-color)]">
-              {category.count}
+              {categories.get(slug).posts.length}
             </span>
           </a>
         ))
@@ -133,13 +173,13 @@ const tags = Array.from(uniqueTags).slice(0, 15); // Limit to 15 tags
     </div>
     <div class="relative flex flex-row flex-wrap">
       {
-        tags.map((tag) => (
+        tagKeys.slice(0, 15).map((slug) => (
           <a
-            href={`/tags/${tag}`}
+            href={`/tags/${slug}`}
             class="tag m-1 rounded-md bg-[var(--primary-color-lighten)] px-2 py-1 transition-all hover:brightness-95"
           >
             <p class="text-sm text-[var(--primary-color)]">
-              {tag}
+              {tags.get(slug).name}
             </p>
           </a>
         ))
@@ -162,10 +202,17 @@ const tags = Array.from(uniqueTags).slice(0, 15); // Limit to 15 tags
         {MaamiConfig.username} All Rights Reserved.
       </p>
       <p>
-        Powered By <a class="link" href="#">Sollungo Maami</a> & <a class="link" href="https://astro.build/">Astro</a>
+        Powered By <a class="link" href="#">Sollungo Maami</a> & <a
+          class="link"
+          href="https://astro.build/">Astro</a
+        >
       </p>
       <p>
-        Website Designed & Maintained By <a class="link" href="https://www.linkedin.com/in/akshay-narayanan-tech/">Akshay Narayanan B</a>.
+        Website Designed & Maintained By <a
+          class="link"
+          href="https://www.linkedin.com/in/akshay-narayanan-tech/"
+          >Akshay Narayanan B</a
+        >.
       </p>
     </div>
   </footer>
