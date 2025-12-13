@@ -1,21 +1,19 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { OverlayScrollbars } from "overlayscrollbars";
+  import "overlayscrollbars/styles/overlayscrollbars.css"; // Ensure CSS is imported
   import Icon from "@iconify/svelte";
-
   import I18nKeys from "../locales/keys";
   import { i18n } from "../locales/translation";
 
   let searchKeyword = "";
   let searchResult: any[] = [];
-
   let resultPannel: HTMLDivElement;
   let searchBar: HTMLDivElement;
+  let pagefind: any = null; // Store the pagefind instance
 
-  let search = (keyword: string) => {};
-
+  // Initialize OverlayScrollbars
   onMount(async () => {
-    // setup overlay scrollbars
     OverlayScrollbars(resultPannel, {
       scrollbars: {
         theme: "scrollbar-base scrollbar-auto py-1",
@@ -23,46 +21,66 @@
       },
     });
 
-    /**
-     * Asynchronously performs a search based on the provided keyword.
-     * If in development mode, extracts a subset of mock results for demonstration.
-     * Otherwise, fetches results from the Pagefind search engine and populates the array.
-     * Toggles the visibility and height of the results panel based on the outcome.
-     */
-    search = async (keyword: string) => {
-      let searchResultArr = [];
-
-      // @ts-ignore
-      const ret = await pagefind.search(keyword);
-      for (const item of ret.results) {
-        searchResultArr.push(await item.data());
-      }
-      searchResult = searchResultArr;
-
-      const searchResultVisable = keyword != "" && searchResult.length != 0;
-
-      if (searchResultVisable) {
-        resultPannel.style.height = `${searchResultArr.length * 84 + 16}px`;
-        resultPannel.style.opacity = "100%";
-      } else {
-        resultPannel.style.height = "0px";
-        resultPannel.style.opacity = "0";
-      }
-    };
-  });
-
-  // handle click outside to closed result pannel
-  document.addEventListener("click", (event) => {
-    if (
-      !resultPannel.contains(event.target as any) &&
-      !searchBar.contains(event.target as any)
-    ) {
-      search("");
+    // Try to load Pagefind (it will only exist after a build)
+    try {
+      // @ts-ignore - formatting fix for Vite/SvelteKit to load the file from public/build root
+      pagefind = await import("/pagefind/pagefind.js");
+      await pagefind.init();
+    } catch (e) {
+      console.warn("Pagefind not loaded. This is normal in Dev mode unless you've generated the index manually.");
     }
   });
 
+  // The search function
+  const search = async (keyword: string) => {
+    // If pagefind isn't loaded or keyword is empty, clear results
+    if (!pagefind || !keyword) {
+      searchResult = [];
+      updatePanelStyles(false);
+      return;
+    }
+
+    // Perform Search
+    const ret = await pagefind.search(keyword);
+    
+    // Load data for top 5-10 results (optimization)
+    const dataPromises = ret.results.slice(0, 10).map((r: any) => r.data());
+    searchResult = await Promise.all(dataPromises);
+
+    updatePanelStyles(searchResult.length > 0);
+  };
+
+  // Helper to toggle panel visibility
+  const updatePanelStyles = (visible: boolean) => {
+    if (!resultPannel) return;
+    if (visible) {
+      resultPannel.style.height = `${searchResult.length * 84 + 16}px`;
+      resultPannel.style.opacity = "1";
+      resultPannel.style.pointerEvents = "auto"; // Ensure it's clickable
+    } else {
+      resultPannel.style.height = "0px";
+      resultPannel.style.opacity = "0";
+      resultPannel.style.pointerEvents = "none";
+    }
+  };
+
+  // Reactive statement to trigger search when keyword changes
   $: search(searchKeyword);
+
+  // Handle click outside
+  const onWindowClick = (event: MouseEvent) => {
+    if (
+      resultPannel &&
+      !resultPannel.contains(event.target as Node) &&
+      !searchBar.contains(event.target as Node)
+    ) {
+      searchKeyword = ""; // Clear keyword to close or just hide panel
+      updatePanelStyles(false);
+    }
+  };
 </script>
+
+<svelte:window on:click={onWindowClick} />
 
 <!-- search bar -->
 <div bind:this={searchBar} class="search-bar hidden lg:block">
