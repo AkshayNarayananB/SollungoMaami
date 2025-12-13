@@ -119,7 +119,7 @@ import SiteViews from "./SiteViews.jsx";
 <script>
   // CLIENT-SIDE SCRIPT TO FETCH CATEGORIES & TAGS FROM FIRESTORE
   // This reuses the session cache logic to prevent high reads
-  import { db } from '../../lib/firebase';
+  import { db } from '../lib/firebase';
   import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
 
   const CACHE_KEY_CATS = 'footer_cats_cache';
