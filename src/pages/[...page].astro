@@ -1,21 +1,88 @@
 ---
+// 1. ENABLE SSR (Live Mode)
+export const prerender = false;
+
 // Component imports
 import Main from "../layouts/MainLayout.astro";
 import PostCard from "../components/PostCard.astro";
 import Pagination from "../components/controllers/Pagination.astro";
-// Utils
-import type { PaginateFunction } from "astro";
-import { GetSortedPosts } from "../utils/content";
 
-export async function getStaticPaths({
-  paginate,
-}: {
-  paginate: PaginateFunction;
-}) {
-  const postCollections = await GetSortedPosts();
-  return paginate(postCollections, { pageSize: 6 });
-}
-const { page } = Astro.props;
+// Firebase Imports
+import { db } from '../lib/firebase';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
+
+// 2. Handle Pagination Logic
+const { page: pageParam } = Astro.params;
+const currentPage = pageParam ? parseInt(pageParam) : 1;
+const pageSize = 6;
+
+// 3. Fetch Data from Firebase
+// We fetch all posts to sort and paginate correctly. 
+// (For a huge blog, you'd use cursors, but this is perfect for <500 posts)
+const q = query(collection(db, "blog"), orderBy("publishedAt", "desc"));
+const querySnapshot = await getDocs(q);
+const allDocs = querySnapshot.docs;
+
+const totalPosts = allDocs.length;
+const lastPage = Math.ceil(totalPosts / pageSize);
+
+// Calculate start/end indices
+const start = (currentPage - 1) * pageSize;
+const end = start + pageSize;
+const paginatedDocs = allDocs.slice(start, end);
+
+// 4. Map Data to match EXACTLY what your template expects
+// Your template expects: entry.id, entry.data.title, entry.rendered.metadata...
+const formattedEntries = paginatedDocs.map(doc => {
+  const data = doc.data();
+  
+  // Calculate Reading Time on the fly
+  const content = data.content || "";
+  const wordCount = content.split(/\s+/g).length;
+  const time = Math.ceil(wordCount / 200);
+
+  return {
+    id: doc.id,
+    data: {
+      title: data.title,
+      published: data.publishedAt ? data.publishedAt.toDate() : new Date(),
+      category: data.category,
+      tags: data.tags || [],
+      description: data.description,
+      image: data.image,
+    },
+    // We mock the "Astro Content Collection" structure here
+    // so the complex access in your template works:
+    // (entry.rendered!.metadata as any).frontmatter.readingMetadata
+    rendered: {
+      metadata: {
+        frontmatter: {
+          readingMetadata: {
+            time: time,
+            wordCount: wordCount
+          }
+        }
+      }
+    }
+  };
+});
+
+// 5. Recreate the 'page' object for the Pagination Component
+const page = {
+  data: formattedEntries,
+  start,
+  end: Math.min(end, totalPosts),
+  size: pageSize,
+  total: totalPosts,
+  currentPage,
+  lastPage,
+  url: {
+    // If we are on page 1, path is '/', otherwise '/2', '/3'
+    current: currentPage === 1 ? '/' : `/${currentPage}`,
+    prev: currentPage > 1 ? (currentPage - 1 === 1 ? '/' : `/${currentPage - 1}`) : undefined,
+    next: currentPage < lastPage ? `/${currentPage + 1}` : undefined,
+  }
+};
 ---
 
 <Main>

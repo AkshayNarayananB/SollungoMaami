@@ -36,7 +36,7 @@ const AdminTools = () => {
     setLoading(true);
     try {
       const tagArray = formData.tags.split(',').map(tag => tag.trim());
-      const docRef = doc(db, "blog", formData.slug); // Slug is the ID
+      const docRef = doc(db, "blog", formData.slug); 
 
       await setDoc(docRef, {
         ...formData,
@@ -44,8 +44,8 @@ const AdminTools = () => {
         publishedAt: serverTimestamp(),
       }, { merge: true });
 
-      alert("Blog Post Created!");
-      setIsModalOpen(false); // Close modal on success
+      alert("✅ Blog Post Created!");
+      setIsModalOpen(false); 
       setFormData({ slug: '', title: '', description: '', category: 'Recipe', image: '', tags: '', content: '' });
     } catch (error) {
       alert("Error: " + error.message);
@@ -53,12 +53,11 @@ const AdminTools = () => {
     setLoading(false);
   };
 
-  // If not admin, render nothing (invisible)
   if (!isAdmin) return null;
 
   return (
     <>
-      {/* --- THE BUTTON (Visible only to Admin) --- */}
+      {/* --- THE BUTTON --- */}
       <button 
         onClick={() => setIsModalOpen(true)}
         className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold rounded-full shadow-lg hover:scale-105 transition-transform"
@@ -69,21 +68,25 @@ const AdminTools = () => {
 
       {/* --- THE POPUP MODAL --- */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
-          {/* Scrollable Container */}
-          <div className="bg-white dark:bg-gray-800 w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative">
+        // 1. OUTER WRAPPER: Fixed to screen, super high z-index
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          
+          {/* 2. CARD CONTAINER: Fixed Height with Flex Column */}
+          <div className="bg-white dark:bg-gray-800 w-full max-w-4xl max-h-[85vh] rounded-xl shadow-2xl flex flex-col overflow-hidden relative">
             
-            {/* Close Button */}
-            <button 
-              onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl font-bold z-10"
-            >
-              ✕
-            </button>
+            {/* 3. HEADER: Sticky at the top (Does not scroll) */}
+            <div className="p-6 border-b dark:border-gray-700 flex justify-between items-center bg-white dark:bg-gray-800 shrink-0">
+              <h2 className="text-2xl font-bold dark:text-white">Create New Post</h2>
+              <button 
+                onClick={() => setIsModalOpen(false)}
+                className="text-gray-500 hover:text-red-500 text-2xl font-bold transition-colors w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                ✕
+              </button>
+            </div>
 
-            <div className="p-8">
-              <h2 className="text-2xl font-bold mb-6 dark:text-white border-b pb-2">Create New Post</h2>
-              
+            {/* 4. BODY: This part scrolls independently */}
+            <div className="p-6 overflow-y-auto custom-scrollbar">
               <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Slugs & Titles */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -121,11 +124,12 @@ const AdminTools = () => {
                     value={formData.content} 
                     onChange={handleChange}
                     required
-                    className="w-full p-4 border rounded-lg font-mono text-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-200 h-96 focus:ring-2 focus:ring-amber-400 outline-none"
+                    className="w-full p-4 border rounded-lg font-mono text-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-200 h-96 focus:ring-2 focus:ring-amber-400 outline-none resize-none"
                     placeholder="# Header&#10;&#10;Your story here..."
                   />
                 </div>
 
+                {/* Footer Buttons */}
                 <button 
                   type="submit" 
                   disabled={loading}
@@ -135,6 +139,7 @@ const AdminTools = () => {
                 </button>
               </form>
             </div>
+            
           </div>
         </div>
       )}

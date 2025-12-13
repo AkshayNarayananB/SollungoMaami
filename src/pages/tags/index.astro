@@ -1,17 +1,53 @@
 ---
+// 1. ENABLE LIVE MODE (SSR)
+export const prerender = false;
+
 import ChipLayout from "../../layouts/ChipLayout.astro";
 import I18nKeys from "../../locales/keys";
 import { i18n } from "../../locales/translation";
-import { GetTags } from "../../utils/content";
 
-const tags = [...(await GetTags()).values()].sort();
-const chips = tags.map((tag) => {
-  return {
-    name: tag.name,
-    slug: tag.slug,
-    subChip: tag.posts.length.toString(),
-  };
+// Firebase Imports
+import { db } from '../../lib/firebase';
+import { collection, getDocs } from 'firebase/firestore';
+
+// 2. Utility to match slugs
+const slugify = (text: string) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-');
+};
+
+// 3. Fetch ALL posts to aggregate tags
+const querySnapshot = await getDocs(collection(db, "blog"));
+
+// 4. Aggregate Counts
+// Map format: { "Gluten Free": 10, "Spicy": 4 }
+const tagCounts: Record<string, number> = {};
+
+querySnapshot.docs.forEach((doc) => {
+  const data = doc.data();
+  if (data.tags && Array.isArray(data.tags)) {
+    data.tags.forEach((t) => {
+      const tagName = t.trim();
+      tagCounts[tagName] = (tagCounts[tagName] || 0) + 1;
+    });
+  }
 });
+
+// 5. Convert to Chips Array
+const chips = Object.keys(tagCounts)
+  .sort() // Sort alphabetically
+  .map((tagName) => {
+    return {
+      name: tagName,
+      slug: slugify(tagName), // Generate link (e.g. /tags/gluten-free)
+      subChip: tagCounts[tagName].toString(), // The count
+    };
+  });
 ---
 
 <ChipLayout chips={chips} title={i18n(I18nKeys.pages_tags_title)} />

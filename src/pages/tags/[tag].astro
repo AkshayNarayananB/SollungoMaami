@@ -1,37 +1,82 @@
 ---
+// 1. ENABLE LIVE MODE (SSR)
+export const prerender = false;
+
 import PostArchiveLayout from "../../layouts/PostArchiveLayout.astro";
 import I18nKeys from "../../locales/keys";
 import { i18n } from "../../locales/translation";
-import { GetTags, type Archive } from "../../utils/content";
 
-export async function getStaticPaths() {
-  const tags = await GetTags();
-  const tagList = Array.from(tags.keys());
-  return tagList.map((tag) => ({
-    params: { tag: tag },
-  }));
-}
+// Firebase Imports
+import { db } from '../../lib/firebase';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 
-const tags = await GetTags();
+// 2. Utility to match slugs (e.g. "Gluten Free" -> "gluten-free")
+const slugify = (text: string) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-');
+};
+
+// 3. Get Tag from URL
 const { tag } = Astro.params;
 
-async function FormatArchiveMap() {
-  const posts = tags.get(tag)!.posts;
-  const tagName = tags.get(tag)!.name;
-  const archiveMap = new Map<number, Array<Archive>>();
-  posts.forEach((post) => {
-    const year = post.date.getFullYear();
-    if (archiveMap.has(year)) archiveMap.get(year)!.push(post);
-    else archiveMap.set(year, [post]);
-  });
-  return { archiveMap, tagName };
-}
+// 4. Fetch ALL posts (Sorted by newest)
+const q = query(collection(db, "blog"), orderBy("publishedAt", "desc"));
+const querySnapshot = await getDocs(q);
 
-const { archiveMap, tagName } = await FormatArchiveMap();
+const archiveMap = new Map();
+let tagDisplayName = "";
+
+// 5. Filter and Group Posts
+querySnapshot.docs.forEach((doc) => {
+  const data = doc.data();
+  
+  // Skip if post has no tags
+  if (!data.tags || !Array.isArray(data.tags)) return;
+
+  // Check if ANY of the tags on this post match the URL param
+  const hasMatchingTag = data.tags.some((t) => {
+    const slugifiedTag = slugify(t);
+    if (slugifiedTag === tag) {
+      // Capture the nice display name (e.g., "Gluten Free") from the match
+      if (!tagDisplayName) tagDisplayName = t;
+      return true;
+    }
+    return false;
+  });
+  
+  if (hasMatchingTag) {
+    const date = data.publishedAt ? data.publishedAt.toDate() : new Date();
+    const year = date.getFullYear();
+
+    // Construct the entry object for Layout
+    const entry = {
+      id: `/posts/${doc.id}`,
+      title: data.title,
+      date: date,
+      tags: data.tags || [],
+    };
+
+    // Add to Map
+    if (!archiveMap.has(year)) {
+      archiveMap.set(year, []);
+    }
+    archiveMap.get(year).push(entry);
+  }
+});
+
+// Fallback name if nothing found
+if (!tagDisplayName) {
+  tagDisplayName = tag || "Unknown Tag";
+}
 ---
 
 <PostArchiveLayout
   archiveMap={archiveMap}
-  title={tagName}
+  title={tagDisplayName}
   subTitle={i18n(I18nKeys.pages_tags_archive)}
 />
