@@ -4,6 +4,7 @@ import MaamiConfig from "../../maami.config";
 import { i18n } from "../locales/translation";
 import I18nKeys from "../locales/keys";
 import SiteViews from "./SiteViews.jsx";
+import { getCachedCategories } from '../lib/serverCache';
 
 // 1. FIREBASE IMPORTS
 import { db } from "../lib/firebase";
@@ -11,12 +12,14 @@ import { collection, getDocs } from "firebase/firestore";
 
 // 2. FETCH DATA
 let postsData = [];
-try {
-  const querySnapshot = await getDocs(collection(db, "blog"));
-  postsData = querySnapshot.docs.map((doc) => doc.data());
-} catch (e) {
-  console.error("Footer fetch error:", e);
-}
+postsData = await getCachedCategories(); //cache smart counter
+
+//try {
+  //const querySnapshot = await getDocs(collection(db, "blog"));
+  //postsData = querySnapshot.docs.map((doc) => doc.data());
+//} catch (e) {
+  //console.error("Footer fetch error:", e);
+//}
 
 // 3. UTILITY: SLUGIFY
 const slugify = (text: string) => {
