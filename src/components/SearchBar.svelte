@@ -8,7 +8,7 @@
   // --- CONFIGURATION ---
   const ALGOLIA_APP_ID = "161MW54G9M"; 
   const ALGOLIA_SEARCH_KEY = "8020e97a6bb3d6de5deb864154986eb7"; 
-  const INDEX_NAME = "blog_posts"; // Must match your Python script
+  const INDEX_NAME = "sollungomaami_com_161mw54g9m_pages"; // Must match your Python script
 
   // <--- CHANGED INITIALIZATION (v5)
   const client = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
