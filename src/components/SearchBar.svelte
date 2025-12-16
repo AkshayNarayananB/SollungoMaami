@@ -30,7 +30,7 @@
             indexName: INDEX_NAME,
             query: keyword,
             hitsPerPage: 5,
-            attributesToSnippet: ["content:100", "headers:100"], // Added headers here
+            attributesToSnippet: ["content:100", "headers:100"], 
           },
         ],
       });
@@ -49,7 +49,6 @@
     resultPannel.style.pointerEvents = show ? "auto" : "none";
   };
 
-  // Helper 1: Clean Path (Top Line)
   const formatPath = (url: string) => {
     try {
       const path = new URL(url).pathname;
@@ -59,24 +58,18 @@
     }
   };
 
-  // Helper 2: First 2 Headers (Bottom Line)
   const formatHeader = (item: any) => {
-    // A. Try to find the 'headers' array (User Request)
-    // We check _highlightResult first to see if matches are bolded
     const highlight = item._highlightResult?.headers;
     const raw = item.headers;
 
-    // Use highlighted version if available
     if (highlight && Array.isArray(highlight) && highlight.length >= 2) {
        return `${highlight[0].value} <span class="opacity-50 px-1">|</span> <span class="text-sm opacity-90">${highlight[1].value}</span>`;
     }
     
-    // Fallback to raw version
     if (raw && Array.isArray(raw) && raw.length >= 2) {
        return `${raw[0]} <span class="opacity-50 px-1">|</span> <span class="text-sm opacity-90">${raw[1]}</span>`;
     }
 
-    // B. Fallback to Hierarchy (Standard Crawler Data) if headers array is missing
     const h = item.hierarchy || {};
     const levels = [h.lvl0, h.lvl1, h.lvl2].filter(Boolean);
     
@@ -91,9 +84,19 @@
     if (e.key === "Enter") {
       e.preventDefault();
       if (searchResult.length > 0) {
-        window.location.href = searchResult[0].url;
+        // Clear search before navigating
+        const url = searchResult[0].url;
+        searchKeyword = ""; 
+        togglePanel(false);
+        window.location.href = url;
       }
     }
+  };
+
+  // --- NEW: Handle Click on Result ---
+  const handleLinkClick = () => {
+    searchKeyword = "";
+    togglePanel(false);
   };
 
   $: search(searchKeyword);
@@ -132,7 +135,11 @@
 >
   <div class="flex flex-col h-full py-2">
     {#each searchResult as item}
-      <a href={item.url} class="mx-2 py-2 px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-all block">
+      <a 
+        href={item.url} 
+        on:click={handleLinkClick}
+        class="mx-2 py-2 px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-all block"
+      >
         <div class="flex flex-row space-x-1 items-center">
           <p class="line-clamp-1 text-xs font-mono opacity-70 text-[var(--text-color)]">
              {formatPath(item.url)}
