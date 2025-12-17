@@ -1,6 +1,6 @@
-import redis from '../../../lib/redis';
-import { db } from '../../../lib/firebaseAdmin'; // Your Admin SDK setup
-import { sendEmail } from '../../../lib/email'; // Your email sender
+import redis from '@/lib/redis';
+import { db } from '@/lib/firebaseAdmin'; // Your Admin SDK setup
+import { sendEmail } from '@/lib/email'; // Your email sender
 
 export default async function handler(req, res) {
   // --- A. SYNC COMMENTS ---
