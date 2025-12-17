@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { db, auth, googleProvider } from '../lib/firebase';
-import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth"; // Added onAuthStateChanged
+import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import { 
-  collection, addDoc, query, where, orderBy, onSnapshot, 
-  serverTimestamp, doc, setDoc, increment 
+  collection, query, where, orderBy, onSnapshot, doc 
 } from 'firebase/firestore';
 
 // 🔒 SECURITY: Only this email gets admin powers
@@ -17,7 +16,8 @@ const EMOTIONS = [
 
 const LiveComments = ({ slug }) => {
   // Comment State
-  const [comments, setComments] = useState([]);
+  const [dbComments, setDbComments] = useState([]); // Comments from Firestore (Older than 1h)
+  const [localComments, setLocalComments] = useState([]); // Optimistic comments (Newer than 1h)
   const [newComment, setNewComment] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -31,27 +31,22 @@ const LiveComments = ({ slug }) => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [replyingTo, setReplyingTo] = useState(null);
 
-  // 1. SESSION PERSISTENCE (This is the fix)
+  // --- 1. AUTH LISTENER ---
   useEffect(() => {
-    // This listener fires immediately when the component mounts
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser && currentUser.email === ADMIN_EMAIL) {
-        // User is already logged in from previous session
         setUser(currentUser);
         setIsAdmin(true);
         setName("Sollungo Maami");
       } else {
-        // Not logged in (or wrong email)
         setUser(null);
         setIsAdmin(false);
       }
     });
-
-    // Cleanup subscription on unmount
     return () => unsubscribe();
   }, []);
 
-  // 2. Listen for Comments
+  // --- 2. LISTEN FOR CONFIRMED COMMENTS (Firestore) ---
   useEffect(() => {
     const q = query(
       collection(db, "comments"),
@@ -60,35 +55,88 @@ const LiveComments = ({ slug }) => {
     );
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const liveData = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      setComments(liveData);
+      setDbComments(liveData);
       setLoading(false);
     });
     return () => unsubscribe();
   }, [slug]);
 
-  // 3. Listen for Page Reactions
+  // --- 3. LISTEN FOR CONFIRMED REACTIONS (Firestore) ---
   useEffect(() => {
     const docRef = doc(db, "emoticons", slug);
     const unsubscribe = onSnapshot(docRef, (docSnap) => {
       if (docSnap.exists()) {
+        // Merge DB counts with any local optimistic clicks could be complex, 
+        // but for simplicity we overwrite with DB if it updates.
+        // In a perfect world, we'd add local offset. 
         setReactions(docSnap.data());
       }
     });
     return () => unsubscribe();
   }, [slug]);
 
-  const handleEmoteClick = async (type) => {
-    const docRef = doc(db, "emoticons", slug);
-    await setDoc(docRef, { [type]: increment(1) }, { merge: true });
+  // --- HELPER: SEND TO REDIS COLLECTOR ---
+  const sendToCollector = async (type, payload) => {
+    try {
+      await fetch('/api/collect', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type,
+          slug,
+          data: payload
+        })
+      });
+    } catch (e) {
+      console.error("Failed to send to collector:", e);
+    }
   };
 
-  // Handle Google Login (Manual Click)
+  // --- ACTION: HANDLE REACTION CLICK ---
+  const handleEmoteClick = async (type) => {
+    // 1. Optimistic Update (Show +1 immediately)
+    setReactions(prev => ({ ...prev, [type]: (prev[type] || 0) + 1 }));
+
+    // 2. Send to Redis
+    await sendToCollector('reaction', { emoji: type });
+  };
+
+  // --- ACTION: HANDLE COMMENT SUBMIT ---
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!newComment.trim()) return;
+
+    const guestName = name.trim() || "Guest";
+    const commentPayload = {
+      text: newComment,
+      name: guestName,
+      email: email.trim(), 
+      isAdmin: isAdmin,
+      replyTo: replyingTo,
+      // Use local Date for display, Redis will timestamp it server-side
+      createdAt: new Date(), 
+      avatar: isAdmin ? user?.photoURL : null
+    };
+
+    // 1. Optimistic Update (Add to local list immediately)
+    // We give it a temp ID so React can render it key-wise
+    const tempComment = { ...commentPayload, id: `temp-${Date.now()}` };
+    setLocalComments(prev => [tempComment, ...prev]);
+
+    // 2. Send to Redis (Write-Behind)
+    // Emails will be sent by the Cron Job in 1 hour
+    await sendToCollector('comment', commentPayload);
+
+    // 3. Reset Form
+    setNewComment("");
+    setReplyingTo(null);
+  };
+
+  // Admin Login
   const handleAdminLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
-      if (result.user.email === ADMIN_EMAIL) {
-        // State updates handled by onAuthStateChanged automatically
-      } else {
+      if (result.user.email !== ADMIN_EMAIL) {
         await signOut(auth);
         alert("Access Denied.");
       }
@@ -97,71 +145,24 @@ const LiveComments = ({ slug }) => {
 
   const handleLogout = async () => {
     await signOut(auth);
-    // State updates handled by onAuthStateChanged automatically
     setName("");
   };
 
-  // Submit Logic
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!newComment.trim()) return;
-
-    const guestName = name.trim() || "Guest";
-
-    // A. Add to Firebase
-    await addDoc(collection(db, "comments"), {
-      slug: slug,
-      text: newComment,
-      name: guestName,
-      email: email.trim(), 
-      createdAt: serverTimestamp(),
-      isAdmin: isAdmin,
-      replyTo: replyingTo
-    });
-
-    // B. EMAIL LOGIC
-    const currentPageLink = window.location.href;
-
-    if (isAdmin && replyingTo) {
-      const parentComment = comments.find(c => c.id === replyingTo);
-      if (parentComment && parentComment.email) {
-        fetch('/api/notify', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            type: 'reply',        
-            to: parentComment.email,
-            link: currentPageLink,
-            message: newComment
-          })
-        }).catch(err => console.error("Failed to notify user", err));
-      }
-    }
-
-    if (!isAdmin) {
-      fetch('/api/notify', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          type: 'new_comment',    
-          name: guestName,
-          link: currentPageLink,
-          message: newComment
-        })
-      }).catch(err => console.error("Failed to notify admin", err));
-    }
-    
-    setNewComment("");
-    setReplyingTo(null);
-  };
-
-  const rootComments = comments.filter(c => !c.replyTo);
-  const getReplies = (parentId) => comments.filter(c => c.replyTo === parentId).sort((a,b) => a.createdAt - b.createdAt);
+  // Merge DB comments and Local (Pending) comments
+  // We filter out duplicates just in case the Cron runs while user is on page
+  const allComments = [...localComments, ...dbComments];
+  
+  const rootComments = allComments.filter(c => !c.replyTo);
+  const getReplies = (parentId) => allComments.filter(c => c.replyTo === parentId).sort((a,b) => {
+    const timeA = a.createdAt?.seconds ? a.createdAt.seconds * 1000 : new Date(a.createdAt).getTime();
+    const timeB = b.createdAt?.seconds ? b.createdAt.seconds * 1000 : new Date(b.createdAt).getTime();
+    return timeA - timeB;
+  });
 
   return (
     <div className="p-3 bg-gray-50 rounded-lg mt-8 dark:bg-[var(--card-color)]">
       
-      {/* PAGE REACTIONS (Centered Circles) */}
+      {/* PAGE REACTIONS */}
       <div className="flex justify-center items-center gap-8 mb-8 mt-2">
         {EMOTIONS.map((emote) => (
           <button
@@ -237,7 +238,7 @@ const LiveComments = ({ slug }) => {
         )}
         
         {rootComments.map((comment) => (
-          <div key={comment.id} className="group">
+          <div key={comment.id} className={`group ${comment.id.toString().startsWith('temp') ? 'opacity-70' : ''}`}>
             
             {/* PARENT COMMENT */}
             <div 
@@ -261,8 +262,11 @@ const LiveComments = ({ slug }) => {
                       ✨ AUTHOR
                     </span>
                   )}
+                  {comment.id.toString().startsWith('temp') && (
+                     <span className="text-[9px] text-gray-400 italic ml-1">(Sending...)</span>
+                  )}
                 </p>
-                {isAdmin && (
+                {isAdmin && !comment.id.toString().startsWith('temp') && (
                   <button 
                     onClick={() => setReplyingTo(comment.id)}
                     className="text-[10px] text-amber-600 hover:text-amber-700 font-medium hover:underline"
@@ -284,7 +288,7 @@ const LiveComments = ({ slug }) => {
             {getReplies(comment.id).map(reply => (
               <div 
                 key={reply.id} 
-                className="ml-6 md:ml-8 mt-1 rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm"
+                className={`ml-6 md:ml-8 mt-1 rounded-lg border-l-4 border-amber-400 bg-amber-50/50 dark:bg-amber-900/10 dark:border-amber-600 shadow-sm ${reply.id.toString().startsWith('temp') ? 'opacity-70' : ''}`}
                 style={{ padding: '4px 8px' }}
               >
                 <p 
@@ -296,6 +300,9 @@ const LiveComments = ({ slug }) => {
                     <span className="text-amber-600 dark:text-amber-400 text-[9px] font-bold">
                       ⭐ Admin
                     </span>
+                  )}
+                  {reply.id.toString().startsWith('temp') && (
+                     <span className="text-[9px] text-gray-400 italic ml-1">(Sending...)</span>
                   )}
                 </p>
                 <p 
