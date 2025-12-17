@@ -2,6 +2,16 @@
 // 1. ENABLE SSR (Live Mode)
 export const prerender = false;
 
+// --- CACHE HEADERS (Add this block) ---
+// 1. Cache on Vercel (CDN) for 1 hour (3600s).
+// 2. If 1 hour passes, serve "stale" content for another 10 mins (600s)
+//    while Vercel fetches new posts in the background.
+Astro.response.headers.set(
+  'Cache-Control', 
+  'public, max-age=0, s-maxage=3600, stale-while-revalidate=600'
+);
+// --------------------------------------
+
 // Component imports
 import Main from "../layouts/MainLayout.astro";
 import PostCard from "../components/PostCard.astro";
