@@ -1,34 +1,39 @@
 import type { APIRoute } from 'astro';
-import { Redis } from '@upstash/redis';
-
-const redis = new Redis({
-  url: import.meta.env.UPSTASH_REDIS_REST_URL,
-  token: import.meta.env.UPSTASH_REDIS_REST_TOKEN,
-});
+import { redis } from '../../lib/redis';
 
 export const POST: APIRoute = async ({ request }) => {
+  // Optional: Remove if testing locally
+  if (import.meta.env.DEV) {
+    return new Response(JSON.stringify({ skipped: true }), { status: 200 });
+  }
+
   try {
     const body = await request.json();
     const { type, slug, data } = body; 
-    // type: 'view' | 'reaction' | 'comment'
-
-    if (!slug || !type) return new Response('Missing Data', { status: 400 });
 
     const timestamp = Date.now();
-
-    if (type === 'view') {
-      // Increment view counter in Redis immediately
-      await redis.incr(`view:${slug}`);
-    } 
-    else if (type === 'reaction') {
-      // Increment specific emoji reaction (e.g. "reaction:🔥:kasi-halwa")
-      // We assume 'data' contains the emoji char
-      await redis.incr(`reaction:${data.emoji}:${slug}`);
+    
+    // 2. REACTIONS (Specific to a post)
+    if (type === 'reaction') {
+      if (data?.emoji && slug) {
+        await redis.incr(`reaction:${data.emoji}:${slug}`);
+      }
     }
+    
+    // 3. COMMENTS (Flexible Fields)
     else if (type === 'comment') {
-      // Store full comment object in a list
-      const commentPayload = { ...data, createdAt: timestamp, slug };
-      await redis.lpush('comments_buffer', JSON.stringify(commentPayload));
+      // We allow name/email to be null/undefined as per your requirement
+      const payload = { 
+        content: data.text, // Assuming frontend sends 'text'
+        name: data.name || null, // Explicitly null if missing
+        email: data.email || null, // Explicitly null if missing
+        user: data.user || null,   // For admin/auth users
+        avatar: data.avatar || null,
+        createdAt: timestamp, 
+        slug: slug // We still need slug to know WHICH post this comment belongs to
+      };
+      
+      await redis.lpush('comments_buffer', JSON.stringify(payload));
     }
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });
