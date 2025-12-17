@@ -1,10 +1,10 @@
 <script lang="ts">
-  // ... (Keep your Script logic exactly the same) ...
   import { liteClient as algoliasearch } from "algoliasearch/lite";
   import Icon from "@iconify/svelte";
   import I18nKeys from "../locales/keys";
   import { i18n } from "../locales/translation";
 
+  // --- CONFIGURATION ---
   const ALGOLIA_APP_ID = "161MW54G9M"; 
   const ALGOLIA_SEARCH_KEY = "8020e97a6bb3d6de5deb864154986eb7"; 
   const INDEX_NAME = "sollungomaami_com_161mw54g9m_pages";
@@ -44,7 +44,6 @@
 
   const togglePanel = (show: boolean) => {
     if (!resultPannel) return;
-    // Mobile height adjustment could be handled here if needed, but CSS is better
     resultPannel.style.height = show ? `${searchResult.length * 84 + 16}px` : "0px";
     resultPannel.style.opacity = show ? "1" : "0";
     resultPannel.style.pointerEvents = show ? "auto" : "none";
@@ -101,12 +100,11 @@
 
 <svelte:window on:click={onWindowClick} />
 
-<div bind:this={searchBar} class="search-bar">
+<div bind:this={searchBar} class="search-bar relative z-50">
   <div class="bg-black/5 dark:bg-white/5 h-10 rounded-lg flex flex-row">
     <label for="search-bar-input" class="w-10 h-10 flex flex-row justify-center items-center pl-2 pr-1 hover:cursor-text text-gray-400">
       <Icon icon="mingcute:search-line" width={24} height={24} />
     </label>
-    
     <input
       id="search-bar-input"
       class="w-full md:w-36 text-[var(--text-color)] md:focus:w-60 bg-transparent outline-none transition-all"
@@ -122,7 +120,12 @@
 <div
   id="result-pannel"
   bind:this={resultPannel}
-  class="max-h-[436px] overflow-y-scroll opacity-0 absolute h-0 right-0 lg:-right-3 w-[90vw] lg:w-[28rem] bg-[var(--card-color)] rounded-2xl top-14 lg:top-20 transition-all z-50 shadow-xl"
+  class="
+    max-h-[436px] overflow-y-scroll transition-all shadow-xl bg-[var(--card-color)] rounded-2xl
+    opacity-0 pointer-events-none
+    fixed left-4 right-4 top-20 z-[100]
+    lg:absolute lg:left-auto lg:right-0 lg:-right-3 lg:top-14 lg:w-[28rem]
+  "
 >
   <div class="flex flex-col h-full py-2">
     {#each searchResult as item}
