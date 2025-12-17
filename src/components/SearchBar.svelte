@@ -1,10 +1,10 @@
 <script lang="ts">
+  // ... (Keep your Script logic exactly the same) ...
   import { liteClient as algoliasearch } from "algoliasearch/lite";
   import Icon from "@iconify/svelte";
   import I18nKeys from "../locales/keys";
   import { i18n } from "../locales/translation";
 
-  // --- CONFIGURATION ---
   const ALGOLIA_APP_ID = "161MW54G9M"; 
   const ALGOLIA_SEARCH_KEY = "8020e97a6bb3d6de5deb864154986eb7"; 
   const INDEX_NAME = "sollungomaami_com_161mw54g9m_pages";
@@ -44,6 +44,7 @@
 
   const togglePanel = (show: boolean) => {
     if (!resultPannel) return;
+    // Mobile height adjustment could be handled here if needed, but CSS is better
     resultPannel.style.height = show ? `${searchResult.length * 84 + 16}px` : "0px";
     resultPannel.style.opacity = show ? "1" : "0";
     resultPannel.style.pointerEvents = show ? "auto" : "none";
@@ -53,30 +54,21 @@
     try {
       const path = new URL(url).pathname;
       return path.endsWith("/") && path.length > 1 ? path.slice(0, -1) : path;
-    } catch (e) {
-      return url; 
-    }
+    } catch (e) { return url; }
   };
 
   const formatHeader = (item: any) => {
     const highlight = item._highlightResult?.headers;
     const raw = item.headers;
-
     if (highlight && Array.isArray(highlight) && highlight.length >= 2) {
        return `${highlight[0].value} <span class="opacity-50 px-1">|</span> <span class="text-sm opacity-90">${highlight[1].value}</span>`;
     }
-    
     if (raw && Array.isArray(raw) && raw.length >= 2) {
        return `${raw[0]} <span class="opacity-50 px-1">|</span> <span class="text-sm opacity-90">${raw[1]}</span>`;
     }
-
     const h = item.hierarchy || {};
     const levels = [h.lvl0, h.lvl1, h.lvl2].filter(Boolean);
-    
-    if (levels.length > 0) {
-      return levels.slice(0, 2).join(" <span class='opacity-50 text-xs'>&gt;</span> ");
-    }
-    
+    if (levels.length > 0) return levels.slice(0, 2).join(" <span class='opacity-50 text-xs'>&gt;</span> ");
     return item._highlightResult?.title?.value || item.title || "Untitled";
   };
 
@@ -84,7 +76,6 @@
     if (e.key === "Enter") {
       e.preventDefault();
       if (searchResult.length > 0) {
-        // Clear search before navigating
         const url = searchResult[0].url;
         searchKeyword = ""; 
         togglePanel(false);
@@ -93,7 +84,6 @@
     }
   };
 
-  // --- NEW: Handle Click on Result ---
   const handleLinkClick = () => {
     searchKeyword = "";
     togglePanel(false);
@@ -111,14 +101,15 @@
 
 <svelte:window on:click={onWindowClick} />
 
-<div bind:this={searchBar} class="search-bar hidden lg:block">
+<div bind:this={searchBar} class="search-bar">
   <div class="bg-black/5 dark:bg-white/5 h-10 rounded-lg flex flex-row">
     <label for="search-bar-input" class="w-10 h-10 flex flex-row justify-center items-center pl-2 pr-1 hover:cursor-text text-gray-400">
       <Icon icon="mingcute:search-line" width={24} height={24} />
     </label>
+    
     <input
       id="search-bar-input"
-      class="w-36 text-[var(--text-color)] xl:focus:w-60 bg-transparent outline-none transition-all"
+      class="w-full md:w-36 text-[var(--text-color)] md:focus:w-60 bg-transparent outline-none transition-all"
       placeholder={i18n(I18nKeys.nav_bar_search_placeholder)}
       type="text"
       autocomplete="off"
@@ -131,7 +122,7 @@
 <div
   id="result-pannel"
   bind:this={resultPannel}
-  class="max-h-[436px] overflow-y-scroll opacity-0 absolute h-0 -right-3 w-[28rem] bg-[var(--card-color)] rounded-2xl top-20 transition-all z-50 shadow-xl"
+  class="max-h-[436px] overflow-y-scroll opacity-0 absolute h-0 right-0 lg:-right-3 w-[90vw] lg:w-[28rem] bg-[var(--card-color)] rounded-2xl top-14 lg:top-20 transition-all z-50 shadow-xl"
 >
   <div class="flex flex-col h-full py-2">
     {#each searchResult as item}
