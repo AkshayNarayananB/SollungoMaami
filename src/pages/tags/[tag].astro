@@ -24,6 +24,15 @@ const slugify = (text: string) => {
 // 3. Get Tag from URL
 const { tag } = Astro.params;
 
+// --- CACHE HEADERS ---
+// Cache on Vercel (CDN) for 1 hour (3600s).
+// Serve stale content for up to 10 mins (600s) while re-fetching in background.
+Astro.response.headers.set(
+  'Cache-Control', 
+  'public, max-age=0, s-maxage=3600, stale-while-revalidate=600'
+);
+// ---------------------
+
 // 4. Fetch ALL posts (Sorted by newest)
 const q = query(collection(db, "blog"), orderBy("published", "desc"));
 const querySnapshot = await getDocs(q);
