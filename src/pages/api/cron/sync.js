@@ -1,6 +1,6 @@
-import redis from '@/lib/redis';
-import { db } from '@/lib/firebaseAdmin';
-import { sendNotification } from '@/lib/email';
+import redis from '../../../lib/redis';
+import { db } from '../../../lib/firebaseAdmin';
+import { sendNotification } from '../../../lib/email';
 import * as admin from 'firebase-admin'; // Needed for FieldValue.increment
 
 export default async function handler(req, res) {
