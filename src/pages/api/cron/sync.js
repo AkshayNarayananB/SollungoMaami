@@ -1,5 +1,5 @@
 import redis from '../../../lib/redis';
-import { db } from '../../../lib/firebaseAdmin';
+import { db } from '../../../lib/firebase';
 import { sendNotification } from '../../../lib/email';
 import * as admin from 'firebase-admin'; // Needed for FieldValue.increment
 
