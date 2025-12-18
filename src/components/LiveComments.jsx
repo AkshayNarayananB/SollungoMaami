@@ -109,7 +109,9 @@ const LiveComments = ({ slug }) => {
       name: guestName,
       email: email.trim(), 
       isAdmin: isAdmin,
-      replyTo: replyingTo
+      replyTo: replyingTo,
+      // 👇 ADD THIS LINE so your email layout has the link
+      link: window.location.href 
     };
 
     // A. Optimistic Update (Add to local pending list instantly)
