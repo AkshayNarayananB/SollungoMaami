@@ -1,70 +1,84 @@
 import redis from '@/lib/redis';
-import { db } from '@/lib/firebaseAdmin'; // Your Admin SDK setup
-import { sendEmail } from '@/lib/email'; // Your email sender
+import { db } from '@/lib/firebaseAdmin';
+import { sendNotification } from '@/lib/email';
+import * as admin from 'firebase-admin'; // Needed for FieldValue.increment
 
 export default async function handler(req, res) {
-  // --- A. SYNC COMMENTS ---
+  // ---------------------------------------------------------
+  // 1. PROCESS COMMENTS (Queue -> Firestore + Email)
+  // ---------------------------------------------------------
+  
   // Pop up to 50 items from the queue
   const rawComments = await redis.lpop('queue:comments', 50);
   
-  // Upstash returns null if empty, or an array if items exist
-  // Note: lpop with count might return a single item if only 1 exists, 
-  // so ensure we handle it as an array.
-  const commentsToProcess = Array.isArray(rawComments) ? rawComments : (rawComments ? [rawComments] : []);
+  // Handle Upstash return types (null, single item, or array)
+  const commentsToProcess = Array.isArray(rawComments) 
+    ? rawComments 
+    : (rawComments ? [rawComments] : []);
 
   if (commentsToProcess.length > 0) {
     const batch = db.batch();
     const emailsToTrigger = [];
 
     for (const raw of commentsToProcess) {
-      // Data often comes out as a string from Redis, parse it
-      // Note: If you stored it as object directly in Upstash, you might not need JSON.parse
-      // but usually JSON.stringify/parse is safer for complex objects.
+      // Parse if string, otherwise use object
       const comment = typeof raw === 'string' ? JSON.parse(raw) : raw;
 
+      // Prepare Firestore Write
       const docRef = db.collection('comments').doc(); // Auto-ID
-      
       batch.set(docRef, {
         ...comment,
-        // Convert timestamp number back to Firestore Timestamp
+        // Convert timestamp number back to Firestore Date
         createdAt: new Date(comment.createdAt) 
       });
 
+      // Add to email queue
       emailsToTrigger.push(comment);
     }
 
+    // Commit all comments to DB at once
     await batch.commit();
-    console.log(`Synced ${commentsToProcess.length} comments.`);
+    console.log(`✅ Synced ${commentsToProcess.length} comments to Firestore.`);
 
-    // --- B. SEND EMAILS (Only after successful DB write) ---
+    // Send Emails (After successful DB write)
     await Promise.all(emailsToTrigger.map(async (c) => {
-      // 1. Notify Admin for every new comment
+      
+      // A. Notify Admin (New Comment from Guest)
       if (!c.isAdmin) {
-         await sendEmail({ 
-           to: process.env.ADMIN_EMAIL, 
-           subject: "New Comment", 
-           body: `${c.name} said: ${c.text}` 
+         await sendNotification({
+           type: 'new_comment',
+           name: c.name,
+           message: c.text,
+           link: c.link, // Passed from frontend
+           // 'to' is undefined here, so email.js defaults to Admin Email
          });
       }
 
-      // 2. Notify User if Admin replied
+      // B. Notify Guest (Reply from Admin)
       if (c.isAdmin && c.replyTo) {
-        // Need to find the parent email. 
-        // OPTIMIZATION: You might want to store parentEmail in the payload from frontend 
-        // to avoid this read, but for security, reading DB is better.
+        // Fetch parent comment to get the guest's email
         const parentDoc = await db.collection('comments').doc(c.replyTo).get();
-        if (parentDoc.exists && parentDoc.data().email) {
-          await sendEmail({
-            to: parentDoc.data().email,
-            subject: "Reply to your comment",
-            body: `Admin replied: ${c.text}`
-          });
+        
+        if (parentDoc.exists) {
+          const parentData = parentDoc.data();
+          if (parentData.email) {
+            await sendNotification({
+              type: 'reply',
+              to: parentData.email,
+              name: "Sollungo Maami",
+              message: c.text,
+              link: c.link // Passed from frontend
+            });
+          }
         }
       }
     }));
   }
 
-  // --- C. SYNC REACTIONS ---
+  // ---------------------------------------------------------
+  // 2. PROCESS REACTIONS (Redis Hash -> Firestore Increment)
+  // ---------------------------------------------------------
+  
   const slugs = await redis.smembers('dirty_reaction_slugs');
   
   if (slugs.length > 0) {
@@ -75,7 +89,7 @@ export default async function handler(req, res) {
       const counts = await redis.hgetall(key);
 
       if (counts) {
-        // Prepare Firestore update (using increments for safety)
+        // Prepare Firestore update using atomic increments
         const updateData = {};
         if (counts.like) updateData.like = admin.firestore.FieldValue.increment(Number(counts.like));
         if (counts.heart) updateData.heart = admin.firestore.FieldValue.increment(Number(counts.heart));
@@ -84,17 +98,17 @@ export default async function handler(req, res) {
         const docRef = db.collection('emoticons').doc(slug);
         batch.set(docRef, updateData, { merge: true });
 
-        // Delete the Redis key for this page so we start fresh for next hour
+        // Clean up Redis for this page
         await redis.del(key);
       }
     }
 
     await batch.commit();
     
-    // Clear the dirty set
+    // Clear the "dirty" list
     await redis.del('dirty_reaction_slugs');
-    console.log(`Synced reactions for ${slugs.length} pages.`);
+    console.log(`✅ Synced reactions for ${slugs.length} pages.`);
   }
 
-  res.status(200).json({ success: true });
+  return res.status(200).json({ success: true, synced: commentsToProcess.length });
 }
