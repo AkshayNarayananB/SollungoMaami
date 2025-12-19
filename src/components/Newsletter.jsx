@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// Verify this path points to your firebase config
 import { db } from '../lib/firebase'; 
-import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
+// 1. Added getDoc to imports
+import { doc, setDoc, getDoc, serverTimestamp } from 'firebase/firestore';
 
 const Newsletter = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ const Newsletter = () => {
   const [status, setStatus] = useState("idle");
   const [message, setMessage] = useState("");
 
-  // Auto-Open Logic (Runs once per session)
+  // Auto-Open Logic
   useEffect(() => {
     const hasSeen = sessionStorage.getItem("newsletter_seen");
     if (!hasSeen) {
@@ -28,23 +28,39 @@ const Newsletter = () => {
     setStatus("loading");
 
     try {
-      // 1. Save to Firebase 
-      const docRef = doc(db, "newsletters", email); 
+      const docRef = doc(db, "newsletter", email);
       
+      // 2. CHECK IF ALREADY SUBSCRIBED
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        setStatus("success");
+        setMessage("Thanks for your love, you're already subscribed!");
+        setEmail("");
+        
+        // Close modal after delay, but DO NOT send email or update DB
+        setTimeout(() => {
+          setIsOpen(false);
+          setStatus("idle");
+          setMessage("");
+        }, 3000); // Gave them slightly more time to read this longer message
+        return; 
+      }
+
+      // 3. IF NEW, PROCEED TO SAVE
       await setDoc(docRef, {
         email: email,
         subscribedAt: serverTimestamp()
       });
 
-      // 2. Trigger Server-Side Email 
-      // Calls src/pages/api/welcome.ts
+      // 4. Trigger Welcome Email
       fetch('/api/welcome', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email })
       });
 
-      // 3. Success UI
+      // 5. Success UI
       setStatus("success");
       setMessage("You're signed up! 🧡");
       setEmail("");
@@ -64,7 +80,7 @@ const Newsletter = () => {
 
   return (
     <>
-      {/* Floating Button (Yellow/Orange Theme) */}
+      {/* Floating Button */}
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 z-40 w-14 h-14 bg-amber-500 text-white rounded-full shadow-lg flex items-center justify-center text-2xl hover:bg-amber-600 hover:scale-110 transition-all duration-300"
