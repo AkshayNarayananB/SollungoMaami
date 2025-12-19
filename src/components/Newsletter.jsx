@@ -28,7 +28,7 @@ const Newsletter = () => {
     setStatus("loading");
 
     try {
-      const docRef = doc(db, "newsletter", email);
+      const docRef = doc(db, "newsletters", email);
       
       // 2. CHECK IF ALREADY SUBSCRIBED
       const docSnap = await getDoc(docRef);
