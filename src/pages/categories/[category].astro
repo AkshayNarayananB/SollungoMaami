@@ -23,6 +23,9 @@ const slugify = (text: string) => {
 
 // 3. Get Category from URL
 const { category } = Astro.params;
+if (!category) {
+  return Astro.redirect('/404');
+}
 
 // --- CACHE HEADERS ---
 // Cache on Vercel (CDN) for 1 hour (3600s).
@@ -73,6 +76,10 @@ querySnapshot.docs.forEach((doc) => {
     archiveMap.get(year).push(entry);
   }
 });
+
+if (archiveMap.size === 0) {
+  return Astro.redirect('/404');
+} 
 
 // If no category name was found (meaning no posts matched), fallback to URL param
 if (!categoryDisplayName) {
