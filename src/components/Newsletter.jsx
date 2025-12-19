@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { db } from '../lib/firebase';
-import { doc, setDoc, getDoc, serverTimestamp } from 'firebase/firestore';
+// REMOVED getDoc. We only need setDoc.
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const Newsletter = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,42 +28,24 @@ const Newsletter = () => {
     setStatus("loading");
 
     try {
-      // 1. Reference the document directly using Email as the ID
-      // Collection: "newsletters", Doc ID: "user@example.com"
       const docRef = doc(db, "newsletters", email);
       
-      // 2. CHECK EXISTENCE (Read)
-      const docSnap = await getDoc(docRef);
-
-      if (docSnap.exists()) {
-        // User is already in the list
-        setStatus("success");
-        setMessage("Thanks for your love, you're already subscribed! 🧡");
-        setEmail("");
-        
-        setTimeout(() => {
-          setIsOpen(false);
-          setStatus("idle");
-          setMessage("");
-        }, 3000);
-        return; // Stop here. Don't write to DB, don't send welcome email.
-      }
-
-      // 3. CREATE DOCUMENT (Write)
-      // Since it didn't exist, we create it now.
+      // STRATEGY: Try to write.
+      // If our Firestore Rules block "updates", this will fail for existing users.
       await setDoc(docRef, {
-        email: email, // We save the email field too, just for safety
+        email: email,
         subscribedAt: serverTimestamp()
       });
 
-      // 4. Trigger Welcome Email
+      // --- IF WE REACH HERE, IT WAS A NEW USER ---
+      
+      // Trigger Welcome Email
       fetch('/api/welcome', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email })
       });
 
-      // 5. Success UI
       setStatus("success");
       setMessage("You're signed up! 🧡");
       setEmail("");
@@ -74,15 +57,24 @@ const Newsletter = () => {
       }, 2500);
 
     } catch (error) {
-      console.error("Error subscribing: ", error);
-      setStatus("error");
-      setMessage("Something went wrong. Try again.");
+      // --- IF WE FAIL, ASSUME ALREADY SUBSCRIBED ---
+      // (This works because we will set rules to block overwrites)
+      console.log("Subscription blocked (likely duplicate):", error);
+      
+      setStatus("success"); // We show success visually (green)
+      setMessage("Thanks for your love, you're already subscribed! 🧡");
+      setEmail("");
+
+      setTimeout(() => {
+        setIsOpen(false);
+        setStatus("idle");
+        setMessage("");
+      }, 3000);
     }
   };
 
   return (
     <>
-      {/* Floating Button */}
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 z-40 w-14 h-14 bg-amber-500 text-white rounded-full shadow-lg flex items-center justify-center text-2xl hover:bg-amber-600 hover:scale-110 transition-all duration-300"
@@ -91,7 +83,6 @@ const Newsletter = () => {
         ✉️
       </button>
 
-      {/* Popup Modal */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in">
           <div className="relative w-full max-w-md bg-white dark:bg-[#1e1e1e] rounded-2xl shadow-2xl p-8 border-2 border-amber-100 dark:border-amber-900/30">
