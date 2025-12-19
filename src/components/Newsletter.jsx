@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { db } from '../lib/firebase'; 
-// 1. Added getDoc to imports
+import { db } from '../lib/firebase';
 import { doc, setDoc, getDoc, serverTimestamp } from 'firebase/firestore';
 
 const Newsletter = () => {
@@ -28,28 +27,31 @@ const Newsletter = () => {
     setStatus("loading");
 
     try {
+      // 1. Reference the document directly using Email as the ID
+      // Collection: "newsletters", Doc ID: "user@example.com"
       const docRef = doc(db, "newsletters", email);
       
-      // 2. CHECK IF ALREADY SUBSCRIBED
+      // 2. CHECK EXISTENCE (Read)
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
+        // User is already in the list
         setStatus("success");
-        setMessage("Thanks for your love, you're already subscribed!");
+        setMessage("Thanks for your love, you're already subscribed! 🧡");
         setEmail("");
         
-        // Close modal after delay, but DO NOT send email or update DB
         setTimeout(() => {
           setIsOpen(false);
           setStatus("idle");
           setMessage("");
-        }, 3000); // Gave them slightly more time to read this longer message
-        return; 
+        }, 3000);
+        return; // Stop here. Don't write to DB, don't send welcome email.
       }
 
-      // 3. IF NEW, PROCEED TO SAVE
+      // 3. CREATE DOCUMENT (Write)
+      // Since it didn't exist, we create it now.
       await setDoc(docRef, {
-        email: email,
+        email: email, // We save the email field too, just for safety
         subscribedAt: serverTimestamp()
       });
 
