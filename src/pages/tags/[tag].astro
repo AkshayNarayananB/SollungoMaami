@@ -24,6 +24,11 @@ const slugify = (text: string) => {
 // 3. Get Tag from URL
 const { tag } = Astro.params;
 
+// Security: If no tag param, 404 immediately
+if (!tag) {
+  return Astro.redirect('/404');
+}
+
 // --- CACHE HEADERS ---
 // Cache on Vercel (CDN) for 1 hour (3600s).
 // Serve stale content for up to 10 mins (600s) while re-fetching in background.
@@ -64,10 +69,16 @@ querySnapshot.docs.forEach((doc) => {
 
     // Construct the entry object for Layout
     const entry = {
-      id: `/posts/${doc.id}`,
-      title: data.title,
-      date: date,
-      tags: data.tags || [],
+      id: doc.id, // Using just ID, usually handled by Layout to form link
+      data: {
+        title: data.title,
+        published: date,
+        description: data.description,
+        image: data.image,
+        category: data.category,
+        tags: data.tags || [],
+      },
+      slug: doc.id
     };
 
     // Add to Map
@@ -78,10 +89,13 @@ querySnapshot.docs.forEach((doc) => {
   }
 });
 
-// Fallback name if nothing found
-if (!tagDisplayName) {
-  tagDisplayName = tag || "Unknown Tag";
+// 6. THE SECURITY CHECK (Add this!)
+// If we looped through all posts and found NOTHING for this tag, 
+// then this is not a valid tag page. Redirect to 404.
+if (archiveMap.size === 0) {
+  return Astro.redirect('/404');
 }
+
 ---
 
 <PostArchiveLayout
