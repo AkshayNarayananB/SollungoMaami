@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { db } from '../lib/firebase';
-// 1. Changed imports: Added setDoc, doc. Removed addDoc, getDocs, query, where
-import { collection, doc, setDoc, serverTimestamp } from 'firebase/firestore';
+// Verify this path points to your firebase config
+import { db } from '../lib/firebase'; 
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const Newsletter = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ const Newsletter = () => {
   const [status, setStatus] = useState("idle");
   const [message, setMessage] = useState("");
 
-  // Auto-Open Logic
+  // Auto-Open Logic (Runs once per session)
   useEffect(() => {
     const hasSeen = sessionStorage.getItem("newsletter_seen");
     if (!hasSeen) {
@@ -21,7 +21,6 @@ const Newsletter = () => {
     }
   }, []);
 
-  // 2. NEW Simplified Subscribe Logic
   const handleSubscribe = async (e) => {
     e.preventDefault();
     if (!email.includes("@")) return;
@@ -29,27 +28,35 @@ const Newsletter = () => {
     setStatus("loading");
 
     try {
-      // Logic: Use the Email itself as the ID. 
-      // This works even if "Read" permissions are blocked!
-      const docRef = doc(db, "newsletters", email);
-
+      // 1. Save to Firebase 
+      const docRef = doc(db, "newsletters", email); 
+      
       await setDoc(docRef, {
         email: email,
         subscribedAt: serverTimestamp()
       });
 
+      // 2. Trigger Server-Side Email 
+      // Calls src/pages/api/welcome.ts
+      fetch('/api/welcome', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+
+      // 3. Success UI
       setStatus("success");
-      setMessage("You're signed up! 📧");
+      setMessage("You're signed up! 🧡");
       setEmail("");
       
       setTimeout(() => {
         setIsOpen(false);
         setStatus("idle");
         setMessage("");
-      }, 2000);
+      }, 2500);
 
     } catch (error) {
-      console.error("Error adding document: ", error);
+      console.error("Error subscribing: ", error);
       setStatus("error");
       setMessage("Something went wrong. Try again.");
     }
@@ -57,10 +64,10 @@ const Newsletter = () => {
 
   return (
     <>
-      {/* Floating Button */}
+      {/* Floating Button (Yellow/Orange Theme) */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-40 w-14 h-14 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center text-2xl hover:bg-blue-700 hover:scale-110 transition-all duration-300"
+        className="fixed bottom-6 right-6 z-40 w-14 h-14 bg-amber-500 text-white rounded-full shadow-lg flex items-center justify-center text-2xl hover:bg-amber-600 hover:scale-110 transition-all duration-300"
         title="Subscribe to Newsletter"
       >
         ✉️
@@ -69,7 +76,7 @@ const Newsletter = () => {
       {/* Popup Modal */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in">
-          <div className="relative w-full max-w-md bg-white dark:bg-[#1e1e1e] rounded-2xl shadow-2xl p-8 border border-gray-100 dark:border-gray-700">
+          <div className="relative w-full max-w-md bg-white dark:bg-[#1e1e1e] rounded-2xl shadow-2xl p-8 border-2 border-amber-100 dark:border-amber-900/30">
             <button 
               onClick={() => setIsOpen(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200"
@@ -90,7 +97,7 @@ const Newsletter = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white transition-all outline-none"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -104,7 +111,7 @@ const Newsletter = () => {
                       ? 'bg-green-500 scale-100' 
                       : status === 'error'
                       ? 'bg-red-500'
-                      : 'bg-blue-600 hover:bg-blue-700 active:scale-95'
+                      : 'bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 active:scale-95 shadow-md'
                   }`}
                 >
                   {status === 'loading' ? 'Signing up...' : 
