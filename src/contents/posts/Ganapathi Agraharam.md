@@ -122,4 +122,12 @@ The temple is open daily for devotees during the following hours:
 
 ---
 
+## 📞 Temple Contact & Pooja Enquiries
+
+For Modak neivedyam contact Mrs. Latha Ganesan @ +91 - 6380901266. 
+
+---
+
+## 🎥 Video
+
 [![Watch the video](https://img.youtube.com/vi/f_V0RqwqW3I/0.jpg)](https://youtu.be/f_V0RqwqW3I?si=O2E6FngqG3vMq_qe)
