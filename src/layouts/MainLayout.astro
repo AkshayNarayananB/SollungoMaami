@@ -12,31 +12,24 @@ export interface Props {
   bannerImage?: string;
   slug?: string;
   allPosts?: any[];
-  allRoutes?: any[]; // Keep this here
+  allRoutes?: any[];
 }
 
-// FIX 1: Add 'allRoutes' to the destructured object below
-const { title, subTitle, bannerImage, slug, allPosts, allRoutes } = Astro.props;
+// DESTRICTURING CAREFULLY
+const props = Astro.props;
+const { title, subTitle, bannerImage, slug, allPosts, allRoutes } = props;
 ---
 
 <Base>
   <NavBar />
 
-  {
-    MaamiConfig.bannerStyle == "LOOP" && (
-      <Banner
-        title={title}
-        subTitle={subTitle}
-        bannerImage={bannerImage}
-        slug={slug}
-      />
-    )
-  }
+  { MaamiConfig.bannerStyle == "LOOP" && (
+      <Banner title={title} subTitle={subTitle} bannerImage={bannerImage} slug={slug} />
+  )}
 
   <div class="main-container my-10">
     <div class="flex flex-row items-start xl:space-x-4">
       <div class="side-bar">
-        {/* FIX 2: Pass 'allRoutes' into the SideBar component */}
         <SideBar allPosts={allPosts} allRoutes={allRoutes} />
       </div>
       <div class="transition-leaving w-full space-y-8">
@@ -50,5 +43,7 @@ const { title, subTitle, bannerImage, slug, allPosts, allRoutes } = Astro.props;
 </Base>
 
 <style>
-  /* ... Styles remain unchanged ... */
+  .main-container { @apply w-full md:mx-auto md:min-w-[80%] md:max-w-[80%] lg:min-w-[var(--page-width-lg)] lg:max-w-[var(--page-width-lg)] xl:min-w-[var(--page-width-xl)] xl:max-w-[var(--page-width-xl)]; }
+  .side-bar { @apply hidden min-w-[248px] xl:block; }
+  .content { @apply xl:w-[calc(var(--page-width-xl)-264px)]; }
 </style>
