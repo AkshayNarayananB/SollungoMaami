@@ -4,6 +4,8 @@ export const prerender = false;
 import Main from "../../layouts/MainLayout.astro";
 import RouteCard from "../../components/RouteCard.astro";
 import Pagination from "../../components/controllers/Pagination.astro";
+
+// Firebase Client SDK Imports
 import { db } from '../../lib/firebase';
 import { collection, getDocs, query, limit } from 'firebase/firestore';
 
@@ -11,15 +13,24 @@ const { page: pageParam } = Astro.params;
 const currentPage = pageParam ? parseInt(pageParam, 10) : 1;
 const pageSize = 6;
 
-// 1. Fetch Routes - REMOVED orderBy for testing
-const q = query(collection(db, "route"), limit(20)); 
-const querySnapshot = await getDocs(q);
-const allDocs = querySnapshot.docs;
+let allDocs = [];
+let allPosts = [];
+let errorMessage = null;
 
-// 2. Fetch Blog Posts (to keep Sidebar happy)
-const postQuery = query(collection(db, "blog"), limit(5));
-const postSnapshot = await getDocs(postQuery);
-const allPosts = postSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+try {
+  // 1. Fetch Routes (Try fetching without orderBy first to ensure connection)
+  const routeCol = collection(db, "route");
+  const routeSnapshot = await getDocs(query(routeCol, limit(50)));
+  allDocs = routeSnapshot.docs;
+
+  // 2. Fetch Blog Posts for Sidebar
+  const blogCol = collection(db, "blog");
+  const blogSnapshot = await getDocs(query(blogCol, limit(5)));
+  allPosts = blogSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+} catch (e: any) {
+  console.error("Firebase SSR Error:", e);
+  errorMessage = e.message;
+}
 
 const totalRoutes = allDocs.length;
 const lastPage = Math.max(1, Math.ceil(totalRoutes / pageSize));
@@ -27,7 +38,7 @@ const start = (currentPage - 1) * pageSize;
 const end = start + pageSize;
 const paginatedDocs = allDocs.slice(start, end);
 
-// 3. Mapping with strict null checks
+// 3. Mapping with extreme safety
 const formattedRoutes = paginatedDocs.map(doc => {
   const data = doc.data();
   return {
@@ -41,20 +52,38 @@ const formattedRoutes = paginatedDocs.map(doc => {
     locationCount: data.locations ? data.locations.length : 0,
   };
 });
+
+// Final check on the Project ID being used by the server
+const activeProjectId = db.app.options.projectId;
 ---
 
 <Main allPosts={allPosts}>
   <div class="space-y-8">
+    
+    <div class="p-4 bg-slate-900 border border-slate-700 rounded-2xl font-mono text-[10px] text-green-400">
+       <p>> PROJECT_ID: {activeProjectId}</p>
+       <p>> STATUS: {errorMessage ? `ERROR: ${errorMessage}` : 'CONNECTED'}</p>
+       <p>> COLLECTION: route</p>
+       <p>> DOCS_FOUND: {totalRoutes}</p>
+    </div>
+
     <div class="w-full space-y-4">
       {formattedRoutes.length > 0 ? (
         formattedRoutes.map((entry, index) => (
-          <div class="onload-animation" style={`animation-delay: calc(var(--onload-animation-delay) + ${index + 1} * var(--onload-animation-interval));`}>
+          <div 
+            class="onload-animation" 
+            style={`animation-delay: calc(var(--onload-animation-delay) + ${index + 1} * var(--onload-animation-interval));`}
+          >
             <RouteCard {...entry} />
           </div>
         ))
       ) : (
-        <div class="py-20 text-center bg-[var(--card-color)] rounded-3xl">
-          <p class="text-[var(--text-color-lighten)]">No routes found. (Total Docs: {totalRoutes})</p>
+        <div class="py-20 text-center bg-[var(--card-color)] rounded-3xl border border-dashed border-white/10">
+          <Icon name="mdi:database-off" class="mx-auto text-4xl mb-2 opacity-20" />
+          <p class="text-[var(--text-color-lighten)]">
+            {errorMessage ? "Failed to connect to Firebase." : "No routes found in the database."}
+          </p>
+          <p class="text-xs opacity-30 mt-2">Check Firebase Console for collection name 'route'</p>
         </div>
       )}
     </div>
