@@ -1,0 +1,101 @@
+---
+export const prerender = false;
+
+import { db } from '../../lib/firebase';
+import { doc, getDoc } from 'firebase/firestore';
+import RouteLayout from "../../layouts/RouteLayout.astro";
+import LiveComments from "../../components/LiveComments.jsx";
+import { marked } from 'marked';
+
+const { slug } = Astro.params;
+if (!slug) return Astro.redirect('/404');
+
+// --- 1. CACHING (Vercel/CDN) ---
+Astro.response.headers.set(
+  'Cache-Control', 
+  'public, max-age=0, s-maxage=3600, stale-while-revalidate=600'
+);
+
+// --- 2. FETCH FROM FIREBASE ---
+// Collection: "route", Doc ID: slug
+const docRef = doc(db, "route", slug);
+const docSnap = await getDoc(docRef);
+
+if (!docSnap.exists()) return Astro.redirect('/404');
+const routeData = docSnap.data();
+
+// --- 3. DATE HANDLING ---
+let publishedDate = new Date();
+try {
+  if (routeData.published && typeof routeData.published.toDate === 'function') {
+    publishedDate = routeData.published.toDate();
+  }
+} catch (e) {
+  console.log("Date error", e);
+}
+
+// --- 4. MARKDOWN PROCESSING ---
+let rawContent = routeData.markdownContent || "";
+
+// Fix: Header Padding (matches your post logic)
+rawContent = rawContent.replace(/^(#+)\s*(.*)/gm, '$1 &nbsp;$2');
+rawContent = rawContent.replace(/^(#+)/gm, '\n$1');
+
+let htmlContent = "";
+try {
+  htmlContent = await marked.parse(rawContent);
+} catch (e) {
+  console.error("Marked Error:", e);
+  htmlContent = "<p>Error rendering content.</p>";
+}
+
+// --- 5. METADATA & ARRAYS ---
+const tags = Array.isArray(routeData.tags) ? routeData.tags : [];
+const locations = Array.isArray(routeData.locations) ? routeData.locations : [];
+const category = routeData.category || "Route";
+---
+
+<RouteLayout
+  title={routeData.title || "Untitled Route"}
+  category={category}
+  tags={tags}
+  locations={locations}
+  googleMapsUrl={routeData.googleMapsUrl}
+>
+  
+  {/* SEO/Search Metadata */}
+  <div class="hidden" data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">
+    {routeData.title}
+  </div>
+
+  {/* Category and Tags Header (Consistency with Post layout) */}
+  <div class="mb-6">
+    <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-md font-bold uppercase tracking-wider mb-2">
+      {category}
+    </span>
+
+    {tags.length > 0 && (
+      <div class="flex flex-wrap gap-2 mt-2">
+        {tags.map((tag: string) => (
+          <span class="text-sm text-gray-500 dark:text-gray-400 italic">
+            #{tag}
+          </span>
+        ))}
+      </div>
+    )}
+  </div>
+
+  {/* RENDERED MARKDOWN CONTENT */}
+  <div data-pagefind-body>
+    <div 
+      class="prose prose-lg prose-blue dark:prose-invert max-w-none"
+      set:html={htmlContent} 
+    />
+  </div>
+
+  {/* COMMENTS SECTION */}
+  <section class="mt-10">
+    <LiveComments slug={`route-${slug}`} client:visible />
+  </section>
+
+</RouteLayout>
