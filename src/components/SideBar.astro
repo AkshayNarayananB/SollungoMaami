@@ -8,275 +8,85 @@ import SiteViews from "./SiteViews.jsx";
 
 // 1. FIREBASE IMPORTS
 import { db } from '../lib/firebase';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
 
 interface Props {
   allPosts?: any[]; 
+  allRoutes?: any[]; // Added this prop
 }
 
-const { allPosts: initialPosts } = Astro.props;
+const { allPosts: initialPosts, allRoutes: initialRoutes } = Astro.props;
 
 // 2. SMART DATA LOGIC
-// If parent gave us posts, use them. If not, fetch them.
 let postsData = initialPosts;
+let routesData = initialRoutes;
 
+// Auto-fetch if data isn't passed (for static pages like About)
 if (!postsData) {
-  // Console log to debug when it fetches on its own (e.g. on About page)
-  // console.log("Sidebar: Fetching its own data..."); 
   try {
-    const querySnapshot = await getDocs(collection(db, "blog"));
+    const q = query(collection(db, "blog"), orderBy("published", "desc"), limit(20));
+    const querySnapshot = await getDocs(q);
     postsData = querySnapshot.docs.map(doc => doc.data());
   } catch (e) {
-    console.error("Sidebar fetch error:", e);
     postsData = [];
+  }
+}
+
+if (!routesData) {
+  try {
+    const q = query(collection(db, "route"), limit(10));
+    const querySnapshot = await getDocs(q);
+    routesData = querySnapshot.docs.map(doc => doc.data());
+  } catch (e) {
+    routesData = [];
   }
 }
 
 // 3. UTILITY: SLUGIFY
 const slugify = (text: string) => {
-  return text
-    .toString()
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w\-]+/g, '')
-    .replace(/\-\-+/g, '-');
+  return text.toString().toLowerCase().trim()
+    .replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-');
 };
 
-// 4. AGGREGATE DATA
+// 4. AGGREGATE DATA (Merged logic for Posts and Routes)
 const categories = new Map();
 const tags = new Map();
 
-if (postsData) {
-  postsData.forEach((data) => {
-    
-    // --- Process Category ---
-    if (data.category) {
-      // 1. Force into an array (handles string or array safely)
-      const catList = Array.isArray(data.category) ? data.category : [data.category];
+// Helper to process items
+const processItem = (item: any) => {
+  if (!item) return;
 
-      // 2. Loop through each category
-      catList.forEach((cat) => {
-        const catName = String(cat || "").trim();
-        
-        // Safety check: Skip if empty
-        if (!catName) return;
+  // Categories
+  if (item.category) {
+    const catList = Array.isArray(item.category) ? item.category : [item.category];
+    catList.forEach((cat) => {
+      const catName = String(cat || "").trim();
+      if (!catName) return;
+      const catSlug = slugify(catName);
+      if (!categories.has(catSlug)) categories.set(catSlug, { name: catName, count: 0 });
+      categories.get(catSlug).count++;
+    });
+  }
 
-        // 3. Create Slug and Map Entry INSIDE the loop
-        const catSlug = slugify(catName);
+  // Tags
+  if (item.tags && Array.isArray(item.tags)) {
+    item.tags.forEach((t) => {
+      const tagName = String(t || "").trim();
+      if (!tagName) return;
+      const tagSlug = slugify(tagName);
+      if (!tags.has(tagSlug)) tags.set(tagSlug, { name: tagName, count: 0 });
+      tags.get(tagSlug).count++;
+    });
+  }
+};
 
-        if (!categories.has(catSlug)) {
-          categories.set(catSlug, { name: catName, posts: [] });
-        }
-        categories.get(catSlug).posts.push(data);
-      });
-    }
+postsData?.forEach(processItem);
+routesData?.forEach(processItem);
 
-    // --- Process Tags ---
-    if (data.tags && Array.isArray(data.tags)) {
-      data.tags.forEach((t) => {
-        const tagName = String(t || "").trim();
-        if (!tagName) return;
-
-        const tagSlug = slugify(tagName);
-
-        let tagEntry = tags.get(tagSlug);
-        if (!tagEntry) {
-          tagEntry = { name: tagName, posts: [] };
-          tags.set(tagSlug, tagEntry);
-        }
-        tagEntry.posts.push(data);
-      });
-    }
-
-  });
-}
-
-// 5. EXTRACT KEYS
 const categoryKeys = [...categories.keys()].sort();
 const tagKeys = [...tags.keys()].sort();
 ---
 
-<div class="flex w-full flex-row justify-center">
-  <div class="flex flex-col space-y-3">
-    
-    <div
-      class="onload-animation rounded-3xl bg-[var(--card-color)] p-3"
-      style=`animation-delay: var(--onload-animation-delay);`
-    >
-      <a href="/about" class="avatar-wrapper">
-        <img
-          src={MaamiConfig.avatarUrl}
-          alt="avatar"
-          class="avatar lozad select-none"
-        />
-      </a>
-      <div class="username mt-4">
-        <p>{MaamiConfig.username}</p>
-      </div>
-      <p class="slogan mt-2 text-center text-[var(--text-color-lighten)]">
-        {MaamiConfig.sign}
-      </p>
-      <SiteViews client:only="react" />
-      {
-        MaamiConfig.socialLinks.length > 0 && (
-          <div class="mt-1 flex flex-row justify-center">
-            <div class="flex w-[184px] flex-wrap justify-center gap-2">
-              {MaamiConfig.socialLinks.map((item) => (
-                <SocialIcon name={item.icon} link={item.link} />
-              ))}
-            </div>
-          </div>
-        )
-      }
-    </div>
-
-    {
-      categories.size !== 0 && (
-        <div
-          class="onload-animation space-y-2 rounded-3xl bg-[var(--card-color)] p-3"
-          style="animation-delay: calc(var(--onload-animation-delay) + 1 * var(--onload-animation-interval));"
-        >
-          <div class="title m-[0.375rem]">
-            <a
-              href="/categories/"
-              class="pl-4 text-xl font-bold text-[var(--text-color)] transition-colors hover:text-[var(--primary-color)]"
-            >
-              {i18n(I18nKeys.side_bar_categories)}
-            </a>
-          </div>
-          <div class="relative flex flex-col">
-            {categoryKeys
-              .slice(0, MaamiConfig.maxSidebarCategoryChip + 1)
-              .map((categorySlug) => (
-                <a
-                  href={`/categories/${categorySlug}`}
-                  class="category flex flex-row items-center justify-between rounded-lg px-3 py-2 transition-all hover:bg-[var(--primary-color-lighten)]"
-                >
-                  <p class="text-[var(--text-color)] transition-all">
-                    {categories.get(categorySlug)!.name}
-                  </p>
-                  <span class="rounded-md bg-[var(--primary-color-lighten)] px-2.5 py-0.5 text-[var(--primary-color)]">
-                    {categories.get(categorySlug)!.posts.length}
-                  </span>
-                </a>
-              ))}
-            {categoryKeys.length >= MaamiConfig.maxSidebarCategoryChip + 1 && (
-              <div class="absolute bottom-0 flex h-11 w-full flex-row items-center justify-center bg-gradient-to-t from-[var(--card-color)] from-25% to-transparent backdrop-blur-sm">
-                <a
-                  href="/categories/"
-                  class="flex flex-row items-center space-x-1 text-[var(--primary-color)] transition-colors hover:brightness-75 dark:hover:brightness-125"
-                >
-                  <span>{i18n(I18nKeys.side_bar_view_more)}</span>
-                  <Icon name="mingcute:arrow-right-line" />
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
-      )
-    }
-
-    {
-      tags.size !== 0 && (
-        <div
-          class="onload-animation space-y-2 rounded-3xl bg-[var(--card-color)] p-3"
-          style="animation-delay: calc(var(--onload-animation-delay) + 2 * var(--onload-animation-interval));"
-        >
-          <div class="title m-[0.375rem]">
-            <a
-              href="/tags/"
-              class="pl-4 text-xl font-bold text-[var(--text-color)] transition-colors hover:text-[var(--primary-color)]"
-            >
-              {i18n(I18nKeys.side_bar_tags)}
-            </a>
-          </div>
-          <div class="relative flex max-w-[224px] flex-row flex-wrap">
-            {tagKeys.slice(0, MaamiConfig.maxSidebarTagChip + 1).map((tagSlug) => (
-              <a
-                href={`/tags/${tagSlug}`}
-                class="tag m-1 grow rounded-md bg-[var(--primary-color-lighten)] px-2 py-1 transition-all hover:brightness-95"
-              >
-                <p class="text-center text-sm text-[var(--primary-color)]">
-                  {tags.get(tagSlug)!.name}
-                </p>
-              </a>
-            ))}
-            {tagKeys.length >= MaamiConfig.maxSidebarTagChip + 1 && (
-              <div class="absolute bottom-0 flex h-10 w-full flex-row items-center justify-center bg-gradient-to-t from-[var(--card-color)] from-25% to-transparent backdrop-blur-sm">
-                <a
-                  href="/tags/"
-                  class="flex flex-row items-center space-x-1 text-[var(--primary-color)] transition-colors hover:brightness-75 dark:hover:brightness-125"
-                >
-                  <span>{i18n(I18nKeys.side_bar_view_more)}</span>
-                  <Icon name="mingcute:arrow-right-line" />
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
-      )
-    }
-  </div>
-</div>
-
-<style>
-  .avatar-wrapper::after {
-    @apply absolute left-3 top-3 h-56 w-56 rounded-xl transition-all content-[''];
-  }
-
-  .avatar-wrapper::after:hover {
-    @apply bg-black/25 dark:bg-black/50;
-  }
-
-  .avatar {
-    @apply h-56 w-56 rounded-xl transition-all hover:cursor-pointer;
-  }
-
-  .username > p {
-    @apply text-center text-xl font-semibold text-[var(--text-color)];
-    font-family: var(--title-font);
-  }
-
-  .username > div {
-    @apply mx-auto mt-1 h-1 w-8 rounded-full bg-[var(--primary-color)];
-  }
-
-  .slogan {
-    font-family: var(--title-font);
-  }
-
-  .title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-  }
-
-  .title::before {
-    position: absolute;
-    display: block;
-    content: " ";
-    background-color: var(--primary-color);
-    top: 3px;
-    bottom: 3px;
-    width: 0.3rem;
-    border-radius: 4px;
-  }
-
-  .title p {
-    font-family: var(--primary-font);
-  }
-
-  .category {
-    font-family: var(--primary-font);
-  }
-
-  .category:hover > p {
-    @apply pl-2 text-[var(--primary-color)];
-  }
-
-  .tag {
-    font-family: var(--primary-font);
-  }
-</style>
+<span class="rounded-md bg-[var(--primary-color-lighten)] px-2.5 py-0.5 text-[var(--primary-color)]">
+  {categories.get(categorySlug).count}
+</span>
