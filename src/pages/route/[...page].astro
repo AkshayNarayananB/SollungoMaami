@@ -1,110 +1,71 @@
 ---
-// 1. ENABLE SSR (Live Mode)
 export const prerender = false;
 
-// --- CACHE HEADERS ---
-Astro.response.headers.set(
-  'Cache-Control', 
-  'public, max-age=0, s-maxage=3600, stale-while-revalidate=600'
-);
-
-// Component imports
 import Main from "../../layouts/MainLayout.astro";
 import RouteCard from "../../components/RouteCard.astro";
 import Pagination from "../../components/controllers/Pagination.astro";
-
-// Firebase Imports
 import { db } from '../../lib/firebase';
-import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
+import { collection, getDocs, query, limit } from 'firebase/firestore';
 
-// 2. Handle Pagination Logic
 const { page: pageParam } = Astro.params;
 const currentPage = pageParam ? parseInt(pageParam, 10) : 1;
 const pageSize = 6;
 
-// 3. Fetch Data from Firebase (Routes Collection)
-const q = query(collection(db, "route"), orderBy("published", "desc"));
+// 1. Fetch Routes - REMOVED orderBy for testing
+const q = query(collection(db, "route"), limit(20)); 
 const querySnapshot = await getDocs(q);
 const allDocs = querySnapshot.docs;
 
-// Fetch Recent Posts for SideBar (Ensures MainLayout functions correctly)
-const postQuery = query(collection(db, "blog"), orderBy("published", "desc"), limit(5));
+// 2. Fetch Blog Posts (to keep Sidebar happy)
+const postQuery = query(collection(db, "blog"), limit(5));
 const postSnapshot = await getDocs(postQuery);
 const allPosts = postSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
 
 const totalRoutes = allDocs.length;
 const lastPage = Math.max(1, Math.ceil(totalRoutes / pageSize));
-
 const start = (currentPage - 1) * pageSize;
 const end = start + pageSize;
 const paginatedDocs = allDocs.slice(start, end);
 
-// 4. Map Data specifically for RouteCard
+// 3. Mapping with strict null checks
 const formattedRoutes = paginatedDocs.map(doc => {
   const data = doc.data();
   return {
     id: doc.id,
-    title: data.title,
-    published: data.published ? data.published.toDate() : new Date(),
+    title: data.title || "Untitled Route",
+    published: data.published?.toDate ? data.published.toDate() : new Date(),
     category: data.category || "Route",
     tags: data.tags || [],
     description: data.description || "",
-    image: data.image || data.cover,
-    locationCount: data.locations?.length || 0,
+    image: data.image || data.cover || "",
+    locationCount: data.locations ? data.locations.length : 0,
   };
 });
-
-// 5. URL Logic - Crucial for sub-directory pagination
-const page = {
-  data: formattedRoutes,
-  currentPage,
-  lastPage,
-  url: {
-    // We prefix with '/routes' so pagination stays within the routes section
-    current: currentPage === 1 ? '/routes' : `/routes/${currentPage}`,
-    prev: currentPage > 1 ? (currentPage - 1 === 1 ? '/routes' : `/routes/${currentPage - 1}`) : undefined,
-    next: currentPage < lastPage ? `/routes/${currentPage + 1}` : undefined,
-  }
-};
 ---
 
-<Main allPosts={allPosts} allRoutes={formattedRoutes}>
+<Main allPosts={allPosts}>
   <div class="space-y-8">
     <div class="w-full space-y-4">
-      {
-        page.data.map((entry, index) => (
-          <div
-            class="onload-animation"
-            style={`animation-delay: calc(var(--onload-animation-delay) + ${index + 1} * var(--onload-animation-interval));`}
-          >
-            <RouteCard
-              id={entry.id}
-              title={entry.title}
-              published={entry.published}
-              category={entry.category}
-              tags={entry.tags}
-              description={entry.description}
-              image={entry.image}
-              locationCount={entry.locationCount}
-            />
+      {formattedRoutes.length > 0 ? (
+        formattedRoutes.map((entry, index) => (
+          <div class="onload-animation" style={`animation-delay: calc(var(--onload-animation-delay) + ${index + 1} * var(--onload-animation-interval));`}>
+            <RouteCard {...entry} />
           </div>
         ))
-      }
-
-      {page.data.length === 0 && (
-        <div class="py-20 text-center opacity-50 bg-[var(--card-color)] rounded-3xl mx-3 lg:mx-0">
-          <p>No routes found.</p>
+      ) : (
+        <div class="py-20 text-center bg-[var(--card-color)] rounded-3xl">
+          <p class="text-[var(--text-color-lighten)]">No routes found. (Total Docs: {totalRoutes})</p>
         </div>
       )}
     </div>
 
-    <Pagination
-      class="onload-animation"
-      lastPage={page.lastPage}
-      current={page.currentPage}
-      prevURL={page.url.prev}
-      nextURL={page.url.next}
-      style={`animation-delay: calc(var(--onload-animation-delay) + ${page.data.length + 1} * var(--onload-animation-interval));`}
-    />
+    {lastPage > 1 && (
+      <Pagination
+        lastPage={lastPage}
+        current={currentPage}
+        prevURL={currentPage > 1 ? `/routes/${currentPage - 1}` : undefined}
+        nextURL={currentPage < lastPage ? `/routes/${currentPage + 1}` : undefined}
+      />
+    )}
   </div>
 </Main>
