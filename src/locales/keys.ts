@@ -8,6 +8,7 @@ enum I18nKeys {
   nav_bar_about = "nav_bar_about",
   nav_bar_search_placeholder = "nav_bar_search_placeholder",
   nav_bar_youtube = "nav_bar_youtube",
+  nav_bar_routes = "nav_bar_routes",
 
   post_card_words = "post_card_words",
   post_card_minutes = "post_card_minutes",
