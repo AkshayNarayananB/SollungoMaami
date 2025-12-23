@@ -1,0 +1,110 @@
+---
+import Main from "../layouts/MainLayout.astro";
+import Markdown from "../components/Markdown.astro";
+
+interface Location {
+  lat: number;
+  lng: number;
+  label: string;
+  url: string;
+}
+
+interface Props {
+  title: string;
+  category: string;
+  tags: string[];
+  locations: Location[]; // Array of points for the map
+  googleMapsUrl: string; // The pre-defined route link
+}
+
+const { title, category, tags, locations, googleMapsUrl } = Astro.props;
+---
+
+<Main title={title}>
+  <div class="route-wrapper">
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold mb-2">{title}</h1>
+      <div class="flex gap-2 items-center text-sm opacity-70">
+        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">{category}</span>
+        {tags.map(tag => <span class="border px-2 py-1 rounded">#{tag}</span>)}
+      </div>
+    </header>
+
+    <div id="map" class="map-window"></div>
+
+    <div class="my-6 text-center">
+      <a 
+        href={googleMapsUrl} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="route-button"
+      >
+        <span class="icon">📍</span> Open Live Route in Google Maps
+      </a>
+    </div>
+
+    <div class="article-wrapper">
+      <div class="article">
+        <Markdown>
+          <slot />
+        </Markdown>
+      </div>
+    </div>
+  </div>
+</Main>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<script is:inline define:vars={{ locations }}>
+  // Wait for DOM and Leaflet to load
+  document.addEventListener('DOMContentLoaded', () => {
+    import('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js').then(() => {
+      // Initialize map (center on the first location)
+      const map = L.map('map').setView([locations[0].lat, locations[0].lng], 13);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+      }).addTo(map);
+
+      // Add custom markers
+      locations.forEach(loc => {
+        const marker = L.marker([loc.lat, loc.lng]).addTo(map);
+        
+        // Add popup with clickable link
+        marker.bindPopup(`
+          <div style="text-align:center">
+            <p><strong>${loc.label}</strong></p>
+            <a href="${loc.url}" style="color: blue; text-decoration: underline;">View Details</a>
+          </div>
+        `);
+
+        // Optional: Click marker to go directly to URL instead of popup
+        marker.on('click', () => {
+           window.location.href = loc.url;
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .route-wrapper {
+    @apply max-w-5xl mx-auto px-4 py-8;
+  }
+  .map-window {
+    height: 400px;
+    width: 100%;
+    @apply rounded-2xl border-4 border-[var(--card-color)] shadow-lg;
+    z-index: 1;
+  }
+  .route-button {
+    @apply inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-all shadow-md;
+  }
+  .article-wrapper {
+    @apply rounded-2xl bg-[var(--card-color)] px-5 py-6 lg:px-10 lg:py-9;
+  }
+  .article {
+    @apply flex flex-col;
+    font-size: var(--primary-font);
+  }
+</style>
