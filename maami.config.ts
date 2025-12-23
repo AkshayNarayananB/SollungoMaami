@@ -26,6 +26,10 @@ const MaamiConfig: Configuration = {
       href: "/about",
     },
     {
+      nameKey: I18nKeys.nav_bar_routes, // New Section
+      href: "/routes",
+    },
+    {
       nameKey: I18nKeys.nav_bar_youtube,
       href: "https://www.youtube.com/@sollungomaami924",
     },
