@@ -12,7 +12,7 @@ import { collection, getDocs } from 'firebase/firestore';
 
 interface Props {
   allPosts?: any[]; 
-  allRoutes?: any[]; // Added for compatibility
+  allRoutes?: any[]; // Only added to prevent Build errors
 }
 
 const { allPosts: initialPosts } = Astro.props;
@@ -51,9 +51,12 @@ if (postsData) {
     // --- Process Category ---
     if (data.category) {
       const catList = Array.isArray(data.category) ? data.category : [data.category];
+
       catList.forEach((cat) => {
         const catName = String(cat || "").trim();
+        
         if (!catName) return;
+
         const catSlug = slugify(catName);
 
         if (!categories.has(catSlug)) {
@@ -83,7 +86,6 @@ if (postsData) {
   });
 }
 
-// 5. EXTRACT KEYS
 const categoryKeys = [...categories.keys()].sort();
 const tagKeys = [...tags.keys()].sort();
 ---
@@ -212,7 +214,6 @@ const tagKeys = [...tags.keys()].sort();
 </div>
 
 <style>
-  /* Your original styles unchanged */
   .avatar-wrapper::after { @apply absolute left-3 top-3 h-56 w-56 rounded-xl transition-all content-['']; }
   .avatar-wrapper::after:hover { @apply bg-black/25 dark:bg-black/50; }
   .avatar { @apply h-56 w-56 rounded-xl transition-all hover:cursor-pointer; }
