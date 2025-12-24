@@ -2,6 +2,11 @@
 import Main from "../layouts/MainLayout.astro";
 import Markdown from "../components/Markdown.astro";
 
+<link 
+  rel="stylesheet" 
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+/>
+
 interface Location {
   lat: number;
   lng: number;
@@ -86,7 +91,6 @@ const { title, category, tags, locations, googleMapsUrl } = Astro.props;
     });
   });
 </script>
-
 <style>
   .route-wrapper {
     @apply max-w-5xl mx-auto px-4 py-8;
