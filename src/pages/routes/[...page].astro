@@ -13,13 +13,13 @@ const { page: pageParam } = Astro.params;
 const currentPage = pageParam ? parseInt(pageParam, 10) : 1;
 const pageSize = 6;
 
-// 1. Fetch Routes (Ordered by published date)
+// 1. Fetch Routes
 const routeCol = collection(db, "route");
 const routeQuery = query(routeCol, orderBy("published", "desc"));
 const routeSnapshot = await getDocs(routeQuery);
 const allRouteDocs = routeSnapshot.docs;
 
-// 2. Fetch Blog Posts for Sidebar compatibility
+// 2. Fetch Blog Posts for Sidebar
 const blogCol = collection(db, "blog");
 const blogSnapshot = await getDocs(query(blogCol, orderBy("published", "desc"), limit(5)));
 const allPosts = blogSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
@@ -31,13 +31,12 @@ const start = (currentPage - 1) * pageSize;
 const end = start + pageSize;
 const paginatedDocs = allRouteDocs.slice(start, end);
 
-// 4. Map Data to Props
 const formattedRoutes = paginatedDocs.map(doc => {
   const data = doc.data();
   return {
     id: doc.id,
     title: data.title,
-    published: data.published?.toDate(), // Converts Firestore Timestamp to JS Date
+    published: data.published?.toDate(),
     category: data.category,
     tags: data.tags || [],
     description: data.description,
@@ -50,12 +49,6 @@ const formattedRoutes = paginatedDocs.map(doc => {
 <Main allPosts={allPosts}>
   <div class="space-y-8">
     
-    {allRouteDocs.length === 0 && (
-       <div class="p-4 bg-red-900/20 border border-red-900 text-red-400 rounded-2xl text-xs font-mono">
-          Empty Collection: "route" | Project: {db.app.options.projectId}
-       </div>
-    )}
-
     <div class="w-full space-y-4">
       {formattedRoutes.map((entry, index) => (
         <div 
