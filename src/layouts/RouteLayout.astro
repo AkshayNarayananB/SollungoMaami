@@ -71,20 +71,26 @@ const { title, category, tags, locations, googleMapsUrl } = Astro.props;
 <script is:inline src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
 
 <script is:inline define:vars={{ locations }}>
+  function destroyMap() {
+    if (window.currentLeafletMap) {
+        window.currentLeafletMap.remove();
+        window.currentLeafletMap = null;
+    }
+    const container = document.getElementById('map');
+    if (container) {
+        container.innerHTML = '';
+        delete container._leaflet_id;
+    }
+  }
+
   function initMap() {
+    destroyMap(); 
+
     const mapContainer = document.getElementById('map');
-    
-    // Safety checks
     if (!mapContainer || typeof L === 'undefined' || !locations || locations.length === 0) return;
 
-    // Reset map container if already initialized (Fixes Astro View Transition issues)
-    if (mapContainer._leaflet_id) {
-        mapContainer._leaflet_id = null;
-        mapContainer.innerHTML = "";
-    }
-
-    // Initialize Map
     const map = L.map('map').setView([locations[0].lat, locations[0].lng], 12);
+    window.currentLeafletMap = map; 
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
@@ -92,33 +98,32 @@ const { title, category, tags, locations, googleMapsUrl } = Astro.props;
 
     const waypoints = locations.map(loc => L.latLng(loc.lat, loc.lng));
 
-    // Initialize Routing Control
     const routingControl = L.Routing.control({
       waypoints: waypoints,
       router: L.Routing.osrmv1({
         serviceUrl: 'https://router.project-osrm.org/route/v1',
-        profile: 'car' 
+        profile: 'car',
+        useHints: false 
       }),
       lineOptions: {
         styles: [{ color: '#ff8c00', opacity: 0.9, weight: 6 }],
-        missingRouteStyles: [{ color: '#ff8c00', opacity: 0.4, weight: 6, dashArray: '5, 10' }]
+        addWaypoints: false
       },
-      addWaypoints: false,
+      routeWhileDragging: false,
       draggableWaypoints: false,
       fitSelectedRoutes: true,
       show: false,
       createMarker: function(i, waypoint) {
         const loc = locations[i];
         return L.marker(waypoint.latLng).bindPopup(`
-          <div style="text-align:center; color: black !important; min-width: 120px;">
-            <p style="margin: 0 0 5px 0; font-weight: bold; font-size: 14px;">${loc.label}</p>
-            <a href="${loc.url}" style="color: #2563eb; text-decoration: underline; font-size: 12px; font-weight: 600;">View Details</a>
+          <div style="text-align:center; color: black !important; min-width: 100px;">
+            <p style="margin: 0; font-weight: bold;">${loc.label}</p>
+            <a href="${loc.url}" style="color: #2563eb; text-decoration: underline; font-size: 11px;">View Details</a>
           </div>
         `);
       }
     }).addTo(map);
 
-    // Update Distance and Time stats
     routingControl.on('routesfound', function(e) {
       const summary = e.routes[0].summary;
       const distance = (summary.totalDistance / 1000).toFixed(1);
@@ -130,14 +135,12 @@ const { title, category, tags, locations, googleMapsUrl } = Astro.props;
       const timeEl = document.getElementById('total-time');
 
       if (distEl) distEl.innerText = `${distance} km`;
-      if (timeEl) {
-          timeEl.innerText = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;
-      }
+      if (timeEl) timeEl.innerText = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;
     });
   }
 
-  // Handle initialization on both standard load and Astro's View Transitions
   document.addEventListener('DOMContentLoaded', initMap);
+  document.addEventListener('astro:after-swap', initMap);
   document.addEventListener('astro:page-load', initMap);
 </script>
 
@@ -149,19 +152,12 @@ const { title, category, tags, locations, googleMapsUrl } = Astro.props;
     height: 450px;
     width: 100%;
     @apply rounded-3xl border-4 border-[var(--card-color)] shadow-xl;
-    z-index: 1;
+    position: relative;
+    overflow: hidden;
   }
-  
-  /* Stats Card Styling */
   .stat-card {
     @apply bg-[var(--card-color)] border border-white/5 px-6 py-3 rounded-2xl shadow-sm min-w-[140px];
   }
-
-  /* Hide the Routing Machine's white instruction box */
-  :global(.leaflet-routing-container) {
-    display: none !important;
-  }
-
   .route-button {
     @apply inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:scale-105 active:scale-95;
   }
@@ -172,13 +168,7 @@ const { title, category, tags, locations, googleMapsUrl } = Astro.props;
     @apply flex flex-col text-[var(--text-color)];
     font-family: var(--primary-font);
   }
-
-  /* Fixes for Leaflet controls in various themes */
-  :global(.leaflet-control-zoom-in), :global(.leaflet-control-zoom-out) {
-    background: white !important;
-    color: black !important;
-  }
-  :global(.leaflet-popup-content-wrapper) {
-    @apply rounded-xl;
+  :global(.leaflet-routing-container) {
+    display: none !important;
   }
 </style>
