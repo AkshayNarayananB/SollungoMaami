@@ -21,12 +21,8 @@ const { title, category, tags, locations, googleMapsUrl } = Astro.props;
 ---
 
 <Main title={title}>
-  <link 
-    rel="stylesheet" 
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
-    crossorigin=""
-  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
 
   <div class="route-wrapper" data-pagefind-ignore>
     <header class="mb-6">
@@ -37,15 +33,21 @@ const { title, category, tags, locations, googleMapsUrl } = Astro.props;
       </div>
     </header>
 
+    <div id="route-stats" class="mb-4 flex gap-4 justify-center md:justify-start">
+        <div class="stat-card">
+            <span class="text-xs uppercase opacity-60 font-bold">Total Distance</span>
+            <p id="total-dist" class="text-lg font-bold text-orange-500">Calculating...</p>
+        </div>
+        <div class="stat-card">
+            <span class="text-xs uppercase opacity-60 font-bold">Travel Time</span>
+            <p id="total-time" class="text-lg font-bold text-orange-500">...</p>
+        </div>
+    </div>
+
     <div id="map" class="map-window"></div>
 
     <div class="my-6 text-center">
-      <a 
-        href={googleMapsUrl} 
-        target="_blank" 
-        rel="noopener noreferrer"
-        class="route-button"
-      >
+      <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" class="route-button">
         <span class="icon">📍</span> Open Live Route in Google Maps
       </a>
     </div>
@@ -61,65 +63,82 @@ const { title, category, tags, locations, googleMapsUrl } = Astro.props;
 </Main>
 
 <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script is:inline src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
 
 <script is:inline define:vars={{ locations }}>
   function initMap() {
-    if (typeof L === 'undefined' || !locations || locations.length === 0) return;
+    if (typeof L === 'undefined' || typeof L.Routing === 'undefined' || !locations || locations.length === 0) return;
 
-    // Initialize map
     const map = L.map('map').setView([locations[0].lat, locations[0].lng], 12);
-
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    // Add Markers
-    locations.forEach(loc => {
-      const marker = L.marker([loc.lat, loc.lng]).addTo(map);
-      
-      marker.bindPopup(`
-        <div style="text-align:center; color: black !important;">
-          <p style="margin: 0; font-weight: bold;">${loc.label}</p>
-          <a href="${loc.url}" style="color: #2563eb; text-decoration: underline; font-size: 12px;">View Details</a>
-        </div>
-      `);
-    });
+    const waypoints = locations.map(loc => L.latLng(loc.lat, loc.lng));
 
-    // Adjust zoom to fit all markers
-    if (locations.length > 1) {
-      const group = new L.featureGroup(locations.map(l => L.marker([l.lat, l.lng])));
-      map.fitBounds(group.getBounds().pad(0.1));
-    }
+    const routingControl = L.Routing.control({
+      waypoints: waypoints,
+      lineOptions: {
+        styles: [{ color: '#ff8c00', opacity: 0.8, weight: 6 }]
+      },
+      addWaypoints: false,
+      draggableWaypoints: false,
+      fitSelectedRoutes: true,
+      show: false,
+      createMarker: function(i, waypoint) {
+        const loc = locations[i];
+        return L.marker(waypoint.latLng).bindPopup(`
+          <div style="text-align:center; color: black !important;">
+            <p style="margin: 0; font-weight: bold;">${loc.label}</p>
+            <a href="${loc.url}" style="color: #2563eb; text-decoration: underline; font-size: 12px;">View Details</a>
+          </div>
+        `);
+      }
+    }).addTo(map);
+
+    // --- NEW: CATCH ROUTE SUMMARY ---
+    routingControl.on('routesfound', function(e) {
+      const routes = e.routes;
+      const summary = routes[0].summary;
+      
+      // Convert meters to km
+      const distance = (summary.totalDistance / 1000).toFixed(1);
+      
+      // Convert seconds to Hours and Minutes
+      const totalSeconds = summary.totalTime;
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      
+      const timeStr = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;
+
+      document.getElementById('total-dist').innerText = `${distance} km`;
+      document.getElementById('total-time').innerText = timeStr;
+    });
   }
 
-  // Handle both standard loads and Astro view transitions
   document.addEventListener('DOMContentLoaded', initMap);
   document.addEventListener('astro:page-load', initMap);
 </script>
 
 <style>
-  .route-wrapper {
-    @apply max-w-5xl mx-auto px-4 py-8;
-  }
+  .route-wrapper { @apply max-w-5xl mx-auto px-4 py-8; }
   .map-window {
     height: 450px;
     width: 100%;
     @apply rounded-3xl border-4 border-[var(--card-color)] shadow-xl;
-    z-index: 1; /* Keeps map below navbar dropdowns */
+    z-index: 1;
   }
+  
+  /* Stats Card Styling */
+  .stat-card {
+      @apply bg-[var(--card-color)] border border-white/5 px-6 py-3 rounded-2xl shadow-sm min-w-[140px];
+  }
+
+  :global(.leaflet-routing-container) { display: none !important; }
+
   .route-button {
-    @apply inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:scale-105 active:scale-95;
+    @apply inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg;
   }
-  .article-wrapper {
-    @apply rounded-3xl bg-[var(--card-color)] px-6 py-8 lg:px-12 lg:py-10;
-  }
-  .article {
-    @apply flex flex-col text-[var(--text-color)];
-    font-family: var(--primary-font);
-  }
-  /* Fix for Leaflet controls in dark mode */
-  :global(.leaflet-control-zoom-in), :global(.leaflet-control-zoom-out) {
-    background: white !important;
-    color: black !important;
-  }
+  .article-wrapper { @apply rounded-3xl bg-[var(--card-color)] px-6 py-8 lg:px-12 lg:py-10; }
+  .article { @apply flex flex-col text-[var(--text-color)]; font-family: var(--primary-font); }
 </style>
