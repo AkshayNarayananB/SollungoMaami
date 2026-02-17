@@ -5,14 +5,11 @@ import Main from "../layouts/MainLayout.astro";
 import { db } from "../lib/firebase";
 import { collection, getDocs, doc, getDoc, query, orderBy, limit } from "firebase/firestore";
 
-// Initialize variables
 let meta = null;
 let spotlightPosts = [];
 let archives = [];
-let debugInfo = "";
 
 try {
-  // 1. Fetch Metadata
   const metaRef = doc(db, "newsletter_metadata", "latest");
   const metaSnap = await getDoc(metaRef);
   
@@ -20,103 +17,103 @@ try {
     meta = metaSnap.data();
     const spotlightSlugs = meta.spotlight_slugs || [];
 
-    // 2. Fetch Spotlight Posts
     for (const slug of spotlightSlugs) {
         const postRef = doc(db, "blog", slug.trim());
         const postSnap = await getDoc(postRef);
         if (postSnap.exists()) {
             spotlightPosts.push({ id: postSnap.id, ...postSnap.data() });
-        } else {
-            debugInfo += ` | Missing post: ${slug}`;
         }
     }
 
-    // 3. Fetch Archives
     const blogQuery = query(collection(db, "blog"), orderBy("published", "desc"), limit(15));
     const blogSnap = await getDocs(blogQuery);
     const allBlogs = blogSnap.docs.map(d => ({ id: d.id, ...d.data() }));
     archives = allBlogs
         .filter(post => !spotlightSlugs.includes(post.id))
         .slice(0, 5);
-  } else {
-    debugInfo = "Document 'newsletter_metadata/latest' not found in Firestore.";
   }
 } catch (e) {
-  debugInfo = "Error: " + e.message;
+  console.error(e);
 }
 ---
 
 <Main title="Maami's Digest">
-  <div class="newsletter-container max-w-4xl mx-auto px-4 py-10" data-pagefind-ignore>
+  <div class="newsletter-container max-w-4xl mx-auto px-4 py-6 md:py-10" data-pagefind-ignore>
     
-    {(!meta || spotlightPosts.length === 0) && (
-      <div class="p-4 mb-10 bg-red-900/10 border border-red-500 text-red-500 rounded-xl font-mono text-xs">
-        <p><strong>Status:</strong> {debugInfo}</p>
-        <p><strong>Firestore Path:</strong> newsletter_metadata/latest</p>
-        <p><strong>Note:</strong> Check if collection name is 'newsletter_metadata' (singular/plural matters!)</p>
-      </div>
-    )}
-
     {meta && (
       <>
-        <header class="border-b-2 border-[var(--primary-color-lighten)] pb-10 mb-10 flex flex-col md:flex-row justify-between items-end">
-          <div>
-            <h1 class="text-7xl font-black text-orange-600 leading-none tracking-tight">MAAMI'S</h1>
-            <h2 class="text-4xl font-bold text-[var(--text-color)] tracking-[0.2em]">DIGEST</h2>
-            <div class="mt-4 text-[10px] font-black opacity-50 tracking-widest uppercase">
-                @SOLLUNGOMAAMIOFFICIAL • SOLLUNGOMAAMI.COM
+        <header class="border-b-2 border-[var(--primary-color-lighten)] pb-6 md:pb-10 mb-8 md:mb-10 flex justify-between items-center overflow-hidden">
+          <div class="min-w-0 flex-1">
+            <h1 class="text-5xl md:text-7xl font-black text-orange-600 leading-none tracking-tight">MAAMI'S</h1>
+            <h2 class="text-2xl md:text-4xl font-bold text-[var(--text-color)] tracking-[0.1em] md:tracking-[0.2em]">DIGEST</h2>
+            <div class="mt-2 text-[8px] md:text-[10px] font-black opacity-50 tracking-widest uppercase truncate text-[var(--text-color)]">
+              <a 
+                href="https://www.instagram.com/sollungomaamiofficial/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="hover:text-orange-500 transition-colors duration-200"
+              >
+                  @SOLLUNGOMAAMIOFFICIAL
+              </a>
+              <span class="mx-2 opacity-30">•</span>
             </div>
           </div>
           <img src="https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/Narak11---Switch-to-Server-Side-Rendering/images/SM-NewLogo.png" 
-               alt="Logo" class="w-24 h-24 rounded-[2rem] hidden md:block shadow-lg" />
+               alt="Logo" class="w-16 h-16 md:w-24 md:h-24 rounded-2xl md:rounded-[2rem] shadow-lg ml-4 flex-shrink-0 border-2 border-white/10" />
         </header>
 
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 bg-orange-600 rounded-[2.5rem] border-4 border-[var(--card-color)]">
-          {spotlightPosts.length > 0 ? spotlightPosts.map((post) => (
-            <a href={`/posts/${post.id}`} class="bg-white rounded-[2rem] p-5 border-2 border-[#4a2c2a] transition-transform hover:-translate-y-1 block h-full">
-               <span class="text-[10px] font-black text-orange-600 uppercase tracking-wider mb-3 block">{post.title?.slice(0, 22)}...</span>
-               <img src={post.image || post.cover} alt={post.title} class="w-full h-40 object-cover rounded-xl border border-gray-100" />
-               <p class="text-xs text-gray-600 mt-4 leading-relaxed line-clamp-3">{post.description}</p>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-12 p-3 md:p-5 bg-orange-600 rounded-[1.5rem] md:rounded-[2.5rem] border-2 md:border-4 border-[var(--card-color)]">
+          {spotlightPosts.map((post) => (
+            <a href={`/posts/${post.id}`} class="bg-[var(--bg-color)] dark:bg-[var(--card-color)] rounded-2xl md:rounded-[2rem] p-3 md:p-4 border-2 border-[#4a2c2a] dark:border-white/10 transition-transform active:scale-95 block h-full">
+               <span class="text-[9px] font-black text-orange-500 uppercase tracking-wider mb-2 block truncate">{post.title}</span>
+               <img src={post.image || post.cover} alt={post.title} class="w-full h-24 md:h-32 object-cover rounded-xl grayscale-[20%] hover:grayscale-0 transition-all" />
+               <p class="text-[10px] md:text-xs text-[var(--text-color)] opacity-80 mt-2 leading-relaxed line-clamp-2">{post.description}</p>
             </a>
-          )) : <p class="text-white text-center w-full col-span-3">No Spotlight posts found.</p>}
+          ))}
         </section>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10">
+          
           <div class="lg:col-span-2">
-            <div class="inline-block bg-[#ffb433] border-2 border-[#4a2c2a] px-6 py-2 rounded-2xl mb-8">
-                <span class="text-xs font-black text-[#4a2c2a] tracking-[0.2em] uppercase">The Archives</span>
+            <div class="inline-block bg-orange-500 dark:bg-orange-600 border-2 border-[#4a2c2a] dark:border-white/10 px-4 py-1 rounded-xl mb-4">
+                <span class="text-[10px] md:text-xs font-black text-white tracking-[0.1em] uppercase">The Archives</span>
             </div>
-            <div class="space-y-6">
+            
+            <div class="space-y-2 md:space-y-3">
               {archives.map((post) => (
-                <a href={`/posts/${post.id}`} class="flex items-center gap-5 p-4 bg-[var(--card-color)] rounded-3xl border border-transparent hover:border-orange-200 transition-all">
-                  <img src={post.image || post.cover} class="w-20 h-20 rounded-2xl object-cover shadow-sm" />
-                  <div class="flex-1">
-                    <h3 class="font-black text-[#4a2c2a] uppercase text-sm">{post.title}</h3>
-                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">{post.description}</p>
+                <a href={`/posts/${post.id}`} class="flex items-center gap-3 p-2 bg-[var(--card-color)] rounded-xl border border-white/5 hover:border-orange-500/50 transition-all">
+                  <img src={post.image || post.cover} class="w-10 h-10 md:w-14 md:h-14 rounded-lg object-cover" />
+                  <div class="flex-1 min-w-0">
+                    <h3 class="font-black text-[var(--text-color)] uppercase text-[10px] md:text-sm truncate">{post.title}</h3>
+                    <p class="text-[9px] md:text-xs text-[var(--text-color)] opacity-50 truncate">{post.description}</p>
                   </div>
-                  <span class="text-orange-400 text-xl font-bold">&rarr;</span>
+                  <span class="text-orange-500 text-lg pr-1">&rarr;</span>
                 </a>
               ))}
             </div>
           </div>
 
-          <aside class="space-y-10">
+          <aside class="space-y-6 md:space-y-10">
             <div>
-              <p class="text-[10px] font-black opacity-40 tracking-widest mb-3 uppercase">Received Mail</p>
-              <div class="bg-white p-6 border border-gray-100 rounded-lg shadow-sm border-l-4 border-orange-500 italic">
-                <p class="text-sm text-[#4a2c2a] font-serif leading-relaxed">"{meta.viewers_note_text}"</p>
-                <p class="mt-4 pt-4 border-t border-gray-50 text-xs font-bold">— {meta.viewers_note_author}</p>
+              <p class="text-[9px] font-black opacity-40 tracking-widest mb-2 uppercase text-[var(--text-color)]">Received Mail</p>
+              <div class="bg-[var(--card-color)] p-4 border border-white/5 rounded-lg shadow-sm border-l-4 border-orange-500 italic">
+                <p class="text-xs md:text-sm text-[var(--text-color)] font-serif leading-relaxed">"{meta.viewers_note_text}"</p>
+                <p class="mt-3 pt-3 border-t border-white/5 text-[10px] font-bold text-[var(--text-color)]">— {meta.viewers_note_author}</p>
               </div>
             </div>
 
-            <div class="bg-white border border-gray-200 p-8 rounded-xl text-center">
-                <h4 class="text-[10px] font-black text-orange-600 tracking-widest mb-4 uppercase">Maami's Tips</h4>
-                {meta.amateur_icon && <img src={meta.amateur_icon} class="w-12 h-12 mx-auto mb-4 object-contain" />}
-                <p class="text-xs font-black uppercase text-[#4a2c2a] mb-2">{meta.amateur_title}</p>
-                <p class="text-[11px] text-gray-500 leading-relaxed italic">"{meta.amateur_description}"</p>
+            <div class="bg-[var(--card-color)] border border-white/5 p-6 rounded-xl text-center">
+                <h4 class="text-[9px] font-black text-orange-500 tracking-widest mb-3 uppercase">Maami's Tips</h4>
+                {meta.amateur_icon && <img src={meta.amateur_icon} class="w-10 h-10 mx-auto mb-3 object-contain dark:brightness-110" />}
+                <p class="text-[11px] font-black uppercase text-[var(--text-color)] mb-1">{meta.amateur_title}</p>
+                <p class="text-[10px] text-[var(--text-color)] opacity-60 leading-relaxed italic">"{meta.amateur_description}"</p>
             </div>
           </aside>
         </div>
+
+        <footer class="mt-12 pt-8 border-t border-white/10 text-center opacity-40 text-[8px] md:text-[10px] uppercase tracking-widest text-[var(--text-color)]">
+            <p>&copy; 2026 Maami's Digest. Celebrating the beauty of simply being.</p>
+        </footer>
       </>
     )}
   </div>
