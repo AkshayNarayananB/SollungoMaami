@@ -17,7 +17,7 @@ image: "https://raw.githubusercontent.com/AkshayNarayananB/SollungoMaami/master/
 
 ---
 
-## 🌾 About the Place  
+##  About the Place  
 
 Thanjavur, the land of temples and culture, welcomes you with its lush paddy, banana, and sugarcane fields swaying in the breeze. Mornings here begin with the graceful call of peacocks and the earthy fragrance of wet soil. The lifeline of this region is the holy **Cauvery river**, worshipped daily by villagers for nurturing their farmlands and lives.  
 
