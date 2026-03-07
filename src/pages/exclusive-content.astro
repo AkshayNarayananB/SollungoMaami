@@ -13,8 +13,9 @@ import AuthGatekeeper from "../components/AuthGatekeeper.jsx";
           <h1 class="text-4xl font-bold mb-2">Welcome, Member! 🧡</h1>
           <p class="opacity-90">Enjoy your exclusive spices and stories.</p>
         </div>
+        
         <button 
-          onclick="import { auth } from '../lib/firebase'; auth.signOut().then(() => window.location.href = '/')"
+          id="logout-btn"
           class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg text-sm transition-all"
         >
           Logout
@@ -26,3 +27,18 @@ import AuthGatekeeper from "../components/AuthGatekeeper.jsx";
       </div>
   </div>
 </MainLayout>
+
+<script>
+  import { auth } from '../lib/firebase';
+
+  const logoutBtn = document.getElementById('logout-btn');
+  
+  logoutBtn?.addEventListener('click', async () => {
+    try {
+      await auth.signOut();
+      window.location.href = '/';
+    } catch (err) {
+      console.error("Logout failed:", err);
+    }
+  });
+</script>
