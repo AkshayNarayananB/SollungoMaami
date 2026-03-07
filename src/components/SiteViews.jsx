@@ -13,7 +13,7 @@ const SiteViews = () => {
       const hasCounted = sessionStorage.getItem("viewCounted");
       if (!hasCounted) {
         // Fire and forget (we don't await this because we don't want to block the UI)
-        setDoc(docRef, { count: increment(1) }, { merge: true });
+        await setDoc(docRef, { count: increment(1) }, { merge: true });
         sessionStorage.setItem("viewCounted", "true");
       }
 
