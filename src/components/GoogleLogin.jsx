@@ -13,21 +13,17 @@ const GoogleLogin = () => {
     const provider = new GoogleAuthProvider();
 
     try {
-      // 1. Authenticate with Google
       const result = await signInWithPopup(auth, provider);
       const email = result.user.email;
 
-      // 2. Check if email exists in 'newsletters' collection
       const docRef = doc(db, "newsletters", email);
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
-        // Success! Redirect to the private page
         window.location.href = "/exclusive-content";
       } else {
-        // Not a subscriber
         setError("Access Denied: You must be a newsletter subscriber to enter.");
-        await auth.signOut(); // Log them out since they aren't authorized
+        await auth.signOut();
       }
     } catch (err) {
       console.error(err);
@@ -35,6 +31,13 @@ const GoogleLogin = () => {
     } finally {
       setLoading(false);
     }
+  };
+
+  // --- THE NEW TRIGGER FUNCTION ---
+  const triggerNewsletter = (e) => {
+    e.preventDefault();
+    // Dispatch a "shout" that the Newsletter component can hear
+    window.dispatchEvent(new CustomEvent('open-newsletter'));
   };
 
   return (
@@ -59,6 +62,17 @@ const GoogleLogin = () => {
           </>
         )}
       </button>
+
+      {/* --- ADDED SUBSCRIBE LINK --- */}
+      <p className="mt-8 text-xs text-gray-500 dark:text-gray-400 text-center">
+        Only active newsletter subscribers can access this area. <br />
+        <button 
+          onClick={triggerNewsletter}
+          className="text-amber-600 dark:text-amber-400 font-bold hover:underline bg-transparent border-none p-0 cursor-pointer"
+        >
+          Subscribe here
+        </button>.
+      </p>
     </div>
   );
 };
