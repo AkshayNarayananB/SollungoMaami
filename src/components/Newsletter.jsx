@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { db } from '../lib/firebase';
-// REMOVED getDoc. We only need setDoc.
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const Newsletter = () => {
@@ -9,7 +8,6 @@ const Newsletter = () => {
   const [status, setStatus] = useState("idle");
   const [message, setMessage] = useState("");
 
-  // Auto-Open Logic
   useEffect(() => {
     const hasSeen = sessionStorage.getItem("newsletter_seen");
     if (!hasSeen) {
@@ -29,17 +27,11 @@ const Newsletter = () => {
 
     try {
       const docRef = doc(db, "newsletters", email);
-      
-      // STRATEGY: Try to write.
-      // If our Firestore Rules block "updates", this will fail for existing users.
       await setDoc(docRef, {
         email: email,
         subscribedAt: serverTimestamp()
       });
 
-      // --- IF WE REACH HERE, IT WAS A NEW USER ---
-      
-      // Trigger Welcome Email
       fetch('/api/welcome', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -57,11 +49,8 @@ const Newsletter = () => {
       }, 2500);
 
     } catch (error) {
-      // --- IF WE FAIL, ASSUME ALREADY SUBSCRIBED ---
-      // (This works because we will set rules to block overwrites)
-      console.log("Subscription blocked (likely duplicate):", error);
-      
-      setStatus("success"); // We show success visually (green)
+      console.log("Subscription blocked:", error);
+      setStatus("success"); 
       setMessage("Thanks for your love, you're already subscribed! 🧡");
       setEmail("");
 
@@ -118,21 +107,34 @@ const Newsletter = () => {
                   className={`w-full py-3 rounded-lg font-bold text-white transition-all duration-200 ${
                     status === 'success' 
                       ? 'bg-green-500 scale-100' 
-                      : status === 'error'
-                      ? 'bg-red-500'
                       : 'bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 active:scale-95 shadow-md'
                   }`}
                 >
                   {status === 'loading' ? 'Signing up...' : 
                    status === 'success' ? message : 
-                   status === 'error' ? 'Error' :
                    'Subscribe Now'}
                 </button>
               </form>
               
-              <p className="mt-4 text-xs text-gray-400">
+              <p className="mt-4 text-xs text-gray-400 italic">
                 No spam, just love & spices. Unsubscribe anytime.
               </p>
+
+              {/* --- ADDED SECTION START --- */}
+              <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-800">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Already a subscriber?{" "}
+                  <a 
+                    href="/login" 
+                    className="text-amber-600 dark:text-amber-400 font-bold hover:underline"
+                  >
+                    Log in
+                  </a>{" "}
+                  for access to exclusive content.
+                </p>
+              </div>
+              {/* --- ADDED SECTION END --- */}
+
             </div>
           </div>
         </div>
