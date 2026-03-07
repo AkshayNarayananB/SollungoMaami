@@ -1,0 +1,25 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import GoogleLogin from "../components/GoogleLogin.jsx";
+---
+
+<MainLayout title="Member Login">
+  <div class="flex flex-col items-center justify-center min-h-[60vh] px-4">
+    <div class="w-full max-w-md bg-white dark:bg-[#1e1e1e] rounded-3xl shadow-xl p-10 border-2 border-amber-100 dark:border-amber-900/20 text-center">
+      <div class="text-5xl mb-6">🔑</div>
+      <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+        Member Access
+      </h1>
+      <p class="text-gray-600 dark:text-gray-300 mb-8">
+        Sign in with Google to access exclusive recipes and stories.
+      </p>
+
+      <GoogleLogin client:load />
+
+      <p class="mt-8 text-xs text-gray-400">
+        Only active newsletter subscribers can access this area. 
+        <a href="/" class="text-amber-600 hover:underline">Subscribe here</a>.
+      </p>
+    </div>
+  </div>
+</MainLayout>
