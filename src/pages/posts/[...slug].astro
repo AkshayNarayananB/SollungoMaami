@@ -9,19 +9,17 @@ import { marked } from 'marked';
 
 const { slug } = Astro.params;
 if (!slug) return Astro.redirect('/404');
+const firebaseId = slug.replace(/-/g, ' '); 
+// ------------------------------
 
-// --- 2. THE MAGIC LINE (Caching) ---
-// public: Cache can be stored by anyone (CDN, Browser)
-// max-age=0: Tell the User's Browser NOT to cache (so they always ask Vercel)
-// s-maxage=3600: Tell Vercel (CDN) to cache this page for 3600 seconds (1 Hour)
-// stale-while-revalidate=600: If cache expires, serve old version while fetching new one in background
+// 2. Set Caching Headers
 Astro.response.headers.set(
   'Cache-Control', 
   'public, max-age=0, s-maxage=3600, stale-while-revalidate=600'
 );
-// -----------------------------------
 
-const docRef = doc(db, "blog", slug);
+// 3. Fetch from Firebase using the converted ID
+const docRef = doc(db, "blog", firebaseId); // Use firebaseId here, not slug
 const docSnap = await getDoc(docRef);
 
 if (!docSnap.exists()) return Astro.redirect('/404');
