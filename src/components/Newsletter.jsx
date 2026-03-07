@@ -19,6 +19,16 @@ const Newsletter = () => {
     }
   }, []);
 
+    // Inside your Newsletter component...
+  useEffect(() => {
+    const handleOpenEvent = () => setIsOpen(true);
+    
+    // Listen for the custom "open-newsletter" event
+    window.addEventListener('open-newsletter', handleOpenEvent);
+    
+    return () => window.removeEventListener('open-newsletter', handleOpenEvent);
+  }, []);
+
   const handleSubscribe = async (e) => {
     e.preventDefault();
     if (!email.includes("@")) return;
