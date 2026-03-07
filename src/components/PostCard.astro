@@ -20,8 +20,13 @@ export interface Props {
 }
 
 const props = Astro.props;
-const entryID = props.id;
-const contentUrl = `/posts/${entryID}`;
+const entryID = props.id; 
+
+// SCENARIO A: Transform the ID for the URL
+// This turns "great guy-ABC" (ID) into "great-guy-ABC" (URL)
+const urlSlug = entryID.replace(/\s+/g, '-');
+
+const contentUrl = `/posts/${urlSlug}`;
 const { time, wordCount } = props.readingMetadata;
 ---
 
