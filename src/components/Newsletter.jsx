@@ -120,12 +120,13 @@ const Newsletter = () => {
                 No spam, just love & spices. Unsubscribe anytime.
               </p>
 
-              {/* --- ADDED SECTION START --- */}
               <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-800">
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Already a subscriber?{" "}
                   <a 
                     href="/login" 
+                    // --- THE FIX ---
+                    onClick={() => setIsOpen(false)}
                     className="text-amber-600 dark:text-amber-400 font-bold hover:underline"
                   >
                     Log in
@@ -133,7 +134,6 @@ const Newsletter = () => {
                   for access to exclusive content.
                 </p>
               </div>
-              {/* --- ADDED SECTION END --- */}
 
             </div>
           </div>
