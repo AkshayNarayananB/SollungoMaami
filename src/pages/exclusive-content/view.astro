@@ -3,7 +3,8 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import AuthGatekeeper from "../../components/AuthGatekeeper.jsx";
 import PdfViewer from "../../components/PdfViewer.jsx";
 
-// This is fine in static mode because we'll parse it on the client
+// No server-side fetching here! 
+// This keeps your frontend 100% static.
 ---
 
 <MainLayout title="Member View">
@@ -11,12 +12,17 @@ import PdfViewer from "../../components/PdfViewer.jsx";
 
   <div class="max-w-5xl mx-auto py-8 px-4 h-screen flex flex-col">
     <div class="flex items-center justify-between mb-4">
-      <a href="/exclusive-content" class="text-amber-600 font-bold hover:underline">← Back</a>
+      <a href="/exclusive-content" class="text-amber-600 font-bold">← Back to Library</a>
     </div>
 
     <div class="flex-grow bg-white rounded-2xl overflow-hidden shadow-2xl relative border border-gray-200">
-      <PdfViewer client:only="react" fileName={new URL(Astro.url).searchParams.get('file')} />
+      <PdfViewer client:only="react" fileName={new URLSearchParams(window.location.search).get('file')} />
       <div class="absolute top-0 right-0 w-24 h-16 pointer-events-none bg-transparent"></div>
     </div>
   </div>
 </MainLayout>
+
+<script>
+  // Small fix to make the URL search params available to the React component
+  import { PdfViewer } from '../../components/PdfViewer.jsx';
+</script>
