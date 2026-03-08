@@ -1,29 +1,33 @@
 import React, { useState, useEffect } from 'react';
 
 const PdfViewer = ({ fileName }) => {
-  const [url, setUrl] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [pdfUrl, setPdfUrl] = useState("");
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    const fetchLink = async () => {
+    const getLink = async () => {
+      if (!fileName) return;
       try {
         const res = await fetch(`/api/sign-r2?file=${fileName}`);
         const data = await res.json();
-        setUrl(data.url);
+        if (data.url) {
+          setPdfUrl(data.url);
+        } else {
+          setError(true);
+        }
       } catch (err) {
-        console.error("Failed to get PDF link");
-      } finally {
-        setLoading(false);
+        setError(true);
       }
     };
-    if (fileName) fetchLink();
+    getLink();
   }, [fileName]);
 
-  if (loading) return <div className="p-20 text-center animate-pulse text-amber-600">Unlocking PDF...</div>;
+  if (error) return <div className="p-10 text-red-500">Error loading document.</div>;
+  if (!pdfUrl) return <div className="p-10 animate-pulse text-amber-600 font-bold">Unlocking Secure Document...</div>;
 
   return (
     <iframe 
-      src={`${url}#toolbar=0&navpanes=0`} 
+      src={`${pdfUrl}#toolbar=0&navpanes=0`} 
       className="w-full h-full border-none"
       onContextMenu={(e) => e.preventDefault()}
     ></iframe>
