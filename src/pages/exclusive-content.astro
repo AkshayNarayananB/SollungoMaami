@@ -1,20 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import AuthGatekeeper from "../components/AuthGatekeeper.jsx";
-import { db } from '../lib/firebase';
-import { collection, getDocs } from 'firebase/firestore';
-
-// 1. Fetch the 'document' collection
-const querySnapshot = await getDocs(collection(db, "document"));
-const docGroups = querySnapshot.docs.map(doc => ({
-  category: doc.id,        // Document ID (e.g. "Spices", "Secret Stories")
-  pdfs: doc.data().pdfs    // Array of strings (names of the PDFs)
-}));
-
-export const prerender = false;
+import LibraryDropdowns from "../components/LibraryDropdowns.jsx"; // We'll create this
 ---
 
-<MainLayout title="Exclusive Content">
+<MainLayout title="Member Library">
   <AuthGatekeeper client:load />
 
   <div class="max-w-4xl mx-auto py-12 px-4">
@@ -28,38 +18,15 @@ export const prerender = false;
       </div>
     </div>
 
-    <div class="space-y-4">
-      {docGroups.map((group) => (
-        <details class="group bg-white dark:bg-[#1e1e1e] rounded-2xl border-2 border-amber-100 dark:border-amber-900/20 overflow-hidden transition-all shadow-sm">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none font-bold text-xl text-gray-800 dark:text-white">
-            <span class="flex items-center gap-3">
-              <span class="text-amber-500">📁</span> {group.category}
-            </span>
-            <span class="transition-transform group-open:rotate-180 text-amber-500">▼</span>
-          </summary>
-          
-          <div class="px-6 pb-6 pt-2">
-            <ul class="divide-y divide-amber-50 dark:divide-gray-800">
-              {group.pdfs.map((pdfName) => (
-                <li>
-                  <a 
-                    href={`/exclusive-content/view?file=${encodeURIComponent(pdfName)}`}
-                    class="flex items-center justify-between py-4 hover:bg-amber-50 dark:hover:bg-amber-900/10 px-4 rounded-xl transition-colors group/item"
-                  >
-                    <div class="flex items-center gap-3">
-                      <span class="text-red-400">📄</span>
-                      <span class="text-gray-700 dark:text-gray-300 font-medium">{pdfName}</span>
-                    </div>
-                    <span class="text-amber-600 text-sm font-bold opacity-0 group-hover/item:opacity-100 transition-opacity">
-                      Read Online →
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </details>
-      ))}
-    </div>
+    <LibraryDropdowns client:only="react" />
   </div>
 </MainLayout>
+
+<script>
+  import { auth } from '../lib/firebase';
+  const logoutBtn = document.getElementById('logout-btn');
+  logoutBtn?.addEventListener('click', async () => {
+    await auth.signOut();
+    window.location.href = '/login';
+  });
+</script>
