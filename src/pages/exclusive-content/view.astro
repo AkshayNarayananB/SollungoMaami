@@ -1,0 +1,37 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import AuthGatekeeper from "../../components/AuthGatekeeper.jsx";
+
+const { searchParams } = Astro.url;
+const fileName = searchParams.get('file');
+
+if (!fileName) return Astro.redirect('/exclusive-content');
+
+// NOTE: You would store your PDFs in Firebase Storage and get the URL here.
+// For this example, we assume they are in your /public/pdfs folder.
+const pdfUrl = `/pdfs/${fileName}.pdf#toolbar=0&navpanes=0&scrollbar=0`;
+---
+
+<MainLayout title={`Viewing: ${fileName}`}>
+  <AuthGatekeeper client:load />
+
+  <div class="max-w-5xl mx-auto py-8 px-4 h-screen flex flex-col">
+    <div class="flex items-center justify-between mb-4">
+      <a href="/exclusive-content" class="text-amber-600 font-bold flex items-center gap-2">
+        ← Back to Library
+      </a>
+      <p class="text-sm text-gray-500 italic">Protected Member View</p>
+    </div>
+
+    <div class="flex-grow bg-gray-100 rounded-2xl overflow-hidden shadow-inner relative" oncontextmenu="return false;">
+      <iframe 
+        src={pdfUrl} 
+        width="100%" 
+        height="100%" 
+        style="border: none;"
+      ></iframe>
+      
+      <div class="absolute top-0 right-0 w-20 h-20 pointer-events-none"></div>
+    </div>
+  </div>
+</MainLayout>
