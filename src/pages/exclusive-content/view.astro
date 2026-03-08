@@ -3,8 +3,8 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import AuthGatekeeper from "../../components/AuthGatekeeper.jsx";
 import PdfViewer from "../../components/PdfViewer.jsx";
 
-// No server-side fetching here! 
-// This keeps your frontend 100% static.
+// REMOVED: All window.location or new URLSearchParams logic from here.
+// In static mode, this block runs on the server where 'window' doesn't exist.
 ---
 
 <MainLayout title="Member View">
@@ -12,17 +12,20 @@ import PdfViewer from "../../components/PdfViewer.jsx";
 
   <div class="max-w-5xl mx-auto py-8 px-4 h-screen flex flex-col">
     <div class="flex items-center justify-between mb-4">
-      <a href="/exclusive-content" class="text-amber-600 font-bold">← Back to Library</a>
+      <a href="/exclusive-content" class="text-amber-600 font-bold hover:underline">
+        ← Back to Library
+      </a>
+      <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded">Secure View</span>
     </div>
 
     <div class="flex-grow bg-white rounded-2xl overflow-hidden shadow-2xl relative border border-gray-200">
-      <PdfViewer client:only="react" fileName={new URLSearchParams(window.location.search).get('file')} />
+      {/* FIX: Use client:only="react". 
+          This tells Astro NOT to run this component during build.
+          It will only ever run in the user's browser.
+      */}
+      <PdfViewer client:only="react" />
+      
       <div class="absolute top-0 right-0 w-24 h-16 pointer-events-none bg-transparent"></div>
     </div>
   </div>
 </MainLayout>
-
-<script>
-  // Small fix to make the URL search params available to the React component
-  import { PdfViewer } from '../../components/PdfViewer.jsx';
-</script>
