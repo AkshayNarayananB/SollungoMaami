@@ -21,7 +21,7 @@ import pagefind from "astro-pagefind";
 // https://astro.build/config
 export default defineConfig({
   site: MaamiConfig.site,
-  output: 'static',
+  output: 'hybrid',
   adapter: vercel(),
   integrations: [
     tailwind(),
