@@ -1,7 +1,8 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import AuthGatekeeper from "../components/AuthGatekeeper.jsx";
-import LibraryDropdowns from "../components/LibraryDropdowns.jsx"; // We'll create this
+import LibraryDropdowns from "../components/LibraryDropdowns.jsx";
+import Comments from "../components/Comments.jsx"; // [NEW IMPORT]
 ---
 
 <MainLayout title="Member Library">
@@ -19,6 +20,8 @@ import LibraryDropdowns from "../components/LibraryDropdowns.jsx"; // We'll crea
     </div>
 
     <LibraryDropdowns client:only="react" />
+
+    <Comments client:only="react" /> 
   </div>
 </MainLayout>
 
