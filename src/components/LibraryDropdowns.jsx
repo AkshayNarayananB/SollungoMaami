@@ -36,29 +36,20 @@ const handleDownload = async (category, index, pdfName) => {
     setDownloadingStatus({ category, index });
 
     try {
-      // 1. Fetch the secure R2 URL 
-      const res = await fetch(`/api/sign-r2?file=${encodeURIComponent(pdfName)}`);
+      // 1. Fetch the secure URL, passing the ?download=true flag!
+      const res = await fetch(`/api/sign-r2?file=${encodeURIComponent(pdfName)}&download=true`);
       const data = await res.json();
       
       if (!data.url) throw new Error("Failed to get secure URL");
 
-      // 2. Fetch the actual file as a Blob to force a cross-origin download
-      const fileResponse = await fetch(data.url);
-      const blob = await fileResponse.blob();
-      const blobUrl = window.URL.createObjectURL(blob);
-
-      // 3. Trigger the download using the local Blob URL
+      // 2. Trigger the direct download (No Blob needed!)
       const link = document.createElement('a');
-      link.href = blobUrl;
-      link.download = pdfName; // Now this will work
+      link.href = data.url;
       document.body.appendChild(link);
       link.click();
-      
-      // Cleanup the DOM and memory
       document.body.removeChild(link);
-      window.URL.revokeObjectURL(blobUrl);
 
-      // 4. Update the Firestore array and local UI state
+      // 3. Update the Firestore downloads array
       const groupIndex = groups.findIndex(g => g.category === category);
       if (groupIndex === -1) return;
 
@@ -73,10 +64,9 @@ const handleDownload = async (category, index, pdfName) => {
       newDownloads[index] += 1;
       currentGroup.downloads = newDownloads;
 
-      // Optimistically update UI
       setGroups(newGroups);
 
-      // Update Firestore
+      // Push the update to Firestore
       const docRef = doc(db, "document", category);
       await updateDoc(docRef, {
         downloads: newDownloads
@@ -84,12 +74,12 @@ const handleDownload = async (category, index, pdfName) => {
 
     } catch (error) {
       console.error("Error processing download:", error);
-      alert("Sorry, we couldn't download the file. Please try again later.");
+      alert("Sorry, we couldn't download the file.");
     } finally {
       setDownloadingStatus({ category: null, index: null });
     }
   };
-
+  
   if (loading) return <div className="text-center p-10 text-amber-600 animate-pulse font-bold">Loading Library...</div>;
 
   return (
