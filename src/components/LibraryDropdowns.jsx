@@ -30,8 +30,7 @@ const LibraryDropdowns = () => {
     fetchData();
   }, []);
 
-  const handleDownload = async (category, index, pdfName) => {
-    // Prevent multiple clicks while fetching the secure URL
+const handleDownload = async (category, index, pdfName) => {
     if (downloadingStatus.category === category && downloadingStatus.index === index) return;
     
     setDownloadingStatus({ category, index });
@@ -41,22 +40,25 @@ const LibraryDropdowns = () => {
       const res = await fetch(`/api/sign-r2?file=${encodeURIComponent(pdfName)}`);
       const data = await res.json();
       
-      if (!data.url) {
-        throw new Error("Failed to get secure URL");
-      }
+      if (!data.url) throw new Error("Failed to get secure URL");
 
-      // 2. Trigger the download using the secure URL
+      // 2. Fetch the actual file as a Blob to force a cross-origin download
+      const fileResponse = await fetch(data.url);
+      const blob = await fileResponse.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+
+      // 3. Trigger the download using the local Blob URL
       const link = document.createElement('a');
-      link.href = data.url;
-      // Depending on your R2 CORS/Content-Disposition setup, the download attribute 
-      // might just open the file in a new tab if it's cross-origin. Target blank ensures it works smoothly.
-      link.target = "_blank"; 
-      link.download = pdfName; 
+      link.href = blobUrl;
+      link.download = pdfName; // Now this will work
       document.body.appendChild(link);
       link.click();
+      
+      // Cleanup the DOM and memory
       document.body.removeChild(link);
+      window.URL.revokeObjectURL(blobUrl);
 
-      // 3. Update the Firestore array and local UI state
+      // 4. Update the Firestore array and local UI state
       const groupIndex = groups.findIndex(g => g.category === category);
       if (groupIndex === -1) return;
 
@@ -84,7 +86,6 @@ const LibraryDropdowns = () => {
       console.error("Error processing download:", error);
       alert("Sorry, we couldn't download the file. Please try again later.");
     } finally {
-      // Reset button state
       setDownloadingStatus({ category: null, index: null });
     }
   };
