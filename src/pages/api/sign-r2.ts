@@ -14,14 +14,14 @@ export const GET = async ({ request }) => {
 
     const s3 = new S3Client({
       region: "auto",
-      endpoint: `https://5627d34f54eda5c4faa49b384be1d67d.r2.cloudflarestorage.com'
+      // Fixed the syntax error here and reverted to the dynamic variable
+      endpoint: `https://${accountId}.r2.cloudflarestorage.com`,
       credentials: {
         accessKeyId,
         secretAccessKey,
       },
     });
 
-    // THE FIX: Added a fallback base URL so Vercel's relative paths don't crash Node.js
     const url = new URL(request.url, "http://localhost");
     
     const fileName = url.searchParams.get('file');
