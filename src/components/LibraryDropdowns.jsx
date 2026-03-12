@@ -5,6 +5,8 @@ import { collection, getDocs, doc, updateDoc } from 'firebase/firestore';
 const LibraryDropdowns = () => {
   const [groups, setGroups] = useState([]);
   const [loading, setLoading] = useState(true);
+  // Track which file is currently generating a secure link
+  const [downloadingStatus, setDownloadingStatus] = useState({ category: null, index: null });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,7 +17,7 @@ const LibraryDropdowns = () => {
           return {
             category: doc.id,
             pdfs: docData.pdfs || [],
-            downloads: docData.downloads || [] // Fetch the parallel downloads array
+            downloads: docData.downloads || []
           };
         });
         setGroups(data);
@@ -29,46 +31,62 @@ const LibraryDropdowns = () => {
   }, []);
 
   const handleDownload = async (category, index, pdfName) => {
-    // 1. Find the specific group we are modifying
-    const groupIndex = groups.findIndex(g => g.category === category);
-    if (groupIndex === -1) return;
+    // Prevent multiple clicks while fetching the secure URL
+    if (downloadingStatus.category === category && downloadingStatus.index === index) return;
+    
+    setDownloadingStatus({ category, index });
 
-    // Create a deep copy of our state to update it optimally
-    const newGroups = [...groups];
-    const currentGroup = newGroups[groupIndex];
-
-    // Ensure the downloads array matches the length of the pdfs array 
-    // (in case you added new PDFs manually in Firestore but forgot to add the 0s)
-    const newDownloads = [...(currentGroup.downloads || [])];
-    while (newDownloads.length < currentGroup.pdfs.length) {
-      newDownloads.push(0);
-    }
-
-    // Increment the download count for this specific index
-    newDownloads[index] += 1;
-    currentGroup.downloads = newDownloads;
-
-    // 2. Optimistically update the UI so it feels instant to the user
-    setGroups(newGroups);
-
-    // 3. Update the array in Firestore
     try {
+      // 1. Fetch the secure R2 URL 
+      const res = await fetch(`/api/sign-r2?file=${encodeURIComponent(pdfName)}`);
+      const data = await res.json();
+      
+      if (!data.url) {
+        throw new Error("Failed to get secure URL");
+      }
+
+      // 2. Trigger the download using the secure URL
+      const link = document.createElement('a');
+      link.href = data.url;
+      // Depending on your R2 CORS/Content-Disposition setup, the download attribute 
+      // might just open the file in a new tab if it's cross-origin. Target blank ensures it works smoothly.
+      link.target = "_blank"; 
+      link.download = pdfName; 
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // 3. Update the Firestore array and local UI state
+      const groupIndex = groups.findIndex(g => g.category === category);
+      if (groupIndex === -1) return;
+
+      const newGroups = [...groups];
+      const currentGroup = newGroups[groupIndex];
+
+      const newDownloads = [...(currentGroup.downloads || [])];
+      while (newDownloads.length < currentGroup.pdfs.length) {
+        newDownloads.push(0);
+      }
+
+      newDownloads[index] += 1;
+      currentGroup.downloads = newDownloads;
+
+      // Optimistically update UI
+      setGroups(newGroups);
+
+      // Update Firestore
       const docRef = doc(db, "document", category);
       await updateDoc(docRef, {
         downloads: newDownloads
       });
-    } catch (error) {
-      console.error("Error updating download count in Firestore:", error);
-    }
 
-    // 4. Trigger the actual file download
-    // Note: Adjust the href path below based on where your PDFs are actually stored.
-    const link = document.createElement('a');
-    link.href = `/exclusive-content/view?file=${encodeURIComponent(pdfName)}`; 
-    link.download = pdfName; 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    } catch (error) {
+      console.error("Error processing download:", error);
+      alert("Sorry, we couldn't download the file. Please try again later.");
+    } finally {
+      // Reset button state
+      setDownloadingStatus({ category: null, index: null });
+    }
   };
 
   if (loading) return <div className="text-center p-10 text-amber-600 animate-pulse font-bold">Loading Library...</div>;
@@ -86,33 +104,51 @@ const LibraryDropdowns = () => {
           
           <div className="px-6 pb-6 pt-2">
             <ul className="divide-y divide-amber-50 dark:divide-gray-800">
-              {group.pdfs.map((pdfName, index) => (
-                <li key={pdfName} className="flex flex-col sm:flex-row sm:items-center justify-between py-4 hover:bg-amber-50 dark:hover:bg-amber-900/10 px-4 rounded-xl transition-all group/item gap-3">
-                  
-                  {/* Left Side: Title & Read Link */}
-                  <a 
-                    href={`/exclusive-content/view?file=${encodeURIComponent(pdfName)}`}
-                    className="flex-1 flex items-center gap-3"
-                  >
-                    <span className="text-gray-700 dark:text-gray-300 font-medium truncate">📄 {pdfName}</span>
-                    <span className="text-amber-600 text-sm font-bold opacity-0 group-hover/item:opacity-100 transition-opacity hidden sm:inline-block">
-                      Read Online →
-                    </span>
-                  </a>
+              {group.pdfs.map((pdfName, index) => {
+                const isDownloading = downloadingStatus.category === group.category && downloadingStatus.index === index;
+                const downloadCount = group.downloads && group.downloads[index] ? group.downloads[index] : 0;
 
-                  {/* Right Side: Download Button with Counter */}
-                  <button
-                    onClick={() => handleDownload(group.category, index, pdfName)}
-                    className="flex items-center justify-center gap-2 bg-amber-100 hover:bg-amber-200 dark:bg-amber-900/30 dark:hover:bg-amber-900/50 text-amber-800 dark:text-amber-400 px-4 py-2 rounded-lg text-sm font-bold transition-colors active:scale-95 whitespace-nowrap"
-                  >
-                    <span>📥 Download</span>
-                    <span className="bg-white/50 dark:bg-black/20 px-2 py-0.5 rounded-md text-xs">
-                      {group.downloads && group.downloads[index] ? group.downloads[index] : 0}
-                    </span>
-                  </button>
+                return (
+                  <li key={pdfName} className="flex flex-col sm:flex-row sm:items-center justify-between py-4 hover:bg-amber-50 dark:hover:bg-amber-900/10 px-4 rounded-xl transition-all group/item gap-3">
+                    
+                    {/* Left Side: Title & Read Link */}
+                    <a 
+                      href={`/exclusive-content/view?file=${encodeURIComponent(pdfName)}`}
+                      className="flex-1 flex items-center gap-3"
+                    >
+                      <span className="text-gray-700 dark:text-gray-300 font-medium truncate">📄 {pdfName}</span>
+                      <span className="text-amber-600 text-sm font-bold opacity-0 group-hover/item:opacity-100 transition-opacity hidden sm:inline-block">
+                        Read Online →
+                      </span>
+                    </a>
 
-                </li>
-              ))}
+                    {/* Right Side: Download Button with Counter */}
+                    <button
+                      onClick={() => handleDownload(group.category, index, pdfName)}
+                      disabled={isDownloading}
+                      className={`flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-bold transition-all whitespace-nowrap ${
+                        isDownloading 
+                        ? "bg-gray-100 text-gray-400 cursor-not-allowed dark:bg-gray-800" 
+                        : "bg-amber-100 hover:bg-amber-200 dark:bg-amber-900/30 dark:hover:bg-amber-900/50 text-amber-800 dark:text-amber-400 active:scale-95"
+                      }`}
+                    >
+                      {isDownloading ? (
+                        <>
+                          <div className="w-4 h-4 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
+                          <span>Fetching...</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>📥 Download</span>
+                          <span className="bg-white/50 dark:bg-black/20 px-2 py-0.5 rounded-md text-xs">
+                            {downloadCount}
+                          </span>
+                        </>
+                      )}
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </details>
