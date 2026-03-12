@@ -5,7 +5,6 @@ import { collection, getDocs, doc, updateDoc } from 'firebase/firestore';
 const LibraryDropdowns = () => {
   const [groups, setGroups] = useState([]);
   const [loading, setLoading] = useState(true);
-  // Track which file is currently generating a secure link
   const [downloadingStatus, setDownloadingStatus] = useState({ category: null, index: null });
 
   useEffect(() => {
@@ -30,19 +29,24 @@ const LibraryDropdowns = () => {
     fetchData();
   }, []);
 
-const handleDownload = async (category, index, pdfName) => {
+  const handleDownload = async (category, index, pdfName) => {
     if (downloadingStatus.category === category && downloadingStatus.index === index) return;
     
     setDownloadingStatus({ category, index });
 
     try {
-      // 1. Fetch the secure URL, passing the ?download=true flag!
+      // 1. Fetch the secure URL, passing the ?download=true flag
       const res = await fetch(`/api/sign-r2?file=${encodeURIComponent(pdfName)}&download=true`);
-      const data = await res.json();
       
+      // Failsafe to catch non-JSON responses
+      if (!res.ok) {
+        throw new Error(`Server returned ${res.status}`);
+      }
+
+      const data = await res.json();
       if (!data.url) throw new Error("Failed to get secure URL");
 
-      // 2. Trigger the direct download (No Blob needed!)
+      // 2. Trigger the direct download
       const link = document.createElement('a');
       link.href = data.url;
       document.body.appendChild(link);
@@ -68,18 +72,16 @@ const handleDownload = async (category, index, pdfName) => {
 
       // Push the update to Firestore
       const docRef = doc(db, "document", category);
-      await updateDoc(docRef, {
-        downloads: newDownloads
-      });
+      await updateDoc(docRef, { downloads: newDownloads });
 
     } catch (error) {
       console.error("Error processing download:", error);
-      alert("Sorry, we couldn't download the file.");
+      alert("Sorry, we couldn't download the file. Please try again.");
     } finally {
       setDownloadingStatus({ category: null, index: null });
     }
   };
-  
+
   if (loading) return <div className="text-center p-10 text-amber-600 animate-pulse font-bold">Loading Library...</div>;
 
   return (
@@ -101,8 +103,6 @@ const handleDownload = async (category, index, pdfName) => {
 
                 return (
                   <li key={pdfName} className="flex flex-col sm:flex-row sm:items-center justify-between py-4 hover:bg-amber-50 dark:hover:bg-amber-900/10 px-4 rounded-xl transition-all group/item gap-3">
-                    
-                    {/* Left Side: Title & Read Link */}
                     <a 
                       href={`/exclusive-content/view?file=${encodeURIComponent(pdfName)}`}
                       className="flex-1 flex items-center gap-3"
@@ -113,7 +113,6 @@ const handleDownload = async (category, index, pdfName) => {
                       </span>
                     </a>
 
-                    {/* Right Side: Download Button with Counter */}
                     <button
                       onClick={() => handleDownload(group.category, index, pdfName)}
                       disabled={isDownloading}
