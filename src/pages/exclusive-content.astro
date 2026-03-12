@@ -12,20 +12,8 @@ import Comments from "../components/Comments.jsx";
   <div class="max-w-4xl mx-auto py-12 px-4">
     {/* Header Section */}
     <div class="bg-gradient-to-r from-amber-500 to-orange-600 rounded-3xl p-8 text-white mb-10 shadow-lg">
-       <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div>
-          <h1 class="text-4xl font-bold mb-2">Member Library 🧡</h1>
-          <p class="opacity-90 italic">Exclusive recipes and guides for our inner circle.</p>
-        </div>
-        
-        {/* Logout Button */}
-        <button 
-          id="logout-btn" 
-          class="bg-white/20 hover:bg-white/40 active:scale-95 px-6 py-2.5 rounded-xl text-sm font-bold transition-all backdrop-blur-md border border-white/30"
-        >
-          Logout
-        </button>
-      </div>
+      <h1 class="text-4xl font-bold mb-2">Member Library 🧡</h1>
+      <p class="opacity-90 italic">Exclusive recipes and guides for our inner circle.</p>
     </div>
 
     {/* PDF Resources Section */}
@@ -33,6 +21,18 @@ import Comments from "../components/Comments.jsx";
 
     {/* Custom Comments Section */}
     <Comments client:only="react" /> 
+
+    {/* Member Logout Card */}
+    <div class="mt-12 bg-white border border-gray-200 rounded-2xl p-6 text-center shadow-sm flex flex-col items-center justify-center">
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">Done reading for today?</h3>
+      <p class="text-gray-500 mb-6 text-sm">See you next time!</p>
+      <button 
+        id="logout-btn" 
+        class="bg-gray-900 hover:bg-black active:scale-95 px-8 py-2.5 rounded-xl text-white text-sm font-bold transition-all shadow-md"
+      >
+        Logout
+      </button>
+    </div>
   </div>
 </MainLayout>
 
