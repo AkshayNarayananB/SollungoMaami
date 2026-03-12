@@ -1,7 +1,6 @@
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 
-// Initialize S3 Client using Astro's import.meta.env
 const s3 = new S3Client({
   region: "auto",
   endpoint: `https://${import.meta.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
@@ -27,7 +26,7 @@ export const GET = async ({ request }) => {
     const cleanKey = fileName.endsWith('.pdf') ? fileName : `${fileName}.pdf`;
 
     const params: any = {
-      Bucket: import.meta.env.R2_BUCKET_NAME, // Updated here too
+      Bucket: import.meta.env.R2_BUCKET_NAME,
       Key: cleanKey,
     };
 
@@ -42,15 +41,6 @@ export const GET = async ({ request }) => {
       status: 200,
       headers: { "Content-Type": "application/json" }
     });
-
-  } catch (error) {
-    console.error("API Route R2 Error:", error); 
-    return new Response(JSON.stringify({ error: "Failed to generate secure URL" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" }
-    });
-  }
-};
 
   } catch (error) {
     console.error("API Route R2 Error:", error); 
