@@ -35,10 +35,9 @@ const LibraryDropdowns = () => {
     setDownloadingStatus({ category, index });
 
     try {
-      // 1. Fetch the secure URL, passing the ?download=true flag
-      const res = await fetch(`/api/sign-r2?file=${encodeURIComponent(pdfName)}&download=true`);
+      // 1. Fetch the secure URL from your root /api folder
+      const res = await fetch(`/api/sign-r2?file=${encodeURIComponent(pdfName)}`);
       
-      // Failsafe to catch non-JSON responses
       if (!res.ok) {
         throw new Error(`Server returned ${res.status}`);
       }
@@ -46,37 +45,33 @@ const LibraryDropdowns = () => {
       const data = await res.json();
       if (!data.url) throw new Error("Failed to get secure URL");
 
-      // 2. Trigger the direct download
-      const link = document.createElement('a');
-      link.href = data.url;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-
-      // 3. Update the Firestore downloads array
+      // 2. Update the Firestore downloads array
       const groupIndex = groups.findIndex(g => g.category === category);
-      if (groupIndex === -1) return;
+      if (groupIndex !== -1) {
+        const newGroups = [...groups];
+        const currentGroup = newGroups[groupIndex];
 
-      const newGroups = [...groups];
-      const currentGroup = newGroups[groupIndex];
+        const newDownloads = [...(currentGroup.downloads || [])];
+        while (newDownloads.length < currentGroup.pdfs.length) {
+          newDownloads.push(0);
+        }
 
-      const newDownloads = [...(currentGroup.downloads || [])];
-      while (newDownloads.length < currentGroup.pdfs.length) {
-        newDownloads.push(0);
+        newDownloads[index] += 1;
+        currentGroup.downloads = newDownloads;
+
+        setGroups(newGroups);
+
+        // Push the update to Firestore
+        const docRef = doc(db, "document", category);
+        await updateDoc(docRef, { downloads: newDownloads });
       }
 
-      newDownloads[index] += 1;
-      currentGroup.downloads = newDownloads;
-
-      setGroups(newGroups);
-
-      // Push the update to Firestore
-      const docRef = doc(db, "document", category);
-      await updateDoc(docRef, { downloads: newDownloads });
+      // 3. Simply open the secure PDF link in a new tab
+      window.open(data.url, '_blank');
 
     } catch (error) {
       console.error("Error processing download:", error);
-      alert("Sorry, we couldn't download the file. Please try again.");
+      alert("Sorry, we couldn't open the file. Please try again.");
     } finally {
       setDownloadingStatus({ category: null, index: null });
     }
@@ -125,11 +120,11 @@ const LibraryDropdowns = () => {
                       {isDownloading ? (
                         <>
                           <div className="w-4 h-4 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
-                          <span>Fetching...</span>
+                          <span>Opening...</span>
                         </>
                       ) : (
                         <>
-                          <span>📥 Download</span>
+                          <span>📥 View/Download</span>
                           <span className="bg-white/50 dark:bg-black/20 px-2 py-0.5 rounded-md text-xs">
                             {downloadCount}
                           </span>
